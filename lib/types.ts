@@ -49,7 +49,7 @@ export type GridCell =
   | 'hole' // permanent hole
   | { type: 'source' } // always at (0,0)
   | { type: 'stone' } // stone block
-  | { type: 'frozen' } // frozen block
+  | { type: 'frozen'; lives?: number } // frozen block
   | { type: 'target' } // always at (9,9)
   | { type: 'mirror'; mirror: MirrorType }
   | { type: 'fog'; reveals: 'stone' | 'hole' }

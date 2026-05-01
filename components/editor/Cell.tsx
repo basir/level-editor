@@ -19,7 +19,10 @@ function getVisual(cell: GridCell) {
   if (cell === 'hole') return { bg: 'bg-zinc-950', text: '○', style: { color: '#52525b' } }
   if (typeof cell === 'object') {
     if (cell.type === 'stone') return { bg: 'bg-zinc-800', text: '▪', style: { color: '#a1a1aa' } }
-    if (cell.type === 'frozen') return { bg: 'bg-cyan-900/40', text: '❄', style: { color: '#67e8f9' } }
+    if (cell.type === 'frozen') {
+      if (cell.lives === 1) return { bg: 'bg-zinc-800', text: '▪', style: { color: '#a1a1aa' } }
+      return { bg: 'bg-cyan-900/40', text: '❄', style: { color: '#67e8f9' } }
+    }
     if (cell.type === 'source') return { bg: 'bg-blue-600/20', text: '◉', style: { color: '#60a5fa' } }
     if (cell.type === 'target') return { bg: 'bg-green-600/20', text: '★', style: { color: '#4ade80' } }
     if (cell.type === 'mirror') return { bg: 'bg-amber-500/10', text: MIRROR_SYMBOL[cell.mirror], style: { color: '#fbbf24' } }

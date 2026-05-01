@@ -175,52 +175,77 @@ export function runLineClear(grid: GridCell[][]): {
   clearedLines: number
 } {
   const newGrid = grid.map((row) => [...row])
-  let clearedMirrors = 0
+  const cellHits = new Map<string, number>()
+  const mirrorsToClear = new Set<string>()
   let clearedLines = 0
 
-  // Check rows
+  // 1. Identify all row segments to clear
   for (let r = 0; r < GRID_SIZE; r++) {
     const lineCells = Array.from({ length: GRID_SIZE }, (_, c): [number, number] => [r, c])
-    const segments = getSegments(lineCells, newGrid)
+    const segments = getSegments(lineCells, grid)
     for (const seg of segments) {
-      if (segmentIsComplete(seg, newGrid)) {
-        // Clear mirrors bordering this segment
-        const mirrors = getBorderingMirrors(seg, lineCells, newGrid)
-        for (const [mr, mc] of mirrors) {
-          newGrid[mr][mc] = null
-          clearedMirrors++
-        }
-        // Clear segment cells
-        for (const [sr, sc] of seg) {
-          newGrid[sr][sc] = null
-        }
+      if (segmentIsComplete(seg, grid)) {
         clearedLines++
+        for (const [sr, sc] of seg) {
+          const key = `${sr},${sc}`
+          cellHits.set(key, (cellHits.get(key) ?? 0) + 1)
+        }
+        const mirrors = getBorderingMirrors(seg, lineCells, grid)
+        for (const [mr, mc] of mirrors) {
+          mirrorsToClear.add(`${mr},${mc}`)
+        }
       }
     }
   }
 
-  // Check columns
+  // 2. Identify all column segments to clear
   for (let c = 0; c < GRID_SIZE; c++) {
     const lineCells = Array.from({ length: GRID_SIZE }, (_, r): [number, number] => [r, c])
-    const segments = getSegments(lineCells, newGrid)
+    const segments = getSegments(lineCells, grid)
     for (const seg of segments) {
-      if (segmentIsComplete(seg, newGrid)) {
-        // Clear mirrors bordering this segment
-        const mirrors = getBorderingMirrors(seg, lineCells, newGrid)
-        for (const [mr, mc] of mirrors) {
-          newGrid[mr][mc] = null
-          clearedMirrors++
-        }
-        // Clear segment cells
-        for (const [sr, sc] of seg) {
-          newGrid[sr][sc] = null
-        }
+      if (segmentIsComplete(seg, grid)) {
         clearedLines++
+        for (const [sr, sc] of seg) {
+          const key = `${sr},${sc}`
+          cellHits.set(key, (cellHits.get(key) ?? 0) + 1)
+        }
+        const mirrors = getBorderingMirrors(seg, lineCells, grid)
+        for (const [mr, mc] of mirrors) {
+          mirrorsToClear.add(`${mr},${mc}`)
+        }
       }
     }
   }
 
-  return { grid: newGrid, clearedMirrors, clearedLines }
+  // 3. Apply all clears simultaneously
+  for (const [key, hits] of cellHits) {
+    const [r, c] = key.split(',').map(Number)
+    const cell = grid[r][c]
+
+    if (cell && typeof cell === 'object' && cell.type === 'frozen') {
+      const currentLives = cell.lives ?? 2
+      const remainingLives = currentLives - hits
+      if (remainingLives > 0) {
+        newGrid[r][c] = { ...cell, lives: remainingLives }
+      } else {
+        newGrid[r][c] = null
+      }
+    } else {
+      // Regular cells (stone, etc.) are cleared immediately with any number of hits
+      newGrid[r][c] = null
+    }
+  }
+
+  for (const key of mirrorsToClear) {
+    const [r, c] = key.split(',').map(Number)
+    newGrid[r][c] = null
+  }
+
+  return {
+    grid: newGrid,
+    clearedMirrors: mirrorsToClear.size,
+    clearedLines,
+  }
 }
 
 export function runLineClearCascade(grid: GridCell[][]) {
