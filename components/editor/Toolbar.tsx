@@ -23,13 +23,15 @@ export function Toolbar() {
   const playMode = useEditorStore((s) => s.playMode)
   const playMovesLeft = useEditorStore((s) => s.playMovesLeft)
 
-  if (playMode) {
+  if (playMode || solutionMode) {
     return (
       <div className="rounded border border-editor-border bg-editor-panel p-3">
         <div className="mb-2 text-sm">Moves left: {playMovesLeft}</div>
         <div className="flex gap-2">
           <Button onClick={resetPlay}>Reset</Button>
-          <Button onClick={togglePlayMode}>Exit Play</Button>
+          <Button onClick={solutionMode ? toggleSolutionMode : togglePlayMode}>
+            {solutionMode ? "Exit Record" : "Exit Play"}
+          </Button>
         </div>
       </div>
     )
@@ -62,14 +64,9 @@ export function Toolbar() {
       <Button onClick={togglePlayMode} className="w-full">
         Play
       </Button>
-      <Button onClick={toggleSolutionMode} className={`w-full ${solutionMode ? "bg-purple-700 hover:bg-purple-600" : ""}`}>
-        {solutionMode ? "Exit Solution Mode" : "Record Solution"}
+      <Button onClick={toggleSolutionMode} className="w-full">
+        Record Solution
       </Button>
-      {solutionMode ? (
-        <Button onClick={toggleSolutionDrawPath} className={`w-full ${solutionDrawPath ? "bg-purple-600 hover:bg-purple-500" : ""}`}>
-          {solutionDrawPath ? "Path Draw: ON" : "Mirror Mark: ON"}
-        </Button>
-      ) : null}
     </div>
   )
 }

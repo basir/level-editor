@@ -3,15 +3,25 @@ import fs from 'fs/promises';
 import path from 'path';
 import { PIECE_SHAPES, SHAPE_COLORS } from '@/lib/constants';
 
-export async function POST(req: Request) {
+export async function POST() {
   const targetPath = '/Users/basir/projects/OpticalGrid/optical-grid/assets/data';
+  const DATA_DIR = path.join(process.cwd(), 'data');
 
   try {
-    const { worlds } = await req.json();
+    const localWorldsManifestRaw = await fs.readFile(path.join(DATA_DIR, 'worlds.json'), 'utf-8');
+    const localWorldsManifest = JSON.parse(localWorldsManifestRaw);
 
-    if (!worlds || !Array.isArray(worlds)) {
-      return NextResponse.json({ error: 'Invalid worlds data' }, { status: 400 });
-    }
+    const worlds = await Promise.all(
+      localWorldsManifest.worlds.map(async (w: any) => {
+        const worldDataRaw = await fs.readFile(path.join(DATA_DIR, `world-${w.id}.json`), 'utf-8');
+        const worldData = JSON.parse(worldDataRaw);
+        return {
+          id: w.id,
+          name: w.name,
+          levels: worldData.levels,
+        };
+      })
+    );
 
     // 1. Prepare and write worlds.json
     const worldsIndex = {

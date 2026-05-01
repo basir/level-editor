@@ -48,8 +48,8 @@ export type GridCell =
   | null // empty
   | 'hole' // permanent hole
   | { type: 'source' } // always at (0,0)
-  | { type: 'stone' } // stone block
-  | { type: 'frozen'; lives?: number } // frozen block
+  | { type: 'stone'; color: string } // stone block
+  | { type: 'frozen'; lives?: number; color?: string } // frozen block
   | { type: 'target' } // always at (9,9)
   | { type: 'mirror'; mirror: MirrorType }
   | { type: 'fog'; reveals: 'stone' | 'hole' }

@@ -11,6 +11,7 @@ import { PIECE_SHAPES, SHAPE_COLORS } from "@/lib/constants"
 
 import { Cell } from "./Cell"
 import { LaserBeam } from "./LaserBeam"
+import { CellColorPicker } from "./CellColorPicker"
 
 export function Grid() {
   const grid = useEditorStore((s) => s.grid)
@@ -26,6 +27,7 @@ export function Grid() {
   const activeMirrorType = useEditorStore((s) => s.activeMirrorType)
   const placePlayPiece = useEditorStore((s) => s.placePlayPiece)
   const activeLevel = useEditorStore((s) => s.activeLevel)
+  const setEditingCell = useEditorStore((s) => s.setEditingCell)
   const { applyAt } = useGridActions()
   const { beams } = useLaser()
   const [isPainting, setIsPainting] = useState(false)
@@ -37,7 +39,7 @@ export function Grid() {
     return () => window.removeEventListener("mouseup", stopPaint)
   }, [])
 
-  const activeGrid = playMode ? playGrid : grid
+  const activeGrid = (playMode || solutionMode) ? playGrid : grid
   const litSet = useMemo(() => new Set(beams.map((b) => `${b.r},${b.c}`)), [beams])
   const traps = useMemo(() => findTrapMirrors(activeGrid), [activeGrid])
   const selectedPiece = useMemo(
@@ -45,7 +47,7 @@ export function Grid() {
     [playQueue, selectedPlayPieceId]
   )
   const ghostCells = useMemo(() => {
-    if (!playMode || !hover || !selectedPiece) return []
+    if (!(playMode || solutionMode) || !hover || !selectedPiece) return []
     const [r, c] = hover
     return PIECE_SHAPES[selectedPiece.shape]
       .map(([dr, dc]) => [r + dr, c + dc] as [number, number])
@@ -70,7 +72,7 @@ export function Grid() {
               lit={litSet.has(`${r},${c}`)}
               trap={traps.has(`${r},${c}`)}
               onDown={() => {
-                if (playMode) {
+                if (playMode || solutionMode) {
                   if (!selectedPlayPieceId) return
                   const result = placePlayPiece(r, c)
                   if (result.ok && result.clearedMirrors > 0) toast.warning('Mirror destroyed')
@@ -78,16 +80,11 @@ export function Grid() {
                   if (result.ok && result.lose) toast.error('Out of moves')
                   return
                 }
-                if (solutionMode) {
-                  if (solutionDrawPath) addSolutionPathCell(r, c)
-                  else addSolutionMirror(r, c, activeMirrorType)
-                  return
-                }
                 setIsPainting(true)
                 applyAt(r, c)
               }}
               onEnter={() => {
-                if (playMode) {
+                if (playMode || solutionMode) {
                   setHover([r, c])
                   return
                 }
@@ -95,8 +92,13 @@ export function Grid() {
                 if (isPainting) applyAt(r, c)
               }}
               onErase={() => {
-                if (playMode) return
+                if (playMode || solutionMode) return
                 eraseCell(r, c)
+              }}
+              onDoubleClick={() => {
+                if (!playMode && !solutionMode) {
+                  setEditingCell({ row: r, col: c })
+                }
               }}
             />
           ))
@@ -141,6 +143,7 @@ export function Grid() {
       )}
 
       <LaserBeam beams={beams} />
+      <CellColorPicker />
     </div>
   )
 }

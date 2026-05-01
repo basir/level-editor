@@ -38,7 +38,7 @@ export function WorldList() {
                 World {world.id} - {world.name}
               </Button>
               <Button variant="ghost" onClick={() => createLevel(world.id)} className="text-xs text-blue-300">
-                + Level
+                +
               </Button>
             </div>
             <div className="space-y-1">

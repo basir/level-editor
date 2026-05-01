@@ -63,6 +63,7 @@ function PiecePreview({ shape }: { shape: PieceShape }) {
 export function PieceQueue() {
   const activeLevel = useEditorStore((s) => s.activeLevel)
   const playMode = useEditorStore((s) => s.playMode)
+  const solutionMode = useEditorStore((s) => s.solutionMode)
   const playQueue = useEditorStore((s) => s.playQueue)
   const selectedPlayPieceId = useEditorStore((s) => s.selectedPlayPieceId)
   const selectPlayPiece = useEditorStore((s) => s.selectPlayPiece)
@@ -75,7 +76,7 @@ export function PieceQueue() {
   const currentQueueCount = activeLevel.piece_queue.length
   const isAtLimit = currentQueueCount >= 6
 
-  if (playMode) {
+  if (playMode || solutionMode) {
     return (
       <div className='space-y-2 rounded border border-editor-border bg-editor-panel p-3'>
         <div className='text-sm font-semibold'>Play Tray</div>

@@ -14,10 +14,12 @@ export function ExportPanel() {
   const exportWorldJSON = useEditorStore((s) => s.exportWorldJSON)
   const exportWorldsIndex = useEditorStore((s) => s.exportWorldsIndex)
   const importJSON = useEditorStore((s) => s.importJSON)
+  const loadWorlds = useEditorStore((s) => s.loadWorlds)
+  const saveWorlds = useEditorStore((s) => s.saveWorlds)
   const fileRef = useRef<HTMLInputElement>(null)
 
   const handleResetAll = async () => {
-    const confirm = window.confirm("Are you sure you want to reset all worlds and levels? This will replace your current data with the generator output.")
+    const confirm = window.confirm("Are you sure you want to reset all worlds and levels? This will replace your local data with the generator output.")
     if (!confirm) return
 
     const t = toast.loading("Importing levels from generator...")
@@ -26,7 +28,7 @@ export function ExportPanel() {
       if (!res.ok) throw new Error(await res.text())
       const data = await res.json()
       importJSON(JSON.stringify(data))
-      toast.success("Successfully imported all worlds and levels", { id: t })
+      toast.success("Successfully imported all worlds and levels to local data", { id: t })
     } catch (e) {
       console.error(e)
       toast.error("Failed to import levels: " + (e as Error).message, { id: t })
@@ -34,16 +36,12 @@ export function ExportPanel() {
   }
 
   const handleApplyAll = async () => {
-    const confirm = window.confirm("Are you sure you want to apply all changes to the game assets? This will overwrite the game's data files.")
+    const confirm = window.confirm("Are you sure you want to apply all local changes to the game assets?")
     if (!confirm) return
 
     const t = toast.loading("Applying changes to game assets...")
     try {
-      const res = await fetch('/api/export', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ worlds }),
-      })
+      const res = await fetch('/api/export', { method: 'POST' })
       if (!res.ok) throw new Error(await res.text())
       toast.success("Successfully applied changes to game assets", { id: t })
     } catch (e) {

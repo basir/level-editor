@@ -23,6 +23,14 @@ export default function Page() {
   const exportWorldJSON = useEditorStore((s) => s.exportWorldJSON)
   const activeWorldId = useEditorStore((s) => s.activeWorldId)
   const playMode = useEditorStore((s) => s.playMode)
+  const loadWorlds = useEditorStore((s) => s.loadWorlds)
+  const initialized = useEditorStore((s) => s.initialized)
+
+  useEffect(() => {
+    if (!initialized) {
+      loadWorlds()
+    }
+  }, [initialized, loadWorlds])
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {

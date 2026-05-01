@@ -81,6 +81,36 @@ export async function GET() {
       })
     );
 
+    // PERSIST TO LOCAL DATA FOLDER
+    const DATA_DIR = path.join(process.cwd(), 'data');
+    await fs.mkdir(DATA_DIR, { recursive: true });
+
+    const localWorldsIndex = {
+      version: '1.0',
+      worlds: fullWorlds.map((w) => ({
+        id: w.id,
+        name: w.name,
+        levelCount: w.levels.length,
+        levels: w.levels.map((l: any) => ({
+          id: l.id,
+          name: l.name,
+          difficulty: l.difficulty > 20 ? 'hard' : l.difficulty > 10 ? 'medium' : 'easy',
+          difficulty_score: l.difficulty,
+        })),
+      })),
+    };
+
+    await fs.writeFile(path.join(DATA_DIR, 'worlds.json'), JSON.stringify(localWorldsIndex, null, 2));
+
+    for (const w of fullWorlds) {
+      const worldData = {
+        worldId: w.id,
+        worldName: w.name,
+        levels: w.levels,
+      };
+      await fs.writeFile(path.join(DATA_DIR, `world-${w.id}.json`), JSON.stringify(worldData, null, 2));
+    }
+
     return NextResponse.json({ worlds: fullWorlds });
   } catch (error) {
     console.error('Import API Error:', error);

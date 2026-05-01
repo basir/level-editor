@@ -1,0 +1,3355 @@
+{
+  "version": "1.0",
+  "worlds": [
+    {
+      "id": 1,
+      "name": "Meadow",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "1-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "1-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "1-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "1-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "1-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "1-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "1-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "1-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "1-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "1-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "River",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "2-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "2-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "2-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "2-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "2-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "2-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "2-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "2-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "2-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "2-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Cave",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "3-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "3-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "3-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "3-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "3-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "3-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "3-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "3-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "3-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "3-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Storm",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "4-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "4-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "4-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "4-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "4-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "4-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "4-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "4-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "4-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "4-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Factory",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "5-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "5-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "5-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "5-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "5-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "5-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "5-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "5-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "5-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "5-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Labyrinth",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "6-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "6-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "6-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "6-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "6-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "6-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "6-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "6-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "6-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "6-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Volcano",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "7-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "7-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "7-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "7-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "7-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "7-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "7-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "7-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "7-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "7-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Abyss",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "8-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "8-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "8-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "8-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "8-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "8-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "8-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "8-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "8-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "8-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Ruins",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "9-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "9-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "9-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "9-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "9-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "9-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "9-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "9-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "9-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "9-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Summit",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "10-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "10-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "10-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "10-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "10-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "10-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "10-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "10-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "10-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "10-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Deep Space",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "11-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "11-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "11-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "11-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "11-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "11-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "11-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "11-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "11-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "11-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Asteroid Belt",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "12-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "12-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "12-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "12-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "12-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "12-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "12-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "12-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "12-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "12-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Nebula",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "13-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "13-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "13-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "13-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "13-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "13-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "13-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "13-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "13-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "13-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Event Horizon",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "14-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "14-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "14-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "14-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "14-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "14-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "14-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "14-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "14-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "14-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Solar Flare",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "15-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "15-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "15-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "15-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "15-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "15-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "15-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "15-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "15-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "15-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Lunar Base",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "16-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "16-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "16-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "16-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "16-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "16-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "16-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "16-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "16-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "16-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Martian Plains",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "17-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "17-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "17-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "17-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "17-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "17-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "17-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "17-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "17-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "17-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Saturnian Rings",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "18-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "18-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "18-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "18-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "18-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "18-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "18-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "18-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "18-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "18-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Galactic Core",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "19-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "19-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "19-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "19-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "19-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "19-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "19-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "19-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "19-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "19-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Universal Fringe",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "20-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "20-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "20-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "20-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "20-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "20-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "20-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "20-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "20-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "20-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Ice Floes",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "21-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "21-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "21-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "21-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "21-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "21-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "21-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "21-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "21-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "21-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Glacier Peak",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "22-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "22-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "22-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "22-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "22-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "22-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "22-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "22-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "22-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "22-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Permafrost",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "23-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "23-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "23-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "23-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "23-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "23-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "23-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "23-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "23-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "23-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Snowstorm",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "24-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "24-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "24-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "24-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "24-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "24-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "24-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "24-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "24-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "24-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Blizzard",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "25-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "25-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "25-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "25-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "25-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "25-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "25-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "25-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "25-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "25-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Arctic Circle",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "26-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "26-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "26-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "26-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "26-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "26-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "26-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "26-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "26-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "26-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Crystal Cave",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "27-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "27-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "27-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "27-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "27-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "27-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "27-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "27-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "27-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "27-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Winter Tundra",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "28-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "28-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "28-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "28-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "28-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "28-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "28-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "28-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "28-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "28-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Frozen Lake",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "29-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "29-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "29-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "29-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "29-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "29-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "29-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "29-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "29-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "29-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "North Pole",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "30-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "30-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "30-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "30-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "30-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "30-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "30-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "30-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "30-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "30-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Magma Chamber",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "31-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "31-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "31-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "31-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "31-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "31-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "31-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "31-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "31-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "31-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Obsidian Ridge",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "32-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "32-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "32-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "32-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "32-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "32-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "32-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "32-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "32-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "32-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Pyroclastic Flow",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "33-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "33-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "33-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "33-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "33-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "33-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "33-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "33-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "33-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "33-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Ash Clouds",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "34-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "34-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "34-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "34-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "34-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "34-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "34-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "34-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "34-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "34-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Lava Tube",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "35-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "35-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "35-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "35-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "35-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "35-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "35-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "35-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "35-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "35-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Caldera",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "36-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "36-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "36-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "36-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "36-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "36-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "36-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "36-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "36-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "36-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Sulfur Vents",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "37-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "37-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "37-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "37-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "37-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "37-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "37-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "37-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "37-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "37-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Molten Core",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "38-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "38-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "38-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "38-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "38-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "38-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "38-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "38-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "38-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "38-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Basalt Columns",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "39-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "39-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "39-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "39-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "39-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "39-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "39-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "39-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "39-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "39-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Fire Mountain",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "40-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "40-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "40-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "40-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "40-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "40-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "40-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "40-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "40-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "40-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Time Warp",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "41-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "41-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "41-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "41-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "41-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "41-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "41-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "41-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "41-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "41-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Dimensional Rift",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "42-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "42-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "42-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "42-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "42-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "42-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "42-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "42-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "42-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "42-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Paradox",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "43-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "43-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "43-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "43-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "43-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "43-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "43-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "43-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "43-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "43-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Singularity",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "44-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "44-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "44-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "44-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "44-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "44-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "44-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "44-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "44-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "44-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Reality Warp",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "45-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "45-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "45-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "45-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "45-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "45-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "45-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "45-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "45-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "45-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Quantum Realm",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "46-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "46-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "46-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "46-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "46-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "46-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "46-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "46-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "46-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "46-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Void Echo",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "47-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "47-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "47-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "47-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "47-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "47-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "47-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "47-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "47-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "47-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Astral Plane",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "48-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "48-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "48-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "48-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "48-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "48-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "48-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "48-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "48-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "48-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Celestial Throne",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "49-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "49-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "49-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "49-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "49-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "49-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "49-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "49-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "49-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "49-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "The Omega",
+      "levelCount": 10,
+      "levels": [
+        {
+          "id": "50-1",
+          "name": "First Steps",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "50-2",
+          "name": "Warm Up",
+          "difficulty": "easy",
+          "difficulty_score": "easy"
+        },
+        {
+          "id": "50-3",
+          "name": "Getting There",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "50-4",
+          "name": "Finding Flow",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "50-5",
+          "name": "Double Down",
+          "difficulty": "easy",
+          "difficulty_score": "medium"
+        },
+        {
+          "id": "50-6",
+          "name": "Halfway",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "50-7",
+          "name": "Picking Up",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "50-8",
+          "name": "The Pressure",
+          "difficulty": "easy",
+          "difficulty_score": "hard"
+        },
+        {
+          "id": "50-9",
+          "name": "Almost There",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        },
+        {
+          "id": "50-10",
+          "name": "The Final Push",
+          "difficulty": "easy",
+          "difficulty_score": "expert"
+        }
+      ]
+    }
+  ]
+}
