@@ -25,10 +25,10 @@ const DIR_VEC: Record<Dir, Vec> = {
 // If an incoming travel direction is not present for a mirror, the beam
 // is blocked/stops at the mirror.
 const MIRROR_REFLECT: Record<string, Partial<Record<Dir, Dir>>> = {
-  dr: { right: 'down', down: 'right' },
-  dl: { left: 'down', down: 'left' },
-  ur: { right: 'up', up: 'right' },
-  ul: { left: 'up', up: 'left' },
+  dr: { left: 'down', up: 'right' },
+  dl: { right: 'down', up: 'left' },
+  ur: { left: 'up', down: 'right' },
+  ul: { right: 'up', down: 'left' },
 }
 
 function dirFromVec(dr: number, dc: number): Dir {
@@ -73,7 +73,7 @@ export function traceLaser(
       const reflect = MIRROR_REFLECT[cell.mirror]
       const dirOut = reflect?.[dirIn]
       if (!dirOut) break
-      ;[dr, dc] = DIR_VEC[dirOut]
+        ;[dr, dc] = DIR_VEC[dirOut]
     }
 
     r += dr

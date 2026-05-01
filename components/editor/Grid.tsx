@@ -7,7 +7,7 @@ import { useGridActions } from "@/hooks/useGrid"
 import { useLaser } from "@/hooks/useLaser"
 import { findTrapMirrors } from "@/lib/laser"
 import { useEditorStore } from "@/lib/store"
-import { PIECE_CELLS } from "@/lib/constants"
+import { PIECE_SHAPES, SHAPE_COLORS } from "@/lib/constants"
 
 import { Cell } from "./Cell"
 import { LaserBeam } from "./LaserBeam"
@@ -47,7 +47,7 @@ export function Grid() {
   const ghostCells = useMemo(() => {
     if (!playMode || !hover || !selectedPiece) return []
     const [r, c] = hover
-    return PIECE_CELLS[selectedPiece.shape]
+    return PIECE_SHAPES[selectedPiece.shape]
       .map(([dr, dc]) => [r + dr, c + dc] as [number, number])
       .filter(([rr, cc]) => rr >= 0 && rr < 10 && cc >= 0 && cc < 10)
   }, [playMode, hover, selectedPiece])
@@ -129,9 +129,11 @@ export function Grid() {
             return (
               <div
                 key={i}
-                className={`h-[52px] w-[52px] ${
-                  ghost || highlighted ? 'bg-amber-300/20 border border-amber-400/50' : ''
-                }`}
+                style={{
+                  backgroundColor: ghost ? `${SHAPE_COLORS[selectedPiece?.shape || 'Single']}40` : highlighted ? 'rgba(255, 255, 255, 0.2)' : 'transparent',
+                  borderColor: ghost ? `${SHAPE_COLORS[selectedPiece?.shape || 'Single']}80` : highlighted ? 'rgba(255, 255, 255, 0.5)' : 'transparent'
+                }}
+                className={`h-[52px] w-[52px] border`}
               />
             )
           })}

@@ -3,7 +3,7 @@
 import { create } from "zustand"
 import { persist } from "zustand/middleware"
 
-import { GRID_SIZE, PIECE_CELLS } from "@/lib/constants"
+import { GRID_SIZE, PIECE_SHAPES } from "@/lib/constants"
 import { exportWorldJSON, exportWorldsIndex } from "@/lib/export"
 import { runLineClearCascade, traceLaser } from "@/lib/laser"
 import type { GridCell, Level, MirrorType, PieceShape, ToolType, World } from "@/lib/types"
@@ -402,7 +402,7 @@ export const useEditorStore = create<EditorStore>()(
         if (!piece) return { ok: false, clearedMirrors: 0, win: false, lose: false }
         const cells: [number, number][] = []
         const nextGrid = state.playGrid.map((r) => [...r])
-        for (const [dr, dc] of PIECE_CELLS[piece.shape]) {
+        for (const [dr, dc] of PIECE_SHAPES[piece.shape]) {
           const rr = row + dr
           const cc = col + dc
           if (rr < 0 || rr >= GRID_SIZE || cc < 0 || cc >= GRID_SIZE || nextGrid[rr][cc] !== null) {

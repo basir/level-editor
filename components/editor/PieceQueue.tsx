@@ -1,15 +1,15 @@
 'use client'
 
-import { PIECE_CELLS } from '@/lib/constants'
+import { PIECE_SHAPES, SHAPE_COLORS } from '@/lib/constants'
 import { useEditorStore } from '@/lib/store'
 import type { PieceShape } from '@/lib/types'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 
-const SHAPES = Object.keys(PIECE_CELLS) as PieceShape[]
+const SHAPES = Object.keys(PIECE_SHAPES) as PieceShape[]
 
 function PiecePreview({ shape }: { shape: PieceShape }) {
-  const offsets = PIECE_CELLS[shape]
+  const offsets = PIECE_SHAPES[shape]
   const minR = Math.min(...offsets.map(([r]) => r))
   const minC = Math.min(...offsets.map(([, c]) => c))
   const maxR = Math.max(...offsets.map(([r]) => r))
@@ -27,7 +27,7 @@ function PiecePreview({ shape }: { shape: PieceShape }) {
     <div
       className='grid items-center justify-center'
       style={{
-        gridTemplateColumns: `repeat(${cols * zoom}, ${cellSize * zoom}px)`,
+        gridTemplateColumns: `repeat(${cols}, ${cellSize * zoom}px)`,
         gridAutoRows: `${cellSize * zoom}px`,
         gap: `${gap}px`,
       }}
@@ -41,11 +41,15 @@ function PiecePreview({ shape }: { shape: PieceShape }) {
           return (
             <div
               key={key}
-              style={{ width: cellSize * zoom, height: cellSize * zoom }}
+              style={{
+                width: cellSize * zoom,
+                height: cellSize * zoom,
+                backgroundColor: on ? SHAPE_COLORS[shape] : 'transparent',
+                borderColor: on ? `${SHAPE_COLORS[shape]}80` : 'transparent'
+              }}
               className={
                 on
-                  ? 'rounded-[1px] bg-amber-300/20 border border-amber-400/50'
-
+                  ? 'rounded-[1px] border'
                   : 'rounded-[1px] border border-transparent'
               }
             />
@@ -81,9 +85,8 @@ export function PieceQueue() {
               key={piece.id}
               variant='secondary'
               onClick={() => selectPlayPiece(piece.id)}
-              className={`flex items-center justify-center px-2 py-1 ${
-                selectedPlayPieceId === piece.id ? 'border border-amber-500 bg-amber-500/20' : ''
-              }`}
+              className={`flex items-center justify-center px-2 py-1 ${selectedPlayPieceId === piece.id ? 'ring-2 ring-white ring-offset-2 ring-offset-black' : ''
+                }`}
             >
               <PiecePreview shape={piece.shape} />
             </Button>
@@ -104,16 +107,18 @@ export function PieceQueue() {
       </div>
       <div className='grid grid-cols-5 gap-2'>
         {SHAPES.map((shape) => (
-          <Button
-            key={shape}
-            variant='secondary'
-            disabled={isAtLimit}
-            onClick={() => addPieceToQueue(shape, 1)}
-            className='flex items-center justify-center p-0 h-10 w-10 disabled:opacity-30'
-            title={isAtLimit ? 'Maximum 6 pieces per level' : shape}
-          >
-            <PiecePreview shape={shape} />
-          </Button>
+          <div key={shape} className='flex flex-col items-center gap-1'>
+            <Button
+              variant='secondary'
+              disabled={isAtLimit}
+              onClick={() => addPieceToQueue(shape, 1)}
+              className='flex items-center justify-center p-0 h-12 w-12 disabled:opacity-30'
+              title={isAtLimit ? 'Maximum 6 pieces per level' : shape}
+            >
+              <PiecePreview shape={shape} />
+            </Button>
+            {/* <div className='text-[9px] text-zinc-500 text-center leading-tight truncate w-full'>{shape}</div> */}
+          </div>
         ))}
       </div>
       <div className='space-y-2'>

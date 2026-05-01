@@ -11,24 +11,38 @@ export type ToolType =
   | 'erase'
 
 export type PieceShape =
-  | 'dot'
-  | 'domino_h'
-  | 'domino_v'
-  | 'i3_h'
-  | 'i3_v'
-  | 'i4_h'
-  | 'i4_v'
-  | 's_piece'
-  | 'z_piece'
-  | 'l_piece'
-  | 'j_piece'
-  | 'o_piece'
-  | 't_piece'
-  | 'i5_h'
-  | 'u_piece'
-  | 'plus_piece'
-  | 'i6_h'
-  | 'corner_3'
+  | "Single"
+  | "Horizontal2"
+  | "Vertical2"
+  | "Square"
+  | "CornerNE"
+  | "CornerNW"
+  | "CornerSE"
+  | "CornerSW"
+  | "Diagonal_main"
+  | "Diagonal_anti"
+  | "Vertical3"
+  | "L"
+  | "L_reversed"
+  | "J"
+  | "J_reversed"
+  | "T_vertical"
+  | "T_vertical_flipped"
+  | "S_vertical"
+  | "Z_vertical"
+  | "V_vertical"
+  | "V_vertical_flipped"
+  | "Horizontal3"
+  | "T"
+  | "T_reversed"
+  | "S"
+  | "Z"
+  | "L_horizontal"
+  | "L_horizontal_reversed"
+  | "J_horizontal"
+  | "J_horizontal_reversed"
+  | "V"
+  | "V_reversed"
 
 export type GridCell =
   | null // empty

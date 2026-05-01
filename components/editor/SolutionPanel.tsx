@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useEditorStore } from '@/lib/store'
-import { PIECE_CELLS } from '@/lib/constants'
+import { PIECE_SHAPES } from '@/lib/constants'
 import { Button } from '@/components/ui/button'
 import type { PieceShape } from '@/lib/types'
 
@@ -16,7 +16,7 @@ export function SolutionPanel() {
 
   const getMoveCells = (move: any): [number, number][] => {
     const shape = move.shape as PieceShape
-    const offsets = PIECE_CELLS[shape] || []
+    const offsets = PIECE_SHAPES[shape] || []
     return offsets.map(([dr, dc]) => [move.row + dr, move.col + dc])
   }
 
