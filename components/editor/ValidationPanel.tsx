@@ -16,18 +16,49 @@ export function ValidationPanel() {
   const activeGrid = playMode ? playGrid : grid
   const trapCount = useMemo(() => findTrapMirrors(activeGrid).size, [activeGrid])
   const mirrorCount = useMemo(
-    () => activeGrid.flat().filter((c) => c && typeof c === "object" && c.type === "mirror").length,
+    () => activeGrid.flat().filter((c) => c && typeof c === 'object' && c.type === 'mirror').length,
     [activeGrid]
   )
 
+  const lastBeam = beams[beams.length - 1]
+  const blockedAt = reached ? null : lastBeam ? `(${lastBeam.r}, ${lastBeam.c})` : '(0, 0)'
+
   return (
-    <div className="rounded border border-editor-border bg-editor-panel p-3 text-sm">
-      <div>Laser Status: {reached ? "REACHES TARGET" : "BLOCKED"}</div>
-      <div>Path cells: {beams.length}</div>
-      <div>Mirrors placed: {mirrorCount}</div>
-      <div>Trap mirrors: {trapCount}</div>
-      <div>Move limit: {activeLevel?.moveLimit ?? 0}</div>
-      {playMode ? <div>Play moves left: {playMovesLeft}</div> : null}
+    <div className='space-y-1 rounded border border-editor-border bg-editor-panel p-3 text-xs'>
+      <div className='flex items-center gap-2'>
+        <span className='font-semibold'>Laser:</span>
+        {reached ? (
+          <span className='text-green-400'>● REACHES TARGET</span>
+        ) : (
+          <span className='text-red-400'>○ BLOCKED AT {blockedAt}</span>
+        )}
+      </div>
+      <div>
+        <span className='font-semibold'>Mirrors placed:</span> {mirrorCount}
+      </div>
+      <div className='flex items-center gap-2'>
+        <span className='font-semibold'>Trap segments:</span> {trapCount}
+        {trapCount > 0 && <span className='text-amber-500'>⚠</span>}
+      </div>
+      <div>
+        <span className='font-semibold'>Alt paths:</span> {activeLevel?.alt_paths?.length ?? 0}
+      </div>
+      <div>
+        <span className='font-semibold'>Queue size:</span> {activeLevel?.piece_queue?.length ?? 0} / 6
+      </div>
+      <div>
+        <span className='font-semibold'>Move limit:</span> {activeLevel?.move_limit ?? 0}
+      </div>
+      <div>
+        <span className='font-semibold'>Difficulty:</span> {activeLevel?.difficulty ?? 0}
+      </div>
+      {activeLevel?.optic_unsolved && <div className='mt-2 font-bold text-red-500'>⚠ optic_unsolved: TRUE</div>}
+      {playMode && (
+        <div className='mt-2 border-t border-editor-border pt-2 font-semibold text-amber-400'>
+          Play moves left: {playMovesLeft}
+        </div>
+      )}
     </div>
   )
 }
+

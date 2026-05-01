@@ -5,14 +5,18 @@ import type { Level, World } from "@/lib/types"
 export function exportWorldsIndex(worlds: World[]): string {
   return JSON.stringify(
     {
-      version: "1.0",
+      version: '1.0',
       worlds: worlds.map((w) => ({
         id: w.id,
         name: w.name,
-        theme: w.theme,
-        unlockedMechanics: w.unlockedMechanics,
-        levelCount: w.levels.length
-      }))
+        levelCount: w.levels.length,
+        levels: w.levels.map((l) => ({
+          id: l.id,
+          name: l.name,
+          difficulty: l.difficulty > 20 ? 'hard' : l.difficulty > 10 ? 'medium' : 'easy',
+          difficulty_score: l.difficulty,
+        })),
+      })),
     },
     null,
     2
@@ -24,7 +28,7 @@ export function exportWorldJSON(world: World): string {
     {
       worldId: world.id,
       worldName: world.name,
-      levels: world.levels.map((level) => serializeLevel(level))
+      levels: world.levels.map((level) => serializeLevel(level)),
     },
     null,
     2
@@ -32,24 +36,45 @@ export function exportWorldJSON(world: World): string {
 }
 
 function serializeLevel(level: Level) {
+  const {
+    id,
+    worldId,
+    levelIndex,
+    name,
+    grid,
+    solution_mirrors,
+    solution_path,
+    solution_moves,
+    alt_paths,
+    piece_queue,
+    move_limit,
+    difficulty,
+    generation_log,
+    optic_unsolved,
+    notes,
+    ...rest
+  } = level
+
   return {
-    id: level.id,
-    worldId: level.worldId,
-    levelIndex: level.levelIndex,
-    name: level.name,
-    source: level.source,
-    target: level.target,
-    laserStartDir: level.laserStartDir,
-    moveLimit: level.moveLimit,
-    grid: level.grid,
-    fogCells: level.fogCells,
-    prefillCells: level.prefillCells,
-    pieceQueue: level.pieceQueue,
-    solutionMirrors: level.solutionMirrors,
-    solutionPath: level.solutionPath,
-    notes: level.notes
+    id,
+    worldId,
+    levelIndex,
+    name,
+    grid,
+    solution_mirrors,
+    solution_path,
+    solution_moves,
+    alt_paths,
+    piece_queue,
+    move_limit,
+    difficulty,
+    generation_log,
+    optic_unsolved,
+    notes,
+    ...rest,
   }
 }
+
 
 export async function exportAllToZip(worlds: World[]): Promise<Blob> {
   const zip = new JSZip()

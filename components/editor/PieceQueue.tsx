@@ -21,22 +21,8 @@ function PiecePreview({ shape }: { shape: PieceShape }) {
   const gap = 1
 
   const filled = new Set(offsets.map(([r, c]) => `${r - minR},${c - minC}`))
-  const isMirror = shape.startsWith('mirror_')
-  if (isMirror)
-    return (
-      <div className='text-amber-400/50'>
-        {shape === 'mirror_dr'
-          ? '◢'
-          : shape === 'mirror_ur'
-          ? '◤'
-          : shape === 'mirror_dl'
-          ? '◣'
-          : shape === 'mirror_ul'
-          ? '◥'
-          : ''}
-      </div>
-    )
   const zoom = 1.5
+
   return (
     <div
       className='grid items-center justify-center'
@@ -58,10 +44,8 @@ function PiecePreview({ shape }: { shape: PieceShape }) {
               style={{ width: cellSize * zoom, height: cellSize * zoom }}
               className={
                 on
-                  ? isMirror
-                    ? // Mirrors are 1-cell previews; keep them high-contrast so they stay visible.
-                      'rounded-[1px] bg-editor-mirror/45 border border-editor-mirror'
-                    : 'rounded-[1px] bg-amber-300/20 border border-amber-400/50'
+                  ? 'rounded-[1px] bg-amber-300/20 border border-amber-400/50'
+
                   : 'rounded-[1px] border border-transparent'
               }
             />
@@ -84,6 +68,9 @@ export function PieceQueue() {
 
   if (!activeLevel) return null
 
+  const currentQueueCount = activeLevel.piece_queue.length
+  const isAtLimit = currentQueueCount >= 6
+
   if (playMode) {
     return (
       <div className='space-y-2 rounded border border-editor-border bg-editor-panel p-3'>
@@ -95,17 +82,13 @@ export function PieceQueue() {
               variant='secondary'
               onClick={() => selectPlayPiece(piece.id)}
               className={`flex items-center justify-center px-2 py-1 ${
-                selectedPlayPieceId === piece.id
-                  ? 'border border-amber-500 bg-amber-500/20'
-                  : ''
+                selectedPlayPieceId === piece.id ? 'border border-amber-500 bg-amber-500/20' : ''
               }`}
             >
               <PiecePreview shape={piece.shape} />
             </Button>
           ))}
-          {playQueue.length === 0 ? (
-            <div className='text-xs text-zinc-400'>No pieces left.</div>
-          ) : null}
+          {playQueue.length === 0 ? <div className='text-xs text-zinc-400'>No pieces left.</div> : null}
         </div>
       </div>
     )
@@ -113,28 +96,29 @@ export function PieceQueue() {
 
   return (
     <div className='space-y-2 rounded border border-editor-border bg-editor-panel p-3'>
-      <div className='text-sm font-semibold'>Piece Queue</div>
+      <div className='flex items-center justify-between'>
+        <div className='text-sm font-semibold'>Piece Queue</div>
+        <div className={`text-xs ${isAtLimit ? 'text-amber-500 font-bold' : 'text-zinc-400'}`}>
+          {currentQueueCount} / 6 pieces
+        </div>
+      </div>
       <div className='grid grid-cols-5 gap-2'>
         {SHAPES.map((shape) => (
           <Button
             key={shape}
             variant='secondary'
-            onClick={() =>
-              addPieceToQueue(shape, shape.startsWith('mirror_') ? 1 : 1)
-            }
-            className='flex items-center justify-center p-0 h-10 w-10'
-            title={shape}
+            disabled={isAtLimit}
+            onClick={() => addPieceToQueue(shape, 1)}
+            className='flex items-center justify-center p-0 h-10 w-10 disabled:opacity-30'
+            title={isAtLimit ? 'Maximum 6 pieces per level' : shape}
           >
             <PiecePreview shape={shape} />
           </Button>
         ))}
       </div>
       <div className='space-y-2'>
-        {activeLevel.pieceQueue.map((item) => (
-          <div
-            key={item.id}
-            className='flex items-center justify-between rounded border border-editor-border p-2'
-          >
+        {activeLevel.piece_queue.map((item) => (
+          <div key={item.id} className='flex items-center justify-between rounded border border-editor-border p-2'>
             <div className='flex items-center gap-2'>
               <div title={item.shape}>
                 <PiecePreview shape={item.shape} />
@@ -144,9 +128,7 @@ export function PieceQueue() {
               type='number'
               min={1}
               value={item.count}
-              onChange={(e) =>
-                updatePieceCount(item.id, Number(e.target.value))
-              }
+              onChange={(e) => updatePieceCount(item.id, Number(e.target.value))}
               className='w-16 px-2 py-1 text-xs'
             />
             <Button
@@ -162,3 +144,4 @@ export function PieceQueue() {
     </div>
   )
 }
+

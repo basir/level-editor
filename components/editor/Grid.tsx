@@ -51,11 +51,17 @@ export function Grid() {
       .map(([dr, dc]) => [r + dr, c + dc] as [number, number])
       .filter(([rr, cc]) => rr >= 0 && rr < 10 && cc >= 0 && cc < 10)
   }, [playMode, hover, selectedPiece])
-  const solutionPath = activeLevel?.solutionPath ?? []
+  const solutionPath = activeLevel?.solution_path ?? []
+  const highlightedCells = useEditorStore((s) => s.highlightedCells)
 
   return (
-    <div className="relative rounded border border-editor-border bg-editor-panel p-2">
-      <div className="grid grid-cols-10 gap-0" onMouseLeave={() => setHover(null)}>
+    <div className='relative rounded border border-editor-border bg-editor-panel p-2'>
+      {activeLevel?.optic_unsolved && (
+        <div className='mb-2 rounded bg-red-500/20 border border-red-500 p-2 text-center text-xs font-bold text-red-200 animate-pulse'>
+          ⚠ This level has no valid laser solution. Edit to fix.
+        </div>
+      )}
+      <div className='grid grid-cols-10 gap-0' onMouseLeave={() => setHover(null)}>
         {activeGrid.map((row, r) =>
           row.map((cell, c) => (
             <Cell
@@ -67,9 +73,9 @@ export function Grid() {
                 if (playMode) {
                   if (!selectedPlayPieceId) return
                   const result = placePlayPiece(r, c)
-                  if (result.ok && result.clearedMirrors > 0) toast.warning("Mirror destroyed")
-                  if (result.ok && result.win) toast.success("Level Complete")
-                  if (result.ok && result.lose) toast.error("Out of moves")
+                  if (result.ok && result.clearedMirrors > 0) toast.warning('Mirror destroyed')
+                  if (result.ok && result.win) toast.success('Level Complete')
+                  if (result.ok && result.lose) toast.error('Out of moves')
                   return
                 }
                 if (solutionMode) {
@@ -97,25 +103,41 @@ export function Grid() {
         )}
       </div>
       {solutionPath.length > 0 ? (
-        <div className="pointer-events-none absolute left-2 top-2 grid grid-cols-10">
+        <div className='pointer-events-none absolute left-2 top-2 grid grid-cols-10'>
           {Array.from({ length: 100 }, (_, i) => {
             const r = Math.floor(i / 10)
             const c = i % 10
             const onPath = solutionPath.some(([pr, pc]) => pr === r && pc === c)
-            return <div key={i} className={`h-[52px] w-[52px] ${onPath ? "bg-cyan-300/10 border border-dotted border-cyan-400/40" : ""}`} />
+            return (
+              <div
+                key={i}
+                className={`h-[52px] w-[52px] ${
+                  onPath ? 'bg-cyan-300/10 border border-dotted border-cyan-400/40' : ''
+                }`}
+              />
+            )
           })}
         </div>
       ) : null}
-      {ghostCells.length > 0 ? (
-        <div className="pointer-events-none absolute left-2 top-2 grid grid-cols-10">
+      {(ghostCells.length > 0 || (highlightedCells && highlightedCells.length > 0)) && (
+        <div className='pointer-events-none absolute left-2 top-2 grid grid-cols-10'>
           {Array.from({ length: 100 }, (_, i) => {
             const r = Math.floor(i / 10)
             const c = i % 10
             const ghost = ghostCells.some(([gr, gc]) => gr === r && gc === c)
-            return <div key={i} className={`h-[52px] w-[52px] ${ghost ? "bg-amber-300/20 border border-amber-400/50" : ""}`} />
+            const highlighted = highlightedCells?.some(([hr, hc]) => hr === r && hc === c)
+            return (
+              <div
+                key={i}
+                className={`h-[52px] w-[52px] ${
+                  ghost || highlighted ? 'bg-amber-300/20 border border-amber-400/50' : ''
+                }`}
+              />
+            )
           })}
         </div>
-      ) : null}
+      )}
+
       <LaserBeam beams={beams} />
     </div>
   )

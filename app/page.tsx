@@ -57,11 +57,10 @@ export default function Page() {
       if (e.key === "6") {
         setMirrorType("ul")
       }
-      if (e.key === "7") setTool("fog")
-      if (e.key === "8") setTool("prefill")
-      if (e.key.toLowerCase() === "s") setTool("source")
-      if (e.key.toLowerCase() === "t") setTool("target")
+      if (e.key === '7') setTool('fog')
+      if (e.key === '8') setTool('frozen')
     }
+
     window.addEventListener("keydown", onKey)
     return () => window.removeEventListener("keydown", onKey)
   }, [activeWorldId, exportWorldJSON, playMode, redo, saveLevel, setMirrorType, setTool, undo])

@@ -15,23 +15,26 @@ interface CellProps {
 }
 
 function getVisual(cell: GridCell) {
-  if (!cell) return { bg: "bg-editor-cell", text: "" }
-  if (cell === "stone") return { bg: "bg-editor-stone", text: "▪" }
-  if (cell === "hole") return { bg: "bg-editor-hole", text: "○" }
-  if (cell === "prefill") return { bg: "bg-editor-prefill", text: "·" }
-  if (typeof cell === "object" && cell.type === "source") return { bg: "bg-blue-900", text: "◉" }
-  if (typeof cell === "object" && cell.type === "target") return { bg: "bg-green-900", text: "★" }
-  if (typeof cell === "object" && cell.type === "mirror") return { bg: "bg-editor-mirror", text: MIRROR_SYMBOL[cell.mirror] }
-  if (typeof cell === "object" && cell.type === "fog") return { bg: "bg-editor-fog", text: "?" }
-  return { bg: "bg-editor-cell", text: "" }
+  if (!cell) return { bg: 'bg-editor-cell', text: '', style: {} }
+  if (cell === 'hole') return { bg: 'bg-zinc-950', text: '○', style: { color: '#52525b' } }
+  if (typeof cell === 'object') {
+    if (cell.type === 'stone') return { bg: 'bg-zinc-800', text: '▪', style: { color: '#a1a1aa' } }
+    if (cell.type === 'frozen') return { bg: 'bg-cyan-900/40', text: '❄', style: { color: '#67e8f9' } }
+    if (cell.type === 'source') return { bg: 'bg-blue-600/20', text: '◉', style: { color: '#60a5fa' } }
+    if (cell.type === 'target') return { bg: 'bg-green-600/20', text: '★', style: { color: '#4ade80' } }
+    if (cell.type === 'mirror') return { bg: 'bg-amber-500/10', text: MIRROR_SYMBOL[cell.mirror], style: { color: '#fbbf24' } }
+    if (cell.type === 'fog') return { bg: 'bg-zinc-900', text: '?', style: { color: '#3f3f46' } }
+  }
+  return { bg: 'bg-editor-cell', text: '', style: {} }
 }
 
+
 export const Cell = React.memo(function Cell({ cell, lit, trap, onDown, onEnter, onErase }: CellProps) {
-  const { bg, text } = getVisual(cell)
+  const { bg, text, style } = getVisual(cell)
 
   return (
     <button
-      type="button"
+      type='button'
       onMouseDown={(e) => {
         if (e.button === 2) return
         onDown()
@@ -41,10 +44,17 @@ export const Cell = React.memo(function Cell({ cell, lit, trap, onDown, onEnter,
         e.preventDefault()
         onErase()
       }}
-      className={`relative h-[52px] w-[52px] border border-editor-border text-lg ${bg} ${trap ? "trap-pulse ring-1 ring-editor-trap" : ""}`}
+      className={`relative h-[52px] w-[52px] border border-editor-border text-lg flex items-center justify-center transition-colors ${bg} ${
+        trap ? 'trap-pulse ring-1 ring-editor-trap' : ''
+      } hover:bg-white/5`}
     >
-      <span className="pointer-events-none">{text}</span>
-      {lit ? <span className="pointer-events-none absolute inset-0 bg-amber-400/30" /> : null}
+      <span className='pointer-events-none select-none' style={style}>
+        {text}
+      </span>
+      {lit ? (
+        <span className='pointer-events-none absolute inset-0 bg-amber-400/20' />
+      ) : null}
     </button>
   )
 })
+

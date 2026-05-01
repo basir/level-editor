@@ -21,11 +21,8 @@ export const PIECE_CELLS: Record<PieceShape, [number, number][]> = {
   u_piece: [[0, 0], [0, 2], [1, 0], [1, 1], [1, 2]],
   plus_piece: [[0, 1], [1, 0], [1, 1], [1, 2], [2, 1]],
   corner_3: [[0, 0], [1, 0], [1, 1]],
-  mirror_dr: [[0, 0]],
-  mirror_ur: [[0, 0]],
-  mirror_dl: [[0, 0]],
-  mirror_ul: [[0, 0]]
 }
+
 
 export const MIRROR_SYMBOL: Record<MirrorType, string> = {
   dr: "◢",
@@ -35,21 +32,19 @@ export const MIRROR_SYMBOL: Record<MirrorType, string> = {
 }
 
 export const TOOL_LABELS = {
-  stone: "Stone",
-  hole: "Hole",
-  fog: "Fog",
-  prefill: "Prefill",
-  source: "Source",
-  target: "Target",
-  mirror: "Mirror",
-  erase: "Erase"
+  stone: 'Stone',
+  hole: 'Hole',
+  frozen: 'Frozen',
+  fog: 'Fog',
+  mirror: 'Mirror',
+  erase: 'Erase',
 }
+
 
 export const DEFAULT_WORLD: World = {
   id: 1,
-  name: "World 1",
-  theme: "Straight Lines",
-  unlockedMechanics: ["basics"],
+  name: 'World 1',
   levelCount: 1,
-  levels: []
+  levels: [],
 }
+

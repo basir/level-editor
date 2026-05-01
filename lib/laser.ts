@@ -25,29 +25,10 @@ const DIR_VEC: Record<Dir, Vec> = {
 // If an incoming travel direction is not present for a mirror, the beam
 // is blocked/stops at the mirror.
 const MIRROR_REFLECT: Record<string, Partial<Record<Dir, Dir>>> = {
-  // ◢ (dr)
-  // left>up  means: enter from left  -> travel right -> exits up
-  // up>left  means: enter from up    -> travel down  -> exits left
-  // right or down are blocked
-  dr: { right: 'up', down: 'left' },
-
-  // ◣ (dl)
-  // up>right   : enter from up    -> travel down  -> exits right
-  // right>up  : enter from right -> travel left  -> exits up
-  // left or down are blocked
-  dl: { down: 'right', left: 'up' },
-
-  // ◥ (ul)
-  // left>down  : enter from left -> travel right -> exits down
-  // down>left  : enter from down -> travel up    -> exits left
-  // right or up are blocked
-  ul: { right: 'down', up: 'left' },
-
-  // ◤ (ur)
-  // right>down : enter from right -> travel left -> exits down
-  // down>right : enter from down  -> travel up   -> exits right
-  // left or up are blocked
-  ur: { left: 'down', up: 'right' },
+  dr: { right: 'down', down: 'right' },
+  dl: { left: 'down', down: 'left' },
+  ur: { right: 'up', up: 'right' },
+  ul: { left: 'up', up: 'left' },
 }
 
 function dirFromVec(dr: number, dc: number): Dir {
@@ -77,7 +58,8 @@ export function traceLaser(
     const cell = grid[r][c]
     const type = typeof cell === 'object' && cell !== null ? cell.type : cell
 
-    if (type === 'stone' || type === 'prefill' || type === 'hole') break
+    if (type === 'stone' || type === 'hole' || type === 'frozen' || type === 'fog') break
+
 
     beams.push({ r, c, dr, dc })
 
@@ -101,31 +83,87 @@ export function traceLaser(
   return { beams, reached }
 }
 
+const PERMANENT = new Set(['mirror', 'hole', 'source', 'target'])
+
+export function getSegments(lineCells: [number, number][], grid: GridCell[][]): [number, number][][] {
+  const segments: [number, number][][] = []
+  let current: [number, number][] = []
+
+  for (const [r, c] of lineCells) {
+    const cell = grid[r][c]
+    const ctype = typeof cell === 'object' && cell ? cell.type : (cell ?? 'empty')
+    if (PERMANENT.has(ctype as string)) {
+      if (current.length) {
+        segments.push(current)
+        current = []
+      }
+    } else {
+      current.push([r, c])
+    }
+  }
+  if (current.length) segments.push(current)
+  return segments.filter((s) => s.length > 0)
+}
+
+export function segmentIsComplete(segment: [number, number][], grid: GridCell[][]): boolean {
+  return segment.every(([r, c]) => grid[r][c] !== null && grid[r][c] !== undefined)
+}
+
+export function getBorderingMirrors(
+  segment: [number, number][],
+  lineCells: [number, number][],
+  grid: GridCell[][]
+): [number, number][] {
+  const segSet = new Set(segment.map(([r, c]) => `${r},${c}`))
+  const result: [number, number][] = []
+  const added = new Set<string>()
+
+  for (let i = 0; i < lineCells.length; i++) {
+    const [r, c] = lineCells[i]
+    if (!segSet.has(`${r},${c}`)) continue
+    for (const ni of [i - 1, i + 1]) {
+      if (ni < 0 || ni >= lineCells.length) continue
+      const [nr, nc] = lineCells[ni]
+      const key = `${nr},${nc}`
+      if (!segSet.has(key) && !added.has(key)) {
+        const ncell = grid[nr][nc]
+        const nctype = typeof ncell === 'object' && ncell ? ncell.type : ncell
+        if (nctype === 'mirror') {
+          result.push([nr, nc])
+          added.add(key)
+        }
+      }
+    }
+  }
+  return result
+}
+
 export function findTrapMirrors(grid: GridCell[][]): Set<string> {
   const danger = new Set<string>()
 
-  for (let r = 0; r < GRID_SIZE; r++) {
-    const mirrors: string[] = []
-    let empty = 0
-    for (let c = 0; c < GRID_SIZE; c++) {
-      const cell = grid[r][c]
-      const type = typeof cell === 'object' && cell ? cell.type : cell
-      if (type === 'mirror') mirrors.push(`${r},${c}`)
-      if (!cell) empty++
+  for (let r = 0; r < 10; r++) {
+    const line = Array.from({ length: 10 }, (_, c): [number, number] => [r, c])
+    const segs = getSegments(line, grid)
+    for (const seg of segs) {
+      const empty = seg.filter(([r2, c2]) => grid[r2][c2] === null).length
+      if (empty !== 1) continue
+      // This segment is a trap — find bordering mirrors
+      for (const [mr, mc] of getBorderingMirrors(seg, line, grid)) {
+        danger.add(`${mr},${mc}`)
+      }
     }
-    if (mirrors.length > 0 && empty === 1) mirrors.forEach((k) => danger.add(k))
   }
 
-  for (let c = 0; c < GRID_SIZE; c++) {
-    const mirrors: string[] = []
-    let empty = 0
-    for (let r = 0; r < GRID_SIZE; r++) {
-      const cell = grid[r][c]
-      const type = typeof cell === 'object' && cell ? cell.type : cell
-      if (type === 'mirror') mirrors.push(`${r},${c}`)
-      if (!cell) empty++
+  for (let c = 0; c < 10; c++) {
+    const line = Array.from({ length: 10 }, (_, r): [number, number] => [r, c])
+    const segs = getSegments(line, grid)
+    for (const seg of segs) {
+      const empty = seg.filter(([r2, c2]) => grid[r2][c2] === null).length
+      if (empty !== 1) continue
+      for (const [mr, mc] of getBorderingMirrors(seg, line, grid)) {
+        danger.add(`${mr},${mc}`)
+      }
     }
-    if (mirrors.length > 0 && empty === 1) mirrors.forEach((k) => danger.add(k))
   }
 
   return danger
@@ -139,57 +177,46 @@ export function runLineClear(grid: GridCell[][]): {
   const newGrid = grid.map((row) => [...row])
   let clearedMirrors = 0
   let clearedLines = 0
-  const isBoundary = (cell: GridCell) =>
-    cell === 'hole' ||
-    (cell &&
-      typeof cell === 'object' &&
-      (cell.type === 'source' || cell.type === 'target'))
 
+  // Check rows
   for (let r = 0; r < GRID_SIZE; r++) {
-    let segmentStart = 0
-    for (let c = 0; c <= GRID_SIZE; c++) {
-      const atEdge = c === GRID_SIZE
-      const cell = atEdge ? null : newGrid[r][c]
-      if (!atEdge && !isBoundary(cell)) continue
-      const segment = newGrid[r].slice(segmentStart, c)
-      const full = segment.length > 0 && segment.every((item) => item !== null)
-      if (full) {
-        for (let cc = segmentStart; cc < c; cc++) {
-          const item = newGrid[r][cc]
-          if (item && typeof item === 'object' && item.type === 'mirror')
-            clearedMirrors++
-          newGrid[r][cc] = null
+    const lineCells = Array.from({ length: GRID_SIZE }, (_, c): [number, number] => [r, c])
+    const segments = getSegments(lineCells, newGrid)
+    for (const seg of segments) {
+      if (segmentIsComplete(seg, newGrid)) {
+        // Clear mirrors bordering this segment
+        const mirrors = getBorderingMirrors(seg, lineCells, newGrid)
+        for (const [mr, mc] of mirrors) {
+          newGrid[mr][mc] = null
+          clearedMirrors++
+        }
+        // Clear segment cells
+        for (const [sr, sc] of seg) {
+          newGrid[sr][sc] = null
         }
         clearedLines++
       }
-      segmentStart = c + 1
     }
   }
 
+  // Check columns
   for (let c = 0; c < GRID_SIZE; c++) {
-    let segmentStart = 0
-    for (let r = 0; r <= GRID_SIZE; r++) {
-      const atEdge = r === GRID_SIZE
-      const cell = atEdge ? null : newGrid[r][c]
-      if (!atEdge && !isBoundary(cell)) continue
-      let full = r > segmentStart
-      for (let rr = segmentStart; rr < r; rr++) {
-        if (newGrid[rr][c] === null) {
-          full = false
-          break
+    const lineCells = Array.from({ length: GRID_SIZE }, (_, r): [number, number] => [r, c])
+    const segments = getSegments(lineCells, newGrid)
+    for (const seg of segments) {
+      if (segmentIsComplete(seg, newGrid)) {
+        // Clear mirrors bordering this segment
+        const mirrors = getBorderingMirrors(seg, lineCells, newGrid)
+        for (const [mr, mc] of mirrors) {
+          newGrid[mr][mc] = null
+          clearedMirrors++
         }
-      }
-      if (full) {
-        for (let rr = segmentStart; rr < r; rr++) {
-          const item = newGrid[rr][c]
-          if (item && typeof item === 'object' && item.type === 'mirror') {
-            clearedMirrors++
-          }
-          newGrid[rr][c] = null
+        // Clear segment cells
+        for (const [sr, sc] of seg) {
+          newGrid[sr][sc] = null
         }
         clearedLines++
       }
-      segmentStart = r + 1
     }
   }
 
@@ -215,3 +242,4 @@ export function runLineClearCascade(grid: GridCell[][]) {
     clearedLines: totalClearedLines,
   }
 }
+

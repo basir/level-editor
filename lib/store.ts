@@ -9,7 +9,10 @@ import { runLineClearCascade, traceLaser } from "@/lib/laser"
 import type { GridCell, Level, MirrorType, PieceShape, ToolType, World } from "@/lib/types"
 
 function emptyGrid(): GridCell[][] {
-  return Array.from({ length: GRID_SIZE }, () => Array.from({ length: GRID_SIZE }, () => null))
+  const grid: GridCell[][] = Array.from({ length: GRID_SIZE }, () => Array.from({ length: GRID_SIZE }, () => null))
+  grid[0][0] = { type: 'source' }
+  grid[9][9] = { type: 'target' }
+  return grid
 }
 
 function createLevel(worldId: number, levelIndex: number): Level {
@@ -17,29 +20,27 @@ function createLevel(worldId: number, levelIndex: number): Level {
     id: `${worldId}-${levelIndex}`,
     worldId,
     levelIndex,
-    name: "Untitled",
-    source: [0, 0],
-    target: [9, 9],
-    laserStartDir: "right",
-    moveLimit: 20,
+    name: 'Untitled',
     grid: emptyGrid(),
-    fogCells: [],
-    prefillCells: [],
-    pieceQueue: [],
-    solutionMirrors: [],
-    solutionPath: [],
-    notes: ""
+    solution_mirrors: [],
+    solution_path: [],
+    solution_moves: [],
+    alt_paths: [],
+    piece_queue: [],
+    move_limit: 20,
+    difficulty: 0,
+    generation_log: {},
+    optic_unsolved: false,
+    notes: '',
   }
 }
 
 function cellFromTool(tool: ToolType, mirrorType: MirrorType): GridCell {
-  if (tool === "stone") return "stone"
-  if (tool === "hole") return "hole"
-  if (tool === "prefill") return "prefill"
-  if (tool === "fog") return { type: "fog", reveals: "stone" }
-  if (tool === "source") return { type: "source" }
-  if (tool === "target") return { type: "target" }
-  if (tool === "mirror") return { type: "mirror", mirror: mirrorType }
+  if (tool === 'stone') return { type: 'stone' }
+  if (tool === 'hole') return 'hole'
+  if (tool === 'frozen') return { type: 'frozen' }
+  if (tool === 'fog') return { type: 'fog', reveals: 'stone' }
+  if (tool === 'mirror') return { type: 'mirror', mirror: mirrorType }
   return null
 }
 
@@ -65,6 +66,7 @@ interface EditorStore {
   solutionDrawPath: boolean
   history: GridCell[][][]
   historyIndex: number
+  highlightedCells: [number, number][] | null
 
   setTool: (tool: ToolType) => void
   setMirrorType: (type: MirrorType) => void
@@ -80,6 +82,8 @@ interface EditorStore {
   clearSolutionPath: () => void
   recordSolutionPath: (path: [number, number][]) => void
   addSolutionPathCell: (row: number, col: number) => void
+  setHighlightedCells: (cells: [number, number][] | null) => void
+
 
   saveLevel: () => void
   loadLevel: (levelId: string) => void
@@ -107,13 +111,13 @@ const firstLevel = createLevel(1, 1)
 export const useEditorStore = create<EditorStore>()(
   persist(
     (set, get) => ({
-      worlds: [{ id: 1, name: "Straight Lines", theme: "Basics", unlockedMechanics: ["basics"], levelCount: 1, levels: [firstLevel] }],
+      worlds: [{ id: 1, name: 'First Light', levelCount: 1, levels: [firstLevel] }],
       activeWorldId: 1,
       activeLevelId: firstLevel.id,
       grid: firstLevel.grid.map((r) => [...r]),
       activeLevel: firstLevel,
-      activeTool: "stone",
-      activeMirrorType: "dr",
+      activeTool: 'stone',
+      activeMirrorType: 'dr',
       showTrapWarning: true,
       showSolutionPath: false,
       isDirty: false,
@@ -126,29 +130,26 @@ export const useEditorStore = create<EditorStore>()(
       solutionDrawPath: false,
       history: [firstLevel.grid.map((r) => [...r])],
       historyIndex: 0,
+      highlightedCells: null,
 
       setTool: (tool) => set({ activeTool: tool }),
-      setMirrorType: (type) => set({ activeMirrorType: type, activeTool: "mirror" }),
+      setMirrorType: (type) => set({ activeMirrorType: type, activeTool: 'mirror' }),
+      setHighlightedCells: (cells) => set({ highlightedCells: cells }),
+
       paintCell: (row, col) => {
+        if ((row === 0 && col === 0) || (row === 9 && col === 9)) return
         const { grid, activeTool, activeMirrorType, history, historyIndex } = get()
         const next = grid.map((r) => [...r])
-        if (activeTool === "source" || activeTool === "target") {
-          for (let rr = 0; rr < GRID_SIZE; rr++) {
-            for (let cc = 0; cc < GRID_SIZE; cc++) {
-              const cell = next[rr][cc]
-              if (cell && typeof cell === "object" && cell.type === activeTool) next[rr][cc] = null
-            }
-          }
-        }
         next[row][col] = cellFromTool(activeTool, activeMirrorType)
         set({
           grid: next,
           isDirty: true,
           history: [...history.slice(0, historyIndex + 1), next],
-          historyIndex: historyIndex + 1
+          historyIndex: historyIndex + 1,
         })
       },
       eraseCell: (row, col) => {
+        if ((row === 0 && col === 0) || (row === 9 && col === 9)) return
         const { grid, history, historyIndex } = get()
         const next = grid.map((r) => [...r])
         next[row][col] = null
@@ -156,18 +157,19 @@ export const useEditorStore = create<EditorStore>()(
           grid: next,
           isDirty: true,
           history: [...history.slice(0, historyIndex + 1), next],
-          historyIndex: historyIndex + 1
+          historyIndex: historyIndex + 1,
         })
       },
       addPieceToQueue: (shape, count) =>
         set((state) => {
           if (!state.activeLevel) return state
+          if (state.activeLevel.piece_queue.length >= 6) return state
           return {
             activeLevel: {
               ...state.activeLevel,
-              pieceQueue: [...state.activeLevel.pieceQueue, { id: crypto.randomUUID(), shape, count }]
+              piece_queue: [...state.activeLevel.piece_queue, { id: crypto.randomUUID(), shape, count }],
             },
-            isDirty: true
+            isDirty: true,
           }
         }),
       updatePieceCount: (id, count) =>
@@ -176,9 +178,11 @@ export const useEditorStore = create<EditorStore>()(
           return {
             activeLevel: {
               ...state.activeLevel,
-              pieceQueue: state.activeLevel.pieceQueue.map((p) => (p.id === id ? { ...p, count: Math.max(1, count) } : p))
+              piece_queue: state.activeLevel.piece_queue.map((p) =>
+                p.id === id ? { ...p, count: Math.max(1, count) } : p
+              ),
             },
-            isDirty: true
+            isDirty: true,
           }
         }),
       removePieceFromQueue: (id) =>
@@ -187,13 +191,13 @@ export const useEditorStore = create<EditorStore>()(
           return {
             activeLevel: {
               ...state.activeLevel,
-              pieceQueue: state.activeLevel.pieceQueue.filter((p) => p.id !== id)
+              piece_queue: state.activeLevel.piece_queue.filter((p) => p.id !== id),
             },
-            isDirty: true
+            isDirty: true,
           }
         }),
       setMoveLimit: (n) =>
-        set((state) => (state.activeLevel ? { activeLevel: { ...state.activeLevel, moveLimit: n }, isDirty: true } : state)),
+        set((state) => (state.activeLevel ? { activeLevel: { ...state.activeLevel, move_limit: n }, isDirty: true } : state)),
       setLevelName: (name) =>
         set((state) => (state.activeLevel ? { activeLevel: { ...state.activeLevel, name }, isDirty: true } : state)),
       setLevelNotes: (notes) =>
@@ -201,21 +205,31 @@ export const useEditorStore = create<EditorStore>()(
       addSolutionMirror: (row, col, type) =>
         set((state) =>
           state.activeLevel
-            ? { activeLevel: { ...state.activeLevel, solutionMirrors: [...state.activeLevel.solutionMirrors, { row, col, type }] }, isDirty: true }
+            ? {
+                activeLevel: {
+                  ...state.activeLevel,
+                  solution_mirrors: [...state.activeLevel.solution_mirrors, { row, col, type }],
+                },
+                isDirty: true,
+              }
             : state
         ),
       clearSolutionPath: () =>
-        set((state) => (state.activeLevel ? { activeLevel: { ...state.activeLevel, solutionPath: [] }, isDirty: true } : state)),
+        set((state) =>
+          state.activeLevel ? { activeLevel: { ...state.activeLevel, solution_path: [] }, isDirty: true } : state
+        ),
       recordSolutionPath: (path) =>
-        set((state) => (state.activeLevel ? { activeLevel: { ...state.activeLevel, solutionPath: path }, isDirty: true } : state)),
+        set((state) =>
+          state.activeLevel ? { activeLevel: { ...state.activeLevel, solution_path: path }, isDirty: true } : state
+        ),
       addSolutionPathCell: (row, col) =>
         set((state) => {
           if (!state.activeLevel) return state
-          const last = state.activeLevel.solutionPath.at(-1)
+          const last = state.activeLevel.solution_path.at(-1)
           if (last?.[0] === row && last?.[1] === col) return state
           return {
-            activeLevel: { ...state.activeLevel, solutionPath: [...state.activeLevel.solutionPath, [row, col]] },
-            isDirty: true
+            activeLevel: { ...state.activeLevel, solution_path: [...state.activeLevel.solution_path, [row, col]] },
+            isDirty: true,
           }
         }),
 
@@ -225,17 +239,18 @@ export const useEditorStore = create<EditorStore>()(
           const nextLevel = {
             ...state.activeLevel,
             grid: state.grid,
-            source: findCell(state.grid, "source") ?? state.activeLevel.source,
-            target: findCell(state.grid, "target") ?? state.activeLevel.target
           }
           return {
             worlds: state.worlds.map((world) =>
               world.id === state.activeWorldId
-                ? { ...world, levels: world.levels.map((l) => (l.id === state.activeLevelId ? nextLevel : l)) }
+                ? {
+                    ...world,
+                    levels: world.levels.map((l) => (l.id === state.activeLevelId ? nextLevel : l)),
+                  }
                 : world
             ),
             activeLevel: nextLevel,
-            isDirty: false
+            isDirty: false,
           }
         }),
       loadLevel: (levelId) =>
@@ -251,7 +266,7 @@ export const useEditorStore = create<EditorStore>()(
               grid,
               history: [grid],
               historyIndex: 0,
-              isDirty: false
+              isDirty: false,
             }
           }
           return state
@@ -262,14 +277,16 @@ export const useEditorStore = create<EditorStore>()(
           if (!world) return state
           const level = createLevel(worldId, world.levels.length + 1)
           return {
-            worlds: state.worlds.map((w) => (w.id === worldId ? { ...w, levels: [...w.levels, level], levelCount: w.levels.length + 1 } : w)),
+            worlds: state.worlds.map((w) =>
+              w.id === worldId ? { ...w, levels: [...w.levels, level], levelCount: w.levels.length + 1 } : w
+            ),
             activeWorldId: worldId,
             activeLevelId: level.id,
             activeLevel: level,
             grid: level.grid.map((r) => [...r]),
             history: [level.grid.map((r) => [...r])],
             historyIndex: 0,
-            isDirty: false
+            isDirty: false,
           }
         }),
       duplicateLevel: (levelId) =>
@@ -284,14 +301,14 @@ export const useEditorStore = create<EditorStore>()(
               levelIndex: nextIndex,
               name: `${source.name} Copy`,
               grid: source.grid.map((r) => [...r]),
-              pieceQueue: source.pieceQueue.map((p) => ({ ...p, id: crypto.randomUUID() })),
-              solutionMirrors: source.solutionMirrors.map((m) => ({ ...m })),
-              solutionPath: source.solutionPath.map((p) => [...p] as [number, number])
+              piece_queue: source.piece_queue.map((p) => ({ ...p, id: crypto.randomUUID() })),
+              solution_mirrors: source.solution_mirrors.map((m) => ({ ...m })),
+              solution_path: source.solution_path.map((p) => [...p] as [number, number]),
             }
             return {
               worlds: state.worlds.map((w) =>
                 w.id === world.id ? { ...w, levels: [...w.levels, clone], levelCount: w.levels.length + 1 } : w
-              )
+              ),
             }
           }
           return state
@@ -300,36 +317,43 @@ export const useEditorStore = create<EditorStore>()(
         set((state) => ({
           worlds: state.worlds.map((w) => ({
             ...w,
-            levels: w.levels.map((l) => (l.id === levelId ? { ...l, name } : l))
+            levels: w.levels.map((l) => (l.id === levelId ? { ...l, name } : l)),
           })),
-          activeLevel: state.activeLevel?.id === levelId ? { ...state.activeLevel, name } : state.activeLevel
+          activeLevel: state.activeLevel?.id === levelId ? { ...state.activeLevel, name } : state.activeLevel,
         })),
       deleteLevel: (levelId) =>
-        set((state) => ({ worlds: state.worlds.map((w) => ({ ...w, levels: w.levels.filter((l) => l.id !== levelId) })) })),
+        set((state) => ({
+          worlds: state.worlds.map((w) => ({ ...w, levels: w.levels.filter((l) => l.id !== levelId) })),
+        })),
       createWorld: () =>
         set((state) => {
           const id = Math.max(...state.worlds.map((w) => w.id)) + 1
           const level = createLevel(id, 1)
           return {
-            worlds: [...state.worlds, { id, name: `World ${id}`, theme: "", unlockedMechanics: [], levelCount: 1, levels: [level] }],
+            worlds: [...state.worlds, { id, name: `World ${id}`, levelCount: 1, levels: [level] }],
             activeWorldId: id,
             activeLevelId: level.id,
             activeLevel: level,
             grid: level.grid.map((r) => [...r]),
             history: [level.grid.map((r) => [...r])],
-            historyIndex: 0
+            historyIndex: 0,
           }
         }),
       setActiveWorld: (worldId) => set({ activeWorldId: worldId }),
       importJSON: (json) => {
-        const parsed = JSON.parse(json) as { worlds?: World[]; worldId?: number; worldName?: string; levels?: Level[] }
+        const parsed = JSON.parse(json)
         if (parsed.worlds) set({ worlds: parsed.worlds })
         if (parsed.worldId && parsed.levels) {
           set((state) => ({
             worlds: state.worlds.some((w) => w.id === parsed.worldId)
               ? state.worlds.map((w) =>
                   w.id === parsed.worldId
-                    ? { ...w, name: parsed.worldName ?? w.name, levels: parsed.levels ?? w.levels, levelCount: parsed.levels?.length ?? w.levels.length }
+                    ? {
+                        ...w,
+                        name: parsed.worldName ?? w.name,
+                        levels: parsed.levels ?? w.levels,
+                        levelCount: parsed.levels?.length ?? w.levels.length,
+                      }
                     : w
                 )
               : [
@@ -337,18 +361,16 @@ export const useEditorStore = create<EditorStore>()(
                   {
                     id: parsed.worldId!,
                     name: parsed.worldName ?? `World ${parsed.worldId}`,
-                    theme: "",
-                    unlockedMechanics: [],
                     levels: parsed.levels!,
-                    levelCount: parsed.levels!.length
-                  }
-                ]
+                    levelCount: parsed.levels!.length,
+                  },
+                ],
           }))
         }
       },
       exportWorldJSON: (worldId) => {
         const world = get().worlds.find((w) => w.id === worldId)
-        return world ? exportWorldJSON(world) : "{}"
+        return world ? exportWorldJSON(world) : '{}'
       },
       exportWorldsIndex: () => exportWorldsIndex(get().worlds),
       togglePlayMode: () =>
@@ -358,17 +380,17 @@ export const useEditorStore = create<EditorStore>()(
             : {
                 playMode: true,
                 playGrid: state.grid.map((r) => [...r]),
-                playMovesLeft: state.activeLevel?.moveLimit ?? 0,
-                playQueue: flattenQueue(state.activeLevel?.pieceQueue ?? []),
-                selectedPlayPieceId: null
+                playMovesLeft: state.activeLevel?.move_limit ?? 0,
+                playQueue: flattenQueue(state.activeLevel?.piece_queue ?? []),
+                selectedPlayPieceId: null,
               }
         ),
       resetPlay: () =>
         set((state) => ({
           playGrid: state.grid.map((r) => [...r]),
-          playMovesLeft: state.activeLevel?.moveLimit ?? 0,
-          playQueue: flattenQueue(state.activeLevel?.pieceQueue ?? []),
-          selectedPlayPieceId: null
+          playMovesLeft: state.activeLevel?.move_limit ?? 0,
+          playQueue: flattenQueue(state.activeLevel?.piece_queue ?? []),
+          selectedPlayPieceId: null,
         })),
       selectPlayPiece: (id) => set({ selectedPlayPieceId: id }),
       placePlayPiece: (row, col) => {
@@ -389,19 +411,16 @@ export const useEditorStore = create<EditorStore>()(
           cells.push([rr, cc])
         }
         for (const [rr, cc] of cells) {
-          nextGrid[rr][cc] = piece.shape.startsWith("mirror_")
-            ? { type: "mirror", mirror: piece.shape.replace("mirror_", "") as MirrorType }
-            : "prefill"
+          nextGrid[rr][cc] = { type: 'stone' }
         }
         const clearResult = runLineClearCascade(nextGrid)
-        const source = findCell(clearResult.grid, "source") ?? state.activeLevel?.source ?? [0, 0]
-        const win = traceLaser(clearResult.grid, source).reached
+        const win = traceLaser(clearResult.grid, [0, 0]).reached
         const moves = state.playMovesLeft - 1
         set({
           playGrid: clearResult.grid,
           playMovesLeft: moves,
           playQueue: state.playQueue.filter((p) => p.id !== piece.id),
-          selectedPlayPieceId: null
+          selectedPlayPieceId: null,
         })
         return { ok: true, clearedMirrors: clearResult.clearedMirrors, win, lose: !win && moves <= 0 }
       },
@@ -416,17 +435,18 @@ export const useEditorStore = create<EditorStore>()(
         const { history, historyIndex } = get()
         if (historyIndex >= history.length - 1) return
         set({ historyIndex: historyIndex + 1, grid: history[historyIndex + 1], isDirty: true })
-      }
+      },
     }),
-    { name: "optical-grid-editor" }
+    { name: 'optical-grid-editor' }
   )
 )
 
-function flattenQueue(queue: Level["pieceQueue"]): PlayPiece[] {
+function flattenQueue(queue: Level['piece_queue']): PlayPiece[] {
   return queue.flatMap((item, idx) =>
     Array.from({ length: item.count }, (_, i) => ({ id: `${item.id}-${idx}-${i}`, shape: item.shape }))
   )
 }
+
 
 function findCell(grid: GridCell[][], type: "source" | "target"): [number, number] | null {
   for (let r = 0; r < GRID_SIZE; r++) {

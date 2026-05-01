@@ -14,6 +14,7 @@ export function useLaser() {
   return useMemo(() => {
     if (!activeLevel) return { beams: [], reached: false }
     const activeGrid = playMode ? playGrid : grid
-    return traceLaser(activeGrid, activeLevel.source, activeLevel.laserStartDir)
+    return traceLaser(activeGrid, [0, 0])
   }, [grid, playGrid, playMode, activeLevel])
 }
+

@@ -5,8 +5,9 @@ import { useEditorStore } from "@/lib/store"
 import type { MirrorType, ToolType } from "@/lib/types"
 import { Button } from "@/components/ui/button"
 
-const tools: ToolType[] = ["stone", "hole", "fog", "prefill", "source", "target", "erase"]
+const tools: ToolType[] = ["stone", "hole", "frozen", "fog", "erase"]
 const mirrorTools: MirrorType[] = ["dr", "ur", "dl", "ul"]
+
 
 export function Toolbar() {
   const activeTool = useEditorStore((s) => s.activeTool)
