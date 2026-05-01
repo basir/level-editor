@@ -53,12 +53,8 @@ export async function GET() {
                     count: 1,
                   };
                 }),
-              grid: level.grid || [], // grid format already matches
-              solution_mirrors: (level.solution || [])
-                .filter((s: any) => s.piece_id === 'manual_mirror') // adjust if generator uses different markers
-                .map((s: any) => ({ row: s.row, col: s.col, type: s.type })),
-              solution_path: [], // will be recalculated by editor if needed
-              solution_moves: level.solution || [],
+              grid: level.grid || [],
+              solution: level.solution || [],
               notes: level.mechanic_focus ? `Focus: ${level.mechanic_focus}` : '',
             };
           });
@@ -95,7 +91,7 @@ export async function GET() {
           id: l.id,
           name: l.name,
           difficulty: l.difficulty > 20 ? 'hard' : l.difficulty > 10 ? 'medium' : 'easy',
-          difficulty_score: l.difficulty,
+          fingerprint: l.fingerprint,
         })),
       })),
     };

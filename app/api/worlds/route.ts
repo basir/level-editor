@@ -73,7 +73,7 @@ export async function POST(req: Request) {
           id: l.id,
           name: l.name,
           difficulty: l.difficulty > 20 ? 'hard' : l.difficulty > 10 ? 'medium' : 'easy',
-          difficulty_score: l.difficulty,
+          fingerprint: l.fingerprint,
         })),
       })),
     };
@@ -89,7 +89,7 @@ export async function POST(req: Request) {
           // Exclude any temporary or play-mode fields if they exist
           // We only save what's in the Level interface
           const { 
-            // Add any fields to exclude here if necessary
+            difficulty_score,
             ...rest 
           } = level;
           return rest;

@@ -20,7 +20,6 @@ export function Grid() {
   const solutionMode = useEditorStore((s) => s.solutionMode)
   const solutionDrawPath = useEditorStore((s) => s.solutionDrawPath)
   const eraseCell = useEditorStore((s) => s.eraseCell)
-  const addSolutionMirror = useEditorStore((s) => s.addSolutionMirror)
   const addSolutionPathCell = useEditorStore((s) => s.addSolutionPathCell)
   const selectedPlayPieceId = useEditorStore((s) => s.selectedPlayPieceId)
   const playQueue = useEditorStore((s) => s.playQueue)
@@ -53,7 +52,6 @@ export function Grid() {
       .map(([dr, dc]) => [r + dr, c + dc] as [number, number])
       .filter(([rr, cc]) => rr >= 0 && rr < 10 && cc >= 0 && cc < 10)
   }, [playMode, hover, selectedPiece])
-  const solutionPath = activeLevel?.solution_path ?? []
   const highlightedCells = useEditorStore((s) => s.highlightedCells)
 
   return (
@@ -104,23 +102,7 @@ export function Grid() {
           ))
         )}
       </div>
-      {solutionPath.length > 0 ? (
-        <div className='pointer-events-none absolute left-2 top-2 grid grid-cols-10'>
-          {Array.from({ length: 100 }, (_, i) => {
-            const r = Math.floor(i / 10)
-            const c = i % 10
-            const onPath = solutionPath.some(([pr, pc]) => pr === r && pc === c)
-            return (
-              <div
-                key={i}
-                className={`h-[52px] w-[52px] ${
-                  onPath ? 'bg-cyan-300/10 border border-dotted border-cyan-400/40' : ''
-                }`}
-              />
-            )
-          })}
-        </div>
-      ) : null}
+
       {(ghostCells.length > 0 || (highlightedCells && highlightedCells.length > 0)) && (
         <div className='pointer-events-none absolute left-2 top-2 grid grid-cols-10'>
           {Array.from({ length: 100 }, (_, i) => {

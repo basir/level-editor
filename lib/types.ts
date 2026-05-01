@@ -47,10 +47,10 @@ export type PieceShape =
 export type GridCell =
   | null // empty
   | 'hole' // permanent hole
-  | { type: 'source' } // always at (0,0)
+  | { type: 'source'; dir?: Dir } // initial direction of laser
   | { type: 'stone'; color: string } // stone block
   | { type: 'frozen'; lives?: number; color?: string } // frozen block
-  | { type: 'target' } // always at (9,9)
+  | { type: 'target' } // target cell
   | { type: 'mirror'; mirror: MirrorType }
   | { type: 'fog'; reveals: 'stone' | 'hole' }
 
@@ -79,9 +79,7 @@ export interface Level {
   levelIndex: number
   name: string
   grid: GridCell[][]
-  solution_mirrors: { row: number; col: number; type: MirrorType }[]
-  solution_path: [number, number][]
-  solution_moves: SolutionMove[]
+  solution: SolutionMove[]
   alt_paths: AltPath[]
   piece_queue: PieceQueueItem[]
   move_limit: number
@@ -89,6 +87,7 @@ export interface Level {
   generation_log: any
   optic_unsolved: boolean
   notes: string
+  fingerprint: string
   [key: string]: any
 }
 

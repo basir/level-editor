@@ -14,7 +14,7 @@ export function exportWorldsIndex(worlds: World[]): string {
           id: l.id,
           name: l.name,
           difficulty: l.difficulty > 20 ? 'hard' : l.difficulty > 10 ? 'medium' : 'easy',
-          difficulty_score: l.difficulty,
+          fingerprint: l.fingerprint,
         })),
       })),
     },
@@ -52,6 +52,8 @@ function serializeLevel(level: Level) {
     generation_log,
     optic_unsolved,
     notes,
+    fingerprint,
+    difficulty_score,
     ...rest
   } = level
 
@@ -71,6 +73,7 @@ function serializeLevel(level: Level) {
     generation_log,
     optic_unsolved,
     notes,
+    fingerprint,
     ...rest,
   }
 }

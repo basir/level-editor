@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/js-md5": "^0.8.0",
     "clsx": "^2.1.1",
+    "js-md5": "^0.8.3",
     "jszip": "^3.10.1",
     "next": "14.2.5",
     "react": "18.3.1",

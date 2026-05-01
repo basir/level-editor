@@ -85,8 +85,8 @@ export const SHAPE_COLORS: Record<PieceShape, string> = {
 
 export const MIRROR_SYMBOL: Record<MirrorType, string> = {
   dr: "◤",
-  ur: "◣",
   dl: "◥",
+  ur: "◣",
   ul: "◢"
 }
 

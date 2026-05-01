@@ -7,7 +7,6 @@
       "name": "First Steps",
       "world": 37,
       "difficulty": "easy",
-      "difficulty_score": 361,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -322,7 +321,6 @@
       "name": "Warm Up",
       "world": 37,
       "difficulty": "easy",
-      "difficulty_score": 362,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -668,7 +666,6 @@
       "name": "Getting There",
       "world": 37,
       "difficulty": "medium",
-      "difficulty_score": 363,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1017,7 +1014,6 @@
       "name": "Finding Flow",
       "world": 37,
       "difficulty": "medium",
-      "difficulty_score": 364,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1369,7 +1365,6 @@
       "name": "Double Down",
       "world": 37,
       "difficulty": "medium",
-      "difficulty_score": 365,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1721,7 +1716,6 @@
       "name": "Halfway",
       "world": 37,
       "difficulty": "hard",
-      "difficulty_score": 366,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2061,7 +2055,6 @@
       "name": "Picking Up",
       "world": 37,
       "difficulty": "hard",
-      "difficulty_score": 367,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2453,7 +2446,6 @@
       "name": "The Pressure",
       "world": 37,
       "difficulty": "hard",
-      "difficulty_score": 368,
       "mechanic_focus": "chain_clear",
       "min_moves": 6,
       "piece_queue": [
@@ -2808,7 +2800,6 @@
       "name": "Almost There",
       "world": 37,
       "difficulty": "expert",
-      "difficulty_score": 369,
       "mechanic_focus": "chain_clear",
       "min_moves": 6,
       "piece_queue": [
@@ -3163,7 +3154,6 @@
       "name": "The Final Push",
       "world": 37,
       "difficulty": "expert",
-      "difficulty_score": 370,
       "mechanic_focus": "chain_clear",
       "min_moves": 6,
       "piece_queue": [

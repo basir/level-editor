@@ -35,7 +35,7 @@ export async function POST() {
           id: l.levelIndex || parseInt(l.id.split('-')[1]) || 1,
           name: l.name,
           difficulty: l.difficulty > 20 ? 'hard' : l.difficulty > 10 ? 'medium' : 'easy',
-          difficulty_score: l.difficulty_score || l.difficulty,
+          fingerprint: l.fingerprint,
         })),
       })),
     };
@@ -58,6 +58,7 @@ export async function POST() {
             move_limit, 
             piece_queue, 
             grid,
+            difficulty_score,
             ...rest 
           } = level;
 

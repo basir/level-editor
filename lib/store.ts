@@ -5,11 +5,12 @@ import { create } from "zustand"
 import { GRID_SIZE, PIECE_SHAPES } from "@/lib/constants"
 import { exportWorldJSON, exportWorldsIndex } from "@/lib/export"
 import { runLineClearCascade, traceLaser } from "@/lib/laser"
-import type { GridCell, Level, MirrorType, PieceShape, ToolType, World } from "@/lib/types"
+import type { Dir, GridCell, Level, MirrorType, PieceShape, ToolType, World } from "@/lib/types"
+import { levelFingerprint } from "@/lib/utils"
 
 function emptyGrid(): GridCell[][] {
   const grid: GridCell[][] = Array.from({ length: GRID_SIZE }, () => Array.from({ length: GRID_SIZE }, () => null))
-  grid[0][0] = { type: 'source' }
+  grid[0][0] = { type: 'source', dir: 'right' }
   grid[9][9] = { type: 'target' }
   return grid
 }
@@ -21,9 +22,7 @@ function createLevel(worldId: number, levelIndex: number): Level {
     levelIndex,
     name: 'Untitled',
     grid: emptyGrid(),
-    solution_mirrors: [],
-    solution_path: [],
-    solution_moves: [],
+    solution: [],
     alt_paths: [],
     piece_queue: [],
     move_limit: 20,
@@ -31,15 +30,18 @@ function createLevel(worldId: number, levelIndex: number): Level {
     generation_log: {},
     optic_unsolved: false,
     notes: '',
+    fingerprint: '',
   }
 }
 
-function cellFromTool(tool: ToolType, mirrorType: MirrorType): GridCell {
+function cellFromTool(tool: ToolType, mirrorType: MirrorType, sourceDir: Dir = 'right'): GridCell {
   if (tool === 'stone') return { type: 'stone', color: "#ffffff" }
   if (tool === 'hole') return 'hole'
   if (tool === 'frozen') return { type: 'frozen' }
   if (tool === 'fog') return { type: 'fog', reveals: 'stone' }
   if (tool === 'mirror') return { type: 'mirror', mirror: mirrorType }
+  if (tool === 'source') return { type: 'source', dir: sourceDir }
+  if (tool === 'target') return { type: 'target' }
   return null
 }
 
@@ -53,6 +55,7 @@ interface EditorStore {
   activeLevel: Level | null
   activeTool: ToolType
   activeMirrorType: MirrorType
+  activeSourceDir: Dir
   showTrapWarning: boolean
   showSolutionPath: boolean
   isDirty: boolean
@@ -73,6 +76,7 @@ interface EditorStore {
 
   setTool: (tool: ToolType) => void
   setMirrorType: (type: MirrorType) => void
+  setSourceDir: (dir: Dir) => void
   paintCell: (row: number, col: number) => void
   eraseCell: (row: number, col: number) => void
   addPieceToQueue: (shape: PieceShape, count: number) => void
@@ -81,7 +85,6 @@ interface EditorStore {
   setMoveLimit: (n: number) => void
   setLevelName: (name: string) => void
   setLevelNotes: (notes: string) => void
-  addSolutionMirror: (row: number, col: number, type: MirrorType) => void
   clearSolutionPath: () => void
   recordSolutionPath: (path: [number, number][]) => void
   addSolutionPathCell: (row: number, col: number) => void
@@ -122,6 +125,7 @@ export const useEditorStore = create<EditorStore>()(
     activeLevel: firstLevel,
     activeTool: 'stone',
     activeMirrorType: 'dr',
+    activeSourceDir: 'right',
     showTrapWarning: true,
     showSolutionPath: false,
     isDirty: false,
@@ -155,13 +159,23 @@ export const useEditorStore = create<EditorStore>()(
 
     setTool: (tool) => set({ activeTool: tool }),
     setMirrorType: (type) => set({ activeMirrorType: type, activeTool: 'mirror' }),
+    setSourceDir: (dir) => set({ activeSourceDir: dir, activeTool: 'source' }),
     setHighlightedCells: (cells) => set({ highlightedCells: cells }),
 
     paintCell: (row, col) => {
-      if ((row === 0 && col === 0) || (row === 9 && col === 9)) return
-      const { grid, activeTool, activeMirrorType, history, historyIndex } = get()
+      const { grid, activeTool, activeMirrorType, activeSourceDir, history, historyIndex } = get()
       const next = grid.map((r) => [...r])
-      next[row][col] = cellFromTool(activeTool, activeMirrorType)
+
+      if (activeTool === 'source') {
+        const oldSource = findCell(next, 'source')
+        if (oldSource) next[oldSource[0]][oldSource[1]] = null
+      }
+      if (activeTool === 'target') {
+        const oldTarget = findCell(next, 'target')
+        if (oldTarget) next[oldTarget[0]][oldTarget[1]] = null
+      }
+
+      next[row][col] = cellFromTool(activeTool, activeMirrorType, activeSourceDir)
       set({
         grid: next,
         isDirty: true,
@@ -170,7 +184,6 @@ export const useEditorStore = create<EditorStore>()(
       })
     },
     eraseCell: (row, col) => {
-      if ((row === 0 && col === 0) || (row === 9 && col === 9)) return
       const { grid, history, historyIndex } = get()
       const next = grid.map((r) => [...r])
       next[row][col] = null
@@ -223,18 +236,6 @@ export const useEditorStore = create<EditorStore>()(
       set((state) => (state.activeLevel ? { activeLevel: { ...state.activeLevel, name }, isDirty: true } : state)),
     setLevelNotes: (notes) =>
       set((state) => (state.activeLevel ? { activeLevel: { ...state.activeLevel, notes }, isDirty: true } : state)),
-    addSolutionMirror: (row, col, type) =>
-      set((state) =>
-        state.activeLevel
-          ? {
-            activeLevel: {
-              ...state.activeLevel,
-              solution_mirrors: [...state.activeLevel.solution_mirrors, { row, col, type }],
-            },
-            isDirty: true,
-          }
-          : state
-      ),
     clearSolutionPath: () =>
       set((state) =>
         state.activeLevel ? { activeLevel: { ...state.activeLevel, solution_path: [] }, isDirty: true } : state
@@ -260,6 +261,7 @@ export const useEditorStore = create<EditorStore>()(
         const nextLevel = {
           ...state.activeLevel,
           grid: state.grid,
+          fingerprint: levelFingerprint(state.grid, state.activeLevel.solution_moves),
         }
         return {
           worlds: state.worlds.map((world) =>
@@ -325,8 +327,8 @@ export const useEditorStore = create<EditorStore>()(
             name: `${source.name} Copy`,
             grid: source.grid.map((r) => [...r]),
             piece_queue: source.piece_queue.map((p) => ({ ...p, id: crypto.randomUUID() })),
-            solution_mirrors: source.solution_mirrors.map((m) => ({ ...m })),
-            solution_path: source.solution_path.map((p) => [...p] as [number, number]),
+            solution: source.solution.map((m) => ({ ...m })),
+            alt_paths: source.alt_paths.map((p) => ({ ...p, path: p.path.map((p) => [...p] as [number, number]) })),
           }
           return {
             worlds: state.worlds.map((w) =>
@@ -437,7 +439,8 @@ export const useEditorStore = create<EditorStore>()(
         nextGrid[rr][cc] = { type: 'stone', color: '#ffffff' }
       }
       const clearResult = runLineClearCascade(nextGrid)
-      const win = traceLaser(clearResult.grid, [0, 0]).reached
+      const source = findCell(clearResult.grid, 'source')
+      const win = source ? traceLaser(clearResult.grid, source, (clearResult.grid[source[0]][source[1]] as any)?.dir || 'right').reached : false
       const moves = state.playMovesLeft - 1
       if (state.solutionMode && state.activeLevel) {
         const isFirstMove = moves === (state.activeLevel.move_limit - 1)

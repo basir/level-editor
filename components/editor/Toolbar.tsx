@@ -2,18 +2,21 @@
 
 import { MIRROR_SYMBOL } from "@/lib/constants"
 import { useEditorStore } from "@/lib/store"
-import type { MirrorType, ToolType } from "@/lib/types"
+import type { Dir, MirrorType, ToolType } from "@/lib/types"
 import { Button } from "@/components/ui/button"
 
-const tools: ToolType[] = ["stone", "hole", "frozen", "fog", "erase"]
-const mirrorTools: MirrorType[] = ["dr", "ur", "dl", "ul"]
+const tools: ToolType[] = ["stone", "hole", "frozen", "fog", "source", "target", "erase"]
+const mirrorTools: MirrorType[] = ["dr", "dl", "ur", "ul"]
+const directions: Dir[] = ["right", "down", "left", "up"]
 
 
 export function Toolbar() {
   const activeTool = useEditorStore((s) => s.activeTool)
   const activeMirrorType = useEditorStore((s) => s.activeMirrorType)
+  const activeSourceDir = useEditorStore((s) => s.activeSourceDir)
   const setTool = useEditorStore((s) => s.setTool)
   const setMirrorType = useEditorStore((s) => s.setMirrorType)
+  const setSourceDir = useEditorStore((s) => s.setSourceDir)
   const togglePlayMode = useEditorStore((s) => s.togglePlayMode)
   const resetPlay = useEditorStore((s) => s.resetPlay)
   const toggleSolutionMode = useEditorStore((s) => s.toggleSolutionMode)
@@ -50,6 +53,21 @@ export function Toolbar() {
           </button>
         ))}
       </div>
+
+      {activeTool === 'source' && (
+        <div className="grid grid-cols-4 gap-2 border-t border-editor-border pt-3">
+          {directions.map((d) => (
+            <button
+              key={d}
+              onClick={() => setSourceDir(d)}
+              className={`rounded border px-2 py-1 text-[10px] capitalize ${activeSourceDir === d ? "border-blue-500 bg-blue-500/20" : "border-editor-border"}`}
+            >
+              {d}
+            </button>
+          ))}
+        </div>
+      )}
+
       <div className="grid grid-cols-2 gap-2">
         {mirrorTools.map((m) => (
           <button
