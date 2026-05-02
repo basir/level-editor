@@ -57,6 +57,8 @@ export type GridCell =
 export interface PieceQueueItem {
   id: string
   name: PieceShape
+  shape: [number, number][]
+  color: string
   count: number
   isDistractor?: boolean
 }

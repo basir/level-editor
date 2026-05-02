@@ -2,7 +2,7 @@
 
 import { create } from "zustand"
 
-import { GRID_SIZE, PIECE_SHAPES } from "@/lib/constants"
+import { GRID_SIZE, PIECE_SHAPES, SHAPE_COLORS } from "@/lib/constants"
 import { exportWorldJSON, exportWorldsIndex } from "@/lib/export"
 import { runLineClearCascade, traceLaser } from "@/lib/laser"
 import type { Dir, GridCell, Level, MirrorType, PieceShape, ToolType, World } from "@/lib/types"
@@ -46,7 +46,14 @@ function cellFromTool(tool: ToolType, mirrorType: MirrorType, sourceDir: Dir = '
   return null
 }
 
-type PlayPiece = { id: string; name: PieceShape; originalId: string; isDistractor?: boolean }
+type PlayPiece = { 
+  id: string; 
+  name: PieceShape; 
+  shape: [number, number][];
+  color: string;
+  originalId: string; 
+  isDistractor?: boolean 
+}
 
 interface EditorStore {
   worlds: World[]
@@ -209,7 +216,14 @@ export const useEditorStore = create<EditorStore>()(
         return {
           activeLevel: {
             ...state.activeLevel,
-            piece_queue: [...state.activeLevel.piece_queue, { id, name: shape, count, isDistractor }],
+            piece_queue: [...state.activeLevel.piece_queue, { 
+              id, 
+              name: shape, 
+              shape: PIECE_SHAPES[shape],
+              color: SHAPE_COLORS[shape],
+              count, 
+              isDistractor 
+            }],
           },
           isDirty: true,
         }
@@ -588,6 +602,8 @@ function flattenQueue(queue: Level['piece_queue']): PlayPiece[] {
     Array.from({ length: item.count }, (_, i) => ({
       id: `${item.id}-${idx}-${i}`,
       name: item.name,
+      shape: item.shape || PIECE_SHAPES[item.name],
+      color: item.color || SHAPE_COLORS[item.name],
       originalId: item.id,
       isDistractor: item.isDistractor
     }))

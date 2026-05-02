@@ -72,7 +72,7 @@ export async function POST(req: Request) {
         levels: w.levels.map((l: any) => ({
           id: l.id,
           name: l.name,
-          difficulty: l.difficulty > 20 ? 'hard' : l.difficulty > 10 ? 'medium' : 'easy',
+          difficulty: l.difficulty,
           fingerprint: l.fingerprint,
         })),
       })),

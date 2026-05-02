@@ -14,11 +14,15 @@
       "piece_queue": [
         {
           "id": "p1",
-          "name": "CornerNW",
+          "name": "Square",
           "shape": [
             [
               0,
               0
+            ],
+            [
+              0,
+              1
             ],
             [
               1,
@@ -29,14 +33,18 @@
               1
             ]
           ],
-          "color": "#8AC926",
-          "isDistractor": false,
-          "count": 1
+          "color": "#FFCA3A",
+          "count": 1,
+          "isDistractor": false
         },
         {
           "id": "d1",
-          "name": "CornerNE",
+          "name": "CornerSW",
           "shape": [
+            [
+              0,
+              0
+            ],
             [
               0,
               1
@@ -44,27 +52,23 @@
             [
               1,
               0
-            ],
-            [
-              1,
-              1
             ]
           ],
           "color": "#8AC926",
-          "isDistractor": true,
-          "count": 1
+          "count": 1,
+          "isDistractor": true
         },
         {
           "id": "d2",
-          "name": "CornerNE",
+          "name": "CornerSE",
           "shape": [
             [
               0,
-              1
+              0
             ],
             [
-              1,
-              0
+              0,
+              1
             ],
             [
               1,
@@ -72,23 +76,15 @@
             ]
           ],
           "color": "#8AC926",
-          "isDistractor": true,
-          "count": 1
+          "count": 1,
+          "isDistractor": true
         }
       ],
       "distractors": [
         "d1",
         "d2"
       ],
-      "solution": [
-        {
-          "step": 1,
-          "piece_id": "p1",
-          "piece_name": "CornerNW",
-          "row": 4,
-          "col": 1
-        }
-      ],
+      "solution": [],
       "target_clears": [
         {
           "type": "row",
@@ -114,7 +110,7 @@
           ]
         }
       ],
-      "fingerprint": "c85f2d84ee613bd468d118f902427753",
+      "fingerprint": "0736271da87bc42d402c1591480aee21",
       "grid": [
         [
           {
@@ -174,26 +170,23 @@
             "type": "stone",
             "color": "#FF924C"
           },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
           null,
           {
             "type": "stone",
-            "color": "#FF595E"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
+            "color": "#FF924C"
           },
           {
             "type": "stone",
@@ -213,23 +206,23 @@
             "type": "stone",
             "color": "#FF924C"
           },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
           null,
           null,
           {
             "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
+            "color": "#FF924C"
           },
           {
             "type": "stone",

@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge"
 
 
 
-import md5 from 'js-md5'
+import { md5 } from 'js-md5'
 import { GridCell, PieceShape, SolutionMove } from './types'
 import { PIECE_SHAPES } from './constants'
 
