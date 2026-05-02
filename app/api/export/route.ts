@@ -26,15 +26,15 @@ export async function POST() {
     // 1. Prepare and write worlds.json
     const worldsIndex = {
       version: '1.0',
+      updatedAt: new Date().toISOString(),
       worlds: worlds.map((w) => ({
         id: w.id,
         name: w.name,
-        desc: w.desc || `World ${w.id}: ${w.name}. Classic block puzzle mechanics.`,
-        level_count: w.levels.length,
+        levelCount: w.levels.length,
         levels: w.levels.map((l: any) => ({
           id: l.id,
           name: l.name,
-          difficulty: l.difficulty,// > 20 ? 'hard' : l.difficulty > 10 ? 'medium' : 'easy',
+          difficulty: l.difficulty,
           fingerprint: l.fingerprint,
         })),
       })),

@@ -65,6 +65,7 @@ export async function POST(req: Request) {
     // 1. Prepare and write worlds.json (manifest)
     const worldsIndex = {
       version: '1.0',
+      updatedAt: new Date().toISOString(),
       worlds: worlds.map((w) => ({
         id: w.id,
         name: w.name,

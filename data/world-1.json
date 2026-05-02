@@ -84,7 +84,15 @@
         "d1",
         "d2"
       ],
-      "solution": [],
+      "solution": [
+        {
+          "step": 1,
+          "piece_id": "p1",
+          "piece_name": "Square",
+          "row": 4,
+          "col": 4
+        }
+      ],
       "target_clears": [
         {
           "type": "row",
@@ -110,7 +118,7 @@
           ]
         }
       ],
-      "fingerprint": "f6bd681f3e463d70f569473b1a58be2f",
+      "fingerprint": "25397e093a429787da56773dbd5d3341",
       "grid": [
         [
           {
@@ -146,14 +154,8 @@
           null,
           null,
           null,
-          {
-            "type": "stone",
-            "color": "#ffffff"
-          },
-          {
-            "type": "stone",
-            "color": "#ffffff"
-          },
+          null,
+          null,
           null,
           null,
           null,
@@ -163,22 +165,10 @@
           null,
           null,
           null,
-          {
-            "type": "stone",
-            "color": "#ffffff"
-          },
-          {
-            "type": "stone",
-            "color": "#ffffff"
-          },
-          {
-            "type": "stone",
-            "color": "#ffffff"
-          },
-          {
-            "type": "stone",
-            "color": "#ffffff"
-          },
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null
@@ -377,31 +367,6 @@
             ]
           ],
           "color": "#FF924C",
-          "isDistractor": true,
-          "count": 1
-        },
-        {
-          "id": "d1",
-          "name": "L",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              1,
-              0
-            ],
-            [
-              2,
-              0
-            ],
-            [
-              2,
-              1
-            ]
-          ],
-          "color": "#6A4C93",
           "isDistractor": true,
           "count": 1
         }
