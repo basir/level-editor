@@ -4,13 +4,13 @@
     {
       "id": 1,
       "name": "Meadow",
-      "levelCount": 12,
+      "levelCount": 10,
       "levels": [
         {
           "id": "1-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "1af89b543b048abdb322d3b57db7b01c"
+          "fingerprint": "25397e093a429787da56773dbd5d3341"
         },
         {
           "id": "1-2",
@@ -65,18 +65,6 @@
           "name": "The Final Push",
           "difficulty": "easy",
           "fingerprint": "24d0a7324ea8168d657c1105b3ba8c6e"
-        },
-        {
-          "id": "1-11",
-          "name": "First Steps Copy",
-          "difficulty": "easy",
-          "fingerprint": "3a5c74c91d6e84668c4a539020b9237a"
-        },
-        {
-          "id": "1-12",
-          "name": "First Steps Copy Copy",
-          "difficulty": "easy",
-          "fingerprint": "ea9bbe026500e773d924943acea56b07"
         }
       ]
     },
