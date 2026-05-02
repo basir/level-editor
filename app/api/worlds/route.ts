@@ -7,7 +7,7 @@ const DATA_DIR = path.join(process.cwd(), 'data');
 export async function GET() {
   try {
     const worldsIndexPath = path.join(DATA_DIR, 'worlds.json');
-    
+
     // Check if worlds.json exists
     try {
       await fs.access(worldsIndexPath);
@@ -88,9 +88,9 @@ export async function POST(req: Request) {
         levels: w.levels.map((level: any) => {
           // Exclude any temporary or play-mode fields if they exist
           // We only save what's in the Level interface
-          const { 
-            difficulty_score,
-            ...rest 
+          const {
+            // difficulty_score,
+            ...rest
           } = level;
           return rest;
         }),

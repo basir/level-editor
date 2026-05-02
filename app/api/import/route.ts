@@ -37,7 +37,7 @@ export async function GET() {
           return {
             id: w.id,
             name: w.name,
-            levelCount: worldData.levels.length,
+            levelCount: w.levelCount,
             levels: worldData.levels.map((l: any) => ({
               ...l,
               fingerprint: levelFingerprint(l.grid, l.solution),
@@ -65,6 +65,7 @@ export async function GET() {
         id: w.id,
         name: w.name,
         desc: w.desc,
+        levelCount: w.levelCount,
         levels: w.levels.map((l: any) => ({
           id: l.id,
           name: l.name,

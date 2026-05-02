@@ -34,7 +34,7 @@ export async function POST() {
         levels: w.levels.map((l: any) => ({
           id: l.id,
           name: l.name,
-          difficulty: l.difficulty > 20 ? 'hard' : l.difficulty > 10 ? 'medium' : 'easy',
+          difficulty: l.difficulty,// > 20 ? 'hard' : l.difficulty > 10 ? 'medium' : 'easy',
           fingerprint: l.fingerprint,
         })),
       })),
@@ -50,34 +50,6 @@ export async function POST() {
         name: w.name,
         desc: w.desc || `World ${w.id}: ${w.name}. Classic block puzzle mechanics.`,
         levels: w.levels
-        // levels: w.levels.map((level: any) => {
-        //   // Reverse transformation
-        //   const {
-        //     worldId,
-        //     id,
-        //     move_limit,
-        //     piece_queue,
-        //     grid,
-        //     difficulty_score,
-        //     ...rest
-        //   } = level;
-
-        //   return {
-        //     ...rest,
-        //     id: level.id,
-        //     name: level.name,
-        //     world: w.id,
-        //     min_moves: move_limit,
-        //     piece_queue: (piece_queue || []).map((p: any) => ({
-        //       id: p.id,
-        //       shape: PIECE_SHAPES[p.shape as keyof typeof PIECE_SHAPES] || [[0, 0]],
-        //       color: SHAPE_COLORS[p.shape as keyof typeof SHAPE_COLORS] || "#8AC926",
-        //       label: p.shape, // fallback to shape name as label
-        //       isDistractor: false,
-        //     })),
-        //     grid: grid,
-        //   };
-        // }),
       };
 
       await fs.writeFile(path.join(targetPath, `world-${w.id}.json`), JSON.stringify(worldData, null, 2));
