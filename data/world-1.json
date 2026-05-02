@@ -7,21 +7,73 @@
       "name": "First Steps",
       "world": 1,
       "difficulty": "easy",
+      "difficulty_score": 1,
       "mechanic_focus": "chain_clear",
       "min_moves": 1,
       "move_limit": 3,
       "piece_queue": [
         {
-          "id": "d1",
-          "name": "Z",
-          "count": 1,
-          "isDistractor": true
+          "id": "p1",
+          "name": "CornerNW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "isDistractor": false,
+          "count": 1
         },
         {
-          "id": "p2",
-          "name": "CornerNW",
-          "count": 1,
-          "isDistractor": false
+          "id": "d1",
+          "name": "CornerNE",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "isDistractor": true,
+          "count": 1
+        },
+        {
+          "id": "d2",
+          "name": "CornerNE",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "isDistractor": true,
+          "count": 1
         }
       ],
       "distractors": [
@@ -31,7 +83,7 @@
       "solution": [
         {
           "step": 1,
-          "piece_id": "p2",
+          "piece_id": "p1",
           "piece_name": "CornerNW",
           "row": 4,
           "col": 1
@@ -249,6 +301,7 @@
       "name": "Warm Up",
       "world": 1,
       "difficulty": "easy",
+      "difficulty_score": 2,
       "mechanic_focus": "chain_clear",
       "min_moves": 2,
       "move_limit": 4,
@@ -562,6 +615,7 @@
       "name": "Getting There",
       "world": 1,
       "difficulty": "medium",
+      "difficulty_score": 3,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "move_limit": 5,
@@ -936,6 +990,7 @@
       "name": "Finding Flow",
       "world": 1,
       "difficulty": "medium",
+      "difficulty_score": 4,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "move_limit": 5,
@@ -1313,6 +1368,7 @@
       "name": "Double Down",
       "world": 1,
       "difficulty": "medium",
+      "difficulty_score": 5,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "move_limit": 5,
@@ -1712,6 +1768,7 @@
       "name": "Halfway",
       "world": 1,
       "difficulty": "hard",
+      "difficulty_score": 6,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "move_limit": 5,
@@ -2064,6 +2121,7 @@
       "name": "Picking Up",
       "world": 1,
       "difficulty": "hard",
+      "difficulty_score": 7,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "move_limit": 5,
@@ -2422,6 +2480,7 @@
       "name": "The Pressure",
       "world": 1,
       "difficulty": "hard",
+      "difficulty_score": 8,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "move_limit": 5,
@@ -2786,6 +2845,7 @@
       "name": "Almost There",
       "world": 1,
       "difficulty": "expert",
+      "difficulty_score": 9,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "move_limit": 5,
@@ -3146,6 +3206,7 @@
       "name": "The Final Push",
       "world": 1,
       "difficulty": "expert",
+      "difficulty_score": 10,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "move_limit": 5,

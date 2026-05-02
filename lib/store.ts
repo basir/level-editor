@@ -46,7 +46,7 @@ function cellFromTool(tool: ToolType, mirrorType: MirrorType, sourceDir: Dir = '
   return null
 }
 
-type PlayPiece = { id: string; name: PieceShape; originalId: string }
+type PlayPiece = { id: string; name: PieceShape; originalId: string; isDistractor?: boolean }
 
 interface EditorStore {
   worlds: World[]
@@ -476,13 +476,15 @@ export const useEditorStore = create<EditorStore>()(
         const isFirstMove = moves === (state.activeLevel.move_limit - 1)
         const nextSolution = isFirstMove ? [] : [...state.activeLevel.solution]
 
-        nextSolution.push({
-          step: nextSolution.length + 1,
-          piece_id: piece.originalId,
-          piece_name: piece.name,
-          row,
-          col,
-        })
+        if (!piece.isDistractor) {
+          nextSolution.push({
+            step: nextSolution.length + 1,
+            piece_id: piece.originalId,
+            piece_name: piece.name,
+            row,
+            col,
+          })
+        }
 
         set((state) => ({
           activeLevel: state.activeLevel ? {
@@ -587,6 +589,7 @@ function flattenQueue(queue: Level['piece_queue']): PlayPiece[] {
       id: `${item.id}-${idx}-${i}`,
       name: item.name,
       originalId: item.id,
+      isDistractor: item.isDistractor
     }))
   )
 }

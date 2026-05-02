@@ -16,7 +16,7 @@ export function SolutionPanel() {
   const moves = activeLevel.solution || []
 
   const getMoveCells = (move: any): [number, number][] => {
-    const shape = move.shape as PieceShape
+    const shape = move.piece_name as PieceShape
     const offsets = PIECE_SHAPES[shape] || []
     return offsets.map(([dr, dc]) => [move.row + dr, move.col + dc])
   }
