@@ -479,7 +479,7 @@ export const useEditorStore = create<EditorStore>()(
         nextSolution.push({
           step: nextSolution.length + 1,
           piece_id: piece.originalId,
-          shape: piece.name,
+          piece_name: piece.name,
           row,
           col,
         })

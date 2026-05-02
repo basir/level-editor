@@ -3,6 +3,7 @@ import { useEditorStore } from '@/lib/store'
 import { PIECE_SHAPES } from '@/lib/constants'
 import { Button } from '@/components/ui/button'
 import type { PieceShape } from '@/lib/types'
+import { PiecePreview } from './PeicePreview'
 
 export function SolutionPanel() {
   const activeLevel = useEditorStore((s) => s.activeLevel)
@@ -68,7 +69,9 @@ export function SolutionPanel() {
                     }`}
                 >
                   <span className='font-mono text-[10px] bg-zinc-800 px-1 rounded text-zinc-400'>{move.step}</span>
-                  <span className='font-medium'>{move.shape}</span>
+                  <span className='font-mono text-[10px] bg-zinc-800 px-1 rounded text-zinc-400'>{move.piece_id}</span>
+                  <span className='font-medium'>{move.piece_name}</span>
+                  <PiecePreview shape={move.piece_name as PieceShape} />
                   <span className='ml-auto text-zinc-500 font-mono'>
                     ({move.row},{move.col})
                   </span>

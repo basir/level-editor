@@ -64,7 +64,7 @@ export interface PieceQueueItem {
 export interface SolutionMove {
   step: number
   piece_id: string
-  shape: string
+  piece_name: string
   row: number
   col: number
 }

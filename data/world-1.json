@@ -7,72 +7,21 @@
       "name": "First Steps",
       "world": 1,
       "difficulty": "easy",
-      "difficulty_score": 1,
       "mechanic_focus": "chain_clear",
       "min_moves": 1,
+      "move_limit": 3,
       "piece_queue": [
         {
-          "id": "p1",
-          "name": "CornerNW",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              1,
-              0
-            ],
-            [
-              1,
-              1
-            ]
-          ],
-          "color": "#8AC926",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
           "id": "d1",
-          "name": "CornerNE",
-          "shape": [
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              0
-            ],
-            [
-              1,
-              1
-            ]
-          ],
-          "color": "#8AC926",
-          "isDistractor": true,
-          "count": 1
+          "name": "Z",
+          "count": 1,
+          "isDistractor": true
         },
         {
-          "id": "d2",
-          "name": "CornerNE",
-          "shape": [
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              0
-            ],
-            [
-              1,
-              1
-            ]
-          ],
-          "color": "#8AC926",
-          "isDistractor": true,
-          "count": 1
+          "id": "p2",
+          "name": "CornerNW",
+          "count": 1,
+          "isDistractor": false
         }
       ],
       "distractors": [
@@ -82,7 +31,8 @@
       "solution": [
         {
           "step": 1,
-          "piece_id": "p1",
+          "piece_id": "p2",
+          "piece_name": "CornerNW",
           "row": 4,
           "col": 1
         }
@@ -112,7 +62,7 @@
           ]
         }
       ],
-      "fingerprint": "bd69860d13810b133e21224c6a01f16d",
+      "fingerprint": "c85f2d84ee613bd468d118f902427753",
       "grid": [
         [
           {
@@ -299,9 +249,9 @@
       "name": "Warm Up",
       "world": 1,
       "difficulty": "easy",
-      "difficulty_score": 2,
       "mechanic_focus": "chain_clear",
       "min_moves": 2,
+      "move_limit": 4,
       "piece_queue": [
         {
           "id": "p1",
@@ -400,12 +350,14 @@
         {
           "step": 1,
           "piece_id": "p2",
+          "piece_name": "CornerSW",
           "row": 4,
           "col": 2
         },
         {
           "step": 2,
           "piece_id": "p1",
+          "piece_name": "Square",
           "row": 4,
           "col": 6
         }
@@ -435,7 +387,7 @@
           ]
         }
       ],
-      "fingerprint": "44a324acfd14708459ae3a240c1f35f8",
+      "fingerprint": "d669ace440d04d039fc282983dee440e",
       "grid": [
         [
           {
@@ -610,9 +562,9 @@
       "name": "Getting There",
       "world": 1,
       "difficulty": "medium",
-      "difficulty_score": 3,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
+      "move_limit": 5,
       "piece_queue": [
         {
           "id": "p1",
@@ -728,18 +680,21 @@
         {
           "step": 1,
           "piece_id": "p1",
+          "piece_name": "Horizontal3",
           "row": 2,
           "col": 1
         },
         {
           "step": 2,
           "piece_id": "p2",
+          "piece_name": "CornerSE",
           "row": 2,
           "col": 8
         },
         {
           "step": 3,
           "piece_id": "p3",
+          "piece_name": "CornerSE",
           "row": 1,
           "col": 4
         }
@@ -782,7 +737,7 @@
           ]
         }
       ],
-      "fingerprint": "152f6b31ac47b3e3de3fde8913f7db4f",
+      "fingerprint": "94910cb75a6d9f2c96737128309b72c7",
       "grid": [
         [
           {
@@ -981,9 +936,9 @@
       "name": "Finding Flow",
       "world": 1,
       "difficulty": "medium",
-      "difficulty_score": 4,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
+      "move_limit": 5,
       "piece_queue": [
         {
           "id": "p3",
@@ -1099,18 +1054,21 @@
         {
           "step": 1,
           "piece_id": "p1",
+          "piece_name": "Vertical3",
           "row": 6,
           "col": 0
         },
         {
           "step": 2,
           "piece_id": "p2",
+          "piece_name": "CornerSW",
           "row": 7,
           "col": 3
         },
         {
           "step": 3,
           "piece_id": "p3",
+          "piece_name": "Horizontal2",
           "row": 6,
           "col": 2
         }
@@ -1153,7 +1111,7 @@
           ]
         }
       ],
-      "fingerprint": "cc3342988d4cb78468d484870fdc5c6f",
+      "fingerprint": "0046cd391a0e3f2ba37f87ee0e3216e3",
       "grid": [
         [
           {
@@ -1355,9 +1313,9 @@
       "name": "Double Down",
       "world": 1,
       "difficulty": "medium",
-      "difficulty_score": 5,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
+      "move_limit": 5,
       "piece_queue": [
         {
           "id": "p3",
@@ -1477,18 +1435,21 @@
         {
           "step": 1,
           "piece_id": "p2",
+          "piece_name": "CornerSE",
           "row": 4,
           "col": 8
         },
         {
           "step": 2,
           "piece_id": "p3",
+          "piece_name": "CornerSW",
           "row": 4,
           "col": 2
         },
         {
           "step": 3,
           "piece_id": "p1",
+          "piece_name": "L",
           "row": 3,
           "col": 7
         }
@@ -1534,7 +1495,7 @@
           ]
         }
       ],
-      "fingerprint": "d630850bb1358a8d9ee487b202e5748a",
+      "fingerprint": "99361057ae803e7c6f66d107f617179a",
       "grid": [
         [
           {
@@ -1751,9 +1712,9 @@
       "name": "Halfway",
       "world": 1,
       "difficulty": "hard",
-      "difficulty_score": 6,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
+      "move_limit": 5,
       "piece_queue": [
         {
           "id": "d2",
@@ -1849,18 +1810,21 @@
         {
           "step": 1,
           "piece_id": "p2",
+          "piece_name": "CornerNW",
           "row": 6,
           "col": 8
         },
         {
           "step": 2,
           "piece_id": "p3",
+          "piece_name": "Single",
           "row": 7,
           "col": 0
         },
         {
           "step": 3,
           "piece_id": "p1",
+          "piece_name": "Vertical2",
           "row": 6,
           "col": 6
         }
@@ -1898,7 +1862,7 @@
           ]
         }
       ],
-      "fingerprint": "c46f41c0de2819afccc9ca261e00d91d",
+      "fingerprint": "1aff2b9f836d905237e8c2b45af445ea",
       "grid": [
         [
           {
@@ -2100,9 +2064,9 @@
       "name": "Picking Up",
       "world": 1,
       "difficulty": "hard",
-      "difficulty_score": 7,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
+      "move_limit": 5,
       "piece_queue": [
         {
           "id": "p1",
@@ -2221,24 +2185,28 @@
         {
           "step": 1,
           "piece_id": "p3",
+          "piece_name": "CornerNW",
           "row": 0,
           "col": 2
         },
         {
           "step": 2,
           "piece_id": "p4",
+          "piece_name": "Horizontal3",
           "row": 5,
           "col": 4
         },
         {
           "step": 3,
           "piece_id": "p2",
+          "piece_name": "L",
           "row": 6,
           "col": 2
         },
         {
           "step": 4,
           "piece_id": "p1",
+          "piece_name": "Square",
           "row": 4,
           "col": 2
         }
@@ -2276,7 +2244,7 @@
           ]
         }
       ],
-      "fingerprint": "874263ef2364fe6ec06acb21263de5d7",
+      "fingerprint": "b0ddd72261a902167694aac67f51209c",
       "grid": [
         [
           {
@@ -2454,9 +2422,9 @@
       "name": "The Pressure",
       "world": 1,
       "difficulty": "hard",
-      "difficulty_score": 8,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
+      "move_limit": 5,
       "piece_queue": [
         {
           "id": "d1",
@@ -2575,24 +2543,28 @@
         {
           "step": 1,
           "piece_id": "p4",
+          "piece_name": "CornerNW",
           "row": 3,
           "col": 1
         },
         {
           "step": 2,
           "piece_id": "p3",
+          "piece_name": "CornerSE",
           "row": 0,
           "col": 1
         },
         {
           "step": 3,
           "piece_id": "p2",
+          "piece_name": "CornerNW",
           "row": 5,
           "col": 1
         },
         {
           "step": 4,
           "piece_id": "p1",
+          "piece_name": "Horizontal3",
           "row": 8,
           "col": 1
         }
@@ -2630,7 +2602,7 @@
           ]
         }
       ],
-      "fingerprint": "79b063d5b9438b62f5af5fe1bc69e1c8",
+      "fingerprint": "0cf9915dcc4ac2cc1abc90757d5ea0cf",
       "grid": [
         [
           {
@@ -2814,9 +2786,9 @@
       "name": "Almost There",
       "world": 1,
       "difficulty": "expert",
-      "difficulty_score": 9,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
+      "move_limit": 5,
       "piece_queue": [
         {
           "id": "d1",
@@ -2931,24 +2903,28 @@
         {
           "step": 1,
           "piece_id": "p2",
+          "piece_name": "Horizontal2",
           "row": 1,
           "col": 7
         },
         {
           "step": 2,
           "piece_id": "p4",
+          "piece_name": "CornerNE",
           "row": 5,
           "col": 2
         },
         {
           "step": 3,
           "piece_id": "p3",
+          "piece_name": "Vertical3",
           "row": 7,
           "col": 2
         },
         {
           "step": 4,
           "piece_id": "p1",
+          "piece_name": "L",
           "row": 1,
           "col": 2
         }
@@ -2986,7 +2962,7 @@
           ]
         }
       ],
-      "fingerprint": "570ec5b3a8355799e60d44622752348d",
+      "fingerprint": "b7c2d8772398e2f342998aa55e565af7",
       "grid": [
         [
           {
@@ -3170,9 +3146,9 @@
       "name": "The Final Push",
       "world": 1,
       "difficulty": "expert",
-      "difficulty_score": 10,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
+      "move_limit": 5,
       "piece_queue": [
         {
           "id": "p2",
@@ -3295,24 +3271,28 @@
         {
           "step": 1,
           "piece_id": "p4",
+          "piece_name": "CornerNW",
           "row": 4,
           "col": 8
         },
         {
           "step": 2,
           "piece_id": "p2",
+          "piece_name": "CornerSW",
           "row": 1,
           "col": 2
         },
         {
           "step": 3,
           "piece_id": "p3",
+          "piece_name": "L",
           "row": 6,
           "col": 2
         },
         {
           "step": 4,
           "piece_id": "p1",
+          "piece_name": "CornerSE",
           "row": 4,
           "col": 2
         }
@@ -3358,7 +3338,7 @@
           ]
         }
       ],
-      "fingerprint": "05855cb2dbb195aad663fc8753968227",
+      "fingerprint": "1d6b721001291816a2cb504d66b462a8",
       "grid": [
         [
           {

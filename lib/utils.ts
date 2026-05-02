@@ -39,7 +39,7 @@ export function levelFingerprint(grid: GridCell[][], solutionMoves: SolutionMove
 
   // shapes_key = tuple(sorted(tuple(tuple(cell) for cell in s) for s in solution_shapes))
   const solutionShapes = solutionMoves.map(move => {
-    const relativeCells = PIECE_SHAPES[move.shape as PieceShape] || []
+    const relativeCells = PIECE_SHAPES[move.piece_name as PieceShape] || []
     const absoluteCells = relativeCells.map(([dr, dc]) => [move.row + dr, move.col + dc] as [number, number])
     const sortedCells = [...absoluteCells].sort((a, b) => a[0] - b[0] || a[1] - b[1])
     return pythonTupleStr(sortedCells.map(c => pythonTupleStr(c)))
