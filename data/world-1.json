@@ -7,6 +7,7 @@
       "name": "First Steps",
       "world": 1,
       "difficulty": "easy",
+      "difficulty_score": 1,
       "mechanic_focus": "chain_clear",
       "min_moves": 1,
       "move_limit": 3,
@@ -73,12 +74,6 @@
           "color": "#8AC926",
           "isDistractor": true,
           "count": 1
-        },
-        {
-          "id": "p2",
-          "name": "Single",
-          "count": 1,
-          "isDistractor": false
         }
       ],
       "distractors": [
@@ -119,7 +114,7 @@
           ]
         }
       ],
-      "fingerprint": "2b33de9dc7afe70b1b2a1d97eba46db2",
+      "fingerprint": "c85f2d84ee613bd468d118f902427753",
       "grid": [
         [
           {
@@ -165,10 +160,7 @@
         [
           null,
           null,
-          {
-            "type": "stone",
-            "color": "#ffffff"
-          },
+          null,
           null,
           null,
           null,
@@ -309,6 +301,7 @@
       "name": "Warm Up",
       "world": 1,
       "difficulty": "easy",
+      "difficulty_score": 2,
       "mechanic_focus": "chain_clear",
       "min_moves": 2,
       "move_limit": 4,
@@ -622,6 +615,7 @@
       "name": "Getting There",
       "world": 1,
       "difficulty": "medium",
+      "difficulty_score": 3,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "move_limit": 5,
@@ -996,6 +990,7 @@
       "name": "Finding Flow",
       "world": 1,
       "difficulty": "medium",
+      "difficulty_score": 4,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "move_limit": 5,
@@ -1373,6 +1368,7 @@
       "name": "Double Down",
       "world": 1,
       "difficulty": "medium",
+      "difficulty_score": 5,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "move_limit": 5,
@@ -1772,6 +1768,7 @@
       "name": "Halfway",
       "world": 1,
       "difficulty": "hard",
+      "difficulty_score": 6,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "move_limit": 5,
@@ -2124,6 +2121,7 @@
       "name": "Picking Up",
       "world": 1,
       "difficulty": "hard",
+      "difficulty_score": 7,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "move_limit": 5,
@@ -2482,6 +2480,7 @@
       "name": "The Pressure",
       "world": 1,
       "difficulty": "hard",
+      "difficulty_score": 8,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "move_limit": 5,
@@ -2846,6 +2845,7 @@
       "name": "Almost There",
       "world": 1,
       "difficulty": "expert",
+      "difficulty_score": 9,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "move_limit": 5,
@@ -3206,6 +3206,7 @@
       "name": "The Final Push",
       "world": 1,
       "difficulty": "expert",
+      "difficulty_score": 10,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "move_limit": 5,
