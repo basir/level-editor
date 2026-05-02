@@ -22,6 +22,7 @@ function createLevel(worldId: number, levelIndex: number): Level {
     levelIndex,
     name: 'Untitled',
     grid: emptyGrid(),
+    min_moves: 0,
     solution: [],
     alt_paths: [],
     piece_queue: [],
@@ -79,15 +80,13 @@ interface EditorStore {
   setSourceDir: (dir: Dir) => void
   paintCell: (row: number, col: number) => void
   eraseCell: (row: number, col: number) => void
-  addPieceToQueue: (shape: PieceShape, count: number) => void
+  addPieceToQueue: (shape: PieceShape, count: number, isDistractor?: boolean) => void
   updatePieceCount: (id: string, count: number) => void
+  togglePieceDistractor: (id: string) => void
   removePieceFromQueue: (id: string) => void
   setMoveLimit: (n: number) => void
   setLevelName: (name: string) => void
   setLevelNotes: (notes: string) => void
-  clearSolutionPath: () => void
-  recordSolutionPath: (path: [number, number][]) => void
-  addSolutionPathCell: (row: number, col: number) => void
   setHighlightedCells: (cells: [number, number][] | null) => void
 
 
@@ -194,14 +193,23 @@ export const useEditorStore = create<EditorStore>()(
         historyIndex: historyIndex + 1,
       })
     },
-    addPieceToQueue: (shape, count) =>
+    addPieceToQueue: (shape, count, isDistractor = false) =>
       set((state) => {
         if (!state.activeLevel) return state
         if (state.activeLevel.piece_queue.length >= 6) return state
+
+        const prefix = isDistractor ? 'd' : 'p'
+        const existingNums = state.activeLevel.piece_queue
+          .filter(p => p.id.startsWith(prefix))
+          .map(p => parseInt(p.id.slice(1)))
+          .filter(n => !isNaN(n))
+        const nextNum = existingNums.length > 0 ? Math.max(...existingNums) + 1 : 1
+        const id = `${prefix}${nextNum}`
+
         return {
           activeLevel: {
             ...state.activeLevel,
-            piece_queue: [...state.activeLevel.piece_queue, { id: crypto.randomUUID(), name: shape, count }],
+            piece_queue: [...state.activeLevel.piece_queue, { id, name: shape, count, isDistractor }],
           },
           isDirty: true,
         }
@@ -219,6 +227,45 @@ export const useEditorStore = create<EditorStore>()(
           isDirty: true,
         }
       }),
+    togglePieceDistractor: (id) =>
+      set((state) => {
+        if (!state.activeLevel) return state
+        const piece = state.activeLevel.piece_queue.find(p => p.id === id)
+        if (!piece) return state
+
+        const newIsDistractor = !piece.isDistractor
+        const prefix = newIsDistractor ? 'd' : 'p'
+        const existingNums = state.activeLevel.piece_queue
+          .filter(p => p.id.startsWith(prefix))
+          .map(p => parseInt(p.id.slice(1)))
+          .filter(n => !isNaN(n))
+        const nextNum = existingNums.length > 0 ? Math.max(...existingNums) + 1 : 1
+        const newId = `${prefix}${nextNum}`
+
+        // Update piece_queue and solution_moves
+        const newQueue = state.activeLevel.piece_queue.map(p =>
+          p.id === id ? { ...p, id: newId, isDistractor: newIsDistractor } : p
+        )
+
+        // If it became a distractor, remove from solution. If it changed ID, update solution.
+        let newSolution = state.activeLevel.solution || []
+        if (newIsDistractor) {
+          newSolution = newSolution.filter(m => m.piece_id !== id)
+        } else {
+          newSolution = newSolution.map(m =>
+            m.piece_id === id ? { ...m, piece_id: newId } : m
+          )
+        }
+
+        return {
+          activeLevel: {
+            ...state.activeLevel,
+            piece_queue: newQueue,
+            solution: newSolution
+          },
+          isDirty: true
+        }
+      }),
     removePieceFromQueue: (id) =>
       set((state) => {
         if (!state.activeLevel) return state
@@ -226,6 +273,7 @@ export const useEditorStore = create<EditorStore>()(
           activeLevel: {
             ...state.activeLevel,
             piece_queue: state.activeLevel.piece_queue.filter((p) => p.id !== id),
+            solution: (state.activeLevel.solution || []).filter(m => m.piece_id !== id)
           },
           isDirty: true,
         }
@@ -236,24 +284,6 @@ export const useEditorStore = create<EditorStore>()(
       set((state) => (state.activeLevel ? { activeLevel: { ...state.activeLevel, name }, isDirty: true } : state)),
     setLevelNotes: (notes) =>
       set((state) => (state.activeLevel ? { activeLevel: { ...state.activeLevel, notes }, isDirty: true } : state)),
-    clearSolutionPath: () =>
-      set((state) =>
-        state.activeLevel ? { activeLevel: { ...state.activeLevel, solution_path: [] }, isDirty: true } : state
-      ),
-    recordSolutionPath: (path) =>
-      set((state) =>
-        state.activeLevel ? { activeLevel: { ...state.activeLevel, solution_path: path }, isDirty: true } : state
-      ),
-    addSolutionPathCell: (row, col) =>
-      set((state) => {
-        if (!state.activeLevel) return state
-        const last = state.activeLevel.solution_path.at(-1)
-        if (last?.[0] === row && last?.[1] === col) return state
-        return {
-          activeLevel: { ...state.activeLevel, solution_path: [...state.activeLevel.solution_path, [row, col]] },
-          isDirty: true,
-        }
-      }),
 
     saveLevel: () => {
       set((state) => {
@@ -261,7 +291,7 @@ export const useEditorStore = create<EditorStore>()(
         const nextLevel = {
           ...state.activeLevel,
           grid: state.grid,
-          fingerprint: levelFingerprint(state.grid, state.activeLevel.solution_moves),
+          fingerprint: levelFingerprint(state.grid, state.activeLevel.solution),
         }
         return {
           worlds: state.worlds.map((world) =>
@@ -326,7 +356,7 @@ export const useEditorStore = create<EditorStore>()(
             levelIndex: nextIndex,
             name: `${source.name} Copy`,
             grid: source.grid.map((r) => [...r]),
-            piece_queue: source.piece_queue.map((p) => ({ ...p, id: crypto.randomUUID() })),
+            piece_queue: source.piece_queue.map((p) => ({ ...p })),
             solution: source.solution.map((m) => ({ ...m })),
             alt_paths: source.alt_paths.map((p) => ({ ...p, path: p.path.map((p) => [...p] as [number, number]) })),
           }
@@ -405,7 +435,7 @@ export const useEditorStore = create<EditorStore>()(
           : {
             playMode: true,
             playGrid: state.grid.map((r) => [...r]),
-            playMovesLeft: state.activeLevel?.move_limit ?? 0,
+            playMovesLeft: state.activeLevel?.move_limit ?? state.activeLevel?.piece_queue.length ?? 6,
             playQueue: flattenQueue(state.activeLevel?.piece_queue ?? []),
             selectedPlayPieceId: null,
           }
@@ -444,10 +474,10 @@ export const useEditorStore = create<EditorStore>()(
       const moves = state.playMovesLeft - 1
       if (state.solutionMode && state.activeLevel) {
         const isFirstMove = moves === (state.activeLevel.move_limit - 1)
-        const nextSolutionMoves = isFirstMove ? [] : [...state.activeLevel.solution_moves]
+        const nextSolution = isFirstMove ? [] : [...state.activeLevel.solution]
 
-        nextSolutionMoves.push({
-          step: nextSolutionMoves.length + 1,
+        nextSolution.push({
+          step: nextSolution.length + 1,
           piece_id: piece.originalId,
           shape: piece.name,
           row,
@@ -457,8 +487,7 @@ export const useEditorStore = create<EditorStore>()(
         set((state) => ({
           activeLevel: state.activeLevel ? {
             ...state.activeLevel,
-            solution_moves: nextSolutionMoves,
-            solution: nextSolutionMoves // Add this to match world-1.json structure
+            solution: nextSolution
           } : null,
           isDirty: true,
         }))

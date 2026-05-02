@@ -12,7 +12,7 @@ export function SolutionPanel() {
 
   if (!activeLevel) return null
 
-  const moves = activeLevel.solution_moves || []
+  const moves = activeLevel.solution || []
 
   const getMoveCells = (move: any): [number, number][] => {
     const shape = move.shape as PieceShape
@@ -64,9 +64,8 @@ export function SolutionPanel() {
                   onMouseEnter={() => handleMouseEnter(move, idx)}
                   onMouseLeave={handleMouseLeave}
                   onClick={() => handleClick(move, idx)}
-                  className={`flex cursor-pointer items-center gap-3 rounded px-2 py-1.5 text-xs transition-colors ${
-                    persistentHighlight === idx ? 'bg-amber-500/20 text-amber-200' : 'hover:bg-white/5 text-zinc-300'
-                  }`}
+                  className={`flex cursor-pointer items-center gap-3 rounded px-2 py-1.5 text-xs transition-colors ${persistentHighlight === idx ? 'bg-amber-500/20 text-amber-200' : 'hover:bg-white/5 text-zinc-300'
+                    }`}
                 >
                   <span className='font-mono text-[10px] bg-zinc-800 px-1 rounded text-zinc-400'>{move.step}</span>
                   <span className='font-medium'>{move.shape}</span>

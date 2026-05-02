@@ -58,6 +58,7 @@ export interface PieceQueueItem {
   id: string
   name: PieceShape
   count: number
+  isDistractor?: boolean
 }
 
 export interface SolutionMove {
@@ -82,13 +83,13 @@ export interface Level {
   solution: SolutionMove[]
   alt_paths: AltPath[]
   piece_queue: PieceQueueItem[]
+  min_moves: number
   move_limit: number
   difficulty: number
   generation_log: any
   optic_unsolved: boolean
   notes: string
   fingerprint: string
-  [key: string]: any
 }
 
 

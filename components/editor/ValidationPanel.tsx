@@ -23,6 +23,7 @@ export function ValidationPanel() {
   const lastBeam = beams[beams.length - 1]
   const blockedAt = reached ? null : lastBeam ? `(${lastBeam.r}, ${lastBeam.c})` : '(0, 0)'
 
+  const traps = useMemo(() => Array.from(findTrapMirrors(grid)), [grid])
   return (
     <div className='space-y-1 rounded border border-editor-border bg-editor-panel p-3 text-xs'>
       <div className='flex items-center gap-2'>
@@ -39,6 +40,11 @@ export function ValidationPanel() {
       <div className='flex items-center gap-2'>
         <span className='font-semibold'>Trap segments:</span> {trapCount}
         {trapCount > 0 && <span className='text-amber-500'>⚠</span>}
+      </div>
+      <div className='mt-1 space-y-1 text-xs text-red-200'>
+        {traps.map((key) => (
+          <div key={key}>Mirror at ({key}) — adjacent segment has 1 empty cell</div>
+        ))}
       </div>
       <div>
         <span className='font-semibold'>Alt paths:</span> {activeLevel?.alt_paths?.length ?? 0}

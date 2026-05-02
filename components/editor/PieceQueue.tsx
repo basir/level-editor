@@ -69,6 +69,7 @@ export function PieceQueue() {
   const selectPlayPiece = useEditorStore((s) => s.selectPlayPiece)
   const addPieceToQueue = useEditorStore((s) => s.addPieceToQueue)
   const updatePieceCount = useEditorStore((s) => s.updatePieceCount)
+  const togglePieceDistractor = useEditorStore((s) => s.togglePieceDistractor)
   const removePieceFromQueue = useEditorStore((s) => s.removePieceFromQueue)
 
   if (!activeLevel) return null
@@ -124,22 +125,34 @@ export function PieceQueue() {
       </div>
       <div className='space-y-2'>
         {activeLevel.piece_queue.map((item) => (
-          <div key={item.id} className='flex items-center justify-between rounded border border-editor-border p-2'>
-            <div className='flex items-center gap-2'>
+          <div key={item.id} className='flex items-center justify-between rounded border border-editor-border p-2 gap-2'>
+            <div className='flex items-center gap-2 min-w-[60px]'>
+              <div className='text-[10px] font-mono text-zinc-500 w-5'>{item.id}</div>
               <div title={item.name}>
                 <PiecePreview shape={item.name} />
               </div>
             </div>
+
+            <Button
+              variant='ghost'
+              size='sm'
+              onClick={() => togglePieceDistractor(item.id)}
+              className={`text-[10px] px-2 py-0 h-7 border border-white/5 rounded-full ${item.isDistractor ? 'bg-amber-500/20 text-amber-200 border-amber-500/30' : 'text-zinc-400 hover:text-white'}`}
+            >
+              {item.isDistractor ? 'Distractor' : 'Real'}
+            </Button>
+
             <Input
               type='number'
               min={1}
               value={item.count}
               onChange={(e) => updatePieceCount(item.id, Number(e.target.value))}
-              className='w-16 px-2 py-1 text-xs'
+              className='w-12 px-2 py-1 text-[10px] h-7 bg-zinc-900 border-zinc-700'
             />
+
             <Button
               variant='ghost'
-              className='px-2 py-1 text-xs text-red-300'
+              className='px-2 py-1 text-[10px] h-7 text-red-400 hover:text-red-300 hover:bg-red-500/10'
               onClick={() => removePieceFromQueue(item.id)}
             >
               Delete

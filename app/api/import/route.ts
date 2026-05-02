@@ -3,6 +3,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { PIECE_SHAPES } from '@/lib/constants';
 import { PieceShape } from '@/lib/types';
+import { levelFingerprint } from '@/lib/utils';
 
 // Helper to normalize coordinate arrays for comparison
 function normalize(cells: [number, number][]): string {
@@ -33,33 +34,14 @@ export async function GET() {
         try {
           const worldDataRaw = await fs.readFile(path.join(outputPath, `world-${w.id}.json`), 'utf-8');
           const worldData = JSON.parse(worldDataRaw);
-
-          // const transformedLevels = worldData.levels.map((level: any) => {
-          //   // Map generator level to editor level
-          //   return {
-          //     ...level,
-          //     piece_queue: (level.piece_queue || [])
-          //       // .filter((p: any) => !p.is_distractor)
-          //       .map((p: any) => {
-          //         const norm = normalize(p.shape);
-          //         const shapeName = SHAPE_MAP.get(norm) || 'Single'; // fallback to Single if unknown
-          //         return {
-          //           id: p.id || crypto.randomUUID(),
-          //           shape: shapeName,
-          //           count: 1,
-          //         };
-          //       }),
-          //     grid: level.grid || [],
-          //     solution: level.solution || [],
-          //     notes: level.mechanic_focus ? `Focus: ${level.mechanic_focus}` : '',
-          //   };
-          // });
-
           return {
             id: w.id,
             name: w.name,
             levelCount: worldData.levels.length,
-            levels: worldData.levels,
+            levels: worldData.levels.map((l: any) => ({
+              ...l,
+              fingerprint: levelFingerprint(l.grid, l.solution),
+            })),
           };
         } catch (e) {
           console.error(`Failed to read world-${w.id}.json`, e);
@@ -82,11 +64,11 @@ export async function GET() {
       worlds: fullWorlds.map((w) => ({
         id: w.id,
         name: w.name,
-        levelCount: w.levels.length,
+        desc: w.desc,
         levels: w.levels.map((l: any) => ({
           id: l.id,
           name: l.name,
-          difficulty: l.difficulty > 20 ? 'hard' : l.difficulty > 10 ? 'medium' : 'easy',
+          difficulty: l.difficulty,
           fingerprint: l.fingerprint,
         })),
       })),

@@ -33,7 +33,7 @@
             ]
           ],
           "color": "#FF9671",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -54,7 +54,7 @@
             ]
           ],
           "color": "#1982C4",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -67,7 +67,7 @@
             ]
           ],
           "color": "#FF595E",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -88,7 +88,7 @@
             ]
           ],
           "color": "#8AC926",
-          "is_distractor": true,
+          "isDistractor": true,
           "count": 1
         },
         {
@@ -101,7 +101,7 @@
             ]
           ],
           "color": "#FF595E",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -122,7 +122,7 @@
             ]
           ],
           "color": "#8AC926",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         }
       ],
@@ -194,7 +194,7 @@
           ]
         }
       ],
-      "fingerprint": "eb18673748ee280d0cccd6fe8fff947f",
+      "fingerprint": "76b0ccb361460f8c5855b77bed050963",
       "grid": [
         [
           {
@@ -400,7 +400,7 @@
             ]
           ],
           "color": "#FFC75F",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -421,7 +421,7 @@
             ]
           ],
           "color": "#8AC926",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -434,7 +434,7 @@
             ]
           ],
           "color": "#FF595E",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -459,7 +459,7 @@
             ]
           ],
           "color": "#4CC9F0",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -484,7 +484,7 @@
             ]
           ],
           "color": "#4CC9F0",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -509,7 +509,7 @@
             ]
           ],
           "color": "#4CC9F0",
-          "is_distractor": true,
+          "isDistractor": true,
           "count": 1
         }
       ],
@@ -589,7 +589,7 @@
           ]
         }
       ],
-      "fingerprint": "4001aecb5e9486a11c7b8e050f498446",
+      "fingerprint": "a6827849251819b097d1f4e60e3a17de",
       "grid": [
         [
           {
@@ -814,7 +814,7 @@
             ]
           ],
           "color": "#FF6F91",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -839,7 +839,7 @@
             ]
           ],
           "color": "#4CC9F0",
-          "is_distractor": true,
+          "isDistractor": true,
           "count": 1
         },
         {
@@ -860,7 +860,7 @@
             ]
           ],
           "color": "#FFC75F",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -885,7 +885,7 @@
             ]
           ],
           "color": "#6A4C93",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -902,7 +902,7 @@
             ]
           ],
           "color": "#FF924C",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -923,7 +923,7 @@
             ]
           ],
           "color": "#1982C4",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         }
       ],
@@ -1003,7 +1003,7 @@
           ]
         }
       ],
-      "fingerprint": "20a9dd483d5951b76585677477349226",
+      "fingerprint": "94642cc665ade2aaa56679a04e7218cb",
       "grid": [
         [
           {
@@ -1228,7 +1228,7 @@
             ]
           ],
           "color": "#6A4C93",
-          "is_distractor": true,
+          "isDistractor": true,
           "count": 1
         },
         {
@@ -1253,7 +1253,7 @@
             ]
           ],
           "color": "#F72585",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -1270,7 +1270,7 @@
             ]
           ],
           "color": "#FF924C",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -1295,7 +1295,7 @@
             ]
           ],
           "color": "#FF6F91",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -1312,7 +1312,7 @@
             ]
           ],
           "color": "#FF924C",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -1337,7 +1337,7 @@
             ]
           ],
           "color": "#4CC9F0",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         }
       ],
@@ -1417,7 +1417,7 @@
           ]
         }
       ],
-      "fingerprint": "46d2e97b8cd700bfee4ebf9543adc465",
+      "fingerprint": "5d27e3c652fed7542525e59741601830",
       "grid": [
         [
           {
@@ -1642,7 +1642,7 @@
             ]
           ],
           "color": "#FF6F91",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -1663,7 +1663,7 @@
             ]
           ],
           "color": "#FFC75F",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -1688,7 +1688,7 @@
             ]
           ],
           "color": "#6A4C93",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -1709,7 +1709,7 @@
             ]
           ],
           "color": "#8AC926",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -1734,7 +1734,7 @@
             ]
           ],
           "color": "#FF6F91",
-          "is_distractor": true,
+          "isDistractor": true,
           "count": 1
         },
         {
@@ -1759,7 +1759,7 @@
             ]
           ],
           "color": "#6A4C93",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         }
       ],
@@ -1847,7 +1847,7 @@
           ]
         }
       ],
-      "fingerprint": "db579c64b9fe2bb23c62c7a45db44b2e",
+      "fingerprint": "4d7285fdaebf8d29fbd14bd799b91206",
       "grid": [
         [
           {
@@ -2087,7 +2087,7 @@
             ]
           ],
           "color": "#F72585",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -2112,7 +2112,7 @@
             ]
           ],
           "color": "#4CC9F0",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -2129,7 +2129,7 @@
             ]
           ],
           "color": "#FF924C",
-          "is_distractor": true,
+          "isDistractor": true,
           "count": 1
         },
         {
@@ -2154,7 +2154,7 @@
             ]
           ],
           "color": "#6A4C93",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -2175,7 +2175,7 @@
             ]
           ],
           "color": "#FFC75F",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -2200,7 +2200,7 @@
             ]
           ],
           "color": "#4CC9F0",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         }
       ],
@@ -2298,7 +2298,7 @@
           ]
         }
       ],
-      "fingerprint": "52909d710368eb59531b68249a66b7a7",
+      "fingerprint": "1cb495e40f18d48c92e8fa126da6586b",
       "grid": [
         [
           {
@@ -2541,7 +2541,7 @@
             ]
           ],
           "color": "#FF6F91",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -2562,7 +2562,7 @@
             ]
           ],
           "color": "#8AC926",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -2583,7 +2583,7 @@
             ]
           ],
           "color": "#FFC75F",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -2604,7 +2604,7 @@
             ]
           ],
           "color": "#FFC75F",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -2625,7 +2625,7 @@
             ]
           ],
           "color": "#8AC926",
-          "is_distractor": true,
+          "isDistractor": true,
           "count": 1
         },
         {
@@ -2650,7 +2650,7 @@
             ]
           ],
           "color": "#F72585",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         }
       ],
@@ -2743,7 +2743,7 @@
           ]
         }
       ],
-      "fingerprint": "a02ad496e08f892d0023a3b8980e1ef1",
+      "fingerprint": "1add060e34adb952bfc8cb846abda85b",
       "grid": [
         [
           {
@@ -2988,7 +2988,7 @@
             ]
           ],
           "color": "#8AC926",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -3005,7 +3005,7 @@
             ]
           ],
           "color": "#FF924C",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -3030,7 +3030,7 @@
             ]
           ],
           "color": "#FF6F91",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -3051,7 +3051,7 @@
             ]
           ],
           "color": "#FFC75F",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -3064,7 +3064,7 @@
             ]
           ],
           "color": "#FF595E",
-          "is_distractor": true,
+          "isDistractor": true,
           "count": 1
         },
         {
@@ -3089,7 +3089,7 @@
             ]
           ],
           "color": "#6A4C93",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         }
       ],
@@ -3182,7 +3182,7 @@
           ]
         }
       ],
-      "fingerprint": "006f86768ac954b6ea43b2a6c79371ed",
+      "fingerprint": "6fecf5c809e22020cac8f5b5e6f1716e",
       "grid": [
         [
           {
@@ -3430,7 +3430,7 @@
             ]
           ],
           "color": "#8AC926",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -3451,7 +3451,7 @@
             ]
           ],
           "color": "#8AC926",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -3468,7 +3468,7 @@
             ]
           ],
           "color": "#FF924C",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -3489,7 +3489,7 @@
             ]
           ],
           "color": "#8AC926",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -3514,7 +3514,7 @@
             ]
           ],
           "color": "#6A4C93",
-          "is_distractor": true,
+          "isDistractor": true,
           "count": 1
         },
         {
@@ -3535,7 +3535,7 @@
             ]
           ],
           "color": "#FFC75F",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         }
       ],
@@ -3628,7 +3628,7 @@
           ]
         }
       ],
-      "fingerprint": "bfcaac5692646a4d39b3e8f52252dcbd",
+      "fingerprint": "0ffffa76463e9fe2e22200322b1d17fa",
       "grid": [
         [
           {
@@ -3886,7 +3886,7 @@
             ]
           ],
           "color": "#FF9671",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -3911,7 +3911,7 @@
             ]
           ],
           "color": "#4CC9F0",
-          "is_distractor": true,
+          "isDistractor": true,
           "count": 1
         },
         {
@@ -3936,7 +3936,7 @@
             ]
           ],
           "color": "#FF6F91",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -3957,7 +3957,7 @@
             ]
           ],
           "color": "#8AC926",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -3978,7 +3978,7 @@
             ]
           ],
           "color": "#8AC926",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -3999,7 +3999,7 @@
             ]
           ],
           "color": "#FFC75F",
-          "is_distractor": false,
+          "isDistractor": false,
           "count": 1
         }
       ],
@@ -4100,7 +4100,7 @@
           ]
         }
       ],
-      "fingerprint": "15b6a89ad42347996e9e4366891021d9",
+      "fingerprint": "b8f60d3b6a88aebd4488088371298c9c",
       "grid": [
         [
           {
