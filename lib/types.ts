@@ -56,7 +56,7 @@ export type GridCell =
 
 export interface PieceQueueItem {
   id: string
-  shape: PieceShape
+  name: PieceShape
   count: number
 }
 

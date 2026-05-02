@@ -48,7 +48,7 @@ export function Grid() {
   const ghostCells = useMemo(() => {
     if (!(playMode || solutionMode) || !hover || !selectedPiece) return []
     const [r, c] = hover
-    return PIECE_SHAPES[selectedPiece.shape]
+    return PIECE_SHAPES[selectedPiece.name]
       .map(([dr, dc]) => [r + dr, c + dc] as [number, number])
       .filter(([rr, cc]) => rr >= 0 && rr < 10 && cc >= 0 && cc < 10)
   }, [playMode, hover, selectedPiece])
@@ -114,8 +114,8 @@ export function Grid() {
               <div
                 key={i}
                 style={{
-                  backgroundColor: ghost ? `${SHAPE_COLORS[selectedPiece?.shape || 'Single']}40` : highlighted ? 'rgba(255, 255, 255, 0.2)' : 'transparent',
-                  borderColor: ghost ? `${SHAPE_COLORS[selectedPiece?.shape || 'Single']}80` : highlighted ? 'rgba(255, 255, 255, 0.5)' : 'transparent'
+                  backgroundColor: ghost ? `${SHAPE_COLORS[selectedPiece?.name || 'Single']}40` : highlighted ? 'rgba(255, 255, 255, 0.2)' : 'transparent',
+                  borderColor: ghost ? `${SHAPE_COLORS[selectedPiece?.name || 'Single']}80` : highlighted ? 'rgba(255, 255, 255, 0.5)' : 'transparent'
                 }}
                 className={`h-[52px] w-[52px] border`}
               />

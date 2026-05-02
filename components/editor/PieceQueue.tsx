@@ -89,7 +89,7 @@ export function PieceQueue() {
               className={`flex items-center justify-center px-2 py-1 ${selectedPlayPieceId === piece.id ? 'ring-2 ring-white ring-offset-2 ring-offset-black' : ''
                 }`}
             >
-              <PiecePreview shape={piece.shape} />
+              <PiecePreview shape={piece.name} />
             </Button>
           ))}
           {playQueue.length === 0 ? <div className='text-xs text-zinc-400'>No pieces left.</div> : null}
@@ -126,8 +126,8 @@ export function PieceQueue() {
         {activeLevel.piece_queue.map((item) => (
           <div key={item.id} className='flex items-center justify-between rounded border border-editor-border p-2'>
             <div className='flex items-center gap-2'>
-              <div title={item.shape}>
-                <PiecePreview shape={item.shape} />
+              <div title={item.name}>
+                <PiecePreview shape={item.name} />
               </div>
             </div>
             <Input

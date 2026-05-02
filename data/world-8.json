@@ -3,26 +3,109 @@
   "worldName": "Abyss",
   "levels": [
     {
-      "id": "8-1",
-      "name": "First Steps",
+      "id": "8-5",
+      "name": "Double Down",
       "world": 8,
-      "difficulty": "easy",
+      "difficulty": "medium",
+      "difficulty_score": 75,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
         {
+          "id": "d2",
+          "name": "J_horizontal",
+          "shape": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "color": "#F72585",
+          "is_distractor": true,
+          "count": 1
+        },
+        {
           "id": "p2",
-          "shape": "Single",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p1",
-          "shape": "Single",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "CornerSW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": true,
           "count": 1
         },
         {
           "id": "p3",
-          "shape": "Square",
+          "name": "Square",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#FFCA3A",
+          "is_distractor": false,
           "count": 1
         }
       ],
@@ -88,7 +171,7 @@
           ]
         }
       ],
-      "fingerprint": "54aa02cc2ec01a23eacb60a8ecfca625",
+      "fingerprint": "c21d61bdda93cf3b7e085eb6330b2c49",
       "grid": [
         [
           {
@@ -283,697 +366,864 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 8,
-      "levelIndex": 1,
-      "move_limit": 3,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p3",
-          "row": 8,
-          "col": 3
-        },
-        {
-          "step": 2,
-          "piece_id": "p1",
-          "row": 1,
-          "col": 3
-        },
-        {
-          "step": 3,
-          "piece_id": "p2",
-          "row": 3,
-          "col": 4
-        }
-      ],
-      "notes": "Focus: chain_clear"
-    },
-    {
-      "id": "8-2",
-      "name": "Warm Up",
-      "world": 8,
-      "difficulty": "easy",
-      "mechanic_focus": "chain_clear",
-      "min_moves": 3,
-      "piece_queue": [
-        {
-          "id": "p3",
-          "shape": "Single",
-          "count": 1
-        },
-        {
-          "id": "p2",
-          "shape": "Single",
-          "count": 1
-        },
-        {
-          "id": "p1",
-          "shape": "CornerSW",
-          "count": 1
-        }
-      ],
-      "distractors": [
-        "d1",
-        "d2"
-      ],
-      "solution": [
-        {
-          "step": 1,
-          "piece_id": "p3",
-          "row": 3,
-          "col": 2
-        },
-        {
-          "step": 2,
-          "piece_id": "p2",
-          "row": 0,
-          "col": 6
-        },
-        {
-          "step": 3,
-          "piece_id": "p1",
-          "row": 3,
-          "col": 5
-        }
-      ],
-      "target_clears": [
-        {
-          "type": "row",
-          "index": 3
-        },
-        {
-          "type": "col",
-          "index": 5
-        },
-        {
-          "type": "col",
-          "index": 6
-        }
-      ],
-      "clear_chain": [
-        {
-          "trigger": "p1_placement",
-          "clears": [
-            {
-              "type": "row",
-              "index": 3
-            },
-            {
-              "type": "col",
-              "index": 5
-            },
-            {
-              "type": "col",
-              "index": 6
-            }
-          ]
-        }
-      ],
-      "fingerprint": "efd56aaecc3bca69e28889560be5ed17",
-      "grid": [
-        [
-          {
-            "type": "source"
-          },
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          null,
-          null,
-          null,
-          {
-            "type": "mirror",
-            "mirror": "dl"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          null,
-          null,
-          {
-            "type": "target"
-          }
-        ]
-      ],
-      "worldId": 8,
-      "levelIndex": 2,
-      "move_limit": 3,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p3",
-          "row": 3,
-          "col": 2
-        },
-        {
-          "step": 2,
-          "piece_id": "p2",
-          "row": 0,
-          "col": 6
-        },
-        {
-          "step": 3,
-          "piece_id": "p1",
-          "row": 3,
-          "col": 5
-        }
-      ],
-      "notes": "Focus: chain_clear"
-    },
-    {
-      "id": "8-3",
-      "name": "Getting There",
-      "world": 8,
-      "difficulty": "medium",
-      "mechanic_focus": "chain_clear",
-      "min_moves": 3,
-      "piece_queue": [
-        {
-          "id": "p2",
-          "shape": "J_horizontal",
-          "count": 1
-        },
-        {
-          "id": "p3",
-          "shape": "L_horizontal",
-          "count": 1
-        },
-        {
-          "id": "p1",
-          "shape": "Single",
-          "count": 1
-        }
-      ],
-      "distractors": [
-        "d1",
-        "d2"
-      ],
-      "solution": [
-        {
-          "step": 1,
-          "piece_id": "p1",
-          "row": 4,
-          "col": 7
-        },
-        {
-          "step": 2,
-          "piece_id": "p2",
-          "row": 3,
-          "col": 1
-        },
-        {
-          "step": 3,
-          "piece_id": "p3",
-          "row": 4,
-          "col": 5
-        }
-      ],
-      "target_clears": [
-        {
-          "type": "row",
-          "index": 3
-        },
-        {
-          "type": "row",
-          "index": 4
-        },
-        {
-          "type": "row",
-          "index": 5
-        },
-        {
-          "type": "col",
-          "index": 7
-        }
-      ],
-      "clear_chain": [
-        {
-          "trigger": "p2_placement",
-          "clears": [
-            {
-              "type": "row",
-              "index": 3
-            }
-          ]
-        },
-        {
-          "trigger": "p3_placement",
-          "clears": [
-            {
-              "type": "row",
-              "index": 4
-            },
-            {
-              "type": "row",
-              "index": 5
-            },
-            {
-              "type": "col",
-              "index": 7
-            }
-          ]
-        }
-      ],
-      "fingerprint": "695e984ac5e09c771c0f7b89147daf7a",
-      "grid": [
-        [
-          {
-            "type": "source"
-          },
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          {
-            "type": "mirror",
-            "mirror": "dl"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#F72585"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "frozen",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          }
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#F72585"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          }
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          {
-            "type": "stone",
-            "color": "#F72585"
-          },
-          {
-            "type": "stone",
-            "color": "#F72585"
-          },
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          null,
-          {
-            "type": "target"
-          }
-        ]
-      ],
-      "worldId": 8,
-      "levelIndex": 3,
-      "move_limit": 3,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p1",
-          "row": 4,
-          "col": 7
-        },
-        {
-          "step": 2,
-          "piece_id": "p2",
-          "row": 3,
-          "col": 1
-        },
-        {
-          "step": 3,
-          "piece_id": "p3",
-          "row": 4,
-          "col": 5
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
       "id": "8-4",
       "name": "Finding Flow",
       "world": 8,
       "difficulty": "medium",
+      "difficulty_score": 74,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
         {
           "id": "p3",
-          "shape": "CornerNE",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "is_distractor": false,
           "count": 1
         },
         {
-          "id": "p1",
-          "shape": "Vertical2",
+          "id": "d2",
+          "name": "CornerNW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": true,
           "count": 1
         },
         {
           "id": "p2",
-          "shape": "Horizontal2",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "is_distractor": true,
+          "count": 1
+        },
+        {
+          "id": "p1",
+          "name": "CornerSW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
+          "count": 1
+        }
+      ],
+      "distractors": [
+        "d1",
+        "d2"
+      ],
+      "solution": [
+        {
+          "step": 1,
+          "piece_id": "p3",
+          "row": 3,
+          "col": 2
+        },
+        {
+          "step": 2,
+          "piece_id": "p2",
+          "row": 0,
+          "col": 6
+        },
+        {
+          "step": 3,
+          "piece_id": "p1",
+          "row": 3,
+          "col": 5
+        }
+      ],
+      "target_clears": [
+        {
+          "type": "row",
+          "index": 3
+        },
+        {
+          "type": "col",
+          "index": 5
+        },
+        {
+          "type": "col",
+          "index": 6
+        }
+      ],
+      "clear_chain": [
+        {
+          "trigger": "p1_placement",
+          "clears": [
+            {
+              "type": "row",
+              "index": 3
+            },
+            {
+              "type": "col",
+              "index": 5
+            },
+            {
+              "type": "col",
+              "index": 6
+            }
+          ]
+        }
+      ],
+      "fingerprint": "6984979152238c3a5e32d7ad88687668",
+      "grid": [
+        [
+          {
+            "type": "source"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "mirror",
+            "mirror": "dl"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          null,
+          {
+            "type": "target"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "8-1",
+      "name": "First Steps",
+      "world": 8,
+      "difficulty": "easy",
+      "difficulty_score": 71,
+      "mechanic_focus": "chain_clear",
+      "min_moves": 3,
+      "piece_queue": [
+        {
+          "id": "d1",
+          "name": "Square",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#FFCA3A",
+          "is_distractor": true,
+          "count": 1
+        },
+        {
+          "id": "d2",
+          "name": "CornerNW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": true,
+          "count": 1
+        },
+        {
+          "id": "p2",
+          "name": "J_horizontal",
+          "shape": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "color": "#F72585",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "p3",
+          "name": "L_horizontal",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "color": "#6A4C93",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "p1",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "is_distractor": false,
+          "count": 1
+        }
+      ],
+      "distractors": [
+        "d1",
+        "d2"
+      ],
+      "solution": [
+        {
+          "step": 1,
+          "piece_id": "p1",
+          "row": 4,
+          "col": 7
+        },
+        {
+          "step": 2,
+          "piece_id": "p2",
+          "row": 3,
+          "col": 1
+        },
+        {
+          "step": 3,
+          "piece_id": "p3",
+          "row": 4,
+          "col": 5
+        }
+      ],
+      "target_clears": [
+        {
+          "type": "row",
+          "index": 3
+        },
+        {
+          "type": "row",
+          "index": 4
+        },
+        {
+          "type": "row",
+          "index": 5
+        },
+        {
+          "type": "col",
+          "index": 7
+        }
+      ],
+      "clear_chain": [
+        {
+          "trigger": "p2_placement",
+          "clears": [
+            {
+              "type": "row",
+              "index": 3
+            }
+          ]
+        },
+        {
+          "trigger": "p3_placement",
+          "clears": [
+            {
+              "type": "row",
+              "index": 4
+            },
+            {
+              "type": "row",
+              "index": 5
+            },
+            {
+              "type": "col",
+              "index": 7
+            }
+          ]
+        }
+      ],
+      "fingerprint": "8de238f307a95e7032c25a9e33b517dd",
+      "grid": [
+        [
+          {
+            "type": "source"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          {
+            "type": "mirror",
+            "mirror": "dl"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          {
+            "type": "frozen",
+            "color": "#4CC9F0"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          }
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          }
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          null,
+          {
+            "type": "target"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "8-2",
+      "name": "Warm Up",
+      "world": 8,
+      "difficulty": "easy",
+      "difficulty_score": 72,
+      "mechanic_focus": "chain_clear",
+      "min_moves": 3,
+      "piece_queue": [
+        {
+          "id": "p3",
+          "name": "CornerNE",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "CornerNE",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": true,
+          "count": 1
+        },
+        {
+          "id": "d2",
+          "name": "CornerSE",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": true,
+          "count": 1
+        },
+        {
+          "id": "p1",
+          "name": "Vertical2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "p2",
+          "name": "Horizontal2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": false,
           "count": 1
         }
       ],
@@ -1047,7 +1297,7 @@
           ]
         }
       ],
-      "fingerprint": "e605f4969269193f78e06ba9f62e0a4c",
+      "fingerprint": "28932699c851de8f43bb2260ce01cc4b",
       "grid": [
         [
           {
@@ -1266,55 +1516,108 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 8,
-      "levelIndex": 4,
-      "move_limit": 3,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p2",
-          "row": 1,
-          "col": 8
-        },
-        {
-          "step": 2,
-          "piece_id": "p3",
-          "row": 1,
-          "col": 2
-        },
-        {
-          "step": 3,
-          "piece_id": "p1",
-          "row": 2,
-          "col": 1
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
-      "id": "8-5",
-      "name": "Double Down",
+      "id": "8-3",
+      "name": "Getting There",
       "world": 8,
       "difficulty": "medium",
+      "difficulty_score": 73,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
         {
+          "id": "d1",
+          "name": "V_vertical",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#FFC75F",
+          "is_distractor": true,
+          "count": 1
+        },
+        {
+          "id": "d2",
+          "name": "V_vertical",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#FFC75F",
+          "is_distractor": true,
+          "count": 1
+        },
+        {
           "id": "p1",
-          "shape": "Single",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p3",
-          "shape": "Single",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p2",
-          "shape": "J_horizontal",
+          "name": "J_horizontal",
+          "shape": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "color": "#F72585",
+          "is_distractor": false,
           "count": 1
         }
       ],
@@ -1383,7 +1686,7 @@
           ]
         }
       ],
-      "fingerprint": "9c7a7aca255bf5ac4a3b867212bd4b1e",
+      "fingerprint": "f970cc696b497442c92e7edeeafe20e8",
       "grid": [
         [
           {
@@ -1602,60 +1905,120 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 8,
-      "levelIndex": 5,
-      "move_limit": 3,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p3",
-          "row": 1,
-          "col": 0
-        },
-        {
-          "step": 2,
-          "piece_id": "p1",
-          "row": 1,
-          "col": 7
-        },
-        {
-          "step": 3,
-          "piece_id": "p2",
-          "row": 1,
-          "col": 6
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
-      "id": "8-6",
-      "name": "Halfway",
+      "id": "8-10",
+      "name": "The Final Push",
       "world": 8,
-      "difficulty": "hard",
+      "difficulty": "expert",
+      "difficulty_score": 80,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
         {
           "id": "p1",
-          "shape": "L_horizontal",
+          "name": "L_horizontal",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "color": "#6A4C93",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p3",
-          "shape": "CornerSE",
+          "name": "CornerSE",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p4",
-          "shape": "CornerNE",
+          "name": "CornerNE",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "Horizontal2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": true,
           "count": 1
         },
         {
           "id": "p2",
-          "shape": "V_vertical_flipped",
+          "name": "V_vertical_flipped",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "color": "#FFC75F",
+          "is_distractor": false,
           "count": 1
         }
       ],
@@ -1721,7 +2084,7 @@
           ]
         }
       ],
-      "fingerprint": "cb7afbe170f4b3a01054330af4e564fb",
+      "fingerprint": "bfed15cb872f2c26471a6f4526c05e7e",
       "grid": [
         [
           {
@@ -1895,66 +2258,112 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 8,
-      "levelIndex": 6,
-      "move_limit": 4,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p4",
-          "row": 2,
-          "col": 4
-        },
-        {
-          "step": 2,
-          "piece_id": "p3",
-          "row": 0,
-          "col": 4
-        },
-        {
-          "step": 3,
-          "piece_id": "p2",
-          "row": 7,
-          "col": 4
-        },
-        {
-          "step": 4,
-          "piece_id": "p1",
-          "row": 5,
-          "col": 4
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
       "id": "8-7",
       "name": "Picking Up",
       "world": 8,
       "difficulty": "hard",
+      "difficulty_score": 77,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
         {
           "id": "p1",
-          "shape": "CornerSW",
+          "name": "CornerSW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p3",
-          "shape": "Vertical2",
+          "name": "Vertical2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p4",
-          "shape": "Horizontal2",
+          "name": "Horizontal2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p2",
-          "shape": "J_horizontal",
+          "name": "J_horizontal",
+          "shape": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "color": "#F72585",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "Vertical2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": true,
           "count": 1
         }
       ],
@@ -2028,7 +2437,7 @@
           ]
         }
       ],
-      "fingerprint": "df60ed3fe1b56f2cd082d47be917079d",
+      "fingerprint": "0c403b10ecc2289d7e191cda0f752e35",
       "grid": [
         [
           {
@@ -2232,66 +2641,112 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 8,
-      "levelIndex": 7,
-      "move_limit": 4,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p3",
-          "row": 8,
-          "col": 6
-        },
-        {
-          "step": 2,
-          "piece_id": "p2",
-          "row": 6,
-          "col": 0
-        },
-        {
-          "step": 3,
-          "piece_id": "p4",
-          "row": 6,
-          "col": 8
-        },
-        {
-          "step": 4,
-          "piece_id": "p1",
-          "row": 6,
-          "col": 6
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
-      "id": "8-8",
-      "name": "The Pressure",
+      "id": "8-9",
+      "name": "Almost There",
       "world": 8,
-      "difficulty": "hard",
+      "difficulty": "expert",
+      "difficulty_score": 79,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
         {
           "id": "p4",
-          "shape": "Single",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p3",
-          "shape": "CornerNW",
+          "name": "CornerNW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "Square",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#FFCA3A",
+          "is_distractor": true,
           "count": 1
         },
         {
           "id": "p1",
-          "shape": "Vertical2",
+          "name": "Vertical2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p2",
-          "shape": "CornerSW",
+          "name": "CornerSW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
           "count": 1
         }
       ],
@@ -2370,7 +2825,7 @@
           ]
         }
       ],
-      "fingerprint": "07836c267b0f28636d729ef8f88a4cf1",
+      "fingerprint": "59bc3f63ce24c74fdc3298b7a0617b52",
       "grid": [
         [
           {
@@ -2583,66 +3038,116 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 8,
-      "levelIndex": 8,
-      "move_limit": 4,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p3",
-          "row": 2,
-          "col": 7
-        },
-        {
-          "step": 2,
-          "piece_id": "p4",
-          "row": 7,
-          "col": 3
-        },
-        {
-          "step": 3,
-          "piece_id": "p2",
-          "row": 2,
-          "col": 5
-        },
-        {
-          "step": 4,
-          "piece_id": "p1",
-          "row": 1,
-          "col": 3
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
-      "id": "8-9",
-      "name": "Almost There",
+      "id": "8-8",
+      "name": "The Pressure",
       "world": 8,
-      "difficulty": "expert",
+      "difficulty": "hard",
+      "difficulty_score": 78,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
         {
           "id": "p4",
-          "shape": "CornerNE",
+          "name": "CornerNE",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p2",
-          "shape": "L_horizontal",
+          "name": "L_horizontal",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "color": "#6A4C93",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "V_vertical",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#FFC75F",
+          "is_distractor": true,
           "count": 1
         },
         {
           "id": "p3",
-          "shape": "V_reversed",
+          "name": "V_vertical",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#FFC75F",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p1",
-          "shape": "Single",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "is_distractor": false,
           "count": 1
         }
       ],
@@ -2724,7 +3229,7 @@
           ]
         }
       ],
-      "fingerprint": "69948bc0f21268d09c704869440ffa40",
+      "fingerprint": "40eeee9eeca9dc5eb53eb66b3656883b",
       "grid": [
         [
           {
@@ -2952,66 +3457,124 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 8,
-      "levelIndex": 9,
-      "move_limit": 4,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p1",
-          "row": 7,
-          "col": 3
-        },
-        {
-          "step": 2,
-          "piece_id": "p4",
-          "row": 0,
-          "col": 2
-        },
-        {
-          "step": 3,
-          "piece_id": "p3",
-          "row": 2,
-          "col": 2
-        },
-        {
-          "step": 4,
-          "piece_id": "p2",
-          "row": 7,
-          "col": 2
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
-      "id": "8-10",
-      "name": "The Final Push",
+      "id": "8-6",
+      "name": "Halfway",
       "world": 8,
-      "difficulty": "expert",
+      "difficulty": "hard",
+      "difficulty_score": 76,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
         {
           "id": "p1",
-          "shape": "V_reversed",
+          "name": "V_vertical",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#FFC75F",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p3",
-          "shape": "CornerSE",
+          "name": "CornerSE",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p4",
-          "shape": "CornerNW",
+          "name": "CornerNW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p2",
-          "shape": "CornerNW",
+          "name": "CornerNW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "J_horizontal",
+          "shape": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "color": "#F72585",
+          "is_distractor": true,
           "count": 1
         }
       ],
@@ -3098,7 +3661,7 @@
           ]
         }
       ],
-      "fingerprint": "0f143d1c103d58e12bc9cb63ead7e02c",
+      "fingerprint": "e7c510011d7b824f560725501a3d4ace",
       "grid": [
         [
           {
@@ -3329,39 +3892,7 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 8,
-      "levelIndex": 10,
-      "move_limit": 4,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p4",
-          "row": 4,
-          "col": 1
-        },
-        {
-          "step": 2,
-          "piece_id": "p3",
-          "row": 6,
-          "col": 3
-        },
-        {
-          "step": 3,
-          "piece_id": "p2",
-          "row": 3,
-          "col": 7
-        },
-        {
-          "step": 4,
-          "piece_id": "p1",
-          "row": 4,
-          "col": 4
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     }
   ]
 }

@@ -45,7 +45,7 @@ function cellFromTool(tool: ToolType, mirrorType: MirrorType, sourceDir: Dir = '
   return null
 }
 
-type PlayPiece = { id: string; shape: PieceShape; originalId: string }
+type PlayPiece = { id: string; name: PieceShape; originalId: string }
 
 interface EditorStore {
   worlds: World[]
@@ -201,7 +201,7 @@ export const useEditorStore = create<EditorStore>()(
         return {
           activeLevel: {
             ...state.activeLevel,
-            piece_queue: [...state.activeLevel.piece_queue, { id: crypto.randomUUID(), shape, count }],
+            piece_queue: [...state.activeLevel.piece_queue, { id: crypto.randomUUID(), name: shape, count }],
           },
           isDirty: true,
         }
@@ -427,7 +427,7 @@ export const useEditorStore = create<EditorStore>()(
       if (!piece) return { ok: false, clearedMirrors: 0, win: false, lose: false }
       const cells: [number, number][] = []
       const nextGrid = state.playGrid.map((r) => [...r])
-      for (const [dr, dc] of PIECE_SHAPES[piece.shape]) {
+      for (const [dr, dc] of PIECE_SHAPES[piece.name]) {
         const rr = row + dr
         const cc = col + dc
         if (rr < 0 || rr >= GRID_SIZE || cc < 0 || cc >= GRID_SIZE || nextGrid[rr][cc] !== null) {
@@ -449,7 +449,7 @@ export const useEditorStore = create<EditorStore>()(
         nextSolutionMoves.push({
           step: nextSolutionMoves.length + 1,
           piece_id: piece.originalId,
-          shape: piece.shape,
+          shape: piece.name,
           row,
           col,
         })
@@ -556,7 +556,7 @@ function flattenQueue(queue: Level['piece_queue']): PlayPiece[] {
   return queue.flatMap((item, idx) =>
     Array.from({ length: item.count }, (_, i) => ({
       id: `${item.id}-${idx}-${i}`,
-      shape: item.shape,
+      name: item.name,
       originalId: item.id,
     }))
   )

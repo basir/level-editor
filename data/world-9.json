@@ -3,26 +3,117 @@
   "worldName": "Ruins",
   "levels": [
     {
-      "id": "9-1",
-      "name": "First Steps",
+      "id": "9-2",
+      "name": "Warm Up",
       "world": 9,
       "difficulty": "easy",
+      "difficulty_score": 82,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
         {
+          "id": "d1",
+          "name": "J_reversed",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#F72585",
+          "is_distractor": true,
+          "count": 1
+        },
+        {
           "id": "p1",
-          "shape": "CornerSW",
+          "name": "CornerSW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p2",
-          "shape": "V",
+          "name": "V",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "color": "#FFC75F",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p3",
-          "shape": "Horizontal3",
+          "name": "Horizontal3",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "color": "#1982C4",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d2",
+          "name": "Vertical2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": true,
           "count": 1
         }
       ],
@@ -83,7 +174,7 @@
           ]
         }
       ],
-      "fingerprint": "938e6bf49d2a9c683f2442cc3d26f8d5",
+      "fingerprint": "136e30d906ad808f23a234cd56a8252b",
       "grid": [
         [
           {
@@ -269,55 +360,108 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 9,
-      "levelIndex": 1,
-      "move_limit": 3,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p3",
-          "row": 5,
-          "col": 4
-        },
-        {
-          "step": 2,
-          "piece_id": "p2",
-          "row": 5,
-          "col": 7
-        },
-        {
-          "step": 3,
-          "piece_id": "p1",
-          "row": 5,
-          "col": 2
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
-      "id": "9-2",
-      "name": "Warm Up",
+      "id": "9-3",
+      "name": "Getting There",
       "world": 9,
-      "difficulty": "easy",
+      "difficulty": "medium",
+      "difficulty_score": 83,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
         {
           "id": "p3",
-          "shape": "V",
+          "name": "V",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "color": "#FFC75F",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p2",
-          "shape": "CornerNW",
+          "name": "CornerNW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p1",
-          "shape": "Single",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d2",
+          "name": "Horizontal2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": true,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "V",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "color": "#FFC75F",
+          "is_distractor": true,
           "count": 1
         }
       ],
@@ -378,7 +522,7 @@
           ]
         }
       ],
-      "fingerprint": "5cb9e06dba5a478ef19abb93bf3edcff",
+      "fingerprint": "4f627830bbd9555fb0f645aa20f613a5",
       "grid": [
         [
           {
@@ -570,384 +714,510 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 9,
-      "levelIndex": 2,
-      "move_limit": 3,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p2",
-          "row": 4,
-          "col": 6
-        },
-        {
-          "step": 2,
-          "piece_id": "p1",
-          "row": 8,
-          "col": 6
-        },
-        {
-          "step": 3,
-          "piece_id": "p3",
-          "row": 8,
-          "col": 5
-        }
-      ],
-      "notes": "Focus: chain_clear"
-    },
-    {
-      "id": "9-3",
-      "name": "Getting There",
-      "world": 9,
-      "difficulty": "medium",
-      "mechanic_focus": "chain_clear",
-      "min_moves": 3,
-      "piece_queue": [
-        {
-          "id": "p2",
-          "shape": "Z",
-          "count": 1
-        },
-        {
-          "id": "p1",
-          "shape": "CornerSE",
-          "count": 1
-        },
-        {
-          "id": "p3",
-          "shape": "T_reversed",
-          "count": 1
-        }
-      ],
-      "distractors": [
-        "d1",
-        "d2"
-      ],
-      "solution": [
-        {
-          "step": 1,
-          "piece_id": "p3",
-          "row": 4,
-          "col": 1
-        },
-        {
-          "step": 2,
-          "piece_id": "p2",
-          "row": 3,
-          "col": 5
-        },
-        {
-          "step": 3,
-          "piece_id": "p1",
-          "row": 4,
-          "col": 4
-        }
-      ],
-      "target_clears": [
-        {
-          "type": "row",
-          "index": 3
-        },
-        {
-          "type": "row",
-          "index": 4
-        },
-        {
-          "type": "row",
-          "index": 5
-        },
-        {
-          "type": "col",
-          "index": 4
-        }
-      ],
-      "clear_chain": [
-        {
-          "trigger": "p2_placement",
-          "clears": [
-            {
-              "type": "row",
-              "index": 3
-            }
-          ]
-        },
-        {
-          "trigger": "p1_placement",
-          "clears": [
-            {
-              "type": "row",
-              "index": 4
-            },
-            {
-              "type": "row",
-              "index": 5
-            },
-            {
-              "type": "col",
-              "index": 4
-            }
-          ]
-        }
-      ],
-      "fingerprint": "eaf1f1cc36b11938c8a8421190451154",
-      "grid": [
-        [
-          {
-            "type": "source"
-          },
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "mirror",
-            "mirror": "dl"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "frozen",
-            "color": "#4CC9F0"
-          },
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          }
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          }
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          null,
-          null,
-          null,
-          {
-            "type": "frozen",
-            "color": "#1982C4"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "target"
-          }
-        ]
-      ],
-      "worldId": 9,
-      "levelIndex": 3,
-      "move_limit": 3,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p3",
-          "row": 4,
-          "col": 1
-        },
-        {
-          "step": 2,
-          "piece_id": "p2",
-          "row": 3,
-          "col": 5
-        },
-        {
-          "step": 3,
-          "piece_id": "p1",
-          "row": 4,
-          "col": 4
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
       "id": "9-4",
       "name": "Finding Flow",
       "world": 9,
       "difficulty": "medium",
+      "difficulty_score": 84,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
         {
-          "id": "p3",
-          "shape": "L_reversed",
+          "id": "d2",
+          "name": "Vertical2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": true,
           "count": 1
         },
         {
           "id": "p2",
-          "shape": "Horizontal2",
+          "name": "Z",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "color": "#FF9671",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p1",
-          "shape": "CornerSW",
+          "name": "CornerSE",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "Vertical2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": true,
+          "count": 1
+        },
+        {
+          "id": "p3",
+          "name": "T_reversed",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "color": "#4CC9F0",
+          "is_distractor": false,
+          "count": 1
+        }
+      ],
+      "distractors": [
+        "d1",
+        "d2"
+      ],
+      "solution": [
+        {
+          "step": 1,
+          "piece_id": "p3",
+          "row": 4,
+          "col": 1
+        },
+        {
+          "step": 2,
+          "piece_id": "p2",
+          "row": 3,
+          "col": 5
+        },
+        {
+          "step": 3,
+          "piece_id": "p1",
+          "row": 4,
+          "col": 4
+        }
+      ],
+      "target_clears": [
+        {
+          "type": "row",
+          "index": 3
+        },
+        {
+          "type": "row",
+          "index": 4
+        },
+        {
+          "type": "row",
+          "index": 5
+        },
+        {
+          "type": "col",
+          "index": 4
+        }
+      ],
+      "clear_chain": [
+        {
+          "trigger": "p2_placement",
+          "clears": [
+            {
+              "type": "row",
+              "index": 3
+            }
+          ]
+        },
+        {
+          "trigger": "p1_placement",
+          "clears": [
+            {
+              "type": "row",
+              "index": 4
+            },
+            {
+              "type": "row",
+              "index": 5
+            },
+            {
+              "type": "col",
+              "index": 4
+            }
+          ]
+        }
+      ],
+      "fingerprint": "431403ba13f5c4cd3fab5381ab5e1216",
+      "grid": [
+        [
+          {
+            "type": "source"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "mirror",
+            "mirror": "dl"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          {
+            "type": "frozen",
+            "color": "#4CC9F0"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          }
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          }
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "frozen",
+            "color": "#1982C4"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "target"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "9-1",
+      "name": "First Steps",
+      "world": 9,
+      "difficulty": "easy",
+      "difficulty_score": 81,
+      "mechanic_focus": "chain_clear",
+      "min_moves": 3,
+      "piece_queue": [
+        {
+          "id": "d2",
+          "name": "V_reversed",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#FFC75F",
+          "is_distractor": true,
+          "count": 1
+        },
+        {
+          "id": "p3",
+          "name": "L_reversed",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "color": "#6A4C93",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "p2",
+          "name": "Horizontal2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "p1",
+          "name": "CornerSW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "Vertical2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": true,
           "count": 1
         }
       ],
@@ -1021,7 +1291,7 @@
           ]
         }
       ],
-      "fingerprint": "ec3a5aa72a6b53752fa5191f77a37d4c",
+      "fingerprint": "986a82866390121d421688feed5359f9",
       "grid": [
         [
           {
@@ -1234,55 +1504,136 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 9,
-      "levelIndex": 4,
-      "move_limit": 3,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p3",
-          "row": 3,
-          "col": 3
-        },
-        {
-          "step": 2,
-          "piece_id": "p1",
-          "row": 4,
-          "col": 4
-        },
-        {
-          "step": 3,
-          "piece_id": "p2",
-          "row": 3,
-          "col": 8
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
       "id": "9-5",
       "name": "Double Down",
       "world": 9,
       "difficulty": "medium",
+      "difficulty_score": 85,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
         {
           "id": "p2",
-          "shape": "Square",
+          "name": "Square",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#FFCA3A",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "CornerSW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": true,
           "count": 1
         },
         {
           "id": "p1",
-          "shape": "T_reversed",
+          "name": "T_reversed",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "color": "#4CC9F0",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p3",
-          "shape": "T",
+          "name": "T",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#4CC9F0",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d2",
+          "name": "L",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#6A4C93",
+          "is_distractor": true,
           "count": 1
         }
       ],
@@ -1359,7 +1710,7 @@
           ]
         }
       ],
-      "fingerprint": "045f4c19a22216c364c95ef443f410d5",
+      "fingerprint": "ffb1bc7ddebcae8b73b317c7cec72c1c",
       "grid": [
         [
           {
@@ -1584,60 +1935,132 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 9,
-      "levelIndex": 5,
-      "move_limit": 3,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p3",
-          "row": 2,
-          "col": 5
-        },
-        {
-          "step": 2,
-          "piece_id": "p2",
-          "row": 5,
-          "col": 1
-        },
-        {
-          "step": 3,
-          "piece_id": "p1",
-          "row": 2,
-          "col": 1
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
-      "id": "9-6",
-      "name": "Halfway",
+      "id": "9-10",
+      "name": "The Final Push",
       "world": 9,
-      "difficulty": "hard",
+      "difficulty": "expert",
+      "difficulty_score": 90,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
         {
           "id": "p4",
-          "shape": "CornerSW",
+          "name": "CornerSW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p1",
-          "shape": "L_reversed",
+          "name": "L_reversed",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "color": "#6A4C93",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "Vertical3",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "color": "#1982C4",
+          "is_distractor": true,
           "count": 1
         },
         {
           "id": "p2",
-          "shape": "S",
+          "name": "S",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#FF6F91",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p3",
-          "shape": "J",
+          "name": "J",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "color": "#F72585",
+          "is_distractor": false,
           "count": 1
         }
       ],
@@ -1711,7 +2134,7 @@
           ]
         }
       ],
-      "fingerprint": "682559e83dcd926c5a685d2887913913",
+      "fingerprint": "bdababfdafb9001fc4fffdd80efd5594",
       "grid": [
         [
           {
@@ -1903,66 +2326,120 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 9,
-      "levelIndex": 6,
-      "move_limit": 4,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p2",
-          "row": 4,
-          "col": 7
-        },
-        {
-          "step": 2,
-          "piece_id": "p4",
-          "row": 2,
-          "col": 6
-        },
-        {
-          "step": 3,
-          "piece_id": "p3",
-          "row": 7,
-          "col": 6
-        },
-        {
-          "step": 4,
-          "piece_id": "p1",
-          "row": 4,
-          "col": 6
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
-      "id": "9-7",
-      "name": "Picking Up",
+      "id": "9-6",
+      "name": "Halfway",
       "world": 9,
       "difficulty": "hard",
+      "difficulty_score": 86,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
         {
           "id": "p3",
-          "shape": "Horizontal2",
+          "name": "Horizontal2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p4",
-          "shape": "T_reversed",
+          "name": "T_reversed",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "color": "#4CC9F0",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p2",
-          "shape": "Horizontal3",
+          "name": "Horizontal3",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "color": "#1982C4",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p1",
-          "shape": "V_reversed",
+          "name": "V_reversed",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#FFC75F",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "CornerSW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": true,
           "count": 1
         }
       ],
@@ -2036,7 +2513,7 @@
           ]
         }
       ],
-      "fingerprint": "d4f6572191f2b0079ab4ff8422053e33",
+      "fingerprint": "49b3eb0c150067bb2d02a5355a84eb61",
       "grid": [
         [
           {
@@ -2240,66 +2717,124 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 9,
-      "levelIndex": 7,
-      "move_limit": 4,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p4",
-          "row": 5,
-          "col": 4
-        },
-        {
-          "step": 2,
-          "piece_id": "p3",
-          "row": 7,
-          "col": 3
-        },
-        {
-          "step": 3,
-          "piece_id": "p2",
-          "row": 5,
-          "col": 2
-        },
-        {
-          "step": 4,
-          "piece_id": "p1",
-          "row": 5,
-          "col": 7
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
-      "id": "9-8",
-      "name": "The Pressure",
+      "id": "9-9",
+      "name": "Almost There",
       "world": 9,
-      "difficulty": "hard",
+      "difficulty": "expert",
+      "difficulty_score": 89,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
         {
           "id": "p2",
-          "shape": "S",
+          "name": "S",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#FF6F91",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p1",
-          "shape": "Vertical2",
+          "name": "Vertical2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p3",
-          "shape": "CornerNW",
+          "name": "CornerNW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "J_reversed",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#F72585",
+          "is_distractor": true,
           "count": 1
         },
         {
           "id": "p4",
-          "shape": "Vertical3",
+          "name": "Vertical3",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "color": "#1982C4",
+          "is_distractor": false,
           "count": 1
         }
       ],
@@ -2378,7 +2913,7 @@
           ]
         }
       ],
-      "fingerprint": "fde39a63ac40210cb5a88fad8c911a38",
+      "fingerprint": "2e1b2943e0310ce3af577e7c8b0c2469",
       "grid": [
         [
           {
@@ -2582,66 +3117,116 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 9,
-      "levelIndex": 8,
-      "move_limit": 4,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p2",
-          "row": 4,
-          "col": 6
-        },
-        {
-          "step": 2,
-          "piece_id": "p3",
-          "row": 5,
-          "col": 8
-        },
-        {
-          "step": 3,
-          "piece_id": "p4",
-          "row": 4,
-          "col": 3
-        },
-        {
-          "step": 4,
-          "piece_id": "p1",
-          "row": 5,
-          "col": 5
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
-      "id": "9-9",
-      "name": "Almost There",
+      "id": "9-8",
+      "name": "The Pressure",
       "world": 9,
-      "difficulty": "expert",
+      "difficulty": "hard",
+      "difficulty_score": 88,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
         {
           "id": "p4",
-          "shape": "V",
+          "name": "V",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "color": "#FFC75F",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p2",
-          "shape": "Square",
+          "name": "Square",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#FFCA3A",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p1",
-          "shape": "Vertical2",
+          "name": "Vertical2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#FF924C",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p3",
-          "shape": "Single",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "J_reversed",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#F72585",
+          "is_distractor": true,
           "count": 1
         }
       ],
@@ -2720,7 +3305,7 @@
           ]
         }
       ],
-      "fingerprint": "69551b656c918af6095b883c72b68e6f",
+      "fingerprint": "61a67fc18c5fe7ed97fc65027c017867",
       "grid": [
         [
           {
@@ -2930,66 +3515,132 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 9,
-      "levelIndex": 9,
-      "move_limit": 4,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p3",
-          "row": 5,
-          "col": 3
-        },
-        {
-          "step": 2,
-          "piece_id": "p4",
-          "row": 6,
-          "col": 2
-        },
-        {
-          "step": 3,
-          "piece_id": "p1",
-          "row": 1,
-          "col": 4
-        },
-        {
-          "step": 4,
-          "piece_id": "p2",
-          "row": 8,
-          "col": 2
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     },
     {
-      "id": "9-10",
-      "name": "The Final Push",
+      "id": "9-7",
+      "name": "Picking Up",
       "world": 9,
-      "difficulty": "expert",
+      "difficulty": "hard",
+      "difficulty_score": 87,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
         {
           "id": "p2",
-          "shape": "T",
+          "name": "T",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#4CC9F0",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p3",
-          "shape": "Z",
+          "name": "Z",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "color": "#FF9671",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p4",
-          "shape": "Horizontal3",
+          "name": "Horizontal3",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "color": "#1982C4",
+          "is_distractor": false,
           "count": 1
         },
         {
           "id": "p1",
-          "shape": "V",
+          "name": "V",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "color": "#FFC75F",
+          "is_distractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "Square",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#FFCA3A",
+          "is_distractor": true,
           "count": 1
         }
       ],
@@ -3076,7 +3727,7 @@
           ]
         }
       ],
-      "fingerprint": "2d583fab44e10c3c0a874709d0a3bc9f",
+      "fingerprint": "a21a5b40f6df573bba88000e57ebd0f7",
       "grid": [
         [
           {
@@ -3295,39 +3946,7 @@
             "type": "target"
           }
         ]
-      ],
-      "worldId": 9,
-      "levelIndex": 10,
-      "move_limit": 4,
-      "solution_mirrors": [],
-      "solution_path": [],
-      "solution_moves": [
-        {
-          "step": 1,
-          "piece_id": "p3",
-          "row": 2,
-          "col": 0
-        },
-        {
-          "step": 2,
-          "piece_id": "p4",
-          "row": 2,
-          "col": 2
-        },
-        {
-          "step": 3,
-          "piece_id": "p2",
-          "row": 2,
-          "col": 7
-        },
-        {
-          "step": 4,
-          "piece_id": "p1",
-          "row": 1,
-          "col": 4
-        }
-      ],
-      "notes": "Focus: chain_clear"
+      ]
     }
   ]
 }

@@ -32,7 +32,7 @@ export async function POST() {
         desc: w.desc || `World ${w.id}: ${w.name}. Classic block puzzle mechanics.`,
         level_count: w.levels.length,
         levels: w.levels.map((l: any) => ({
-          id: l.levelIndex || parseInt(l.id.split('-')[1]) || 1,
+          id: l.id,
           name: l.name,
           difficulty: l.difficulty > 20 ? 'hard' : l.difficulty > 10 ? 'medium' : 'easy',
           fingerprint: l.fingerprint,
@@ -51,20 +51,19 @@ export async function POST() {
         desc: w.desc || `World ${w.id}: ${w.name}. Classic block puzzle mechanics.`,
         levels: w.levels.map((level: any) => {
           // Reverse transformation
-          const { 
-            worldId, 
-            levelIndex, 
-            id, 
-            move_limit, 
-            piece_queue, 
+          const {
+            worldId,
+            id,
+            move_limit,
+            piece_queue,
             grid,
             difficulty_score,
-            ...rest 
+            ...rest
           } = level;
 
           return {
             ...rest,
-            id: levelIndex || parseInt(id.split('-')[1]) || 1,
+            id: level.id,
             name: level.name,
             world: w.id,
             min_moves: move_limit,

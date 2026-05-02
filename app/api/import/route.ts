@@ -34,36 +34,32 @@ export async function GET() {
           const worldDataRaw = await fs.readFile(path.join(outputPath, `world-${w.id}.json`), 'utf-8');
           const worldData = JSON.parse(worldDataRaw);
 
-          const transformedLevels = worldData.levels.map((level: any) => {
-            // Map generator level to editor level
-            return {
-              ...level,
-              worldId: w.id,
-              levelIndex: level.id,
-              id: `${w.id}-${level.id}`,
-              move_limit: level.min_moves || 20,
-              piece_queue: (level.piece_queue || [])
-                .filter((p: any) => !p.is_distractor)
-                .map((p: any) => {
-                  const norm = normalize(p.shape);
-                  const shapeName = SHAPE_MAP.get(norm) || 'Single'; // fallback to Single if unknown
-                  return {
-                    id: p.id || crypto.randomUUID(),
-                    shape: shapeName,
-                    count: 1,
-                  };
-                }),
-              grid: level.grid || [],
-              solution: level.solution || [],
-              notes: level.mechanic_focus ? `Focus: ${level.mechanic_focus}` : '',
-            };
-          });
+          // const transformedLevels = worldData.levels.map((level: any) => {
+          //   // Map generator level to editor level
+          //   return {
+          //     ...level,
+          //     piece_queue: (level.piece_queue || [])
+          //       // .filter((p: any) => !p.is_distractor)
+          //       .map((p: any) => {
+          //         const norm = normalize(p.shape);
+          //         const shapeName = SHAPE_MAP.get(norm) || 'Single'; // fallback to Single if unknown
+          //         return {
+          //           id: p.id || crypto.randomUUID(),
+          //           shape: shapeName,
+          //           count: 1,
+          //         };
+          //       }),
+          //     grid: level.grid || [],
+          //     solution: level.solution || [],
+          //     notes: level.mechanic_focus ? `Focus: ${level.mechanic_focus}` : '',
+          //   };
+          // });
 
           return {
             id: w.id,
             name: w.name,
-            levelCount: transformedLevels.length,
-            levels: transformedLevels,
+            levelCount: worldData.levels.length,
+            levels: worldData.levels,
           };
         } catch (e) {
           console.error(`Failed to read world-${w.id}.json`, e);
