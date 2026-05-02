@@ -3,11 +3,11 @@
   "worldName": "Snowstorm",
   "levels": [
     {
-      "id": "24-4",
-      "name": "Finding Flow",
+      "id": "24-1",
+      "name": "First Steps",
       "world": 24,
-      "difficulty": "medium",
-      "difficulty_score": 234,
+      "difficulty": "easy",
+      "difficulty_score": 231,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -364,11 +364,11 @@
       ]
     },
     {
-      "id": "24-1",
-      "name": "First Steps",
+      "id": "24-2",
+      "name": "Warm Up",
       "world": 24,
       "difficulty": "easy",
-      "difficulty_score": 231,
+      "difficulty_score": 232,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -725,11 +725,11 @@
       ]
     },
     {
-      "id": "24-2",
-      "name": "Warm Up",
+      "id": "24-3",
+      "name": "Getting There",
       "world": 24,
-      "difficulty": "easy",
-      "difficulty_score": 232,
+      "difficulty": "medium",
+      "difficulty_score": 233,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1122,11 +1122,11 @@
       ]
     },
     {
-      "id": "24-5",
-      "name": "Double Down",
+      "id": "24-4",
+      "name": "Finding Flow",
       "world": 24,
       "difficulty": "medium",
-      "difficulty_score": 235,
+      "difficulty_score": 234,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1514,11 +1514,11 @@
       ]
     },
     {
-      "id": "24-3",
-      "name": "Getting There",
+      "id": "24-5",
+      "name": "Double Down",
       "world": 24,
       "difficulty": "medium",
-      "difficulty_score": 233,
+      "difficulty_score": 235,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1936,11 +1936,11 @@
       ]
     },
     {
-      "id": "24-7",
-      "name": "Picking Up",
+      "id": "24-6",
+      "name": "Halfway",
       "world": 24,
       "difficulty": "hard",
-      "difficulty_score": 237,
+      "difficulty_score": 236,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2315,11 +2315,11 @@
       ]
     },
     {
-      "id": "24-6",
-      "name": "Halfway",
+      "id": "24-7",
+      "name": "Picking Up",
       "world": 24,
       "difficulty": "hard",
-      "difficulty_score": 236,
+      "difficulty_score": 237,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2687,11 +2687,11 @@
       ]
     },
     {
-      "id": "24-10",
-      "name": "The Final Push",
+      "id": "24-8",
+      "name": "The Pressure",
       "world": 24,
-      "difficulty": "expert",
-      "difficulty_score": 240,
+      "difficulty": "hard",
+      "difficulty_score": 238,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3054,11 +3054,11 @@
       ]
     },
     {
-      "id": "24-8",
-      "name": "The Pressure",
+      "id": "24-9",
+      "name": "Almost There",
       "world": 24,
-      "difficulty": "hard",
-      "difficulty_score": 238,
+      "difficulty": "expert",
+      "difficulty_score": 239,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3465,11 +3465,11 @@
       ]
     },
     {
-      "id": "24-9",
-      "name": "Almost There",
+      "id": "24-10",
+      "name": "The Final Push",
       "world": 24,
       "difficulty": "expert",
-      "difficulty_score": 239,
+      "difficulty_score": 240,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

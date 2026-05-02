@@ -3,11 +3,11 @@
   "worldName": "Solar Flare",
   "levels": [
     {
-      "id": "15-3",
-      "name": "Getting There",
+      "id": "15-1",
+      "name": "First Steps",
       "world": 15,
-      "difficulty": "medium",
-      "difficulty_score": 143,
+      "difficulty": "easy",
+      "difficulty_score": 141,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -368,11 +368,11 @@
       ]
     },
     {
-      "id": "15-1",
-      "name": "First Steps",
+      "id": "15-2",
+      "name": "Warm Up",
       "world": 15,
       "difficulty": "easy",
-      "difficulty_score": 141,
+      "difficulty_score": 142,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -733,11 +733,11 @@
       ]
     },
     {
-      "id": "15-2",
-      "name": "Warm Up",
+      "id": "15-3",
+      "name": "Getting There",
       "world": 15,
-      "difficulty": "easy",
-      "difficulty_score": 142,
+      "difficulty": "medium",
+      "difficulty_score": 143,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -1919,11 +1919,11 @@
       ]
     },
     {
-      "id": "15-10",
-      "name": "The Final Push",
+      "id": "15-6",
+      "name": "Halfway",
       "world": 15,
-      "difficulty": "expert",
-      "difficulty_score": 150,
+      "difficulty": "hard",
+      "difficulty_score": 146,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -2312,11 +2312,11 @@
       ]
     },
     {
-      "id": "15-6",
-      "name": "Halfway",
+      "id": "15-7",
+      "name": "Picking Up",
       "world": 15,
       "difficulty": "hard",
-      "difficulty_score": 146,
+      "difficulty_score": 147,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -3114,11 +3114,11 @@
       ]
     },
     {
-      "id": "15-7",
-      "name": "Picking Up",
+      "id": "15-9",
+      "name": "Almost There",
       "world": 15,
-      "difficulty": "hard",
-      "difficulty_score": 147,
+      "difficulty": "expert",
+      "difficulty_score": 149,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -3501,11 +3501,11 @@
       ]
     },
     {
-      "id": "15-9",
-      "name": "Almost There",
+      "id": "15-10",
+      "name": "The Final Push",
       "world": 15,
       "difficulty": "expert",
-      "difficulty_score": 149,
+      "difficulty_score": 150,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

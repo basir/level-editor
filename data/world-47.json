@@ -3,11 +3,11 @@
   "worldName": "Void Echo",
   "levels": [
     {
-      "id": "47-10",
-      "name": "The Final Push",
+      "id": "47-1",
+      "name": "First Steps",
       "world": 47,
-      "difficulty": "expert",
-      "difficulty_score": 470,
+      "difficulty": "easy",
+      "difficulty_score": 461,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -407,11 +407,11 @@
       ]
     },
     {
-      "id": "47-5",
-      "name": "Double Down",
+      "id": "47-2",
+      "name": "Warm Up",
       "world": 47,
-      "difficulty": "medium",
-      "difficulty_score": 465,
+      "difficulty": "easy",
+      "difficulty_score": 462,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -810,11 +810,11 @@
       ]
     },
     {
-      "id": "47-4",
-      "name": "Finding Flow",
+      "id": "47-3",
+      "name": "Getting There",
       "world": 47,
       "difficulty": "medium",
-      "difficulty_score": 464,
+      "difficulty_score": 463,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -1220,11 +1220,11 @@
       ]
     },
     {
-      "id": "47-3",
-      "name": "Getting There",
+      "id": "47-4",
+      "name": "Finding Flow",
       "world": 47,
       "difficulty": "medium",
-      "difficulty_score": 463,
+      "difficulty_score": 464,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -1634,11 +1634,11 @@
       ]
     },
     {
-      "id": "47-9",
-      "name": "Almost There",
+      "id": "47-5",
+      "name": "Double Down",
       "world": 47,
-      "difficulty": "expert",
-      "difficulty_score": 469,
+      "difficulty": "medium",
+      "difficulty_score": 465,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2445,11 +2445,11 @@
       ]
     },
     {
-      "id": "47-1",
-      "name": "First Steps",
+      "id": "47-7",
+      "name": "Picking Up",
       "world": 47,
-      "difficulty": "easy",
-      "difficulty_score": 461,
+      "difficulty": "hard",
+      "difficulty_score": 467,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3288,11 +3288,11 @@
       ]
     },
     {
-      "id": "47-2",
-      "name": "Warm Up",
+      "id": "47-9",
+      "name": "Almost There",
       "world": 47,
-      "difficulty": "easy",
-      "difficulty_score": 462,
+      "difficulty": "expert",
+      "difficulty_score": 469,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3721,11 +3721,11 @@
       ]
     },
     {
-      "id": "47-7",
-      "name": "Picking Up",
+      "id": "47-10",
+      "name": "The Final Push",
       "world": 47,
-      "difficulty": "hard",
-      "difficulty_score": 467,
+      "difficulty": "expert",
+      "difficulty_score": 470,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

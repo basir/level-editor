@@ -3,11 +3,11 @@
   "worldName": "Magma Chamber",
   "levels": [
     {
-      "id": "31-4",
-      "name": "Finding Flow",
+      "id": "31-1",
+      "name": "First Steps",
       "world": 31,
-      "difficulty": "medium",
-      "difficulty_score": 304,
+      "difficulty": "easy",
+      "difficulty_score": 301,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -406,11 +406,11 @@
       ]
     },
     {
-      "id": "31-1",
-      "name": "First Steps",
+      "id": "31-2",
+      "name": "Warm Up",
       "world": 31,
       "difficulty": "easy",
-      "difficulty_score": 301,
+      "difficulty_score": 302,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -807,11 +807,11 @@
       ]
     },
     {
-      "id": "31-2",
-      "name": "Warm Up",
+      "id": "31-3",
+      "name": "Getting There",
       "world": 31,
-      "difficulty": "easy",
-      "difficulty_score": 302,
+      "difficulty": "medium",
+      "difficulty_score": 303,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1199,11 +1199,11 @@
       ]
     },
     {
-      "id": "31-3",
-      "name": "Getting There",
+      "id": "31-4",
+      "name": "Finding Flow",
       "world": 31,
       "difficulty": "medium",
-      "difficulty_score": 303,
+      "difficulty_score": 304,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -2044,11 +2044,11 @@
       ]
     },
     {
-      "id": "31-10",
-      "name": "The Final Push",
+      "id": "31-6",
+      "name": "Halfway",
       "world": 31,
-      "difficulty": "expert",
-      "difficulty_score": 310,
+      "difficulty": "hard",
+      "difficulty_score": 306,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3281,11 +3281,11 @@
       ]
     },
     {
-      "id": "31-6",
-      "name": "Halfway",
+      "id": "31-9",
+      "name": "Almost There",
       "world": 31,
-      "difficulty": "hard",
-      "difficulty_score": 306,
+      "difficulty": "expert",
+      "difficulty_score": 309,
       "mechanic_focus": "chain_clear",
       "min_moves": 6,
       "piece_queue": [
@@ -3683,11 +3683,11 @@
       ]
     },
     {
-      "id": "31-9",
-      "name": "Almost There",
+      "id": "31-10",
+      "name": "The Final Push",
       "world": 31,
       "difficulty": "expert",
-      "difficulty_score": 309,
+      "difficulty_score": 310,
       "mechanic_focus": "chain_clear",
       "min_moves": 6,
       "piece_queue": [

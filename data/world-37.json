@@ -3,11 +3,11 @@
   "worldName": "Sulfur Vents",
   "levels": [
     {
-      "id": "37-4",
-      "name": "Finding Flow",
+      "id": "37-1",
+      "name": "First Steps",
       "world": 37,
-      "difficulty": "medium",
-      "difficulty_score": 364,
+      "difficulty": "easy",
+      "difficulty_score": 361,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -355,11 +355,11 @@
       ]
     },
     {
-      "id": "37-5",
-      "name": "Double Down",
+      "id": "37-2",
+      "name": "Warm Up",
       "world": 37,
-      "difficulty": "medium",
-      "difficulty_score": 365,
+      "difficulty": "easy",
+      "difficulty_score": 362,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1140,11 +1140,11 @@
       ]
     },
     {
-      "id": "37-1",
-      "name": "First Steps",
+      "id": "37-4",
+      "name": "Finding Flow",
       "world": 37,
-      "difficulty": "easy",
-      "difficulty_score": 361,
+      "difficulty": "medium",
+      "difficulty_score": 364,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1533,11 +1533,11 @@
       ]
     },
     {
-      "id": "37-2",
-      "name": "Warm Up",
+      "id": "37-5",
+      "name": "Double Down",
       "world": 37,
-      "difficulty": "easy",
-      "difficulty_score": 362,
+      "difficulty": "medium",
+      "difficulty_score": 365,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1930,11 +1930,11 @@
       ]
     },
     {
-      "id": "37-8",
-      "name": "The Pressure",
+      "id": "37-6",
+      "name": "Halfway",
       "world": 37,
       "difficulty": "hard",
-      "difficulty_score": 368,
+      "difficulty_score": 366,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2333,11 +2333,11 @@
       ]
     },
     {
-      "id": "37-9",
-      "name": "Almost There",
+      "id": "37-7",
+      "name": "Picking Up",
       "world": 37,
-      "difficulty": "expert",
-      "difficulty_score": 369,
+      "difficulty": "hard",
+      "difficulty_score": 367,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2784,11 +2784,11 @@
       ]
     },
     {
-      "id": "37-7",
-      "name": "Picking Up",
+      "id": "37-8",
+      "name": "The Pressure",
       "world": 37,
       "difficulty": "hard",
-      "difficulty_score": 367,
+      "difficulty_score": 368,
       "mechanic_focus": "chain_clear",
       "min_moves": 6,
       "piece_queue": [
@@ -3187,11 +3187,11 @@
       ]
     },
     {
-      "id": "37-10",
-      "name": "The Final Push",
+      "id": "37-9",
+      "name": "Almost There",
       "world": 37,
       "difficulty": "expert",
-      "difficulty_score": 370,
+      "difficulty_score": 369,
       "mechanic_focus": "chain_clear",
       "min_moves": 6,
       "piece_queue": [
@@ -3590,11 +3590,11 @@
       ]
     },
     {
-      "id": "37-6",
-      "name": "Halfway",
+      "id": "37-10",
+      "name": "The Final Push",
       "world": 37,
-      "difficulty": "hard",
-      "difficulty_score": 366,
+      "difficulty": "expert",
+      "difficulty_score": 370,
       "mechanic_focus": "chain_clear",
       "min_moves": 6,
       "piece_queue": [

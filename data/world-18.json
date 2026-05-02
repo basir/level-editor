@@ -372,11 +372,11 @@
       ]
     },
     {
-      "id": "18-4",
-      "name": "Finding Flow",
+      "id": "18-2",
+      "name": "Warm Up",
       "world": 18,
-      "difficulty": "medium",
-      "difficulty_score": 174,
+      "difficulty": "easy",
+      "difficulty_score": 172,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -1086,11 +1086,11 @@
       ]
     },
     {
-      "id": "18-2",
-      "name": "Warm Up",
+      "id": "18-4",
+      "name": "Finding Flow",
       "world": 18,
-      "difficulty": "easy",
-      "difficulty_score": 172,
+      "difficulty": "medium",
+      "difficulty_score": 174,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -1875,11 +1875,11 @@
       ]
     },
     {
-      "id": "18-9",
-      "name": "Almost There",
+      "id": "18-6",
+      "name": "Halfway",
       "world": 18,
-      "difficulty": "expert",
-      "difficulty_score": 179,
+      "difficulty": "hard",
+      "difficulty_score": 176,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -2273,11 +2273,11 @@
       ]
     },
     {
-      "id": "18-8",
-      "name": "The Pressure",
+      "id": "18-7",
+      "name": "Picking Up",
       "world": 18,
       "difficulty": "hard",
-      "difficulty_score": 178,
+      "difficulty_score": 177,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -2653,11 +2653,11 @@
       ]
     },
     {
-      "id": "18-7",
-      "name": "Picking Up",
+      "id": "18-8",
+      "name": "The Pressure",
       "world": 18,
       "difficulty": "hard",
-      "difficulty_score": 177,
+      "difficulty_score": 178,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -3039,11 +3039,11 @@
       ]
     },
     {
-      "id": "18-10",
-      "name": "The Final Push",
+      "id": "18-9",
+      "name": "Almost There",
       "world": 18,
       "difficulty": "expert",
-      "difficulty_score": 180,
+      "difficulty_score": 179,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3409,11 +3409,11 @@
       ]
     },
     {
-      "id": "18-6",
-      "name": "Halfway",
+      "id": "18-10",
+      "name": "The Final Push",
       "world": 18,
-      "difficulty": "hard",
-      "difficulty_score": 176,
+      "difficulty": "expert",
+      "difficulty_score": 180,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

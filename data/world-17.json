@@ -3,11 +3,11 @@
   "worldName": "Martian Plains",
   "levels": [
     {
-      "id": "17-5",
-      "name": "Double Down",
+      "id": "17-1",
+      "name": "First Steps",
       "world": 17,
-      "difficulty": "medium",
-      "difficulty_score": 165,
+      "difficulty": "easy",
+      "difficulty_score": 161,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -1546,11 +1546,11 @@
       ]
     },
     {
-      "id": "17-1",
-      "name": "First Steps",
+      "id": "17-5",
+      "name": "Double Down",
       "world": 17,
-      "difficulty": "easy",
-      "difficulty_score": 161,
+      "difficulty": "medium",
+      "difficulty_score": 165,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -1951,11 +1951,11 @@
       ]
     },
     {
-      "id": "17-8",
-      "name": "The Pressure",
+      "id": "17-6",
+      "name": "Halfway",
       "world": 17,
       "difficulty": "hard",
-      "difficulty_score": 168,
+      "difficulty_score": 166,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -2305,11 +2305,11 @@
       ]
     },
     {
-      "id": "17-10",
-      "name": "The Final Push",
+      "id": "17-7",
+      "name": "Picking Up",
       "world": 17,
-      "difficulty": "expert",
-      "difficulty_score": 170,
+      "difficulty": "hard",
+      "difficulty_score": 167,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -2693,11 +2693,11 @@
       ]
     },
     {
-      "id": "17-7",
-      "name": "Picking Up",
+      "id": "17-8",
+      "name": "The Pressure",
       "world": 17,
       "difficulty": "hard",
-      "difficulty_score": 167,
+      "difficulty_score": 168,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -3129,11 +3129,11 @@
       ]
     },
     {
-      "id": "17-6",
-      "name": "Halfway",
+      "id": "17-9",
+      "name": "Almost There",
       "world": 17,
-      "difficulty": "hard",
-      "difficulty_score": 166,
+      "difficulty": "expert",
+      "difficulty_score": 169,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3538,11 +3538,11 @@
       ]
     },
     {
-      "id": "17-9",
-      "name": "Almost There",
+      "id": "17-10",
+      "name": "The Final Push",
       "world": 17,
       "difficulty": "expert",
-      "difficulty_score": 169,
+      "difficulty_score": 170,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

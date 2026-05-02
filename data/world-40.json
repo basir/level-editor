@@ -3,11 +3,11 @@
   "worldName": "Fire Mountain",
   "levels": [
     {
-      "id": "40-3",
-      "name": "Getting There",
+      "id": "40-1",
+      "name": "First Steps",
       "world": 40,
-      "difficulty": "medium",
-      "difficulty_score": 393,
+      "difficulty": "easy",
+      "difficulty_score": 391,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -385,11 +385,11 @@
       ]
     },
     {
-      "id": "40-4",
-      "name": "Finding Flow",
+      "id": "40-2",
+      "name": "Warm Up",
       "world": 40,
-      "difficulty": "medium",
-      "difficulty_score": 394,
+      "difficulty": "easy",
+      "difficulty_score": 392,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -787,11 +787,11 @@
       ]
     },
     {
-      "id": "40-5",
-      "name": "Double Down",
+      "id": "40-3",
+      "name": "Getting There",
       "world": 40,
       "difficulty": "medium",
-      "difficulty_score": 395,
+      "difficulty_score": 393,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1208,11 +1208,11 @@
       ]
     },
     {
-      "id": "40-1",
-      "name": "First Steps",
+      "id": "40-4",
+      "name": "Finding Flow",
       "world": 40,
-      "difficulty": "easy",
-      "difficulty_score": 391,
+      "difficulty": "medium",
+      "difficulty_score": 394,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1642,11 +1642,11 @@
       ]
     },
     {
-      "id": "40-2",
-      "name": "Warm Up",
+      "id": "40-5",
+      "name": "Double Down",
       "world": 40,
-      "difficulty": "easy",
-      "difficulty_score": 392,
+      "difficulty": "medium",
+      "difficulty_score": 395,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -2065,11 +2065,11 @@
       ]
     },
     {
-      "id": "40-9",
-      "name": "Almost There",
+      "id": "40-6",
+      "name": "Halfway",
       "world": 40,
-      "difficulty": "expert",
-      "difficulty_score": 399,
+      "difficulty": "hard",
+      "difficulty_score": 396,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3355,11 +3355,11 @@
       ]
     },
     {
-      "id": "40-10",
-      "name": "The Final Push",
+      "id": "40-9",
+      "name": "Almost There",
       "world": 40,
       "difficulty": "expert",
-      "difficulty_score": 400,
+      "difficulty_score": 399,
       "mechanic_focus": "chain_clear",
       "min_moves": 6,
       "piece_queue": [
@@ -3724,11 +3724,11 @@
       ]
     },
     {
-      "id": "40-6",
-      "name": "Halfway",
+      "id": "40-10",
+      "name": "The Final Push",
       "world": 40,
-      "difficulty": "hard",
-      "difficulty_score": 396,
+      "difficulty": "expert",
+      "difficulty_score": 400,
       "mechanic_focus": "chain_clear",
       "min_moves": 6,
       "piece_queue": [

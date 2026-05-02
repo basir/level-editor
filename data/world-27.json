@@ -3,11 +3,11 @@
   "worldName": "Crystal Cave",
   "levels": [
     {
-      "id": "27-2",
-      "name": "Warm Up",
+      "id": "27-1",
+      "name": "First Steps",
       "world": 27,
       "difficulty": "easy",
-      "difficulty_score": 262,
+      "difficulty_score": 261,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -356,11 +356,11 @@
       ]
     },
     {
-      "id": "27-1",
-      "name": "First Steps",
+      "id": "27-2",
+      "name": "Warm Up",
       "world": 27,
       "difficulty": "easy",
-      "difficulty_score": 261,
+      "difficulty_score": 262,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -715,11 +715,11 @@
       ]
     },
     {
-      "id": "27-4",
-      "name": "Finding Flow",
+      "id": "27-3",
+      "name": "Getting There",
       "world": 27,
       "difficulty": "medium",
-      "difficulty_score": 264,
+      "difficulty_score": 263,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1113,11 +1113,11 @@
       ]
     },
     {
-      "id": "27-3",
-      "name": "Getting There",
+      "id": "27-4",
+      "name": "Finding Flow",
       "world": 27,
       "difficulty": "medium",
-      "difficulty_score": 263,
+      "difficulty_score": 264,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1938,11 +1938,11 @@
       ]
     },
     {
-      "id": "27-10",
-      "name": "The Final Push",
+      "id": "27-6",
+      "name": "Halfway",
       "world": 27,
-      "difficulty": "expert",
-      "difficulty_score": 270,
+      "difficulty": "hard",
+      "difficulty_score": 266,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2308,11 +2308,11 @@
       ]
     },
     {
-      "id": "27-8",
-      "name": "The Pressure",
+      "id": "27-7",
+      "name": "Picking Up",
       "world": 27,
       "difficulty": "hard",
-      "difficulty_score": 268,
+      "difficulty_score": 267,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2682,11 +2682,11 @@
       ]
     },
     {
-      "id": "27-6",
-      "name": "Halfway",
+      "id": "27-8",
+      "name": "The Pressure",
       "world": 27,
       "difficulty": "hard",
-      "difficulty_score": 266,
+      "difficulty_score": 268,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3494,11 +3494,11 @@
       ]
     },
     {
-      "id": "27-7",
-      "name": "Picking Up",
+      "id": "27-10",
+      "name": "The Final Push",
       "world": 27,
-      "difficulty": "hard",
-      "difficulty_score": 267,
+      "difficulty": "expert",
+      "difficulty_score": 270,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

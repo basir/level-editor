@@ -3,11 +3,11 @@
   "worldName": "Galactic Core",
   "levels": [
     {
-      "id": "19-4",
-      "name": "Finding Flow",
+      "id": "19-1",
+      "name": "First Steps",
       "world": 19,
-      "difficulty": "medium",
-      "difficulty_score": 184,
+      "difficulty": "easy",
+      "difficulty_score": 181,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -367,11 +367,11 @@
       ]
     },
     {
-      "id": "19-1",
-      "name": "First Steps",
+      "id": "19-2",
+      "name": "Warm Up",
       "world": 19,
       "difficulty": "easy",
-      "difficulty_score": 181,
+      "difficulty_score": 182,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -730,11 +730,11 @@
       ]
     },
     {
-      "id": "19-5",
-      "name": "Double Down",
+      "id": "19-3",
+      "name": "Getting There",
       "world": 19,
       "difficulty": "medium",
-      "difficulty_score": 185,
+      "difficulty_score": 183,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -1127,11 +1127,11 @@
       ]
     },
     {
-      "id": "19-3",
-      "name": "Getting There",
+      "id": "19-4",
+      "name": "Finding Flow",
       "world": 19,
       "difficulty": "medium",
-      "difficulty_score": 183,
+      "difficulty_score": 184,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -1527,11 +1527,11 @@
       ]
     },
     {
-      "id": "19-2",
-      "name": "Warm Up",
+      "id": "19-5",
+      "name": "Double Down",
       "world": 19,
-      "difficulty": "easy",
-      "difficulty_score": 182,
+      "difficulty": "medium",
+      "difficulty_score": 185,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -1926,11 +1926,11 @@
       ]
     },
     {
-      "id": "19-9",
-      "name": "Almost There",
+      "id": "19-6",
+      "name": "Halfway",
       "world": 19,
-      "difficulty": "expert",
-      "difficulty_score": 189,
+      "difficulty": "hard",
+      "difficulty_score": 186,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -2323,11 +2323,11 @@
       ]
     },
     {
-      "id": "19-10",
-      "name": "The Final Push",
+      "id": "19-7",
+      "name": "Picking Up",
       "world": 19,
-      "difficulty": "expert",
-      "difficulty_score": 190,
+      "difficulty": "hard",
+      "difficulty_score": 187,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -3089,11 +3089,11 @@
       ]
     },
     {
-      "id": "19-6",
-      "name": "Halfway",
+      "id": "19-9",
+      "name": "Almost There",
       "world": 19,
-      "difficulty": "hard",
-      "difficulty_score": 186,
+      "difficulty": "expert",
+      "difficulty_score": 189,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3496,11 +3496,11 @@
       ]
     },
     {
-      "id": "19-7",
-      "name": "Picking Up",
+      "id": "19-10",
+      "name": "The Final Push",
       "world": 19,
-      "difficulty": "hard",
-      "difficulty_score": 187,
+      "difficulty": "expert",
+      "difficulty_score": 190,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

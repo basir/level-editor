@@ -3,11 +3,11 @@
   "worldName": "The Omega",
   "levels": [
     {
-      "id": "50-10",
-      "name": "The Final Push",
+      "id": "50-1",
+      "name": "First Steps",
       "world": 50,
-      "difficulty": "expert",
-      "difficulty_score": 500,
+      "difficulty": "easy",
+      "difficulty_score": 491,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -374,11 +374,11 @@
       ]
     },
     {
-      "id": "50-1",
-      "name": "First Steps",
+      "id": "50-2",
+      "name": "Warm Up",
       "world": 50,
       "difficulty": "easy",
-      "difficulty_score": 491,
+      "difficulty_score": 492,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -784,11 +784,11 @@
       ]
     },
     {
-      "id": "50-2",
-      "name": "Warm Up",
+      "id": "50-3",
+      "name": "Getting There",
       "world": 50,
-      "difficulty": "easy",
-      "difficulty_score": 492,
+      "difficulty": "medium",
+      "difficulty_score": 493,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -1198,11 +1198,11 @@
       ]
     },
     {
-      "id": "50-9",
-      "name": "Almost There",
+      "id": "50-4",
+      "name": "Finding Flow",
       "world": 50,
-      "difficulty": "expert",
-      "difficulty_score": 499,
+      "difficulty": "medium",
+      "difficulty_score": 494,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2057,11 +2057,11 @@
       ]
     },
     {
-      "id": "50-3",
-      "name": "Getting There",
+      "id": "50-6",
+      "name": "Halfway",
       "world": 50,
-      "difficulty": "medium",
-      "difficulty_score": 493,
+      "difficulty": "hard",
+      "difficulty_score": 496,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2962,11 +2962,11 @@
       ]
     },
     {
-      "id": "50-4",
-      "name": "Finding Flow",
+      "id": "50-8",
+      "name": "The Pressure",
       "world": 50,
-      "difficulty": "medium",
-      "difficulty_score": 494,
+      "difficulty": "hard",
+      "difficulty_score": 498,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3404,11 +3404,11 @@
       ]
     },
     {
-      "id": "50-8",
-      "name": "The Pressure",
+      "id": "50-9",
+      "name": "Almost There",
       "world": 50,
-      "difficulty": "hard",
-      "difficulty_score": 498,
+      "difficulty": "expert",
+      "difficulty_score": 499,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3856,11 +3856,11 @@
       ]
     },
     {
-      "id": "50-6",
-      "name": "Halfway",
+      "id": "50-10",
+      "name": "The Final Push",
       "world": 50,
-      "difficulty": "hard",
-      "difficulty_score": 496,
+      "difficulty": "expert",
+      "difficulty_score": 500,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

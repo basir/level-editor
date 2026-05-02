@@ -3,11 +3,11 @@
   "worldName": "Glacier Peak",
   "levels": [
     {
-      "id": "22-2",
-      "name": "Warm Up",
+      "id": "22-1",
+      "name": "First Steps",
       "world": 22,
       "difficulty": "easy",
-      "difficulty_score": 212,
+      "difficulty_score": 211,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -397,11 +397,11 @@
       ]
     },
     {
-      "id": "22-5",
-      "name": "Double Down",
+      "id": "22-2",
+      "name": "Warm Up",
       "world": 22,
-      "difficulty": "medium",
-      "difficulty_score": 215,
+      "difficulty": "easy",
+      "difficulty_score": 212,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -794,11 +794,11 @@
       ]
     },
     {
-      "id": "22-1",
-      "name": "First Steps",
+      "id": "22-3",
+      "name": "Getting There",
       "world": 22,
-      "difficulty": "easy",
-      "difficulty_score": 211,
+      "difficulty": "medium",
+      "difficulty_score": 213,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1188,11 +1188,11 @@
       ]
     },
     {
-      "id": "22-3",
-      "name": "Getting There",
+      "id": "22-4",
+      "name": "Finding Flow",
       "world": 22,
       "difficulty": "medium",
-      "difficulty_score": 213,
+      "difficulty_score": 214,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1570,11 +1570,11 @@
       ]
     },
     {
-      "id": "22-4",
-      "name": "Finding Flow",
+      "id": "22-5",
+      "name": "Double Down",
       "world": 22,
       "difficulty": "medium",
-      "difficulty_score": 214,
+      "difficulty_score": 215,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -2007,11 +2007,11 @@
       ]
     },
     {
-      "id": "22-9",
-      "name": "Almost There",
+      "id": "22-6",
+      "name": "Halfway",
       "world": 22,
-      "difficulty": "expert",
-      "difficulty_score": 219,
+      "difficulty": "hard",
+      "difficulty_score": 216,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2420,11 +2420,11 @@
       ]
     },
     {
-      "id": "22-6",
-      "name": "Halfway",
+      "id": "22-7",
+      "name": "Picking Up",
       "world": 22,
       "difficulty": "hard",
-      "difficulty_score": 216,
+      "difficulty_score": 217,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3250,11 +3250,11 @@
       ]
     },
     {
-      "id": "22-7",
-      "name": "Picking Up",
+      "id": "22-9",
+      "name": "Almost There",
       "world": 22,
-      "difficulty": "hard",
-      "difficulty_score": 217,
+      "difficulty": "expert",
+      "difficulty_score": 219,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

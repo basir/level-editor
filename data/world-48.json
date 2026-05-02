@@ -3,11 +3,11 @@
   "worldName": "Astral Plane",
   "levels": [
     {
-      "id": "48-10",
-      "name": "The Final Push",
+      "id": "48-1",
+      "name": "First Steps",
       "world": 48,
-      "difficulty": "expert",
-      "difficulty_score": 480,
+      "difficulty": "easy",
+      "difficulty_score": 471,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -380,11 +380,11 @@
       ]
     },
     {
-      "id": "48-9",
-      "name": "Almost There",
+      "id": "48-2",
+      "name": "Warm Up",
       "world": 48,
-      "difficulty": "expert",
-      "difficulty_score": 479,
+      "difficulty": "easy",
+      "difficulty_score": 472,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -759,11 +759,11 @@
       ]
     },
     {
-      "id": "48-1",
-      "name": "First Steps",
+      "id": "48-3",
+      "name": "Getting There",
       "world": 48,
-      "difficulty": "easy",
-      "difficulty_score": 471,
+      "difficulty": "medium",
+      "difficulty_score": 473,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -1171,11 +1171,11 @@
       ]
     },
     {
-      "id": "48-2",
-      "name": "Warm Up",
+      "id": "48-4",
+      "name": "Finding Flow",
       "world": 48,
-      "difficulty": "easy",
-      "difficulty_score": 472,
+      "difficulty": "medium",
+      "difficulty_score": 474,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -1582,11 +1582,11 @@
       ]
     },
     {
-      "id": "48-3",
-      "name": "Getting There",
+      "id": "48-5",
+      "name": "Double Down",
       "world": 48,
       "difficulty": "medium",
-      "difficulty_score": 473,
+      "difficulty_score": 475,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -1989,11 +1989,11 @@
       ]
     },
     {
-      "id": "48-4",
-      "name": "Finding Flow",
+      "id": "48-6",
+      "name": "Halfway",
       "world": 48,
-      "difficulty": "medium",
-      "difficulty_score": 474,
+      "difficulty": "hard",
+      "difficulty_score": 476,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3286,11 +3286,11 @@
       ]
     },
     {
-      "id": "48-5",
-      "name": "Double Down",
+      "id": "48-9",
+      "name": "Almost There",
       "world": 48,
-      "difficulty": "medium",
-      "difficulty_score": 475,
+      "difficulty": "expert",
+      "difficulty_score": 479,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3741,11 +3741,11 @@
       ]
     },
     {
-      "id": "48-6",
-      "name": "Halfway",
+      "id": "48-10",
+      "name": "The Final Push",
       "world": 48,
-      "difficulty": "hard",
-      "difficulty_score": 476,
+      "difficulty": "expert",
+      "difficulty_score": 480,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

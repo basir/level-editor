@@ -3,11 +3,11 @@
   "worldName": "Ash Clouds",
   "levels": [
     {
-      "id": "34-4",
-      "name": "Finding Flow",
+      "id": "34-1",
+      "name": "First Steps",
       "world": 34,
-      "difficulty": "medium",
-      "difficulty_score": 334,
+      "difficulty": "easy",
+      "difficulty_score": 331,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -348,11 +348,11 @@
       ]
     },
     {
-      "id": "34-3",
-      "name": "Getting There",
+      "id": "34-2",
+      "name": "Warm Up",
       "world": 34,
-      "difficulty": "medium",
-      "difficulty_score": 333,
+      "difficulty": "easy",
+      "difficulty_score": 332,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -740,11 +740,11 @@
       ]
     },
     {
-      "id": "34-5",
-      "name": "Double Down",
+      "id": "34-3",
+      "name": "Getting There",
       "world": 34,
       "difficulty": "medium",
-      "difficulty_score": 335,
+      "difficulty_score": 333,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1127,11 +1127,11 @@
       ]
     },
     {
-      "id": "34-1",
-      "name": "First Steps",
+      "id": "34-4",
+      "name": "Finding Flow",
       "world": 34,
-      "difficulty": "easy",
-      "difficulty_score": 331,
+      "difficulty": "medium",
+      "difficulty_score": 334,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1521,11 +1521,11 @@
       ]
     },
     {
-      "id": "34-2",
-      "name": "Warm Up",
+      "id": "34-5",
+      "name": "Double Down",
       "world": 34,
-      "difficulty": "easy",
-      "difficulty_score": 332,
+      "difficulty": "medium",
+      "difficulty_score": 335,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1914,11 +1914,11 @@
       ]
     },
     {
-      "id": "34-10",
-      "name": "The Final Push",
+      "id": "34-6",
+      "name": "Halfway",
       "world": 34,
-      "difficulty": "expert",
-      "difficulty_score": 340,
+      "difficulty": "hard",
+      "difficulty_score": 336,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2723,11 +2723,11 @@
       ]
     },
     {
-      "id": "34-6",
-      "name": "Halfway",
+      "id": "34-8",
+      "name": "The Pressure",
       "world": 34,
       "difficulty": "hard",
-      "difficulty_score": 336,
+      "difficulty_score": 338,
       "mechanic_focus": "chain_clear",
       "min_moves": 6,
       "piece_queue": [
@@ -3495,11 +3495,11 @@
       ]
     },
     {
-      "id": "34-8",
-      "name": "The Pressure",
+      "id": "34-10",
+      "name": "The Final Push",
       "world": 34,
-      "difficulty": "hard",
-      "difficulty_score": 338,
+      "difficulty": "expert",
+      "difficulty_score": 340,
       "mechanic_focus": "chain_clear",
       "min_moves": 6,
       "piece_queue": [

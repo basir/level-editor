@@ -3,11 +3,11 @@
   "worldName": "Paradox",
   "levels": [
     {
-      "id": "43-6",
-      "name": "Halfway",
+      "id": "43-1",
+      "name": "First Steps",
       "world": 43,
-      "difficulty": "hard",
-      "difficulty_score": 426,
+      "difficulty": "easy",
+      "difficulty_score": 421,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -415,11 +415,11 @@
       ]
     },
     {
-      "id": "43-10",
-      "name": "The Final Push",
+      "id": "43-2",
+      "name": "Warm Up",
       "world": 43,
-      "difficulty": "expert",
-      "difficulty_score": 430,
+      "difficulty": "easy",
+      "difficulty_score": 422,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -827,11 +827,11 @@
       ]
     },
     {
-      "id": "43-2",
-      "name": "Warm Up",
+      "id": "43-3",
+      "name": "Getting There",
       "world": 43,
-      "difficulty": "easy",
-      "difficulty_score": 422,
+      "difficulty": "medium",
+      "difficulty_score": 423,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -1242,11 +1242,11 @@
       ]
     },
     {
-      "id": "43-9",
-      "name": "Almost There",
+      "id": "43-4",
+      "name": "Finding Flow",
       "world": 43,
-      "difficulty": "expert",
-      "difficulty_score": 429,
+      "difficulty": "medium",
+      "difficulty_score": 424,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -1684,11 +1684,11 @@
       ]
     },
     {
-      "id": "43-1",
-      "name": "First Steps",
+      "id": "43-5",
+      "name": "Double Down",
       "world": 43,
-      "difficulty": "easy",
-      "difficulty_score": 421,
+      "difficulty": "medium",
+      "difficulty_score": 425,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2125,11 +2125,11 @@
       ]
     },
     {
-      "id": "43-5",
-      "name": "Double Down",
+      "id": "43-6",
+      "name": "Halfway",
       "world": 43,
-      "difficulty": "medium",
-      "difficulty_score": 425,
+      "difficulty": "hard",
+      "difficulty_score": 426,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2569,11 +2569,11 @@
       ]
     },
     {
-      "id": "43-4",
-      "name": "Finding Flow",
+      "id": "43-7",
+      "name": "Picking Up",
       "world": 43,
-      "difficulty": "medium",
-      "difficulty_score": 424,
+      "difficulty": "hard",
+      "difficulty_score": 427,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3000,11 +3000,11 @@
       ]
     },
     {
-      "id": "43-7",
-      "name": "Picking Up",
+      "id": "43-8",
+      "name": "The Pressure",
       "world": 43,
       "difficulty": "hard",
-      "difficulty_score": 427,
+      "difficulty_score": 428,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3456,11 +3456,11 @@
       ]
     },
     {
-      "id": "43-3",
-      "name": "Getting There",
+      "id": "43-9",
+      "name": "Almost There",
       "world": 43,
-      "difficulty": "medium",
-      "difficulty_score": 423,
+      "difficulty": "expert",
+      "difficulty_score": 429,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3911,11 +3911,11 @@
       ]
     },
     {
-      "id": "43-8",
-      "name": "The Pressure",
+      "id": "43-10",
+      "name": "The Final Push",
       "world": 43,
-      "difficulty": "hard",
-      "difficulty_score": 428,
+      "difficulty": "expert",
+      "difficulty_score": 430,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

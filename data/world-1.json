@@ -2810,11 +2810,11 @@
       ]
     },
     {
-      "id": "1-10",
-      "name": "The Final Push",
+      "id": "1-9",
+      "name": "Almost There",
       "world": 1,
       "difficulty": "expert",
-      "difficulty_score": 10,
+      "difficulty_score": 9,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -3166,11 +3166,11 @@
       ]
     },
     {
-      "id": "1-9",
-      "name": "Almost There",
+      "id": "1-10",
+      "name": "The Final Push",
       "world": 1,
       "difficulty": "expert",
-      "difficulty_score": 9,
+      "difficulty_score": 10,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [

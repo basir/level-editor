@@ -3,11 +3,11 @@
   "worldName": "Obsidian Ridge",
   "levels": [
     {
-      "id": "32-4",
-      "name": "Finding Flow",
+      "id": "32-1",
+      "name": "First Steps",
       "world": 32,
-      "difficulty": "medium",
-      "difficulty_score": 314,
+      "difficulty": "easy",
+      "difficulty_score": 311,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -365,11 +365,11 @@
       ]
     },
     {
-      "id": "32-3",
-      "name": "Getting There",
+      "id": "32-2",
+      "name": "Warm Up",
       "world": 32,
-      "difficulty": "medium",
-      "difficulty_score": 313,
+      "difficulty": "easy",
+      "difficulty_score": 312,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -712,11 +712,11 @@
       ]
     },
     {
-      "id": "32-2",
-      "name": "Warm Up",
+      "id": "32-3",
+      "name": "Getting There",
       "world": 32,
-      "difficulty": "easy",
-      "difficulty_score": 312,
+      "difficulty": "medium",
+      "difficulty_score": 313,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1110,11 +1110,11 @@
       ]
     },
     {
-      "id": "32-1",
-      "name": "First Steps",
+      "id": "32-4",
+      "name": "Finding Flow",
       "world": 32,
-      "difficulty": "easy",
-      "difficulty_score": 311,
+      "difficulty": "medium",
+      "difficulty_score": 314,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1931,11 +1931,11 @@
       ]
     },
     {
-      "id": "32-7",
-      "name": "Picking Up",
+      "id": "32-6",
+      "name": "Halfway",
       "world": 32,
       "difficulty": "hard",
-      "difficulty_score": 317,
+      "difficulty_score": 316,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2343,11 +2343,11 @@
       ]
     },
     {
-      "id": "32-6",
-      "name": "Halfway",
+      "id": "32-7",
+      "name": "Picking Up",
       "world": 32,
       "difficulty": "hard",
-      "difficulty_score": 316,
+      "difficulty_score": 317,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2755,11 +2755,11 @@
       ]
     },
     {
-      "id": "32-10",
-      "name": "The Final Push",
+      "id": "32-8",
+      "name": "The Pressure",
       "world": 32,
-      "difficulty": "expert",
-      "difficulty_score": 320,
+      "difficulty": "hard",
+      "difficulty_score": 318,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3196,11 +3196,11 @@
       ]
     },
     {
-      "id": "32-8",
-      "name": "The Pressure",
+      "id": "32-9",
+      "name": "Almost There",
       "world": 32,
-      "difficulty": "hard",
-      "difficulty_score": 318,
+      "difficulty": "expert",
+      "difficulty_score": 319,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3673,11 +3673,11 @@
       ]
     },
     {
-      "id": "32-9",
-      "name": "Almost There",
+      "id": "32-10",
+      "name": "The Final Push",
       "world": 32,
       "difficulty": "expert",
-      "difficulty_score": 319,
+      "difficulty_score": 320,
       "mechanic_focus": "chain_clear",
       "min_moves": 6,
       "piece_queue": [

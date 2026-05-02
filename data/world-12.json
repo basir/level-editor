@@ -3,11 +3,11 @@
   "worldName": "Asteroid Belt",
   "levels": [
     {
-      "id": "12-2",
-      "name": "Warm Up",
+      "id": "12-1",
+      "name": "First Steps",
       "world": 12,
       "difficulty": "easy",
-      "difficulty_score": 112,
+      "difficulty_score": 111,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -373,11 +373,11 @@
       ]
     },
     {
-      "id": "12-1",
-      "name": "First Steps",
+      "id": "12-2",
+      "name": "Warm Up",
       "world": 12,
       "difficulty": "easy",
-      "difficulty_score": 111,
+      "difficulty_score": 112,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -1101,11 +1101,11 @@
       ]
     },
     {
-      "id": "12-5",
-      "name": "Double Down",
+      "id": "12-4",
+      "name": "Finding Flow",
       "world": 12,
       "difficulty": "medium",
-      "difficulty_score": 115,
+      "difficulty_score": 114,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -1507,11 +1507,11 @@
       ]
     },
     {
-      "id": "12-4",
-      "name": "Finding Flow",
+      "id": "12-5",
+      "name": "Double Down",
       "world": 12,
       "difficulty": "medium",
-      "difficulty_score": 114,
+      "difficulty_score": 115,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -1906,11 +1906,11 @@
       ]
     },
     {
-      "id": "12-9",
-      "name": "Almost There",
+      "id": "12-6",
+      "name": "Halfway",
       "world": 12,
-      "difficulty": "expert",
-      "difficulty_score": 119,
+      "difficulty": "hard",
+      "difficulty_score": 116,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -2331,11 +2331,11 @@
       ]
     },
     {
-      "id": "12-10",
-      "name": "The Final Push",
+      "id": "12-7",
+      "name": "Picking Up",
       "world": 12,
-      "difficulty": "expert",
-      "difficulty_score": 120,
+      "difficulty": "hard",
+      "difficulty_score": 117,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2706,11 +2706,11 @@
       ]
     },
     {
-      "id": "12-6",
-      "name": "Halfway",
+      "id": "12-8",
+      "name": "The Pressure",
       "world": 12,
       "difficulty": "hard",
-      "difficulty_score": 116,
+      "difficulty_score": 118,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3104,11 +3104,11 @@
       ]
     },
     {
-      "id": "12-7",
-      "name": "Picking Up",
+      "id": "12-9",
+      "name": "Almost There",
       "world": 12,
-      "difficulty": "hard",
-      "difficulty_score": 117,
+      "difficulty": "expert",
+      "difficulty_score": 119,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3508,11 +3508,11 @@
       ]
     },
     {
-      "id": "12-8",
-      "name": "The Pressure",
+      "id": "12-10",
+      "name": "The Final Push",
       "world": 12,
-      "difficulty": "hard",
-      "difficulty_score": 118,
+      "difficulty": "expert",
+      "difficulty_score": 120,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

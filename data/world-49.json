@@ -3,11 +3,11 @@
   "worldName": "Celestial Throne",
   "levels": [
     {
-      "id": "49-8",
-      "name": "The Pressure",
+      "id": "49-1",
+      "name": "First Steps",
       "world": 49,
-      "difficulty": "hard",
-      "difficulty_score": 488,
+      "difficulty": "easy",
+      "difficulty_score": 481,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -381,11 +381,11 @@
       ]
     },
     {
-      "id": "49-1",
-      "name": "First Steps",
+      "id": "49-2",
+      "name": "Warm Up",
       "world": 49,
       "difficulty": "easy",
-      "difficulty_score": 481,
+      "difficulty_score": 482,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -1214,11 +1214,11 @@
       ]
     },
     {
-      "id": "49-6",
-      "name": "Halfway",
+      "id": "49-4",
+      "name": "Finding Flow",
       "world": 49,
-      "difficulty": "hard",
-      "difficulty_score": 486,
+      "difficulty": "medium",
+      "difficulty_score": 484,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -1624,11 +1624,11 @@
       ]
     },
     {
-      "id": "49-4",
-      "name": "Finding Flow",
+      "id": "49-5",
+      "name": "Double Down",
       "world": 49,
       "difficulty": "medium",
-      "difficulty_score": 484,
+      "difficulty_score": 485,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2042,11 +2042,11 @@
       ]
     },
     {
-      "id": "49-5",
-      "name": "Double Down",
+      "id": "49-6",
+      "name": "Halfway",
       "world": 49,
-      "difficulty": "medium",
-      "difficulty_score": 485,
+      "difficulty": "hard",
+      "difficulty_score": 486,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2456,11 +2456,11 @@
       ]
     },
     {
-      "id": "49-9",
-      "name": "Almost There",
+      "id": "49-7",
+      "name": "Picking Up",
       "world": 49,
-      "difficulty": "expert",
-      "difficulty_score": 489,
+      "difficulty": "hard",
+      "difficulty_score": 487,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2873,11 +2873,11 @@
       ]
     },
     {
-      "id": "49-10",
-      "name": "The Final Push",
+      "id": "49-8",
+      "name": "The Pressure",
       "world": 49,
-      "difficulty": "expert",
-      "difficulty_score": 490,
+      "difficulty": "hard",
+      "difficulty_score": 488,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3269,11 +3269,11 @@
       ]
     },
     {
-      "id": "49-2",
-      "name": "Warm Up",
+      "id": "49-9",
+      "name": "Almost There",
       "world": 49,
-      "difficulty": "easy",
-      "difficulty_score": 482,
+      "difficulty": "expert",
+      "difficulty_score": 489,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3676,11 +3676,11 @@
       ]
     },
     {
-      "id": "49-7",
-      "name": "Picking Up",
+      "id": "49-10",
+      "name": "The Final Push",
       "world": 49,
-      "difficulty": "hard",
-      "difficulty_score": 487,
+      "difficulty": "expert",
+      "difficulty_score": 490,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

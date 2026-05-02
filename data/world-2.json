@@ -3,11 +3,11 @@
   "worldName": "River",
   "levels": [
     {
-      "id": "2-4",
-      "name": "Finding Flow",
+      "id": "2-1",
+      "name": "First Steps",
       "world": 2,
-      "difficulty": "medium",
-      "difficulty_score": 14,
+      "difficulty": "easy",
+      "difficulty_score": 11,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -1086,11 +1086,11 @@
       ]
     },
     {
-      "id": "2-5",
-      "name": "Double Down",
+      "id": "2-4",
+      "name": "Finding Flow",
       "world": 2,
       "difficulty": "medium",
-      "difficulty_score": 15,
+      "difficulty_score": 14,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -1445,11 +1445,11 @@
       ]
     },
     {
-      "id": "2-1",
-      "name": "First Steps",
+      "id": "2-5",
+      "name": "Double Down",
       "world": 2,
-      "difficulty": "easy",
-      "difficulty_score": 11,
+      "difficulty": "medium",
+      "difficulty_score": 15,
       "mechanic_focus": "chain_clear",
       "min_moves": 3,
       "piece_queue": [
@@ -1846,11 +1846,11 @@
       ]
     },
     {
-      "id": "2-7",
-      "name": "Picking Up",
+      "id": "2-6",
+      "name": "Halfway",
       "world": 2,
       "difficulty": "hard",
-      "difficulty_score": 17,
+      "difficulty_score": 16,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -2202,11 +2202,11 @@
       ]
     },
     {
-      "id": "2-6",
-      "name": "Halfway",
+      "id": "2-7",
+      "name": "Picking Up",
       "world": 2,
       "difficulty": "hard",
-      "difficulty_score": 16,
+      "difficulty_score": 17,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [

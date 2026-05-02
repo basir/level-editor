@@ -3,11 +3,11 @@
   "worldName": "Caldera",
   "levels": [
     {
-      "id": "36-2",
-      "name": "Warm Up",
+      "id": "36-1",
+      "name": "First Steps",
       "world": 36,
       "difficulty": "easy",
-      "difficulty_score": 352,
+      "difficulty_score": 351,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -359,11 +359,11 @@
       ]
     },
     {
-      "id": "36-1",
-      "name": "First Steps",
+      "id": "36-2",
+      "name": "Warm Up",
       "world": 36,
       "difficulty": "easy",
-      "difficulty_score": 351,
+      "difficulty_score": 352,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -714,11 +714,11 @@
       ]
     },
     {
-      "id": "36-5",
-      "name": "Double Down",
+      "id": "36-3",
+      "name": "Getting There",
       "world": 36,
       "difficulty": "medium",
-      "difficulty_score": 355,
+      "difficulty_score": 353,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1103,11 +1103,11 @@
       ]
     },
     {
-      "id": "36-3",
-      "name": "Getting There",
+      "id": "36-4",
+      "name": "Finding Flow",
       "world": 36,
       "difficulty": "medium",
-      "difficulty_score": 353,
+      "difficulty_score": 354,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1498,11 +1498,11 @@
       ]
     },
     {
-      "id": "36-4",
-      "name": "Finding Flow",
+      "id": "36-5",
+      "name": "Double Down",
       "world": 36,
       "difficulty": "medium",
-      "difficulty_score": 354,
+      "difficulty_score": 355,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1893,11 +1893,11 @@
       ]
     },
     {
-      "id": "36-9",
-      "name": "Almost There",
+      "id": "36-6",
+      "name": "Halfway",
       "world": 36,
-      "difficulty": "expert",
-      "difficulty_score": 359,
+      "difficulty": "hard",
+      "difficulty_score": 356,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2269,11 +2269,11 @@
       ]
     },
     {
-      "id": "36-8",
-      "name": "The Pressure",
+      "id": "36-7",
+      "name": "Picking Up",
       "world": 36,
       "difficulty": "hard",
-      "difficulty_score": 358,
+      "difficulty_score": 357,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2677,11 +2677,11 @@
       ]
     },
     {
-      "id": "36-10",
-      "name": "The Final Push",
+      "id": "36-8",
+      "name": "The Pressure",
       "world": 36,
-      "difficulty": "expert",
-      "difficulty_score": 360,
+      "difficulty": "hard",
+      "difficulty_score": 358,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3089,11 +3089,11 @@
       ]
     },
     {
-      "id": "36-6",
-      "name": "Halfway",
+      "id": "36-9",
+      "name": "Almost There",
       "world": 36,
-      "difficulty": "hard",
-      "difficulty_score": 356,
+      "difficulty": "expert",
+      "difficulty_score": 359,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3520,11 +3520,11 @@
       ]
     },
     {
-      "id": "36-7",
-      "name": "Picking Up",
+      "id": "36-10",
+      "name": "The Final Push",
       "world": 36,
-      "difficulty": "hard",
-      "difficulty_score": 357,
+      "difficulty": "expert",
+      "difficulty_score": 360,
       "mechanic_focus": "chain_clear",
       "min_moves": 6,
       "piece_queue": [

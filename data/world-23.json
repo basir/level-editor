@@ -3,11 +3,11 @@
   "worldName": "Permafrost",
   "levels": [
     {
-      "id": "23-2",
-      "name": "Warm Up",
+      "id": "23-1",
+      "name": "First Steps",
       "world": 23,
       "difficulty": "easy",
-      "difficulty_score": 222,
+      "difficulty_score": 221,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -364,11 +364,11 @@
       ]
     },
     {
-      "id": "23-4",
-      "name": "Finding Flow",
+      "id": "23-2",
+      "name": "Warm Up",
       "world": 23,
-      "difficulty": "medium",
-      "difficulty_score": 224,
+      "difficulty": "easy",
+      "difficulty_score": 222,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -757,11 +757,11 @@
       ]
     },
     {
-      "id": "23-1",
-      "name": "First Steps",
+      "id": "23-3",
+      "name": "Getting There",
       "world": 23,
-      "difficulty": "easy",
-      "difficulty_score": 221,
+      "difficulty": "medium",
+      "difficulty_score": 223,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1153,11 +1153,11 @@
       ]
     },
     {
-      "id": "23-3",
-      "name": "Getting There",
+      "id": "23-4",
+      "name": "Finding Flow",
       "world": 23,
       "difficulty": "medium",
-      "difficulty_score": 223,
+      "difficulty_score": 224,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -2326,11 +2326,11 @@
       ]
     },
     {
-      "id": "23-9",
-      "name": "Almost There",
+      "id": "23-7",
+      "name": "Picking Up",
       "world": 23,
-      "difficulty": "expert",
-      "difficulty_score": 229,
+      "difficulty": "hard",
+      "difficulty_score": 227,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3123,11 +3123,11 @@
       ]
     },
     {
-      "id": "23-10",
-      "name": "The Final Push",
+      "id": "23-9",
+      "name": "Almost There",
       "world": 23,
       "difficulty": "expert",
-      "difficulty_score": 230,
+      "difficulty_score": 229,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3538,11 +3538,11 @@
       ]
     },
     {
-      "id": "23-7",
-      "name": "Picking Up",
+      "id": "23-10",
+      "name": "The Final Push",
       "world": 23,
-      "difficulty": "hard",
-      "difficulty_score": 227,
+      "difficulty": "expert",
+      "difficulty_score": 230,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

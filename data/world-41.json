@@ -3,11 +3,11 @@
   "worldName": "Time Warp",
   "levels": [
     {
-      "id": "41-3",
-      "name": "Getting There",
+      "id": "41-1",
+      "name": "First Steps",
       "world": 41,
-      "difficulty": "medium",
-      "difficulty_score": 403,
+      "difficulty": "easy",
+      "difficulty_score": 401,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -408,11 +408,11 @@
       ]
     },
     {
-      "id": "41-4",
-      "name": "Finding Flow",
+      "id": "41-2",
+      "name": "Warm Up",
       "world": 41,
-      "difficulty": "medium",
-      "difficulty_score": 404,
+      "difficulty": "easy",
+      "difficulty_score": 402,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -816,11 +816,11 @@
       ]
     },
     {
-      "id": "41-5",
-      "name": "Double Down",
+      "id": "41-3",
+      "name": "Getting There",
       "world": 41,
       "difficulty": "medium",
-      "difficulty_score": 405,
+      "difficulty_score": 403,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -1233,11 +1233,11 @@
       ]
     },
     {
-      "id": "41-6",
-      "name": "Halfway",
+      "id": "41-4",
+      "name": "Finding Flow",
       "world": 41,
-      "difficulty": "hard",
-      "difficulty_score": 406,
+      "difficulty": "medium",
+      "difficulty_score": 404,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -1639,11 +1639,11 @@
       ]
     },
     {
-      "id": "41-8",
-      "name": "The Pressure",
+      "id": "41-5",
+      "name": "Double Down",
       "world": 41,
-      "difficulty": "hard",
-      "difficulty_score": 408,
+      "difficulty": "medium",
+      "difficulty_score": 405,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2058,11 +2058,11 @@
       ]
     },
     {
-      "id": "41-2",
-      "name": "Warm Up",
+      "id": "41-6",
+      "name": "Halfway",
       "world": 41,
-      "difficulty": "easy",
-      "difficulty_score": 402,
+      "difficulty": "hard",
+      "difficulty_score": 406,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2915,11 +2915,11 @@
       ]
     },
     {
-      "id": "41-1",
-      "name": "First Steps",
+      "id": "41-8",
+      "name": "The Pressure",
       "world": 41,
-      "difficulty": "easy",
-      "difficulty_score": 401,
+      "difficulty": "hard",
+      "difficulty_score": 408,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3357,11 +3357,11 @@
       ]
     },
     {
-      "id": "41-10",
-      "name": "The Final Push",
+      "id": "41-9",
+      "name": "Almost There",
       "world": 41,
       "difficulty": "expert",
-      "difficulty_score": 410,
+      "difficulty_score": 409,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3805,11 +3805,11 @@
       ]
     },
     {
-      "id": "41-9",
-      "name": "Almost There",
+      "id": "41-10",
+      "name": "The Final Push",
       "world": 41,
       "difficulty": "expert",
-      "difficulty_score": 409,
+      "difficulty_score": 410,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

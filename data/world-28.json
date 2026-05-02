@@ -360,11 +360,11 @@
       ]
     },
     {
-      "id": "28-4",
-      "name": "Finding Flow",
+      "id": "28-2",
+      "name": "Warm Up",
       "world": 28,
-      "difficulty": "medium",
-      "difficulty_score": 274,
+      "difficulty": "easy",
+      "difficulty_score": 272,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -756,11 +756,11 @@
       ]
     },
     {
-      "id": "28-5",
-      "name": "Double Down",
+      "id": "28-3",
+      "name": "Getting There",
       "world": 28,
       "difficulty": "medium",
-      "difficulty_score": 275,
+      "difficulty_score": 273,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1157,11 +1157,11 @@
       ]
     },
     {
-      "id": "28-3",
-      "name": "Getting There",
+      "id": "28-4",
+      "name": "Finding Flow",
       "world": 28,
       "difficulty": "medium",
-      "difficulty_score": 273,
+      "difficulty_score": 274,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -1584,11 +1584,11 @@
       ]
     },
     {
-      "id": "28-2",
-      "name": "Warm Up",
+      "id": "28-5",
+      "name": "Double Down",
       "world": 28,
-      "difficulty": "easy",
-      "difficulty_score": 272,
+      "difficulty": "medium",
+      "difficulty_score": 275,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -2014,11 +2014,11 @@
       ]
     },
     {
-      "id": "28-10",
-      "name": "The Final Push",
+      "id": "28-6",
+      "name": "Halfway",
       "world": 28,
-      "difficulty": "expert",
-      "difficulty_score": 280,
+      "difficulty": "hard",
+      "difficulty_score": 276,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2765,11 +2765,11 @@
       ]
     },
     {
-      "id": "28-6",
-      "name": "Halfway",
+      "id": "28-8",
+      "name": "The Pressure",
       "world": 28,
       "difficulty": "hard",
-      "difficulty_score": 276,
+      "difficulty_score": 278,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3603,11 +3603,11 @@
       ]
     },
     {
-      "id": "28-8",
-      "name": "The Pressure",
+      "id": "28-10",
+      "name": "The Final Push",
       "world": 28,
-      "difficulty": "hard",
-      "difficulty_score": 278,
+      "difficulty": "expert",
+      "difficulty_score": 280,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [

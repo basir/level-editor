@@ -3,11 +3,11 @@
   "worldName": "Universal Fringe",
   "levels": [
     {
-      "id": "20-3",
-      "name": "Getting There",
+      "id": "20-1",
+      "name": "First Steps",
       "world": 20,
-      "difficulty": "medium",
-      "difficulty_score": 193,
+      "difficulty": "easy",
+      "difficulty_score": 191,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -363,11 +363,11 @@
       ]
     },
     {
-      "id": "20-1",
-      "name": "First Steps",
+      "id": "20-2",
+      "name": "Warm Up",
       "world": 20,
       "difficulty": "easy",
-      "difficulty_score": 191,
+      "difficulty_score": 192,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -765,11 +765,11 @@
       ]
     },
     {
-      "id": "20-2",
-      "name": "Warm Up",
+      "id": "20-3",
+      "name": "Getting There",
       "world": 20,
-      "difficulty": "easy",
-      "difficulty_score": 192,
+      "difficulty": "medium",
+      "difficulty_score": 193,
       "mechanic_focus": "chain_clear",
       "min_moves": 4,
       "piece_queue": [
@@ -2016,11 +2016,11 @@
       ]
     },
     {
-      "id": "20-8",
-      "name": "The Pressure",
+      "id": "20-6",
+      "name": "Halfway",
       "world": 20,
       "difficulty": "hard",
-      "difficulty_score": 198,
+      "difficulty_score": 196,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2384,11 +2384,11 @@
       ]
     },
     {
-      "id": "20-10",
-      "name": "The Final Push",
+      "id": "20-7",
+      "name": "Picking Up",
       "world": 20,
-      "difficulty": "expert",
-      "difficulty_score": 200,
+      "difficulty": "hard",
+      "difficulty_score": 197,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -2760,11 +2760,11 @@
       ]
     },
     {
-      "id": "20-6",
-      "name": "Halfway",
+      "id": "20-8",
+      "name": "The Pressure",
       "world": 20,
       "difficulty": "hard",
-      "difficulty_score": 196,
+      "difficulty_score": 198,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3160,11 +3160,11 @@
       ]
     },
     {
-      "id": "20-7",
-      "name": "Picking Up",
+      "id": "20-9",
+      "name": "Almost There",
       "world": 20,
-      "difficulty": "hard",
-      "difficulty_score": 197,
+      "difficulty": "expert",
+      "difficulty_score": 199,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
@@ -3578,11 +3578,11 @@
       ]
     },
     {
-      "id": "20-9",
-      "name": "Almost There",
+      "id": "20-10",
+      "name": "The Final Push",
       "world": 20,
       "difficulty": "expert",
-      "difficulty_score": 199,
+      "difficulty_score": 200,
       "mechanic_focus": "chain_clear",
       "min_moves": 5,
       "piece_queue": [
