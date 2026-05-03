@@ -10,25 +10,11 @@ const DIR_VEC: Record<Dir, Vec> = {
   up: [-1, 0],
 }
 
-// Reflection rules for each mirror type.
-// Important: the incoming direction names in the rules (left/right/up/down)
-// refer to the side the beam ENTERS the mirror from, not the beam's travel
-// direction through the grid.
-//
-// The tracer's `Dir` represents the beam's travel direction at the mirror.
-// Therefore we map prompt directions to travel directions like this:
-//   enter-from left  -> travel right
-//   enter-from right -> travel left
-//   enter-from up    -> travel down
-//   enter-from down  -> travel up
-//
-// If an incoming travel direction is not present for a mirror, the beam
-// is blocked/stops at the mirror.
 const MIRROR_REFLECT: Record<string, Partial<Record<Dir, Dir>>> = {
-  dr: { left: 'down', up: 'right' },
-  dl: { right: 'down', up: 'left' },
-  ur: { left: 'up', down: 'right' },
-  ul: { right: 'up', down: 'left' },
+  dr: { left: 'down', up: 'right', right: 'right', down: 'down' },
+  dl: { right: 'down', up: 'left', left: 'left', down: 'down' },
+  ur: { left: 'up', down: 'right', right: 'right', up: 'up' },
+  ul: { right: 'up', down: 'left', left: 'left', up: 'up' },
 }
 
 function dirFromVec(dr: number, dc: number): Dir {

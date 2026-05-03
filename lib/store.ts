@@ -35,8 +35,28 @@ function createLevel(worldId: number, levelIndex: number): Level {
   }
 }
 
-function cellFromTool(tool: ToolType, mirrorType: MirrorType, sourceDir: Dir = 'right'): GridCell {
-  if (tool === 'stone') return { type: 'stone', color: "#ffffff" }
+function cellFromTool(tool: ToolType, mirrorType: MirrorType, sourceDir: Dir = 'right', grid?: GridCell[][], row?: number, col?: number): GridCell {
+  if (tool === 'stone') {
+    let color = "#FFCA3A"
+    if (grid && row !== undefined && col !== undefined) {
+      const neighbors = [
+        [row - 1, col],
+        [row + 1, col],
+        [row, col - 1],
+        [row, col + 1],
+      ]
+      for (const [r, c] of neighbors) {
+        if (r >= 0 && r < GRID_SIZE && c >= 0 && c < GRID_SIZE) {
+          const neighbor = grid[r][c]
+          if (neighbor && typeof neighbor === 'object' && 'type' in neighbor && neighbor.type === 'stone') {
+            color = neighbor.color
+            break
+          }
+        }
+      }
+    }
+    return { type: 'stone', color }
+  }
   if (tool === 'hole') return 'hole'
   if (tool === 'frozen') return { type: 'frozen' }
   if (tool === 'fog') return { type: 'fog', reveals: 'stone' }
@@ -46,13 +66,13 @@ function cellFromTool(tool: ToolType, mirrorType: MirrorType, sourceDir: Dir = '
   return null
 }
 
-type PlayPiece = { 
-  id: string; 
-  name: PieceShape; 
+type PlayPiece = {
+  id: string;
+  name: PieceShape;
   shape: [number, number][];
   color: string;
-  originalId: string; 
-  isDistractor?: boolean 
+  originalId: string;
+  isDistractor?: boolean
 }
 
 interface EditorStore {
@@ -181,7 +201,7 @@ export const useEditorStore = create<EditorStore>()(
         if (oldTarget) next[oldTarget[0]][oldTarget[1]] = null
       }
 
-      next[row][col] = cellFromTool(activeTool, activeMirrorType, activeSourceDir)
+      next[row][col] = cellFromTool(activeTool, activeMirrorType, activeSourceDir, grid, row, col)
       set({
         grid: next,
         isDirty: true,
@@ -216,13 +236,13 @@ export const useEditorStore = create<EditorStore>()(
         return {
           activeLevel: {
             ...state.activeLevel,
-            piece_queue: [...state.activeLevel.piece_queue, { 
-              id, 
-              name: shape, 
+            piece_queue: [...state.activeLevel.piece_queue, {
+              id,
+              name: shape,
               shape: PIECE_SHAPES[shape],
               color: SHAPE_COLORS[shape],
-              count, 
-              isDistractor 
+              count,
+              isDistractor
             }],
           },
           isDirty: true,
