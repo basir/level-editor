@@ -17,6 +17,13 @@ const MIRROR_REFLECT: Record<string, Partial<Record<Dir, Dir>>> = {
   ul: { right: 'up', down: 'left', left: 'left', up: 'up' },
 }
 
+const MIRROR_FACES: Record<string, string[]> = {
+  dr: ["down", "right"],
+  dl: ["down", "left"],
+  ur: ["up", "right"],
+  ul: ["up", "left"]
+}
+
 function dirFromVec(dr: number, dc: number): Dir {
   if (dr === 0 && dc === 1) return 'right'
   if (dr === 1 && dc === 0) return 'down'
@@ -113,10 +120,17 @@ export function getBorderingMirrors(
       const key = `${nr},${nc}`
       if (!segSet.has(key) && !added.has(key)) {
         const ncell = grid[nr][nc]
-        const nctype = typeof ncell === 'object' && ncell ? ncell.type : ncell
-        if (nctype === 'mirror') {
-          result.push([nr, nc])
-          added.add(key)
+        if (ncell && typeof ncell === 'object' && ncell.type === 'mirror') {
+          let face = ""
+          if (nr < r) face = "down"   // Mirror is above, we hit its bottom face
+          else if (nr > r) face = "up"  // Mirror is below, we hit its top face
+          else if (nc < c) face = "right" // Mirror is left, we hit its right face
+          else if (nc > c) face = "left"  // Mirror is right, we hit its left face
+
+          if (MIRROR_FACES[ncell.mirror]?.includes(face)) {
+            result.push([nr, nc])
+            added.add(key)
+          }
         }
       }
     }
