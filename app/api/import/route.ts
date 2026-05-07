@@ -23,7 +23,7 @@ Object.entries(PIECE_SHAPES).forEach(([name, cells]) => {
 });
 
 export async function GET() {
-  const outputPath = '/Users/basir/projects/OpticalGrid/olevel-gen/output';
+  const outputPath = '/Users/basir/projects/OpticalGrid/level-gen/output';
 
   try {
     const worldsIndexRaw = await fs.readFile(path.join(outputPath, 'worlds.json'), 'utf-8');

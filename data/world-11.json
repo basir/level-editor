@@ -13,413 +13,23 @@
       "move_limit": 5,
       "piece_queue": [
         {
-          "id": "p3",
-          "name": "CornerSE",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              1
-            ]
-          ],
-          "color": "#8AC926",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "d1",
-          "name": "T",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ],
-            [
-              0,
-              2
-            ],
-            [
-              1,
-              1
-            ]
-          ],
-          "color": "#4CC9F0",
-          "isDistractor": true,
-          "count": 1
-        },
-        {
-          "id": "d2",
-          "name": "Horizontal3",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ],
-            [
-              0,
-              2
-            ]
-          ],
-          "color": "#1982C4",
-          "isDistractor": true,
-          "count": 1
-        },
-        {
-          "id": "p1",
-          "name": "Horizontal2",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ]
-          ],
-          "color": "#FF924C",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
           "id": "p2",
-          "name": "Single",
+          "name": "Vertical3",
           "shape": [
             [
               0,
               0
-            ]
-          ],
-          "color": "#FF595E",
-          "isDistractor": false,
-          "count": 1
-        }
-      ],
-      "distractors": [
-        "d1",
-        "d2"
-      ],
-      "solution": [
-        {
-          "step": 1,
-          "piece_id": "p2",
-          "piece_name": "Single",
-          "row": 0,
-          "col": 7
-        },
-        {
-          "step": 2,
-          "piece_id": "p3",
-          "piece_name": "CornerSE",
-          "row": 6,
-          "col": 7
-        },
-        {
-          "step": 3,
-          "piece_id": "p1",
-          "piece_name": "Horizontal2",
-          "row": 8,
-          "col": 7
-        }
-      ],
-      "target_clears": [
-        {
-          "type": "row",
-          "index": 8
-        },
-        {
-          "type": "col",
-          "index": 7
-        },
-        {
-          "type": "col",
-          "index": 8
-        }
-      ],
-      "clear_chain": [
-        {
-          "trigger": "p1_placement",
-          "clears": [
-            {
-              "type": "row",
-              "index": 8
-            },
-            {
-              "type": "col",
-              "index": 7
-            },
-            {
-              "type": "col",
-              "index": 8
-            }
-          ]
-        }
-      ],
-      "fingerprint": "7497982b2a7e2e7f080a522a401cb25b",
-      "grid": [
-        [
-          {
-            "type": "source"
-          },
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          {
-            "type": "mirror",
-            "mirror": "dl"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFC75F"
-          },
-          null,
-          null
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#FFC75F"
-          },
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#00D2FF"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFC75F"
-          },
-          {
-            "type": "stone",
-            "color": "#00D2FF"
-          },
-          {
-            "type": "target"
-          }
-        ]
-      ]
-    },
-    {
-      "id": "11-2",
-      "name": "Warm Up",
-      "world": 11,
-      "difficulty": "easy",
-      "difficulty_score": 102,
-      "mechanic_focus": "chain_clear",
-      "min_moves": 3,
-      "move_limit": 5,
-      "piece_queue": [
-        {
-          "id": "p3",
-          "name": "Horizontal3",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ],
-            [
-              0,
-              2
-            ]
-          ],
-          "color": "#1982C4",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "p2",
-          "name": "J",
-          "shape": [
-            [
-              0,
-              1
             ],
             [
               1,
-              1
-            ],
-            [
-              2,
-              1
+              0
             ],
             [
               2,
               0
             ]
           ],
-          "color": "#F72585",
+          "color": "#1982C4",
           "isDistractor": false,
           "count": 1
         },
@@ -450,7 +60,32 @@
         },
         {
           "id": "d1",
-          "name": "Horizontal3",
+          "name": "L",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#6A4C93",
+          "isDistractor": true,
+          "count": 1
+        },
+        {
+          "id": "p3",
+          "name": "CornerSW",
           "shape": [
             [
               0,
@@ -461,12 +96,12 @@
               1
             ],
             [
-              0,
-              2
+              1,
+              0
             ]
           ],
-          "color": "#1982C4",
-          "isDistractor": true,
+          "color": "#8AC926",
+          "isDistractor": false,
           "count": 1
         },
         {
@@ -503,22 +138,1562 @@
         {
           "step": 1,
           "piece_id": "p3",
-          "piece_name": "Horizontal3",
-          "row": 9,
+          "piece_name": "CornerSW",
+          "row": 8,
           "col": 4
         },
         {
           "step": 2,
           "piece_id": "p2",
-          "piece_name": "J",
-          "row": 5,
+          "piece_name": "Vertical3",
+          "row": 3,
           "col": 5
         },
         {
           "step": 3,
           "piece_id": "p1",
           "piece_name": "Square",
+          "row": 6,
+          "col": 4
+        }
+      ],
+      "target_clears": [
+        {
+          "type": "row",
+          "index": 6
+        },
+        {
+          "type": "col",
+          "index": 4
+        },
+        {
+          "type": "col",
+          "index": 5
+        }
+      ],
+      "clear_chain": [
+        {
+          "trigger": "p1_placement",
+          "clears": [
+            {
+              "type": "row",
+              "index": 6
+            },
+            {
+              "type": "col",
+              "index": 4
+            },
+            {
+              "type": "col",
+              "index": 5
+            }
+          ]
+        }
+      ],
+      "fingerprint": "a4a7887d9aebce0177efb59a62305ee7",
+      "grid": [
+        [
+          {
+            "type": "mirror",
+            "mirror": "dr"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "target"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#00D2FF"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#00D2FF"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "source"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "11-2",
+      "name": "Warm Up",
+      "world": 11,
+      "difficulty": "easy",
+      "difficulty_score": 102,
+      "mechanic_focus": "chain_clear",
+      "min_moves": 3,
+      "move_limit": 5,
+      "piece_queue": [
+        {
+          "id": "p2",
+          "name": "CornerSE",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "d2",
+          "name": "CornerSE",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "isDistractor": true,
+          "count": 1
+        },
+        {
+          "id": "p1",
+          "name": "Square",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#FFCA3A",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "p3",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "CornerSE",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "isDistractor": true,
+          "count": 1
+        }
+      ],
+      "distractors": [
+        "d1",
+        "d2"
+      ],
+      "solution": [
+        {
+          "step": 1,
+          "piece_id": "p3",
+          "piece_name": "Single",
+          "row": 6,
+          "col": 7
+        },
+        {
+          "step": 2,
+          "piece_id": "p2",
+          "piece_name": "CornerSE",
+          "row": 7,
+          "col": 6
+        },
+        {
+          "step": 3,
+          "piece_id": "p1",
+          "piece_name": "Square",
           "row": 1,
+          "col": 6
+        }
+      ],
+      "target_clears": [
+        {
+          "type": "row",
+          "index": 2
+        },
+        {
+          "type": "col",
+          "index": 6
+        },
+        {
+          "type": "col",
+          "index": 7
+        }
+      ],
+      "clear_chain": [
+        {
+          "trigger": "p1_placement",
+          "clears": [
+            {
+              "type": "row",
+              "index": 2
+            },
+            {
+              "type": "col",
+              "index": 6
+            },
+            {
+              "type": "col",
+              "index": 7
+            }
+          ]
+        }
+      ],
+      "fingerprint": "64dfb68081686f8eb92233c89e4508ca",
+      "grid": [
+        [
+          {
+            "type": "mirror",
+            "mirror": "dr"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          {
+            "type": "target"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#8AC926"
+          },
+          {
+            "type": "stone",
+            "color": "#8AC926"
+          },
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#8AC926"
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#8AC926"
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "source"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#8AC926"
+          },
+          {
+            "type": "stone",
+            "color": "#8AC926"
+          },
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "11-3",
+      "name": "Getting There",
+      "world": 11,
+      "difficulty": "medium",
+      "difficulty_score": 103,
+      "mechanic_focus": "chain_clear",
+      "min_moves": 3,
+      "move_limit": 5,
+      "piece_queue": [
+        {
+          "id": "p1",
+          "name": "Square",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#FFCA3A",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "p2",
+          "name": "CornerSW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#8AC926",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "Horizontal3",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "color": "#1982C4",
+          "isDistractor": true,
+          "count": 1
+        },
+        {
+          "id": "p3",
+          "name": "CornerNE",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "d2",
+          "name": "T",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#4CC9F0",
+          "isDistractor": true,
+          "count": 1
+        }
+      ],
+      "distractors": [
+        "d1",
+        "d2"
+      ],
+      "solution": [
+        {
+          "step": 1,
+          "piece_id": "p3",
+          "piece_name": "CornerNE",
+          "row": 4,
+          "col": 7
+        },
+        {
+          "step": 2,
+          "piece_id": "p2",
+          "piece_name": "CornerSW",
+          "row": 4,
+          "col": 1
+        },
+        {
+          "step": 3,
+          "piece_id": "p1",
+          "piece_name": "Square",
+          "row": 3,
+          "col": 4
+        }
+      ],
+      "target_clears": [
+        {
+          "type": "row",
+          "index": 5
+        },
+        {
+          "type": "row",
+          "index": 3
+        },
+        {
+          "type": "row",
+          "index": 4
+        },
+        {
+          "type": "col",
+          "index": 5
+        }
+      ],
+      "clear_chain": [
+        {
+          "trigger": "p2_placement",
+          "clears": [
+            {
+              "type": "row",
+              "index": 5
+            }
+          ]
+        },
+        {
+          "trigger": "p1_placement",
+          "clears": [
+            {
+              "type": "row",
+              "index": 3
+            },
+            {
+              "type": "row",
+              "index": 4
+            },
+            {
+              "type": "col",
+              "index": 5
+            }
+          ]
+        }
+      ],
+      "fingerprint": "086412cc3569134226da34b159f95f2a",
+      "grid": [
+        [
+          {
+            "type": "mirror",
+            "mirror": "dr"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "target"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          }
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#F72585"
+          }
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          {
+            "type": "frozen",
+            "color": "#4CC9F0"
+          },
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#F72585"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "source"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "11-4",
+      "name": "Finding Flow",
+      "world": 11,
+      "difficulty": "medium",
+      "difficulty_score": 104,
+      "mechanic_focus": "chain_clear",
+      "min_moves": 3,
+      "move_limit": 5,
+      "piece_queue": [
+        {
+          "id": "p2",
+          "name": "CornerSW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#8AC926",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "p3",
+          "name": "CornerNE",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "p1",
+          "name": "Horizontal2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "color": "#FF924C",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "d2",
+          "name": "L",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#6A4C93",
+          "isDistractor": true,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "CornerSW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#8AC926",
+          "isDistractor": true,
+          "count": 1
+        }
+      ],
+      "distractors": [
+        "d1",
+        "d2"
+      ],
+      "solution": [
+        {
+          "step": 1,
+          "piece_id": "p3",
+          "piece_name": "CornerNE",
+          "row": 7,
+          "col": 3
+        },
+        {
+          "step": 2,
+          "piece_id": "p2",
+          "piece_name": "CornerSW",
+          "row": 3,
+          "col": 3
+        },
+        {
+          "step": 3,
+          "piece_id": "p1",
+          "piece_name": "Horizontal2",
+          "row": 5,
+          "col": 2
+        }
+      ],
+      "target_clears": [
+        {
+          "type": "col",
+          "index": 4
+        },
+        {
+          "type": "row",
+          "index": 5
+        },
+        {
+          "type": "col",
+          "index": 2
+        },
+        {
+          "type": "col",
+          "index": 3
+        }
+      ],
+      "clear_chain": [
+        {
+          "trigger": "p2_placement",
+          "clears": [
+            {
+              "type": "col",
+              "index": 4
+            }
+          ]
+        },
+        {
+          "trigger": "p1_placement",
+          "clears": [
+            {
+              "type": "row",
+              "index": 5
+            },
+            {
+              "type": "col",
+              "index": 2
+            },
+            {
+              "type": "col",
+              "index": 3
+            }
+          ]
+        }
+      ],
+      "fingerprint": "8a1adbea425537b18a4f8943c2476602",
+      "grid": [
+        [
+          {
+            "type": "mirror",
+            "mirror": "dr"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "target"
+          }
+        ],
+        [
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          null,
+          {
+            "type": "frozen",
+            "color": "#4CC9F0"
+          },
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          }
+        ],
+        [
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "source"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "11-5",
+      "name": "Double Down",
+      "world": 11,
+      "difficulty": "medium",
+      "difficulty_score": 105,
+      "mechanic_focus": "chain_clear",
+      "min_moves": 3,
+      "move_limit": 5,
+      "piece_queue": [
+        {
+          "id": "p1",
+          "name": "CornerNE",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "p2",
+          "name": "Vertical2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "color": "#FF924C",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "L",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#6A4C93",
+          "isDistractor": true,
+          "count": 1
+        },
+        {
+          "id": "p3",
+          "name": "Horizontal2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "color": "#FF924C",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "d2",
+          "name": "L",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "color": "#6A4C93",
+          "isDistractor": true,
+          "count": 1
+        }
+      ],
+      "distractors": [
+        "d1",
+        "d2"
+      ],
+      "solution": [
+        {
+          "step": 1,
+          "piece_id": "p3",
+          "piece_name": "Horizontal2",
+          "row": 1,
+          "col": 4
+        },
+        {
+          "step": 2,
+          "piece_id": "p2",
+          "piece_name": "Vertical2",
+          "row": 0,
+          "col": 6
+        },
+        {
+          "step": 3,
+          "piece_id": "p1",
+          "piece_name": "CornerNE",
+          "row": 2,
           "col": 4
         }
       ],
@@ -529,7 +1704,7 @@
         },
         {
           "type": "row",
-          "index": 2
+          "index": 3
         },
         {
           "type": "col",
@@ -555,7 +1730,7 @@
           "clears": [
             {
               "type": "row",
-              "index": 2
+              "index": 3
             },
             {
               "type": "col",
@@ -568,32 +1743,29 @@
           ]
         }
       ],
-      "fingerprint": "01f22dcecffb5be4816df9880c54be23",
+      "fingerprint": "432b58388177eb24788da5526a53c7b2",
       "grid": [
         [
           {
-            "type": "source"
-          },
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          {
             "type": "mirror",
-            "mirror": "dl"
+            "mirror": "dr"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "target"
           }
         ],
         [
@@ -602,6 +1774,21 @@
           null,
           null,
           null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#00D2FF"
+          },
           null,
           {
             "type": "stone",
@@ -626,7 +1813,7 @@
           },
           {
             "type": "stone",
-            "color": "#FF595E"
+            "color": "#00D2FF"
           },
           null,
           null,
@@ -683,7 +1870,7 @@
           },
           {
             "type": "stone",
-            "color": "#FF595E"
+            "color": "#1982C4"
           },
           null,
           null,
@@ -702,7 +1889,10 @@
             "type": "stone",
             "color": "#FFCA3A"
           },
-          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
           null,
           null,
           null
@@ -720,42 +1910,9 @@
             "type": "stone",
             "color": "#FFCA3A"
           },
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
           {
             "type": "stone",
-            "color": "#6A4C93"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          {
-            "type": "stone",
-            "color": "#6A4C93"
+            "color": "#1982C4"
           },
           null,
           null,
@@ -766,75 +1923,76 @@
           null,
           null,
           null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
           null,
           null,
+          null
+        ],
+        [
+          {
+            "type": "source"
+          },
           null,
           null,
           null,
           {
-            "type": "target"
-          }
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          null,
+          null
         ]
       ]
     },
     {
-      "id": "11-3",
-      "name": "Getting There",
+      "id": "11-6",
+      "name": "Halfway",
       "world": 11,
-      "difficulty": "medium",
-      "difficulty_score": 103,
+      "difficulty": "hard",
+      "difficulty_score": 106,
       "mechanic_focus": "chain_clear",
-      "min_moves": 3,
+      "min_moves": 4,
       "move_limit": 5,
       "piece_queue": [
         {
-          "id": "p3",
-          "name": "L",
+          "id": "p1",
+          "name": "CornerSE",
           "shape": [
             [
               0,
               0
             ],
             [
+              0,
+              1
+            ],
+            [
               1,
-              0
-            ],
-            [
-              2,
-              0
-            ],
-            [
-              2,
               1
             ]
           ],
-          "color": "#6A4C93",
+          "color": "#8AC926",
           "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "d2",
-          "name": "T",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ],
-            [
-              0,
-              2
-            ],
-            [
-              1,
-              1
-            ]
-          ],
-          "color": "#4CC9F0",
-          "isDistractor": true,
           "count": 1
         },
         {
@@ -859,6 +2017,40 @@
           "count": 1
         },
         {
+          "id": "p4",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "p3",
+          "name": "CornerNW",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
           "id": "p2",
           "name": "CornerSW",
           "shape": [
@@ -878,67 +2070,48 @@
           "color": "#8AC926",
           "isDistractor": false,
           "count": 1
-        },
-        {
-          "id": "p1",
-          "name": "Vertical3",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              1,
-              0
-            ],
-            [
-              2,
-              0
-            ]
-          ],
-          "color": "#1982C4",
-          "isDistractor": false,
-          "count": 1
         }
       ],
       "distractors": [
-        "d1",
-        "d2"
+        "d1"
       ],
       "solution": [
         {
           "step": 1,
-          "piece_id": "p2",
-          "piece_name": "CornerSW",
-          "row": 0,
-          "col": 5
+          "piece_id": "p4",
+          "piece_name": "Single",
+          "row": 5,
+          "col": 9
         },
         {
           "step": 2,
-          "piece_id": "p1",
-          "piece_name": "Vertical3",
-          "row": 2,
+          "piece_id": "p3",
+          "piece_name": "CornerNW",
+          "row": 4,
           "col": 4
         },
         {
           "step": 3,
-          "piece_id": "p3",
-          "piece_name": "L",
-          "row": 6,
+          "piece_id": "p2",
+          "piece_name": "CornerSW",
+          "row": 4,
+          "col": 2
+        },
+        {
+          "step": 4,
+          "piece_id": "p1",
+          "piece_name": "CornerSE",
+          "row": 4,
           "col": 5
         }
       ],
       "target_clears": [
         {
           "type": "row",
-          "index": 2
-        },
-        {
-          "type": "col",
           "index": 4
         },
         {
-          "type": "col",
+          "type": "row",
           "index": 5
         },
         {
@@ -952,19 +2125,10 @@
           "clears": [
             {
               "type": "row",
-              "index": 2
+              "index": 4
             },
             {
-              "type": "col",
-              "index": 4
-            }
-          ]
-        },
-        {
-          "trigger": "p3_placement",
-          "clears": [
-            {
-              "type": "col",
+              "type": "row",
               "index": 5
             },
             {
@@ -974,8 +2138,172 @@
           ]
         }
       ],
-      "fingerprint": "3e1462100628e128fef30392f2207c8c",
+      "fingerprint": "5df003545cb8c6dc3d0b3fb6fddf09c0",
       "grid": [
+        [
+          {
+            "type": "mirror",
+            "mirror": "dr"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          {
+            "type": "target"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          }
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null
+        ],
         [
           {
             "type": "source"
@@ -983,28 +2311,7 @@
           null,
           null,
           null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
           null,
-          null,
-          null,
-          null,
-          {
-            "type": "mirror",
-            "mirror": "dl"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
           null,
           {
             "type": "stone",
@@ -1013,283 +2320,38 @@
           null,
           null,
           null
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          null,
-          {
-            "type": "frozen",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "frozen",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          null,
-          null,
-          {
-            "type": "target"
-          }
         ]
       ]
     },
     {
-      "id": "11-4",
-      "name": "Finding Flow",
+      "id": "11-7",
+      "name": "Picking Up",
       "world": 11,
-      "difficulty": "medium",
-      "difficulty_score": 104,
+      "difficulty": "hard",
+      "difficulty_score": 107,
       "mechanic_focus": "chain_clear",
-      "min_moves": 3,
+      "min_moves": 4,
       "move_limit": 5,
       "piece_queue": [
         {
-          "id": "p3",
-          "name": "CornerSE",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              1
-            ]
-          ],
-          "color": "#8AC926",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "d1",
-          "name": "J",
-          "shape": [
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              1
-            ],
-            [
-              2,
-              1
-            ],
-            [
-              2,
-              0
-            ]
-          ],
-          "color": "#F72585",
-          "isDistractor": true,
-          "count": 1
-        },
-        {
-          "id": "d2",
-          "name": "J",
-          "shape": [
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              1
-            ],
-            [
-              2,
-              1
-            ],
-            [
-              2,
-              0
-            ]
-          ],
-          "color": "#F72585",
-          "isDistractor": true,
-          "count": 1
-        },
-        {
-          "id": "p1",
-          "name": "CornerSE",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              1
-            ]
-          ],
-          "color": "#8AC926",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
           "id": "p2",
+          "name": "Horizontal2",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "color": "#FF924C",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "p3",
           "name": "Vertical2",
           "shape": [
             [
@@ -1304,338 +2366,10 @@
           "color": "#FF924C",
           "isDistractor": false,
           "count": 1
-        }
-      ],
-      "distractors": [
-        "d1",
-        "d2"
-      ],
-      "solution": [
-        {
-          "step": 1,
-          "piece_id": "p3",
-          "piece_name": "CornerSE",
-          "row": 5,
-          "col": 2
         },
         {
-          "step": 2,
-          "piece_id": "p2",
-          "piece_name": "Vertical2",
-          "row": 5,
-          "col": 6
-        },
-        {
-          "step": 3,
-          "piece_id": "p1",
-          "piece_name": "CornerSE",
-          "row": 6,
-          "col": 4
-        }
-      ],
-      "target_clears": [
-        {
-          "type": "row",
-          "index": 5
-        },
-        {
-          "type": "row",
-          "index": 6
-        },
-        {
-          "type": "row",
-          "index": 7
-        },
-        {
-          "type": "col",
-          "index": 4
-        }
-      ],
-      "clear_chain": [
-        {
-          "trigger": "p2_placement",
-          "clears": [
-            {
-              "type": "row",
-              "index": 5
-            }
-          ]
-        },
-        {
-          "trigger": "p1_placement",
-          "clears": [
-            {
-              "type": "row",
-              "index": 6
-            },
-            {
-              "type": "row",
-              "index": 7
-            },
-            {
-              "type": "col",
-              "index": 4
-            }
-          ]
-        }
-      ],
-      "fingerprint": "b45d0f0aff176a2d9ee3daeb97924691",
-      "grid": [
-        [
-          {
-            "type": "source"
-          },
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "mirror",
-            "mirror": "dl"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          {
-            "type": "frozen",
-            "color": "#6A4C93"
-          },
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#F72585"
-          }
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#F72585"
-          }
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "frozen",
-            "color": "#1982C4"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#F72585"
-          },
-          {
-            "type": "stone",
-            "color": "#F72585"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "target"
-          }
-        ]
-      ]
-    },
-    {
-      "id": "11-5",
-      "name": "Double Down",
-      "world": 11,
-      "difficulty": "medium",
-      "difficulty_score": 105,
-      "mechanic_focus": "chain_clear",
-      "min_moves": 3,
-      "move_limit": 5,
-      "piece_queue": [
-        {
-          "id": "p3",
-          "name": "Single",
-          "shape": [
-            [
-              0,
-              0
-            ]
-          ],
-          "color": "#FF595E",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "d1",
-          "name": "Single",
-          "shape": [
-            [
-              0,
-              0
-            ]
-          ],
-          "color": "#FF595E",
-          "isDistractor": true,
-          "count": 1
-        },
-        {
-          "id": "p2",
-          "name": "T",
+          "id": "p1",
+          "name": "Horizontal3",
           "shape": [
             [
               0,
@@ -1648,31 +2382,14 @@
             [
               0,
               2
-            ],
-            [
-              1,
-              1
             ]
           ],
-          "color": "#4CC9F0",
+          "color": "#1982C4",
           "isDistractor": false,
           "count": 1
         },
         {
-          "id": "d2",
-          "name": "Single",
-          "shape": [
-            [
-              0,
-              0
-            ]
-          ],
-          "color": "#FF595E",
-          "isDistractor": true,
-          "count": 1
-        },
-        {
-          "id": "p1",
+          "id": "d1",
           "name": "L",
           "shape": [
             [
@@ -1693,431 +2410,12 @@
             ]
           ],
           "color": "#6A4C93",
-          "isDistractor": false,
-          "count": 1
-        }
-      ],
-      "distractors": [
-        "d1",
-        "d2"
-      ],
-      "solution": [
-        {
-          "step": 1,
-          "piece_id": "p2",
-          "piece_name": "T",
-          "row": 6,
-          "col": 6
-        },
-        {
-          "step": 2,
-          "piece_id": "p3",
-          "piece_name": "Single",
-          "row": 5,
-          "col": 9
-        },
-        {
-          "step": 3,
-          "piece_id": "p1",
-          "piece_name": "L",
-          "row": 5,
-          "col": 5
-        }
-      ],
-      "target_clears": [
-        {
-          "type": "row",
-          "index": 5
-        },
-        {
-          "type": "row",
-          "index": 6
-        },
-        {
-          "type": "row",
-          "index": 7
-        },
-        {
-          "type": "col",
-          "index": 5
-        },
-        {
-          "type": "col",
-          "index": 6
-        }
-      ],
-      "clear_chain": [
-        {
-          "trigger": "p1_placement",
-          "clears": [
-            {
-              "type": "row",
-              "index": 5
-            },
-            {
-              "type": "row",
-              "index": 6
-            },
-            {
-              "type": "row",
-              "index": 7
-            },
-            {
-              "type": "col",
-              "index": 5
-            },
-            {
-              "type": "col",
-              "index": 6
-            }
-          ]
-        }
-      ],
-      "fingerprint": "797c05529f6d4f929f713396bc32016e",
-      "grid": [
-        [
-          {
-            "type": "source"
-          },
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          {
-            "type": "mirror",
-            "mirror": "dl"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#F72585"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          null
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#F72585"
-          },
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#8AC926"
-          }
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#F72585"
-          },
-          {
-            "type": "stone",
-            "color": "#F72585"
-          },
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#8AC926"
-          },
-          {
-            "type": "stone",
-            "color": "#8AC926"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          {
-            "type": "target"
-          }
-        ]
-      ]
-    },
-    {
-      "id": "11-6",
-      "name": "Halfway",
-      "world": 11,
-      "difficulty": "hard",
-      "difficulty_score": 106,
-      "mechanic_focus": "chain_clear",
-      "min_moves": 4,
-      "move_limit": 5,
-      "piece_queue": [
-        {
-          "id": "p3",
-          "name": "CornerSW",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              0
-            ]
-          ],
-          "color": "#8AC926",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "p1",
-          "name": "Square",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              0
-            ],
-            [
-              1,
-              1
-            ]
-          ],
-          "color": "#FFCA3A",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "p4",
-          "name": "J",
-          "shape": [
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              1
-            ],
-            [
-              2,
-              1
-            ],
-            [
-              2,
-              0
-            ]
-          ],
-          "color": "#F72585",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "d1",
-          "name": "J",
-          "shape": [
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              1
-            ],
-            [
-              2,
-              1
-            ],
-            [
-              2,
-              0
-            ]
-          ],
-          "color": "#F72585",
           "isDistractor": true,
           "count": 1
         },
         {
-          "id": "p2",
-          "name": "Horizontal3",
+          "id": "p4",
+          "name": "Horizontal2",
           "shape": [
             [
               0,
@@ -2126,354 +2424,11 @@
             [
               0,
               1
-            ],
-            [
-              0,
-              2
-            ]
-          ],
-          "color": "#1982C4",
-          "isDistractor": false,
-          "count": 1
-        }
-      ],
-      "distractors": [
-        "d1"
-      ],
-      "solution": [
-        {
-          "step": 1,
-          "piece_id": "p4",
-          "piece_name": "J",
-          "row": 7,
-          "col": 4
-        },
-        {
-          "step": 2,
-          "piece_id": "p3",
-          "piece_name": "CornerSW",
-          "row": 5,
-          "col": 4
-        },
-        {
-          "step": 3,
-          "piece_id": "p2",
-          "piece_name": "Horizontal3",
-          "row": 2,
-          "col": 6
-        },
-        {
-          "step": 4,
-          "piece_id": "p1",
-          "piece_name": "Square",
-          "row": 2,
-          "col": 4
-        }
-      ],
-      "target_clears": [
-        {
-          "type": "row",
-          "index": 2
-        },
-        {
-          "type": "col",
-          "index": 4
-        },
-        {
-          "type": "col",
-          "index": 5
-        }
-      ],
-      "clear_chain": [
-        {
-          "trigger": "p1_placement",
-          "clears": [
-            {
-              "type": "row",
-              "index": 2
-            },
-            {
-              "type": "col",
-              "index": 4
-            },
-            {
-              "type": "col",
-              "index": 5
-            }
-          ]
-        }
-      ],
-      "fingerprint": "6caae19b3df880112b98201f3208b71b",
-      "grid": [
-        [
-          {
-            "type": "source"
-          },
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null,
-          {
-            "type": "mirror",
-            "mirror": "dl"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "target"
-          }
-        ]
-      ]
-    },
-    {
-      "id": "11-7",
-      "name": "Picking Up",
-      "world": 11,
-      "difficulty": "hard",
-      "difficulty_score": 107,
-      "mechanic_focus": "chain_clear",
-      "min_moves": 4,
-      "move_limit": 5,
-      "piece_queue": [
-        {
-          "id": "p1",
-          "name": "Vertical2",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              1,
-              0
             ]
           ],
           "color": "#FF924C",
           "isDistractor": false,
           "count": 1
-        },
-        {
-          "id": "d1",
-          "name": "J",
-          "shape": [
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              1
-            ],
-            [
-              2,
-              1
-            ],
-            [
-              2,
-              0
-            ]
-          ],
-          "color": "#F72585",
-          "isDistractor": true,
-          "count": 1
-        },
-        {
-          "id": "p4",
-          "name": "Single",
-          "shape": [
-            [
-              0,
-              0
-            ]
-          ],
-          "color": "#FF595E",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "p3",
-          "name": "Single",
-          "shape": [
-            [
-              0,
-              0
-            ]
-          ],
-          "color": "#FF595E",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "p2",
-          "name": "Horizontal3",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ],
-            [
-              0,
-              2
-            ]
-          ],
-          "color": "#1982C4",
-          "isDistractor": false,
-          "count": 1
         }
       ],
       "distractors": [
@@ -2483,44 +2438,44 @@
         {
           "step": 1,
           "piece_id": "p4",
-          "piece_name": "Single",
-          "row": 5,
-          "col": 7
+          "piece_name": "Horizontal2",
+          "row": 4,
+          "col": 2
         },
         {
           "step": 2,
           "piece_id": "p2",
-          "piece_name": "Horizontal3",
-          "row": 4,
-          "col": 1
+          "piece_name": "Horizontal2",
+          "row": 8,
+          "col": 6
         },
         {
           "step": 3,
           "piece_id": "p3",
-          "piece_name": "Single",
+          "piece_name": "Vertical2",
           "row": 5,
-          "col": 1
+          "col": 3
         },
         {
           "step": 4,
           "piece_id": "p1",
-          "piece_name": "Vertical2",
-          "row": 4,
-          "col": 6
+          "piece_name": "Horizontal3",
+          "row": 8,
+          "col": 1
         }
       ],
       "target_clears": [
         {
           "type": "row",
-          "index": 4
-        },
-        {
-          "type": "row",
-          "index": 5
+          "index": 8
         },
         {
           "type": "col",
-          "index": 6
+          "index": 2
+        },
+        {
+          "type": "col",
+          "index": 3
         }
       ],
       "clear_chain": [
@@ -2529,52 +2484,94 @@
           "clears": [
             {
               "type": "row",
-              "index": 4
-            },
-            {
-              "type": "row",
-              "index": 5
+              "index": 8
             },
             {
               "type": "col",
-              "index": 6
+              "index": 2
+            },
+            {
+              "type": "col",
+              "index": 3
             }
           ]
         }
       ],
-      "fingerprint": "d235eeeb60b11bc41a3bac52eae01b70",
+      "fingerprint": "2e78743c3ef7d0ce4ec3a0fec22b0946",
       "grid": [
         [
           {
-            "type": "source"
-          },
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          {
             "type": "mirror",
-            "mirror": "dl"
+            "mirror": "dr"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "target"
           }
         ],
         [
           null,
           null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
           null,
           null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
           null,
           null,
           {
             "type": "stone",
-            "color": "#1982C4"
+            "color": "#FFCA3A"
           },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null,
           null,
           null,
           null
@@ -2586,10 +2583,7 @@
           null,
           null,
           null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
+          null,
           null,
           null,
           null
@@ -2597,92 +2591,14 @@
         [
           null,
           null,
-          null,
-          null,
-          null,
-          null,
           {
             "type": "stone",
-            "color": "#00D2FF"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#FF924C"
+            "color": "#6A4C93"
           },
           null,
           null,
           null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
           null,
-          {
-            "type": "stone",
-            "color": "#00D2FF"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          }
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
           null,
           null,
           null
@@ -2690,14 +2606,14 @@
         [
           null,
           null,
-          null,
-          null,
-          null,
-          null,
           {
             "type": "stone",
-            "color": "#1982C4"
+            "color": "#6A4C93"
           },
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null
@@ -2705,34 +2621,67 @@
         [
           null,
           null,
-          null,
-          null,
-          null,
-          null,
           {
             "type": "stone",
-            "color": "#1982C4"
+            "color": "#6A4C93"
           },
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          null,
+          null,
+          null,
           null,
           null,
           null
         ],
         [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           {
             "type": "stone",
             "color": "#FF595E"
           },
           null,
           null,
+          null,
           {
-            "type": "target"
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
           }
+        ],
+        [
+          {
+            "type": "source"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
         ]
       ]
     },
@@ -2746,73 +2695,6 @@
       "min_moves": 4,
       "move_limit": 5,
       "piece_queue": [
-        {
-          "id": "p2",
-          "name": "Square",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              0
-            ],
-            [
-              1,
-              1
-            ]
-          ],
-          "color": "#FFCA3A",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "p1",
-          "name": "J",
-          "shape": [
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              1
-            ],
-            [
-              2,
-              1
-            ],
-            [
-              2,
-              0
-            ]
-          ],
-          "color": "#F72585",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "p3",
-          "name": "Vertical2",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              1,
-              0
-            ]
-          ],
-          "color": "#FF924C",
-          "isDistractor": false,
-          "count": 1
-        },
         {
           "id": "p4",
           "name": "CornerNE",
@@ -2835,7 +2717,7 @@
           "count": 1
         },
         {
-          "id": "d1",
+          "id": "p1",
           "name": "L",
           "shape": [
             [
@@ -2856,355 +2738,49 @@
             ]
           ],
           "color": "#6A4C93",
-          "isDistractor": true,
+          "isDistractor": false,
           "count": 1
-        }
-      ],
-      "distractors": [
-        "d1"
-      ],
-      "solution": [
-        {
-          "step": 1,
-          "piece_id": "p4",
-          "piece_name": "CornerNE",
-          "row": 6,
-          "col": 4
         },
         {
-          "step": 2,
-          "piece_id": "p2",
-          "piece_name": "Square",
-          "row": 8,
-          "col": 4
-        },
-        {
-          "step": 3,
-          "piece_id": "p1",
-          "piece_name": "J",
-          "row": 1,
-          "col": 3
-        },
-        {
-          "step": 4,
-          "piece_id": "p3",
-          "piece_name": "Vertical2",
-          "row": 5,
-          "col": 3
-        }
-      ],
-      "target_clears": [
-        {
-          "type": "col",
-          "index": 5
-        },
-        {
-          "type": "row",
-          "index": 1
-        },
-        {
-          "type": "col",
-          "index": 4
-        },
-        {
-          "type": "col",
-          "index": 3
-        }
-      ],
-      "clear_chain": [
-        {
-          "trigger": "p2_placement",
-          "clears": [
-            {
-              "type": "col",
-              "index": 5
-            }
-          ]
-        },
-        {
-          "trigger": "p1_placement",
-          "clears": [
-            {
-              "type": "row",
-              "index": 1
-            },
-            {
-              "type": "col",
-              "index": 4
-            }
-          ]
-        },
-        {
-          "trigger": "p3_placement",
-          "clears": [
-            {
-              "type": "col",
-              "index": 3
-            }
-          ]
-        }
-      ],
-      "fingerprint": "dfe76a772396d841091a057afe0b3737",
-      "grid": [
-        [
-          {
-            "type": "source"
-          },
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          null,
-          null,
-          null,
-          {
-            "type": "mirror",
-            "mirror": "dl"
-          }
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "frozen",
-            "color": "#4CC9F0"
-          },
-          null,
-          {
-            "type": "frozen",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "target"
-          }
-        ]
-      ]
-    },
-    {
-      "id": "11-9",
-      "name": "Almost There",
-      "world": 11,
-      "difficulty": "expert",
-      "difficulty_score": 109,
-      "mechanic_focus": "chain_clear",
-      "min_moves": 5,
-      "move_limit": 6,
-      "piece_queue": [
-        {
-          "id": "p4",
-          "name": "Horizontal3",
+          "id": "p3",
+          "name": "Square",
           "shape": [
             [
               0,
               0
             ],
-            [
-              0,
-              1
-            ],
-            [
-              0,
-              2
-            ]
-          ],
-          "color": "#1982C4",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "p5",
-          "name": "J",
-          "shape": [
             [
               0,
               1
             ],
             [
               1,
-              1
-            ],
-            [
-              2,
-              1
-            ],
-            [
-              2,
               0
+            ],
+            [
+              1,
+              1
             ]
           ],
-          "color": "#F72585",
+          "color": "#FFCA3A",
           "isDistractor": false,
           "count": 1
         },
         {
-          "id": "p3",
+          "id": "p2",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
           "name": "CornerNW",
           "shape": [
             [
@@ -3221,30 +2797,300 @@
             ]
           ],
           "color": "#8AC926",
-          "isDistractor": false,
+          "isDistractor": true,
           "count": 1
+        }
+      ],
+      "distractors": [
+        "d1"
+      ],
+      "solution": [
+        {
+          "step": 1,
+          "piece_id": "p4",
+          "piece_name": "CornerNE",
+          "row": 2,
+          "col": 6
         },
         {
-          "id": "p2",
-          "name": "CornerSE",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              1
-            ]
-          ],
-          "color": "#8AC926",
-          "isDistractor": false,
-          "count": 1
+          "step": 2,
+          "piece_id": "p2",
+          "piece_name": "Single",
+          "row": 4,
+          "col": 6
         },
+        {
+          "step": 3,
+          "piece_id": "p3",
+          "piece_name": "Square",
+          "row": 2,
+          "col": 4
+        },
+        {
+          "step": 4,
+          "piece_id": "p1",
+          "piece_name": "L",
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "target_clears": [
+        {
+          "type": "row",
+          "index": 2
+        },
+        {
+          "type": "row",
+          "index": 3
+        },
+        {
+          "type": "row",
+          "index": 4
+        },
+        {
+          "type": "col",
+          "index": 3
+        }
+      ],
+      "clear_chain": [
+        {
+          "trigger": "p1_placement",
+          "clears": [
+            {
+              "type": "row",
+              "index": 2
+            },
+            {
+              "type": "row",
+              "index": 3
+            },
+            {
+              "type": "row",
+              "index": 4
+            },
+            {
+              "type": "col",
+              "index": 3
+            }
+          ]
+        }
+      ],
+      "fingerprint": "2f7b07d7f8509eaeda1a659989bc33e1",
+      "grid": [
+        [
+          {
+            "type": "mirror",
+            "mirror": "dr"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "target"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          }
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          }
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "source"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "11-9",
+      "name": "Almost There",
+      "world": 11,
+      "difficulty": "expert",
+      "difficulty_score": 109,
+      "mechanic_focus": "chain_clear",
+      "min_moves": 4,
+      "move_limit": 5,
+      "piece_queue": [
         {
           "id": "d1",
           "name": "J",
@@ -3271,8 +3117,21 @@
           "count": 1
         },
         {
-          "id": "p1",
-          "name": "CornerSW",
+          "id": "p4",
+          "name": "Single",
+          "shape": [
+            [
+              0,
+              0
+            ]
+          ],
+          "color": "#FF595E",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "p3",
+          "name": "Square",
           "shape": [
             [
               0,
@@ -3285,6 +3144,52 @@
             [
               1,
               0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#FFCA3A",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "p2",
+          "name": "CornerNE",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#8AC926",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "p1",
+          "name": "CornerNE",
+          "shape": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
             ]
           ],
           "color": "#8AC926",
@@ -3298,56 +3203,49 @@
       "solution": [
         {
           "step": 1,
-          "piece_id": "p3",
-          "piece_name": "CornerNW",
-          "row": 8,
-          "col": 5
+          "piece_id": "p2",
+          "piece_name": "CornerNE",
+          "row": 1,
+          "col": 3
         },
         {
           "step": 2,
-          "piece_id": "p5",
-          "piece_name": "J",
+          "piece_id": "p4",
+          "piece_name": "Single",
           "row": 6,
-          "col": 6
+          "col": 0
         },
         {
           "step": 3,
-          "piece_id": "p4",
-          "piece_name": "Horizontal3",
-          "row": 1,
-          "col": 5
+          "piece_id": "p3",
+          "piece_name": "Square",
+          "row": 4,
+          "col": 2
         },
         {
           "step": 4,
-          "piece_id": "p2",
-          "piece_name": "CornerSE",
-          "row": 6,
-          "col": 5
-        },
-        {
-          "step": 5,
           "piece_id": "p1",
-          "piece_name": "CornerSW",
-          "row": 3,
-          "col": 6
+          "piece_name": "CornerNE",
+          "row": 6,
+          "col": 2
         }
       ],
       "target_clears": [
         {
           "type": "col",
-          "index": 5
+          "index": 4
         },
         {
           "type": "row",
-          "index": 3
-        },
-        {
-          "type": "col",
           "index": 6
         },
         {
           "type": "col",
-          "index": 7
+          "index": 2
+        },
+        {
+          "type": "col",
+          "index": 3
         }
       ],
       "clear_chain": [
@@ -3356,7 +3254,7 @@
           "clears": [
             {
               "type": "col",
-              "index": 5
+              "index": 4
             }
           ]
         },
@@ -3365,210 +3263,225 @@
           "clears": [
             {
               "type": "row",
-              "index": 3
-            },
-            {
-              "type": "col",
               "index": 6
             },
             {
               "type": "col",
-              "index": 7
+              "index": 2
+            },
+            {
+              "type": "col",
+              "index": 3
             }
           ]
         }
       ],
-      "fingerprint": "a82954cd11568df92dc3394402bd51ae",
+      "fingerprint": "5b30013536a0479ff6e4171b453daa79",
       "grid": [
+        [
+          {
+            "type": "mirror",
+            "mirror": "dr"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "target"
+          }
+        ],
+        [
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          {
+            "type": "frozen",
+            "color": "#FF924C"
+          },
+          null,
+          {
+            "type": "frozen",
+            "color": "#4CC9F0"
+          },
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#1982C4"
+          },
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FF924C"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         [
           {
             "type": "source"
           },
           null,
-          null,
-          null,
-          null,
           {
             "type": "stone",
-            "color": "#1982C4"
+            "color": "#FFCA3A"
           },
           {
             "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          null,
-          {
-            "type": "mirror",
-            "mirror": "dl"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
+            "color": "#FFCA3A"
           },
           {
             "type": "stone",
             "color": "#FF924C"
           },
           null,
-          null
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#1982C4"
-          },
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "frozen",
-            "color": "#4CC9F0"
-          },
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#F72585"
-          },
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#F72585"
-          },
-          {
-            "type": "stone",
-            "color": "#F72585"
-          },
-          {
-            "type": "stone",
-            "color": "#F72585"
-          },
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           null,
           null,
           null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          null,
-          {
-            "type": "target"
-          }
         ]
       ]
     },
@@ -3579,11 +3492,78 @@
       "difficulty": "expert",
       "difficulty_score": 110,
       "mechanic_focus": "chain_clear",
-      "min_moves": 5,
-      "move_limit": 6,
+      "min_moves": 4,
+      "move_limit": 5,
       "piece_queue": [
         {
+          "id": "p3",
+          "name": "Vertical3",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "color": "#1982C4",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "d1",
+          "name": "Horizontal3",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "color": "#1982C4",
+          "isDistractor": true,
+          "count": 1
+        },
+        {
           "id": "p1",
+          "name": "Square",
+          "shape": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "color": "#FFCA3A",
+          "isDistractor": false,
+          "count": 1
+        },
+        {
+          "id": "p2",
           "name": "T",
           "shape": [
             [
@@ -3608,95 +3588,27 @@
           "count": 1
         },
         {
-          "id": "p2",
-          "name": "CornerNW",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              1,
-              0
-            ],
-            [
-              1,
-              1
-            ]
-          ],
-          "color": "#8AC926",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "p3",
-          "name": "CornerSE",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ],
-            [
-              1,
-              1
-            ]
-          ],
-          "color": "#8AC926",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
-          "id": "d1",
-          "name": "Horizontal2",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ]
-          ],
-          "color": "#FF924C",
-          "isDistractor": true,
-          "count": 1
-        },
-        {
-          "id": "p5",
-          "name": "Horizontal2",
-          "shape": [
-            [
-              0,
-              0
-            ],
-            [
-              0,
-              1
-            ]
-          ],
-          "color": "#FF924C",
-          "isDistractor": false,
-          "count": 1
-        },
-        {
           "id": "p4",
-          "name": "Horizontal2",
+          "name": "J",
           "shape": [
             [
               0,
-              0
+              1
             ],
             [
-              0,
+              1,
               1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              0
             ]
           ],
-          "color": "#FF924C",
+          "color": "#F72585",
           "isDistractor": false,
           "count": 1
         }
@@ -3707,91 +3619,289 @@
       "solution": [
         {
           "step": 1,
-          "piece_id": "p5",
-          "piece_name": "Horizontal2",
-          "row": 6,
-          "col": 1
+          "piece_id": "p3",
+          "piece_name": "Vertical3",
+          "row": 5,
+          "col": 3
         },
         {
           "step": 2,
           "piece_id": "p4",
-          "piece_name": "Horizontal2",
-          "row": 9,
-          "col": 4
+          "piece_name": "J",
+          "row": 7,
+          "col": 3
         },
         {
           "step": 3,
           "piece_id": "p2",
-          "piece_name": "CornerNW",
-          "row": 1,
-          "col": 4
+          "piece_name": "T",
+          "row": 3,
+          "col": 6
         },
         {
           "step": 4,
-          "piece_id": "p3",
-          "piece_name": "CornerSE",
-          "row": 4,
-          "col": 5
-        },
-        {
-          "step": 5,
           "piece_id": "p1",
-          "piece_name": "T",
-          "row": 6,
-          "col": 4
+          "piece_name": "Square",
+          "row": 2,
+          "col": 3
         }
       ],
       "target_clears": [
         {
           "type": "row",
-          "index": 6
+          "index": 4
         },
         {
           "type": "row",
-          "index": 7
+          "index": 2
+        },
+        {
+          "type": "row",
+          "index": 3
+        },
+        {
+          "type": "col",
+          "index": 3
         },
         {
           "type": "col",
           "index": 4
-        },
-        {
-          "type": "col",
-          "index": 5
-        },
-        {
-          "type": "col",
-          "index": 6
         }
       ],
       "clear_chain": [
+        {
+          "trigger": "p2_placement",
+          "clears": [
+            {
+              "type": "row",
+              "index": 4
+            }
+          ]
+        },
         {
           "trigger": "p1_placement",
           "clears": [
             {
               "type": "row",
-              "index": 6
+              "index": 2
             },
             {
               "type": "row",
-              "index": 7
+              "index": 3
+            },
+            {
+              "type": "col",
+              "index": 3
             },
             {
               "type": "col",
               "index": 4
-            },
-            {
-              "type": "col",
-              "index": 5
-            },
-            {
-              "type": "col",
-              "index": 6
             }
           ]
         }
       ],
-      "fingerprint": "2d195b4e45e16946d53ae4c513c35bfe",
+      "fingerprint": "04321e9d3c6c098aac7281ea48037c11",
       "grid": [
+        [
+          {
+            "type": "mirror",
+            "mirror": "dr"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "target"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          }
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#FFCA3A"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#6A4C93"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#F72585"
+          }
+        ],
+        [
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          {
+            "type": "frozen",
+            "color": "#4CC9F0"
+          },
+          {
+            "type": "frozen",
+            "color": "#4CC9F0"
+          },
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          null,
+          {
+            "type": "stone",
+            "color": "#F72585"
+          },
+          {
+            "type": "stone",
+            "color": "#F72585"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#4CC9F0"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          {
+            "type": "stone",
+            "color": "#FF595E"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         [
           {
             "type": "source"
@@ -3799,215 +3909,12 @@
           null,
           null,
           null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
           null,
-          null,
-          {
-            "type": "mirror",
-            "mirror": "dl"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#8AC926"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          {
-            "type": "stone",
-            "color": "#8AC926"
-          },
-          {
-            "type": "stone",
-            "color": "#8AC926"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
           null,
           null,
           null,
           null,
           null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          {
-            "type": "stone",
-            "color": "#6A4C93"
-          },
-          null,
-          null,
-          null,
-          null
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#8AC926"
-          },
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          }
-        ],
-        [
-          {
-            "type": "stone",
-            "color": "#8AC926"
-          },
-          {
-            "type": "stone",
-            "color": "#8AC926"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          null,
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FFCA3A"
-          },
-          {
-            "type": "stone",
-            "color": "#FF924C"
-          }
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#FF595E"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "type": "stone",
-            "color": "#4CC9F0"
-          },
-          null,
-          null,
-          {
-            "type": "target"
-          }
         ]
       ]
     }

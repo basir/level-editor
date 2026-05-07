@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-05-03T13:25:21.078Z",
+  "updatedAt": "2026-05-07T15:29:53.209Z",
   "worlds": [
     {
       "id": 1,
@@ -17,55 +17,55 @@
           "id": "1-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "acd9e7afe55d7c658f4b91f0368775e7"
+          "fingerprint": "fc49086f1278d70235075e81e9018974"
         },
         {
           "id": "1-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "49f91b8d4d7419ca485ec52619c6ebc8"
+          "fingerprint": "467d35f8b403085c94ffd0953b2d0407"
         },
         {
           "id": "1-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "0c9f2206e26b9a19a8bccaf5be51d926"
+          "fingerprint": "ebd37bccafe96de4dac8fea0565faf17"
         },
         {
           "id": "1-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "99361057ae803e7c6f66d107f617179a"
+          "fingerprint": "f8529304d2cc4a54adcd9d632bb8a22c"
         },
         {
           "id": "1-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "1aff2b9f836d905237e8c2b45af445ea"
+          "fingerprint": "6cbb4139d30ba5a00c4ceb643e1e0930"
         },
         {
           "id": "1-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "b0ddd72261a902167694aac67f51209c"
+          "fingerprint": "3b6ec41a909277bca3df509461d87561"
         },
         {
           "id": "1-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "0cf9915dcc4ac2cc1abc90757d5ea0cf"
+          "fingerprint": "ecdc0f8a8992dd0a1859fcdc203844d1"
         },
         {
           "id": "1-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "b7c2d8772398e2f342998aa55e565af7"
+          "fingerprint": "c177ac8c2e49f5103b9b98b39f69f55d"
         },
         {
           "id": "1-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "1d6b721001291816a2cb504d66b462a8"
+          "fingerprint": "c5b8c504b2e558bd00c9132d76a64e3a"
         }
       ]
     },
@@ -78,61 +78,61 @@
           "id": "2-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "ed2d1a89c46c14829667d4055224d7a3"
+          "fingerprint": "fe855d9a0077754c4ab6a28035d08a78"
         },
         {
           "id": "2-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "b30d01a9a4ea660eb7f9406d1c9bcf3e"
+          "fingerprint": "c0fce22c47f6470e5b9df43f054f8ec5"
         },
         {
           "id": "2-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "2d0f8176771f4cace9a5c2e05ad70346"
+          "fingerprint": "08948389ede8057e4fddfb4c7865fb7b"
         },
         {
           "id": "2-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "3a7889a52e67da684f0b002a96c1b621"
+          "fingerprint": "a3c61001b667ae360104c286432c7fb1"
         },
         {
           "id": "2-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "2c47a4661c48693029128ae5365f4b63"
+          "fingerprint": "9e335590744b773b155f6ec3ed11a757"
         },
         {
           "id": "2-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "379f264edcbbdfa8e0c5270468508044"
+          "fingerprint": "d36c5bafc2eb4155130502f234577964"
         },
         {
           "id": "2-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "52e2d24e9aef35bb2f6c6518be2cbe81"
+          "fingerprint": "2199a455fcf8a247eccce4415f334cf4"
         },
         {
           "id": "2-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "cdbbf18a5eba51dcab31636adf8d754b"
+          "fingerprint": "05512c1af29b441e921354cf69b7cef1"
         },
         {
           "id": "2-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "fa8727eb71b4a8e246a0f2629ad6da74"
+          "fingerprint": "8ac3f7a4f6fb404dbb0873b61aab3c2b"
         },
         {
           "id": "2-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "b917c0a785bb06f4a9adf8d0d13c98f2"
+          "fingerprint": "e316035e4b084b7067cf7a6556a6a6c3"
         }
       ]
     },
@@ -145,61 +145,61 @@
           "id": "3-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "71c7947cbb12b8cda97b4ee3790a967e"
+          "fingerprint": "e0b8f4262aa72161df242c5f86fc67d8"
         },
         {
           "id": "3-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "56e775d3468e46f339b820c6911267fa"
+          "fingerprint": "b5b49df02381a405ed514429c7a4d35e"
         },
         {
           "id": "3-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "4a6f32ff991c56d4fda023fb847f01f8"
+          "fingerprint": "c6b86725cfd50356ff60fff088934a2b"
         },
         {
           "id": "3-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "ffd23d72105364817d5dfcc71d04d53c"
+          "fingerprint": "5964c666d3ac6198f65707f104b47d6f"
         },
         {
           "id": "3-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "c599152c678148a5d1059f121b5b4d00"
+          "fingerprint": "7820642652c0ccfcbfb31a8ee03e3aa8"
         },
         {
           "id": "3-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "72784b2f5eb27c4966b724b51771ccff"
+          "fingerprint": "c7364eff26ca3e2d05bb9eb46859c64c"
         },
         {
           "id": "3-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "199fe3965778ea77a1577285a748d9aa"
+          "fingerprint": "c7c076c949721431632395372109264b"
         },
         {
           "id": "3-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "d09725ae3410e3aa058420acd5435875"
+          "fingerprint": "d4b1bb17a3e5291bbec9c878a86f7a9f"
         },
         {
           "id": "3-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "0d748cd7ea76d18c081b9b2e34cb5ff6"
+          "fingerprint": "486b1e8ad8c2757dce1b7fbc79a84659"
         },
         {
           "id": "3-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "bdcf887e60bdaa05505dd717b6927112"
+          "fingerprint": "9fb911da2c6193f718499e70992274f3"
         }
       ]
     },
@@ -212,61 +212,61 @@
           "id": "4-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "015cd9d2d777883a891a4c5ada7927e0"
+          "fingerprint": "bc62b41d9457981ebb32483b626b0677"
         },
         {
           "id": "4-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "3be65ec14deaee19692210c120ebd129"
+          "fingerprint": "cd93c836bca8c980390c23de0e8c059d"
         },
         {
           "id": "4-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "41ba4c2c17e3117b553cfd0f5a3faa28"
+          "fingerprint": "82faeb2c523ce47371ebd4f56248ad7b"
         },
         {
           "id": "4-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "b3ee50df6459face9c06e17954308d0a"
+          "fingerprint": "a6d74aca2fad15d918cd8aa238620e19"
         },
         {
           "id": "4-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "b8ab395c30a173c18839a477f3031cfa"
+          "fingerprint": "fce9abdd6f563994758ebf41ccbea32c"
         },
         {
           "id": "4-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "75d9ca3e2d2a7260253abac8d417f70a"
+          "fingerprint": "a1282e5043280314e74beb37ac553763"
         },
         {
           "id": "4-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "9ac4ea2a9a6fbfdcd6f54356b8b5d140"
+          "fingerprint": "b2b80326cc4342bcfa87631e7157dad2"
         },
         {
           "id": "4-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "eb45119557506659134f52ed28428164"
+          "fingerprint": "a2272284cc97923f48e7813620ba0726"
         },
         {
           "id": "4-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "aaf5121f559b1d7be2eaf3809b045b5f"
+          "fingerprint": "7bb9ad4a0e00850215e4e6211f0faaa6"
         },
         {
           "id": "4-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "38ba870c764bb119d5703857d1c79a6b"
+          "fingerprint": "d1896285e2bbd049a40b2472c64064fa"
         }
       ]
     },
@@ -279,61 +279,61 @@
           "id": "5-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "b2f5424d21ac9c375934cd241a2b0711"
+          "fingerprint": "75b6103ccfad8dcb3a6098752898af37"
         },
         {
           "id": "5-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "eb4c24f90c51e96c6e8d4bd459eb8dea"
+          "fingerprint": "2735455b2c8caf80748c8fc32c735c5b"
         },
         {
           "id": "5-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "45899faac95b5a56fcae66ebe0fe0a9b"
+          "fingerprint": "fdcf69b8454e89a84e61d3a9a141b2bb"
         },
         {
           "id": "5-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "9601ff53fd2d517509647f2f44a6253b"
+          "fingerprint": "c527288ce5d0f1f1870f6307e01b6d10"
         },
         {
           "id": "5-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "f5e6e60e42ed57033f976231f67e1b45"
+          "fingerprint": "2507c26af8bc95d7c42fb9bd855976b5"
         },
         {
           "id": "5-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "0f16b5951375d479018e543190db09bc"
+          "fingerprint": "d516b431e4a3dcaa8901143d2a4a2ab8"
         },
         {
           "id": "5-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "5788efd7accce75f8a79a88be1c240ce"
+          "fingerprint": "6dc73981f6beeddbde43b9195e3da033"
         },
         {
           "id": "5-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "fb4d3ad678d768eae69442738f0f47a4"
+          "fingerprint": "ecf12b427eec329ba69fa3319b847251"
         },
         {
           "id": "5-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "97e62f3be3b2ee69f96019d62585a42e"
+          "fingerprint": "68bf5627a0c19d7fb04294cccb590b2c"
         },
         {
           "id": "5-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "736f2bbadd88c07519ab801eefd64ad3"
+          "fingerprint": "a24009a8a7cda9829c040cee170acee3"
         }
       ]
     },
@@ -346,61 +346,61 @@
           "id": "6-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "63859af2f3c69af1176ff84e0c86750d"
+          "fingerprint": "70616486f91f58ec2364bf642b0769de"
         },
         {
           "id": "6-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "329c5d312ec7938d74415f38c64d8a3a"
+          "fingerprint": "2a39ea495568958b12daf091875b3de0"
         },
         {
           "id": "6-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "4b76f519560dc51061553245d44e27c8"
+          "fingerprint": "1632cb76b529c60f48282e682b67699c"
         },
         {
           "id": "6-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "c6955ca4efa8a864e89e3d5300428dd9"
+          "fingerprint": "8c14bfa7c492ebb7494e4a2a329a09f3"
         },
         {
           "id": "6-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "e1b11c3f75e3dde74125508379a10416"
+          "fingerprint": "1086f6faca54cb51b0721bc5659e618a"
         },
         {
           "id": "6-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "581d61416b1c386f2d268347039de161"
+          "fingerprint": "1a1cfeabb4bac5b1713ddec6520d01bb"
         },
         {
           "id": "6-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "6f6332201ee1e8ee8ce737da133cf13c"
+          "fingerprint": "a1fb211164124c89b7101500e7a34e97"
         },
         {
           "id": "6-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "6918a97595295981cc43f3451802236a"
+          "fingerprint": "a4bd464602f59ea985f5f66d8ebdac16"
         },
         {
           "id": "6-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "0ac1efa51261c8e41619492e735bbed6"
+          "fingerprint": "8599132c474e1287607f7ec35f70cde2"
         },
         {
           "id": "6-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "58a92b3ca21b0bcfa1a34a72dfba6875"
+          "fingerprint": "90cd3e371083982b941eea0150de8184"
         }
       ]
     },
@@ -413,61 +413,61 @@
           "id": "7-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "4c6b33b5f194fbfcb418330509aac509"
+          "fingerprint": "4ee0bb2a91af111be95b05363adaa4e0"
         },
         {
           "id": "7-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "d19e1a467de77463286a4caf8dd601c1"
+          "fingerprint": "e578c3f4e3f21da930f416dc7e70bde0"
         },
         {
           "id": "7-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "75bd85e94754111f08bbf05c84514f46"
+          "fingerprint": "e2eb466aa7d85fb156917cf9f9e2e81d"
         },
         {
           "id": "7-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "0cf1dce3f570de12b72a071d2864f37b"
+          "fingerprint": "dc3d089a644a44f0660f31f5da03badc"
         },
         {
           "id": "7-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "262bd591fa3254d49db5f713a8e6a546"
+          "fingerprint": "1ccc33c23c79719b73010242e2322d30"
         },
         {
           "id": "7-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "88e2fd32a33d5fa9ddf5327f7b2893e9"
+          "fingerprint": "b0ce1a8f14770210e61c79fb4f37fab5"
         },
         {
           "id": "7-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "009d99737063679bedf13bbee8165169"
+          "fingerprint": "04ba85952eeabef81f458efaf3bb012c"
         },
         {
           "id": "7-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "ffaeaf4216308de3d831fdb294d008b5"
+          "fingerprint": "b8a10a7459bef58559f17264ff3f02b0"
         },
         {
           "id": "7-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "f4cbefe8672f488a0a40fb601980535b"
+          "fingerprint": "20c8a87d49a7d63678c13a4867a0a253"
         },
         {
           "id": "7-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "536de681ae6d5e48f4f8293c31aa0643"
+          "fingerprint": "c396668dc2dc8d3cb292819d5e77789f"
         }
       ]
     },
@@ -480,61 +480,61 @@
           "id": "8-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "9ce5398bd57940aa83733cf16a8d2e10"
+          "fingerprint": "4548b862f4caebd26fdae369b58e6877"
         },
         {
           "id": "8-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "e7d889f500f9231d3ce01c74aedcefe8"
+          "fingerprint": "eeeb14a9e55942413aa4e98f9c6c9479"
         },
         {
           "id": "8-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "5b05e013deddc14f49ce678a2b6c0296"
+          "fingerprint": "ff25341021844cd72cbc5d6d507c79a9"
         },
         {
           "id": "8-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "31a3dd17699b43ee3ae1ef5b76b57cb2"
+          "fingerprint": "d003248642aa36f5d1d16ecb0c18097e"
         },
         {
           "id": "8-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "ee8a6eb7a6bdb25887ecc12d0b01378d"
+          "fingerprint": "1536053bebeb564777f782f24a5b53fb"
         },
         {
           "id": "8-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "84aa55e1890b5f3c6f8c056887f38354"
+          "fingerprint": "8362bfebdaff27542b3f37810fd65b08"
         },
         {
           "id": "8-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "307bedab6afbe36cae36896a049ca320"
+          "fingerprint": "46ca7182271832cc7e9f923715b70236"
         },
         {
           "id": "8-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "a9c456a5cafc6f08f9cc6c31b667a093"
+          "fingerprint": "677f0bf1018074423fe3e185a6bc58aa"
         },
         {
           "id": "8-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "30aba9f80df97c380d5706cd20f8204d"
+          "fingerprint": "fadf051ded58f37a81a996b202b5ba2a"
         },
         {
           "id": "8-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "57d5f50ccb80f67059f4194a435fac3c"
+          "fingerprint": "a4950460b7a4559b24a5ab6070d90d1a"
         }
       ]
     },
@@ -547,61 +547,61 @@
           "id": "9-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "61ad36cb689979ae1b2c55ed41a4e66d"
+          "fingerprint": "168fdf6960d7b758db3b63058e5ca143"
         },
         {
           "id": "9-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "6f436d6764cb78fc08f9fdc0fee3dfc6"
+          "fingerprint": "8f844c8b9b2187cf01bf51c98041c6dd"
         },
         {
           "id": "9-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "68eab402e04f5c5fb72c63fb9f7e3f50"
+          "fingerprint": "754827ac5dd4036c22b116739bd730c8"
         },
         {
           "id": "9-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "accbf561b34879638e285dc3dd327ed6"
+          "fingerprint": "707a43f84611505ec6434fd3d2332ebc"
         },
         {
           "id": "9-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "8cff873d4dc16f8a76a2c9019880198c"
+          "fingerprint": "2b153fd2a44faf869690c8c09c5580bd"
         },
         {
           "id": "9-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "82b706deb6aa0281fc716f503c6e361b"
+          "fingerprint": "1ef6ec88a82f9cebe816322d08468141"
         },
         {
           "id": "9-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "413ae7f15b3e5525edce9e756d196ef8"
+          "fingerprint": "251c67f74eaa0989a63e10afb4e11602"
         },
         {
           "id": "9-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "3b5838d80163aa705a1713eb6d0a4bc3"
+          "fingerprint": "0076b77539bcc696975eb06ba89647e5"
         },
         {
           "id": "9-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "8bfc5f636c04a3ee7c1d49d91ab16166"
+          "fingerprint": "7516f1019952953b10cbedc240b156c2"
         },
         {
           "id": "9-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "9712be3fe7a746cc99cd6450f61c1458"
+          "fingerprint": "66c1de2f588df9463184a2d6e64b9b89"
         }
       ]
     },
@@ -614,61 +614,61 @@
           "id": "10-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "10eba2fabbc674db7b850653fe0436c8"
+          "fingerprint": "d23feef587cee79066286d014f8caae1"
         },
         {
           "id": "10-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "6ece3283071331b428360fdadc2338e9"
+          "fingerprint": "9647dfeabdea1cdb8e57066b85a724a2"
         },
         {
           "id": "10-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "c49eb8ec2f8ea44093628f49a78c69e1"
+          "fingerprint": "71cc10f4e542ba0a3df788b4503e448c"
         },
         {
           "id": "10-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "93b2d23aec6cc44dd993756a3844f684"
+          "fingerprint": "231b22baae938071ee3b05b274afcaa5"
         },
         {
           "id": "10-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "e75b0d989b433dbcb5e9ddc51221a402"
+          "fingerprint": "7b8561f58dee2e3de42671119c6b5bb1"
         },
         {
           "id": "10-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "8059cc14ae329f1c5b6940989717d1ec"
+          "fingerprint": "1c37a9dc34c6aeac74cd8e3a0e33aecb"
         },
         {
           "id": "10-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "47e689fb07f2eccc50555edec2cb9db1"
+          "fingerprint": "a80337b5bee518af4b1bbe632f320850"
         },
         {
           "id": "10-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "b75d6c0e2d3919e13da19c75b7f3ae03"
+          "fingerprint": "50e2975e76fb859a5f3e374c8b2517b8"
         },
         {
           "id": "10-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "d45d508f06925a8cff9457d6a256068c"
+          "fingerprint": "f233aec162d68de5c91ec5091d65b901"
         },
         {
           "id": "10-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "2e87f4ede0469f7d93c883bf53ff0b4d"
+          "fingerprint": "f8fa8cf09ea2a546d057d1394b7e3ada"
         }
       ]
     },
@@ -681,61 +681,61 @@
           "id": "11-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "7497982b2a7e2e7f080a522a401cb25b"
+          "fingerprint": "a4a7887d9aebce0177efb59a62305ee7"
         },
         {
           "id": "11-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "01f22dcecffb5be4816df9880c54be23"
+          "fingerprint": "64dfb68081686f8eb92233c89e4508ca"
         },
         {
           "id": "11-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "3e1462100628e128fef30392f2207c8c"
+          "fingerprint": "086412cc3569134226da34b159f95f2a"
         },
         {
           "id": "11-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "b45d0f0aff176a2d9ee3daeb97924691"
+          "fingerprint": "8a1adbea425537b18a4f8943c2476602"
         },
         {
           "id": "11-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "797c05529f6d4f929f713396bc32016e"
+          "fingerprint": "432b58388177eb24788da5526a53c7b2"
         },
         {
           "id": "11-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "6caae19b3df880112b98201f3208b71b"
+          "fingerprint": "5df003545cb8c6dc3d0b3fb6fddf09c0"
         },
         {
           "id": "11-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "d235eeeb60b11bc41a3bac52eae01b70"
+          "fingerprint": "2e78743c3ef7d0ce4ec3a0fec22b0946"
         },
         {
           "id": "11-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "dfe76a772396d841091a057afe0b3737"
+          "fingerprint": "2f7b07d7f8509eaeda1a659989bc33e1"
         },
         {
           "id": "11-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "a82954cd11568df92dc3394402bd51ae"
+          "fingerprint": "5b30013536a0479ff6e4171b453daa79"
         },
         {
           "id": "11-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "2d195b4e45e16946d53ae4c513c35bfe"
+          "fingerprint": "04321e9d3c6c098aac7281ea48037c11"
         }
       ]
     },
@@ -748,61 +748,61 @@
           "id": "12-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "63e0e1319e1da6aa68da774883932ea0"
+          "fingerprint": "30966317248ca163c1a1331ea86fef20"
         },
         {
           "id": "12-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "e8755a8cac4253e81993770f3acf4a72"
+          "fingerprint": "0f9355c40a4d24098ff8bdb2f0e940fc"
         },
         {
           "id": "12-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "537895fad9869b197aebea3c0a439949"
+          "fingerprint": "96a77621222d1576b4382a29724f4a20"
         },
         {
           "id": "12-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "c196e86fa66945fcba12d8335aeaa1f8"
+          "fingerprint": "d5d1a51e7f526828f5d16bdc2dc5cbcd"
         },
         {
           "id": "12-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "ea499b64481830b63bc946e4f6f91bdb"
+          "fingerprint": "5269fc3e49fb4c6433615cb0f4a58ee1"
         },
         {
           "id": "12-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "18fdd1a2c11f6b3b44477c2657624583"
+          "fingerprint": "a80f8e027b2434d7dc46198fce384821"
         },
         {
           "id": "12-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "2758fe614ae8e2024900c7d7ebc8b0bd"
+          "fingerprint": "5b519c9472690c721633116f040a7ba3"
         },
         {
           "id": "12-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "bd9436f5a85f496ea9b4c9bf3314b3c7"
+          "fingerprint": "f6ab44b812cee22202a4fba47a03db20"
         },
         {
           "id": "12-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "a258277d97d73ad3f21a522814f73f81"
+          "fingerprint": "226a2610a9a9b524490508730171035a"
         },
         {
           "id": "12-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "c912b462fec73359b8217d7c0ddff8fa"
+          "fingerprint": "ca4390a7dda598929d52a6690b7cf19e"
         }
       ]
     },
@@ -815,61 +815,61 @@
           "id": "13-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "5fea7cd96143b43ac7dc31fa21a403ba"
+          "fingerprint": "6f698cb329bf18f37063aacb7e1722a7"
         },
         {
           "id": "13-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "21bfda87020db27635cf39e9677c7eef"
+          "fingerprint": "303d6ea263e1e9a3b1c4604b6b27955d"
         },
         {
           "id": "13-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "5030b00b812224ec73115a092b025429"
+          "fingerprint": "bcc81353f70dde2c2bca56695cd667e7"
         },
         {
           "id": "13-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "fc36f5b66515a6f7c86dacac31177ade"
+          "fingerprint": "33f3cb0a7073a0f5f94c0c7f1e6883d8"
         },
         {
           "id": "13-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "e7993ad9a909ab316dcd9d95230e4d2d"
+          "fingerprint": "ea9ecd6397c28c7e31272defd9980006"
         },
         {
           "id": "13-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "0a1c9a0604671941bb8e144293672a8f"
+          "fingerprint": "1dff880db0504dc6bd313e4d781ea058"
         },
         {
           "id": "13-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "6de3b4aec400f5c2891818fb0ae94c59"
+          "fingerprint": "ecae4632c22285aa0b081f008f68e8ad"
         },
         {
           "id": "13-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "40e4d0ac6fa4da85ca149c34de5412ee"
+          "fingerprint": "20043f3d97960094cc76939c123edba7"
         },
         {
           "id": "13-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "7e1e87435fa889df136f9f95f55b732d"
+          "fingerprint": "5b57404a6379eef443e2e6b85c9a38cc"
         },
         {
           "id": "13-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "95bc219c4cd9bfc5c6044ed5255d4146"
+          "fingerprint": "baa9c0ad8691929bdfe9d5a8b41419f7"
         }
       ]
     },
@@ -882,61 +882,61 @@
           "id": "14-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "130c20aad36f802089af2cf784373e84"
+          "fingerprint": "4de4c557efc346839e48d3c2b2555ee1"
         },
         {
           "id": "14-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "2c13aabe0310d1a14fcbcc16d6c3a99b"
+          "fingerprint": "383fa5510d77b961e902639d4ee867c8"
         },
         {
           "id": "14-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "6bb49c52676da1306af2b17191308e09"
+          "fingerprint": "f7c4810f7420a196b4fb89c8790a48a3"
         },
         {
           "id": "14-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "a335715834617a42dd2f809566bb3daf"
+          "fingerprint": "a42db238ea23e4d04cbfea0e32ed5aec"
         },
         {
           "id": "14-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "cccd1ee491e54293c40d2e37ae938e75"
+          "fingerprint": "2e990d793cd0568ab19c9be1c6a9a070"
         },
         {
           "id": "14-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "a3729551dd546cec0da915bdd0f1a436"
+          "fingerprint": "8f3a34ec635d2073ad29d08d326ed755"
         },
         {
           "id": "14-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "cd663cedc7d022c7a6a054a7c71e40b9"
+          "fingerprint": "b25bf673bc3e64c81d9797e1a67b9ea9"
         },
         {
           "id": "14-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "29091f4638787825d6f17581e7f7ca0c"
+          "fingerprint": "afa92d97358527fbc3c8039b0b13ff7a"
         },
         {
           "id": "14-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "a5eef0f5241e82175531096f9ca73be7"
+          "fingerprint": "d19c579afe25cb1e21a79a7d664cd563"
         },
         {
           "id": "14-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "ea557e1432967ae399164da9a24c162e"
+          "fingerprint": "8fc01ec5779abac9debe1d8a977da76a"
         }
       ]
     },
@@ -949,61 +949,61 @@
           "id": "15-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "7f110437238f588d1c78b962afcc9af0"
+          "fingerprint": "4442be8ccc397b36a71da7e408d00734"
         },
         {
           "id": "15-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "1981e3056aef4948e2b471cf76adb517"
+          "fingerprint": "ffd11a7e2f6a24a1c0225f92f67b7bd1"
         },
         {
           "id": "15-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "33ad8776a4db63894620335c9a646290"
+          "fingerprint": "6847af4d619a544a2c5fb82a46a4b52f"
         },
         {
           "id": "15-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "277bb1e77f3ea23bebbaa45aaa9f61e3"
+          "fingerprint": "1f698793850f2828e0a9d32d86b08fb8"
         },
         {
           "id": "15-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "874006b7b3ea6f4f39f9fe82b4360623"
+          "fingerprint": "2fdbc2383ce9e0211acb99e2a337e6c3"
         },
         {
           "id": "15-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "4ac4d29fffb44c961b0ee55670fac1e8"
+          "fingerprint": "636a47579e2e153b9b9007f0cb585167"
         },
         {
           "id": "15-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "860d8368a85cf2928051051f83182605"
+          "fingerprint": "6ba81872c07d77860ace2ea989b79f47"
         },
         {
           "id": "15-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "168d61afd3d3d6142e7079327395df0d"
+          "fingerprint": "d3eaa458b8eaeefef3b38defc6927d18"
         },
         {
           "id": "15-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "d983763fc8d6ed00b935e43d8a1d08f1"
+          "fingerprint": "218f947fcbe23621e3b1e0d05ede0dc6"
         },
         {
           "id": "15-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "56e6d1b1f231889f77cdf7f4cd644aeb"
+          "fingerprint": "65187bd543a9880febf3a8234e14fbb0"
         }
       ]
     },
@@ -1016,61 +1016,61 @@
           "id": "16-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "50dce413effccaeedd66ad0007a57929"
+          "fingerprint": "7dd50334683b976c5fbccaa42d996c73"
         },
         {
           "id": "16-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "ced13f96afe5e65d4c18257f99446697"
+          "fingerprint": "5a979d12c6594cd81502e18e77083df5"
         },
         {
           "id": "16-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "1d3299ddb05d4ca6a03474bae728f16d"
+          "fingerprint": "f4dc5614b5acaf46689250007e28ac6e"
         },
         {
           "id": "16-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "00cbb64b9b20e83ebe3ca1c8f15a189d"
+          "fingerprint": "ff61a1323f821af377c2adb6a2ffb01f"
         },
         {
           "id": "16-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "b5376c9f89effd7b541c8e0b92c012ad"
+          "fingerprint": "2be173274277ea235ce2be622627b060"
         },
         {
           "id": "16-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "3780626e9b1133e8d232a4eb65f31130"
+          "fingerprint": "05cf238a17347680794f8a6d4b7bfdaf"
         },
         {
           "id": "16-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "dbe00616e385b384bf6aee43ad84dbb5"
+          "fingerprint": "9a435a58534d9082920cc297889ffe73"
         },
         {
           "id": "16-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "406194dc26c5aaceaee2c6b75b9377f0"
+          "fingerprint": "456c25c7f8ad67aed7ef8796d277e706"
         },
         {
           "id": "16-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "c52134192d5825d57f0a206c9213a0dc"
+          "fingerprint": "e088de4ead4cc32c1f9d59d6f4bb5a7b"
         },
         {
           "id": "16-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "573837679bbda23fb8e003cccadcd896"
+          "fingerprint": "bcd285cf70f65bbafb4f41e1ba134c05"
         }
       ]
     },
@@ -1083,61 +1083,61 @@
           "id": "17-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "c21a46ce69e417f11d3f6eb37fd8ca55"
+          "fingerprint": "b3e654f00a8be6fb1975e5b39687551c"
         },
         {
           "id": "17-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "423bab42274dac9049fe9912b91b20d3"
+          "fingerprint": "ee69eb51edb9527edb1100b1e95f3e2e"
         },
         {
           "id": "17-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "00f89e19ec9b86dbd23e0003f543dfc7"
+          "fingerprint": "a8dc9951f9d8e1bf9dd32314d13fc032"
         },
         {
           "id": "17-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "a34eeeef0f333f532e07ae8faa0da8c3"
+          "fingerprint": "19fa278d0edbaa4acb42e9ac2be6eee3"
         },
         {
           "id": "17-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "6ddf21df12e44055105406932464537e"
+          "fingerprint": "b7b0943a8b72cbb9d4ea73373a5496e4"
         },
         {
           "id": "17-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "b4435ec6718c8b93e8f94bd6a0ee1951"
+          "fingerprint": "40972bcd641cf87f137e900d45e5071d"
         },
         {
           "id": "17-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "47b1698359704d537b2d38d2f270850c"
+          "fingerprint": "1c254af5249cb6786dbcaa4b1875704c"
         },
         {
           "id": "17-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "f35069abf2410e598bbdecde38d4fdeb"
+          "fingerprint": "37cd77c17fb8cd3e62f5d385c895e79f"
         },
         {
           "id": "17-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "0e92f9331df1855c9fbae79745309796"
+          "fingerprint": "5b904d8b19b41c42e95015d3b72b6633"
         },
         {
           "id": "17-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "752f68345e7260f7d9a6d52cc3452feb"
+          "fingerprint": "0cae6a3d67de49dc8c6d0b4b58bb6274"
         }
       ]
     },
@@ -1150,61 +1150,61 @@
           "id": "18-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "291b73261e3ebdd2c10b47ace0351f4d"
+          "fingerprint": "8d987e6d054e662b9235c7e2afcb94f5"
         },
         {
           "id": "18-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "4c8f64ac9177b2543528343749b6f745"
+          "fingerprint": "cd32fd1aa37708ec4286e7c7dccb8f57"
         },
         {
           "id": "18-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "b6f1efc03f7c9f6f1330ce25ce483849"
+          "fingerprint": "ef9d56ce22cfb0187d608c9bccf11f32"
         },
         {
           "id": "18-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "4684077547c912f931b56276da3885a0"
+          "fingerprint": "67f80383503aa2f7a2aa013f99b524a9"
         },
         {
           "id": "18-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "8604aabeb0d65a8f9d7423ac3c316f36"
+          "fingerprint": "9af3bf4d9bd3fe1448b8151b0e984ef0"
         },
         {
           "id": "18-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "7aec4cdbfb95f43f4f1b9e71a4bbf8c3"
+          "fingerprint": "22f7abfdcf180eab51c5deb9ada1a595"
         },
         {
           "id": "18-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "8775131a4bb08442e68fc897e1d5d701"
+          "fingerprint": "29a90a4e032535d43dd824051b068a3d"
         },
         {
           "id": "18-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "604a3ca29f2a69da350a3669c14f6310"
+          "fingerprint": "533bdc45a0498f2bb8e4c40314357a3d"
         },
         {
           "id": "18-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "37c8c2ab8a42afca330c03178e2fc7c0"
+          "fingerprint": "5ad2b73b8347ba627fa9dcd25a369cac"
         },
         {
           "id": "18-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "0fc0bc7e4043933ab0be8690bd611819"
+          "fingerprint": "7ce44cbe59b79c3b5897eb41ede8f51c"
         }
       ]
     },
@@ -1217,61 +1217,61 @@
           "id": "19-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "87b8307bf2cd171ed13bedf8542c8c22"
+          "fingerprint": "842f5014e8792072d591e0ed6f57dbd6"
         },
         {
           "id": "19-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "ef238f34d453810d22c81bf2bc8b5ad9"
+          "fingerprint": "aa0654e79e5b0eb707f2e0fa87d3a3fd"
         },
         {
           "id": "19-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "377fbcb8978f434d04d9732b9819ceaa"
+          "fingerprint": "32d013fb7ff460a0fd424cc77080851b"
         },
         {
           "id": "19-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "8708dfb84ee2770a1197a0a0e2e09cb5"
+          "fingerprint": "56a8f96b3b0375bc2283b7ad6a1ff77d"
         },
         {
           "id": "19-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "21da6b872515ff98098a69d8e2e934fb"
+          "fingerprint": "6ac3ecac7f2695058aa7f11483b19e83"
         },
         {
           "id": "19-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "e890e9446860ee3b0faf4c7f6c801ee2"
+          "fingerprint": "7dc7c63492b1e4d54baf288a7af36666"
         },
         {
           "id": "19-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "b25427fa03c97073827eff31f57bf538"
+          "fingerprint": "c56a5ba38ec2d4cea71a772c8124ed37"
         },
         {
           "id": "19-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "3a2f5bca9648c542b8262560c02ba17d"
+          "fingerprint": "77562370867260af9008b9e879168aad"
         },
         {
           "id": "19-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "66202035d8bc4f2fdeb29eb506b9daad"
+          "fingerprint": "41cc21e038608671ea7f65216a5eada8"
         },
         {
           "id": "19-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "dcdee34edb5a60ef762b386bc6c531d8"
+          "fingerprint": "45e91d818aa9f385ae67b4c89f01d286"
         }
       ]
     },
@@ -1284,61 +1284,61 @@
           "id": "20-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "a29cc77157697b3f6eab189d2ebc7aa5"
+          "fingerprint": "a238cabbc9d87c17df15b2c84cb248c5"
         },
         {
           "id": "20-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "bc543c4847f01397be301b04452f068f"
+          "fingerprint": "96b4824648920973bad0ba029d6c894c"
         },
         {
           "id": "20-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "732f52f28d2240bec1fd3f5fdf4dda66"
+          "fingerprint": "765392c6808fc552afda472b21421bff"
         },
         {
           "id": "20-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "5eb65d436c74d2552abf9a7da15c73df"
+          "fingerprint": "8697de08c03e0f6874b8d24f143a5217"
         },
         {
           "id": "20-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "106c74d2617ea4a7c05797356535be3b"
+          "fingerprint": "9a25b5969dfcc89703414e5ff1c28039"
         },
         {
           "id": "20-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "6c3ac1c7bf0ce0afdac21518eaed31d8"
+          "fingerprint": "940c68506bc60d1fad8073a701a70ca7"
         },
         {
           "id": "20-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "e8999c1863a427c4969afcd196bb4a77"
+          "fingerprint": "a2dad00a40a8ed52da93df0e4d2300c0"
         },
         {
           "id": "20-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "180e5811b1d899956a89ab4b4ebf61f3"
+          "fingerprint": "e306a3e6994ab9f2a7873352e11883be"
         },
         {
           "id": "20-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "77dd2468f3fc03cf9823b1c42cda2c3a"
+          "fingerprint": "df7cb237da85ffc0caab314271726c19"
         },
         {
           "id": "20-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "b51c60410d62933de17c12a098b63115"
+          "fingerprint": "355963e6fac4092b6b90a9d7ba0a9acc"
         }
       ]
     },
@@ -1351,61 +1351,61 @@
           "id": "21-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "84449b4bf8ec4f8cdad609116b5ddf85"
+          "fingerprint": "db70f9b6e21c9c199fd0a979351ff377"
         },
         {
           "id": "21-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "1e071ae3f79f05ef03852f6aa778b353"
+          "fingerprint": "8f6c6c49a2972b35cce32a58be101685"
         },
         {
           "id": "21-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "5cdd0f4d269faaa521444d501befb54f"
+          "fingerprint": "a8ad2b2a59d00b070ed88de28a23a910"
         },
         {
           "id": "21-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "97f5202cf06602ba0419cf9e490ef7b9"
+          "fingerprint": "973c93fb7287cd24c8bda8fdce6774ad"
         },
         {
           "id": "21-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "1bcb6cafa162d4d3f8ffd5808d9bace8"
+          "fingerprint": "8bf2600cab44c2d2960fb9f24a7da84d"
         },
         {
           "id": "21-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "d8dab2f80ea05f9a898f58a954979fb1"
+          "fingerprint": "4ef4cb3bd8cdc8d4ec920021e5737518"
         },
         {
           "id": "21-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "2c0af29e22bcc26db507cc1a74529d01"
+          "fingerprint": "39433a5fdb30cd770c3500c1340b5f04"
         },
         {
           "id": "21-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "a6c26c6afe0ae30b6c8cf47e460c07db"
+          "fingerprint": "955397e5dfc76637098824653df4ac2a"
         },
         {
           "id": "21-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "e969382097202651292b161cd4f7afb8"
+          "fingerprint": "4477f837d7c9d2ebda4fcfb74473ca6d"
         },
         {
           "id": "21-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "ef356e093bb79b863ae9ba5f3729db34"
+          "fingerprint": "ee7eb2f99d8262a52da8fb3dcdb504ae"
         }
       ]
     },
@@ -1418,61 +1418,61 @@
           "id": "22-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "222d9b4cda514d3754fa7ccb06507bbe"
+          "fingerprint": "1c935f72e24f537dd3da1ff54797ad7f"
         },
         {
           "id": "22-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "0fea799f420b0ff215782a7ee67bf4f9"
+          "fingerprint": "bf3825de92c1cf2069742c3211f2ef9e"
         },
         {
           "id": "22-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "9e7e7df9c4b98365eda2fe1fcdbad4a3"
+          "fingerprint": "63a7342b24614dbd1828daa37eae1846"
         },
         {
           "id": "22-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "90c7f185282511726b98c187ef4b7bfe"
+          "fingerprint": "bd834fb80a8a23fd3cbaff5671492cf4"
         },
         {
           "id": "22-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "b3b0c2dc441ed54b102f91a5dbcf8625"
+          "fingerprint": "88a4257cef1a70f3b76bfe3e5e90ec18"
         },
         {
           "id": "22-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "00da7afa87bfe2cee5d44dfce392702e"
+          "fingerprint": "de40b02eef5f8c7ff0e07f7a5de39ae2"
         },
         {
           "id": "22-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "4cfecd8357afdfeb81f8924945e4db72"
+          "fingerprint": "dab8c623073f1e387b693bb6f1da7eed"
         },
         {
           "id": "22-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "fa61053e563ef914b23f20c849511aeb"
+          "fingerprint": "b36af2127a7665024efef565fd3afe41"
         },
         {
           "id": "22-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "73ddb4d155570d1ab257e519e7a78882"
+          "fingerprint": "d5a84e83c1ecfa3ee414ff912f2a3fa5"
         },
         {
           "id": "22-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "912b36e5bfee57d528fb99779a6f4358"
+          "fingerprint": "58928342c78136152b776ba651fe1a39"
         }
       ]
     },
@@ -1485,61 +1485,61 @@
           "id": "23-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "48b26a0d91bc81bfba75826d787ec29e"
+          "fingerprint": "534802b6cf1a14ada3e9b41d3353e714"
         },
         {
           "id": "23-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "bfeea4d34c2097e782b9064bd2aa5a84"
+          "fingerprint": "8fedf81f91d47e7e72e2445657797803"
         },
         {
           "id": "23-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "c4f250e275645d6d48478d8686b6e79a"
+          "fingerprint": "494f4eec8bf7e116bd4fcaace037f374"
         },
         {
           "id": "23-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "8ca3682b4e18536be22967fa0faf3524"
+          "fingerprint": "140f47f0ca8627de7d3391f070ebab61"
         },
         {
           "id": "23-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "069c2cfba25128862251732d4aaba6fe"
+          "fingerprint": "1a9a59fcb688b3e9e10908a784a75826"
         },
         {
           "id": "23-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "dff878c4d8ee98307dd0b974b31e07b7"
+          "fingerprint": "07474c2bc5bcd2ff33f970f7beb55a71"
         },
         {
           "id": "23-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "fa12e8e51130a698ed39909d03370916"
+          "fingerprint": "510ea18f096d7d279d0bb32f18904bbb"
         },
         {
           "id": "23-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "e25ad95901a3bb4029aa64f27a86ce48"
+          "fingerprint": "82985f5b9bd755895b1fcd945338de32"
         },
         {
           "id": "23-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "2eb9e16df9954365e25ae87e7e897672"
+          "fingerprint": "f79fe1399536ccabf47a604462f1cd24"
         },
         {
           "id": "23-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "436c7cd95a379ad1a72ea15c4930a773"
+          "fingerprint": "0e4e9a3368a4064e31cbb088274287db"
         }
       ]
     },
@@ -1552,61 +1552,61 @@
           "id": "24-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "5f75169dbf151d2aa6526230654a7fe4"
+          "fingerprint": "1cc2f2c87262e1d9d4e79ddeb07eba86"
         },
         {
           "id": "24-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "d9846521b1888a574012cb304957d2b6"
+          "fingerprint": "0c99fc129fcde6dcb89e698e0ed49fe8"
         },
         {
           "id": "24-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "566598e0d8964c8fb390dc5863ddec1e"
+          "fingerprint": "f3238183916540f29fb5226aae70b1f4"
         },
         {
           "id": "24-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "b1b5cf67b5db1e235efb64f0db976bcb"
+          "fingerprint": "72e0b0b62d52f4a554369415914134a3"
         },
         {
           "id": "24-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "c6984c2c50d7cd2ca8b5bda598da8a2c"
+          "fingerprint": "bed212c34105b4015177f3a52877ac1b"
         },
         {
           "id": "24-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "6a324001a2a4756c6723a0a82cec6898"
+          "fingerprint": "92a972e84c90dc5331397a5f1e668fd3"
         },
         {
           "id": "24-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "fcad19284b266686c47341760fb8a476"
+          "fingerprint": "5f07211f292617f171748fa93c099b41"
         },
         {
           "id": "24-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "1cd9da8470b410700674e25ac9639428"
+          "fingerprint": "85edc1c9b829743a6a0cfeab4c7a7e5c"
         },
         {
           "id": "24-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "6977bb0abcd0290bdb2bd89476b442a7"
+          "fingerprint": "2b80d8582b6e6a2da06dfa3f00982d06"
         },
         {
           "id": "24-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "c5994e4c736865ab89f9808d19453777"
+          "fingerprint": "cb7ffbacc0230b2b7197525ce5e018a9"
         }
       ]
     },
@@ -1619,61 +1619,61 @@
           "id": "25-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "aa88c7c4591152e1ac4b6ebb49fd0d37"
+          "fingerprint": "d479d68f44978967d3b0b8ede35426fb"
         },
         {
           "id": "25-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "2807dfb024c5cc68894cafa1c3a9fb4a"
+          "fingerprint": "629fadc88881808507f8b18731268590"
         },
         {
           "id": "25-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "42087cfb53afb38ddea3c7d07f10a610"
+          "fingerprint": "2ee72c75339dde8b35636c559b1014fb"
         },
         {
           "id": "25-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "da9f9c51c81c2db66dcc111c86aafa71"
+          "fingerprint": "0673a76f0eb4a939360af39423410d2e"
         },
         {
           "id": "25-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "57459f0a4e8fa015f178f0dae161e56a"
+          "fingerprint": "6b558ee7766a9131a2e07f0eb2d71bc3"
         },
         {
           "id": "25-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "9c98fb2f1f2fd78f018f70c2a53af18b"
+          "fingerprint": "067fc1c9fcdbc7ff8477de93dced7d7d"
         },
         {
           "id": "25-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "df81f99aaf9f19be768e39303e5e0a8d"
+          "fingerprint": "f05d2028a4ef5efeb65c09369b802733"
         },
         {
           "id": "25-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "a13ec6c0a51a73fe3214943fb7457245"
+          "fingerprint": "2cfa744b4854c8709f2e4cbe2b4c3fb9"
         },
         {
           "id": "25-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "47245539b2228a13842e65a4605ad976"
+          "fingerprint": "8904e7f6052b44fdd73b73aa4201582d"
         },
         {
           "id": "25-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "fd31d874b0ba7511b82b36c8fcf69439"
+          "fingerprint": "318abd7d38b11d02f897d86429303213"
         }
       ]
     },
@@ -1686,61 +1686,61 @@
           "id": "26-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "d5d581ddd4521ec27be3f8bb0325020a"
+          "fingerprint": "11e5763b9ed0dc4cd92d0ba3b4e35355"
         },
         {
           "id": "26-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "c917b4e67b3db24db8eec64087caa4f2"
+          "fingerprint": "42e3788a1de04b551e91eca516504d35"
         },
         {
           "id": "26-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "46abf56b20b7280609c033f7ef9a9e46"
+          "fingerprint": "e27ed98e9074dcc989f9943e9f459a56"
         },
         {
           "id": "26-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "69424df18bbe60ecff948f38469563a8"
+          "fingerprint": "bf63e686b63b499b0e5738a76e2ed451"
         },
         {
           "id": "26-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "3d1d2da3c40b83ba6cd1faa02877405b"
+          "fingerprint": "8e01216be8373108aa8d6b820dae5cc0"
         },
         {
           "id": "26-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "4ddcc3ec820008caa42f95741f9b1e27"
+          "fingerprint": "6f556a640d80f954bec58f16742f4360"
         },
         {
           "id": "26-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "218416e075af1faa98629fbbc7c8e2c6"
+          "fingerprint": "6f8f87e2d44081a780fbb0aef82f5b23"
         },
         {
           "id": "26-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "33614558f794d20a53f939b723be7087"
+          "fingerprint": "1d35929d020c690179ece936160a55f3"
         },
         {
           "id": "26-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "fdbee1afc7c6f33d79dd507e2bd0da7f"
+          "fingerprint": "de4860816ec6e2dbdc10d4002a83d442"
         },
         {
           "id": "26-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "323445a8761b3619e1d3d19a3a762f57"
+          "fingerprint": "4b686d1473476920ca9d5852a4aa205e"
         }
       ]
     },
@@ -1753,61 +1753,61 @@
           "id": "27-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "976d47a12f5297d7a16d60b395602b59"
+          "fingerprint": "5cd1d6fcec1eccf7f104443c3e6f4a4f"
         },
         {
           "id": "27-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "b0459d050d291e41bbc46eb74835dd4d"
+          "fingerprint": "066e62d86cedc5193bdc3cf575d05a5a"
         },
         {
           "id": "27-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "0e77486ee29a0b295a3b835c1b7d4faa"
+          "fingerprint": "3d04fc391240453add11fa1bb9493dee"
         },
         {
           "id": "27-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "ec6316ebc99742a7e5eae5d2f6cfff51"
+          "fingerprint": "d9602ba8ea0a25a9cf16f7c224ddfe38"
         },
         {
           "id": "27-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "70314b4f41da155efdaa6a41856dc318"
+          "fingerprint": "69519e66fa1fb2f563ece823f0d32dc0"
         },
         {
           "id": "27-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "8ba731fb1fc78e8ab9ee031e96fc3eed"
+          "fingerprint": "94685d966b6b0e2bed2c9ba9ec9b455c"
         },
         {
           "id": "27-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "daf7be96dc476cc5ef3b0807aebd8a27"
+          "fingerprint": "e08ff3ce63529b2497f999ae7dec1e6a"
         },
         {
           "id": "27-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "81b4e861e0390bcf9b355ca724938451"
+          "fingerprint": "f8c9e70be0b3093356ecad64da3676b9"
         },
         {
           "id": "27-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "b132ffcd42db350641b459a6de1f3393"
+          "fingerprint": "161a9454132a626a2466121018df8bd2"
         },
         {
           "id": "27-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "9942c05fef8482d13f28b14a0e6c06c5"
+          "fingerprint": "223cc74c6e6e44689c5ad41c6c53f1eb"
         }
       ]
     },
@@ -1820,61 +1820,61 @@
           "id": "28-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "42f7da1a040712200bcdf437e9de8e66"
+          "fingerprint": "f9cc97b56a72fd933e8e2771bac56b37"
         },
         {
           "id": "28-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "5f4fe69b7d00c6deefef0f23f19b9a05"
+          "fingerprint": "9891567e5777cfb8371bd792cf6d5cff"
         },
         {
           "id": "28-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "d69c478f2ac619c2996bed8f9fdede7e"
+          "fingerprint": "83cddda973bccd6936bc1e1772b902f5"
         },
         {
           "id": "28-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "119b19401a8524872b7a4936bdbf48c9"
+          "fingerprint": "fbf3fa12a8262c3b33c3298323f2356c"
         },
         {
           "id": "28-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "8dc24cfcd2d21e851b35848b771c56a5"
+          "fingerprint": "ea60f87b1e599ac81f81bbb80f25ebc7"
         },
         {
           "id": "28-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "83f59b104bc9c848d143d5d84bd508a6"
+          "fingerprint": "3de47d5d1e935630dbbd0e756b84b741"
         },
         {
           "id": "28-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "95ed596b54e1224e15497cd673e03865"
+          "fingerprint": "17d9d8b3de60ca6003008c6e66369a29"
         },
         {
           "id": "28-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "8c4132faee509ab9f50fec7164a390a4"
+          "fingerprint": "b026de322e4aed8417ddcb19feccbf22"
         },
         {
           "id": "28-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "4cfc63109274253656c17d1117dc9c22"
+          "fingerprint": "6abbd0b714f8e7435b48585baf04409d"
         },
         {
           "id": "28-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "b99616ebab2cad52e1e8dd941fdca17f"
+          "fingerprint": "14073632ce7e5369fe61d330725bea55"
         }
       ]
     },
@@ -1887,61 +1887,61 @@
           "id": "29-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "d9c4a9b868fb968dfced3cd076a4fc7b"
+          "fingerprint": "adab4b86acdc470fab2b4b2ecaaff513"
         },
         {
           "id": "29-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "c0c8e22a0629c57ab0d51ae12c6d1512"
+          "fingerprint": "7a95c446f2fc5259ca1e95589443b73e"
         },
         {
           "id": "29-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "7844cbb994012bcd870cbb47753f67bb"
+          "fingerprint": "c9ac3a5a9b67c7c0dae75a52ac462d79"
         },
         {
           "id": "29-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "208f3341b1f6c662c557ca8c530f4b71"
+          "fingerprint": "1a9109dea05c0daa9de4542b2ad6398e"
         },
         {
           "id": "29-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "b552bd24e8ffcd1148058f56f25922b4"
+          "fingerprint": "2b0893974d50693adfdbabe95017ad68"
         },
         {
           "id": "29-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "8fdfd8507b3600de25371149f3b5e4e9"
+          "fingerprint": "844ccf842b5e3ef3bb9ca874e452c02f"
         },
         {
           "id": "29-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "9292b89b8169eba3507288166887dedd"
+          "fingerprint": "9937ae3264e3534f3f51fed658482976"
         },
         {
           "id": "29-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "1980720822ae93c8ababc7f83792d8f8"
+          "fingerprint": "60a24a324e6a6bf1f8cb28484dad2acd"
         },
         {
           "id": "29-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "4206dedb17d818005afeefd787f9d55d"
+          "fingerprint": "d8118a5cffdee8b407bb84859cbb34ac"
         },
         {
           "id": "29-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "f48e9236281d7612409ce6d9e566e58d"
+          "fingerprint": "e3f13e41bfd7db1ee781649fec394f86"
         }
       ]
     },
@@ -1954,61 +1954,61 @@
           "id": "30-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "ac5346466aab9595989b2691a40ebb04"
+          "fingerprint": "41cf3d1fb68e860f08a168647f997e64"
         },
         {
           "id": "30-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "a2004c23b5791d75e0f26d168e71c61a"
+          "fingerprint": "0c85e276e1e457d2ee0139fb47c0fa4b"
         },
         {
           "id": "30-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "3363ca1438316a1b6ee1494d8754490b"
+          "fingerprint": "b87fcbd1cece3c0c9afa39b026983eca"
         },
         {
           "id": "30-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "1486dc5cac5b231ffa3c7093ea7f35a0"
+          "fingerprint": "ec621b9221bbeae8e43d43ec3bf44d02"
         },
         {
           "id": "30-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "4ee71c66aab1147687aadcb601660833"
+          "fingerprint": "f874e98579e86a54bab44b64632ce3d3"
         },
         {
           "id": "30-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "426612765ea329b095ef8864b5a8ff9f"
+          "fingerprint": "2883c4e8643a139c9c631d56a6c3c501"
         },
         {
           "id": "30-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "ae53f7fcdb786a0c0fbfbc0d33a99006"
+          "fingerprint": "f758cae2775fd0d02f8dc261a3e84a0f"
         },
         {
           "id": "30-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "a60e395e5d215f5a05733440e5769f77"
+          "fingerprint": "69a8a3dc2b7d0a1c5a8ce92e50c5d6c2"
         },
         {
           "id": "30-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "548b1bef2514d15af3052ce351670d10"
+          "fingerprint": "584b434e7a068fd605704b2f4c96a10a"
         },
         {
           "id": "30-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "bbe0dd43754ff2d4dcf63ec7dbd2400b"
+          "fingerprint": "68410d5c0093c2f88779f62a96bd7a0c"
         }
       ]
     },
@@ -2021,61 +2021,61 @@
           "id": "31-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "4077f80f034b615e8a9226a2a5b58ee5"
+          "fingerprint": "4ffc99a2a3d7b69563d8ee5f11c0af2d"
         },
         {
           "id": "31-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "88344658069da5661de0e4e47a36271a"
+          "fingerprint": "10e4f419bb84fcc0b87f4f52e20f3569"
         },
         {
           "id": "31-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "cd0b81a9a7569c5e14122fd850628a41"
+          "fingerprint": "ebcd240b1a4f2f229453433c37f2849a"
         },
         {
           "id": "31-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "e961df18fb753c9be3b8a6e16e04647f"
+          "fingerprint": "c62b7d5879d67d82fe2dffaaa09c5497"
         },
         {
           "id": "31-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "d9e2d7dca9f525df2a3ebd358e310d7d"
+          "fingerprint": "1f8c6b9e2eca382457b661f991045460"
         },
         {
           "id": "31-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "90a543d0b85b65c153ce82d36da16249"
+          "fingerprint": "f3bf23838bdc0c94d1af6133df9f9dac"
         },
         {
           "id": "31-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "97acc15e9cbb100a1db74b3db1553a4f"
+          "fingerprint": "689223c1e9f3621538742bd2037babf5"
         },
         {
           "id": "31-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "eeb549b5940d786f8fcdfbc8118f0cf4"
+          "fingerprint": "7078372b2d394dad9053cacdc66e8ad5"
         },
         {
           "id": "31-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "5df6394019613f76e7b69f92fd8ba2d3"
+          "fingerprint": "f62a9de61cf33959a37f81beec749abd"
         },
         {
           "id": "31-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "b9ff0f0117170e4920d0e7a5b7b3677b"
+          "fingerprint": "f83c6edb85274ec6432735a61d18fefb"
         }
       ]
     },
@@ -2088,61 +2088,61 @@
           "id": "32-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "0dea2543ec92123e433377ab40d5307c"
+          "fingerprint": "00491e431fc40c10cb1206ac713265c3"
         },
         {
           "id": "32-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "9a344a901e8592040981c094abd5a0e3"
+          "fingerprint": "04f34b8e4fd9ecb43da15e03e9f60133"
         },
         {
           "id": "32-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "04a327a6534a6e39b49c63337bc0d518"
+          "fingerprint": "beb98d70dc39b1d88ef48e1dae32ea35"
         },
         {
           "id": "32-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "60cb55df8f167bfd8199018edcc525c0"
+          "fingerprint": "3fd18a1d597737b6d4b0e9cb27ada67d"
         },
         {
           "id": "32-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "8e350fdf0c34e50142a4320a0c61ed4d"
+          "fingerprint": "b825d2070eb6d4ab0e6a4e5379a63f4d"
         },
         {
           "id": "32-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "2f20f54955c66b9abdd28250163206a5"
+          "fingerprint": "a7d207b46732430d959249f19c9e822b"
         },
         {
           "id": "32-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "0a3a0f9dc3ec647d8735eeff74806072"
+          "fingerprint": "10690de8971b543cac64d4116e0a54ad"
         },
         {
           "id": "32-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "b26609400c9dbca60e9ebc9bf98d688d"
+          "fingerprint": "8ce220e50293c32b2264575041e8c3ed"
         },
         {
           "id": "32-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "8d86fee60cf2ebfbd863c020928d52e1"
+          "fingerprint": "9b0d0ef430f5935989d4187102cd792a"
         },
         {
           "id": "32-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "07a9598cb1d2f70a90bbdfbe9e1b63d9"
+          "fingerprint": "ea0327e5e3773234532737b26e947463"
         }
       ]
     },
@@ -2155,61 +2155,61 @@
           "id": "33-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "59474023604ec9ea33a165afed95cdab"
+          "fingerprint": "493cbb879ec4f9d4f7a427c85a07f530"
         },
         {
           "id": "33-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "3412a290982915a1460bdad55da2c323"
+          "fingerprint": "a7cd86f0f511aa1bbac5a71662b5edd6"
         },
         {
           "id": "33-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "9eddcff81060eed2f387a4501c231362"
+          "fingerprint": "5df3ab5b4a838e13c212b6d7d191d7f9"
         },
         {
           "id": "33-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "28fefcd51c54295592a506c3061777a4"
+          "fingerprint": "b0d5f2cae157f724d49e823223a882fe"
         },
         {
           "id": "33-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "0699246f4875ba43c226b221e5eaf98e"
+          "fingerprint": "1657f4e84e3f7102e494ae4184a57653"
         },
         {
           "id": "33-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "e564d11d4f1668ed534611734b54a8e0"
+          "fingerprint": "d22deb2a38adb4d26455f275221af5a4"
         },
         {
           "id": "33-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "4b1c4fd87d2447e7c1a83301904e6909"
+          "fingerprint": "8457ba28421c7cfb3cb0522497252906"
         },
         {
           "id": "33-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "f0073ce2bd48a2b1ed2d2f2f9b8c4ad9"
+          "fingerprint": "005ec94964e406283e54268d942a7350"
         },
         {
           "id": "33-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "f892b7aa6c9672681e8d1ed4b192e015"
+          "fingerprint": "9d82b27a067c8683f2774cb9962b4e7d"
         },
         {
           "id": "33-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "0ccd017c8fdffee1ed4fd5ee9ad91cae"
+          "fingerprint": "2a5988204771e79630d046842add6635"
         }
       ]
     },
@@ -2222,61 +2222,61 @@
           "id": "34-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "37c2b849bad2327198b700c54459201b"
+          "fingerprint": "ebe7dae7d219cd61103aa215f4428c0d"
         },
         {
           "id": "34-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "f1838383014f02ba163731409d023501"
+          "fingerprint": "25f4cf1e240b5dfa8478e61114449d7f"
         },
         {
           "id": "34-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "8212074d76448df237c3b19679be7483"
+          "fingerprint": "f982a73dafde78efdc2408c0fd068319"
         },
         {
           "id": "34-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "3263325071feb2fc98167976ccd05cb0"
+          "fingerprint": "5e84630f4ea3a1a69d6da6061d6133a4"
         },
         {
           "id": "34-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "af5c53e026794151baa999a2534b1377"
+          "fingerprint": "3a3991a5c191b59c0666e893203f3ce3"
         },
         {
           "id": "34-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "5ef7ad8ae5a44934c309e90bc1bbe100"
+          "fingerprint": "453020f005ea4903bf3979e986c1a659"
         },
         {
           "id": "34-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "cbb55d59c55798037205c9d5155a129c"
+          "fingerprint": "60777487109b97e14504c759aebdbd27"
         },
         {
           "id": "34-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "44199d0955110c3097cf31c348460b4c"
+          "fingerprint": "8a2b731a0cc4c98f9e92321e5d31ffbb"
         },
         {
           "id": "34-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "04b029427d06f60e4b0e51d1cf4ee1bc"
+          "fingerprint": "4d6593b69aa17e2064137d3881d14c5a"
         },
         {
           "id": "34-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "da544e2538ca96a61bd1823d493eace4"
+          "fingerprint": "44baf66f2319c28cea64b023b867aadc"
         }
       ]
     },
@@ -2289,61 +2289,61 @@
           "id": "35-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "e2a35a7b04ee96ee35434f1979d91f1b"
+          "fingerprint": "53be1c5aeaf4249c5230c14c32b4a957"
         },
         {
           "id": "35-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "789ecf9a3640cb2179bd2ee043b9b937"
+          "fingerprint": "c633c6e28284bb386c6818f396dcc63a"
         },
         {
           "id": "35-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "45eba2e7afdcaafc3d299592dad1d996"
+          "fingerprint": "e36f32ef677914541577fb64579b0b9f"
         },
         {
           "id": "35-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "06bc4ab00f50bb42e969e219c9aba691"
+          "fingerprint": "db6ae44a3e538ec3407e0955f6401810"
         },
         {
           "id": "35-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "b43088517ffbcf56e5f149e32b833882"
+          "fingerprint": "2d1687a28413fe65c05d0cb41da9120b"
         },
         {
           "id": "35-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "89ef6e7d9361629bb3f86b9d77fa6f36"
+          "fingerprint": "1211da888ccd3a59a3c218c05901f39d"
         },
         {
           "id": "35-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "21ac83703a6878ba44113a518fa8947e"
+          "fingerprint": "5f67871f8a129d90a06b220055b3f9ed"
         },
         {
           "id": "35-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "6f79c1684aca7bd3f6786eef831a39c7"
+          "fingerprint": "49815f3168777e1b31ea8f5899bdfd9d"
         },
         {
           "id": "35-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "582a1f58f4f6122741324bb5aca2e563"
+          "fingerprint": "b71d09c2205ad0ae746447152c5cf7fb"
         },
         {
           "id": "35-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "a40b0c54f3a4fe8879407859d28faf63"
+          "fingerprint": "9d5cda4d149f6c1a6044a54af92f2667"
         }
       ]
     },
@@ -2356,61 +2356,61 @@
           "id": "36-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "3e5d542cc079f332d04fb67aa45e0078"
+          "fingerprint": "e723eb00652bca77eea8cd31b4bd09aa"
         },
         {
           "id": "36-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "d8c3ea9bd38e5db6504ba30265de84e9"
+          "fingerprint": "e3b10e4ec303e9a622ac4e279c044c3a"
         },
         {
           "id": "36-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "de7031b38a211625dc0fef4b9e14cfc4"
+          "fingerprint": "4e38a98ee00fdca5aa8fbfdbeffbcd4d"
         },
         {
           "id": "36-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "9efb72132c3151566be4f957ba9a636d"
+          "fingerprint": "90c06f5346031b83cbe4adab4a8573f8"
         },
         {
           "id": "36-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "6a1bd8b1e95dae0b64ccb5197fc6fd45"
+          "fingerprint": "a5c2fa968b59306444434a68d701afd2"
         },
         {
           "id": "36-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "d98cd8939bd68e359cf2672c479f15fa"
+          "fingerprint": "5c7587bae1683b27935237e870d782e8"
         },
         {
           "id": "36-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "5f9db55e33578e9b5568b1ea8fa04e9b"
+          "fingerprint": "f7d60f75708e43cbb271734c46d052d6"
         },
         {
           "id": "36-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "13e5471e9fa055f72e4607c7a5476bae"
+          "fingerprint": "e95921021f938f29ed4047adacab0d5c"
         },
         {
           "id": "36-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "9a0ed3c0520809a41943420664e83701"
+          "fingerprint": "61eeadf8e93bc18dc33427b18f366840"
         },
         {
           "id": "36-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "e9b98738a312f6251b30ddd6605f6515"
+          "fingerprint": "0281240a556748a1117eefe3c83256cc"
         }
       ]
     },
@@ -2423,61 +2423,61 @@
           "id": "37-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "47c9d066dae44137321f1222858ce666"
+          "fingerprint": "8108c6600de67a825a9b28c7e98cebae"
         },
         {
           "id": "37-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "e75411fd6c47e1f87b296febeef1ca4d"
+          "fingerprint": "0a7042e7ad700407fc58f5057063023b"
         },
         {
           "id": "37-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "446e6a9dbe36e2fb9449c344e8e5f327"
+          "fingerprint": "3e0d94f3ad9d93d49da9195c61ac3c95"
         },
         {
           "id": "37-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "8b810ea24c1f57497b185be8d42fced2"
+          "fingerprint": "b5150f6889bb678c70169a7706d77db6"
         },
         {
           "id": "37-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "56a6899430b99ccb3b455c97aaa1c5aa"
+          "fingerprint": "5acb76824b1524f80dc0d93c86244e1d"
         },
         {
           "id": "37-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "fdb8d6c78e1f70906689a0ff8a78ea59"
+          "fingerprint": "12e5737f45c2904038f5618ecf31a98d"
         },
         {
           "id": "37-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "468d9a7f422e5bd5f1467b2b8e2537ce"
+          "fingerprint": "59ba76a49e3f82c027dfd6537e653a67"
         },
         {
           "id": "37-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "2c8d23e76504857091fcbd010d01e8eb"
+          "fingerprint": "e7d6a8a6f1b16ecc3484a828f8fe822a"
         },
         {
           "id": "37-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "baeee9959dc1f92278b8102633639131"
+          "fingerprint": "709e040ec44e2d2b6147fac57e7982bf"
         },
         {
           "id": "37-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "ae3ff62c0a645067ae8edb85cb392c8f"
+          "fingerprint": "43d8548e4444c0f17c5fc9e32713e163"
         }
       ]
     },
@@ -2490,61 +2490,61 @@
           "id": "38-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "eea1cd87d0bca76ab7305e1e1b177e3b"
+          "fingerprint": "3130167ef41e0c20b751caf7826dd160"
         },
         {
           "id": "38-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "74c942651f2eac89348bb39c987f7523"
+          "fingerprint": "dddaa661f4c1531f0d658136e35cb104"
         },
         {
           "id": "38-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "70185c0b7cbcf0dbd9669c9435b0a8bd"
+          "fingerprint": "c710d30731691cea1ddb3cb423eb2ac0"
         },
         {
           "id": "38-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "6e94319ae5d539da0bb70acc73e24ed1"
+          "fingerprint": "378c40fe4495153de7f320ec04bac3e8"
         },
         {
           "id": "38-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "2af7788d1b57728c4608e75c69fd4f90"
+          "fingerprint": "dd6c7dfb0a971816b1239b89c9e408c5"
         },
         {
           "id": "38-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "12fe10cccc87ea40092e07b9fa8a0c1e"
+          "fingerprint": "3da7104a704f2d8764ef42af06ab7e73"
         },
         {
           "id": "38-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "ed634403b1188a2217c7da54069d429b"
+          "fingerprint": "09311a399e7ae3117c71726f89a8d62e"
         },
         {
           "id": "38-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "720f62fce7c39db4196ffff752b17bf2"
+          "fingerprint": "715d19721d1e5261ab60f8c7a6599cff"
         },
         {
           "id": "38-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "43b4c49533e4729239ef3c6e19a5c681"
+          "fingerprint": "2bb44f85a9fae5b981d25b83fccc3ee7"
         },
         {
           "id": "38-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "e0f8451f0695807eddad366a513c8401"
+          "fingerprint": "b7f26001e1c5fe547c69bdfe9e62e90a"
         }
       ]
     },
@@ -2557,61 +2557,61 @@
           "id": "39-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "281168a89b3426834ff0aa724d3328ea"
+          "fingerprint": "5a31a60a740e7faa7419633d71b37b4e"
         },
         {
           "id": "39-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "e6575fe1aad988c648d17afc4b4f38b3"
+          "fingerprint": "e7a1c8392083e2ac255bb3a97cbd7c47"
         },
         {
           "id": "39-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "f74f9ccc68f0f92b342bf2589f9cd765"
+          "fingerprint": "43ce46bff49017e362be1b412e1b3879"
         },
         {
           "id": "39-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "04696d604f5771a248d3253485b24740"
+          "fingerprint": "bbb508ed96f4ac1c20ef77ae952bafa2"
         },
         {
           "id": "39-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "ed8531a827d6acd046e859770afde0ba"
+          "fingerprint": "732a767fb7b5b517b106c66e7a25bd72"
         },
         {
           "id": "39-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "fee25500ce84ca190b7eec03bbe25b05"
+          "fingerprint": "9f150f914a70ec47bde2393bfc94129a"
         },
         {
           "id": "39-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "e440157eba2899a778277809ff1c4d4f"
+          "fingerprint": "5439dea8a2ff7c072f07d09addec2be1"
         },
         {
           "id": "39-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "a52df3b16983752b1bb799895dead9fc"
+          "fingerprint": "c9ef66e700d43347e00676344f15a088"
         },
         {
           "id": "39-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "9102ad6f1640148ae3a223ea07378738"
+          "fingerprint": "2d03b1cd705db95f58ce03d64c3d77bc"
         },
         {
           "id": "39-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "c8de0c0a0de75463a15c612d19974e46"
+          "fingerprint": "905e0ec594926b51c5177213ef16c1d0"
         }
       ]
     },
@@ -2624,61 +2624,61 @@
           "id": "40-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "7cc1857355e833eec1aa4496f5f0bef9"
+          "fingerprint": "ef7fc3b417007a070c8bcaab45857c4a"
         },
         {
           "id": "40-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "14712571843b454b1ef318a8eb11caf6"
+          "fingerprint": "6c3dbae17e26b13f02c6a07c5533841e"
         },
         {
           "id": "40-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "60ffe9b692cf5835f932c8f3f38b564e"
+          "fingerprint": "f389dca73bd150e01c9ec874d2949498"
         },
         {
           "id": "40-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "73f76c0151bd4a9172de091151d467cd"
+          "fingerprint": "672fa222e00d1d25ecfb0298fa17e315"
         },
         {
           "id": "40-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "bb23d274fd7d56de205a6fbaea752750"
+          "fingerprint": "50c4904cc1c5b25acde2cf5f8215a6c6"
         },
         {
           "id": "40-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "b146e5ba905d8f8ae366690dfa616972"
+          "fingerprint": "751f31ac6dbe0f281483737c7ffbe5c2"
         },
         {
           "id": "40-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "99e693b10261676a6e851659ef8bc532"
+          "fingerprint": "733792b3df97dba58752a842290605fb"
         },
         {
           "id": "40-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "128644057d4696cdc5c84ab2b56c0613"
+          "fingerprint": "f42c5d875a930afee31b5e04aa38e0bb"
         },
         {
           "id": "40-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "b49e9a382d4757b3f36f263d10282018"
+          "fingerprint": "4bbe6226d4dad98352a77c3cfb53541d"
         },
         {
           "id": "40-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "a747cd833718684af8a2583233a74ea8"
+          "fingerprint": "641cd5fc43f5f6e8d573ba7426dedb0b"
         }
       ]
     },
@@ -2691,61 +2691,61 @@
           "id": "41-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "b62c6cc4fb7c1eab8eb6aa17b0ee80df"
+          "fingerprint": "f1298d4e0c7b725c20cc0cf9341eee5e"
         },
         {
           "id": "41-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "baf7ddf4824d5f1b87d931bbab70ccf7"
+          "fingerprint": "58360b7eda9b2157c9532f760708dc4e"
         },
         {
           "id": "41-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "4faf7e57937d2a6c97b0e8acc9f93e8c"
+          "fingerprint": "89b683ae0b84d6d8356492c2cbce22cf"
         },
         {
           "id": "41-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "05ef5cb7d97da3d3b263f2e6698d8ded"
+          "fingerprint": "307d1d8bff78289427416e273441458b"
         },
         {
           "id": "41-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "382de20661408a43940ea052c38ecd20"
+          "fingerprint": "a3d9917b9348bdceedf40ad3e4812dd9"
         },
         {
           "id": "41-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "fccd8db5d138167b09147ef2208c1673"
+          "fingerprint": "ece0b5d2a27af429e2fbffd8ed8fc1f4"
         },
         {
           "id": "41-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "139f53156713e42236bfe97958456d63"
+          "fingerprint": "80888245ab7252a801b862339d9f5882"
         },
         {
           "id": "41-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "7361d488ec3f276f9009731ed3e8ef29"
+          "fingerprint": "255b060e3d915007de20cb744f115869"
         },
         {
           "id": "41-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "c9f5c9fe6660a09a3a44db44264f042e"
+          "fingerprint": "8732bfc13c873d01f157239d727df504"
         },
         {
           "id": "41-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "d4f2d2355e4ead0e8af04e51e09757f3"
+          "fingerprint": "e9c47e4d73d9faf12812111dc684d06b"
         }
       ]
     },
@@ -2758,61 +2758,61 @@
           "id": "42-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "da9eb5990be7743260140b35b3367edc"
+          "fingerprint": "c4d7583cb42f8f11a50b403c3f2eaf80"
         },
         {
           "id": "42-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "ec57db0395126a7604c8532c97f9a735"
+          "fingerprint": "5134912b3a4095c274f0a16c90c184db"
         },
         {
           "id": "42-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "8c5df4623494c544b52ad417a4ad20cb"
+          "fingerprint": "156de0979052f9ee1e9b9457fedb1296"
         },
         {
           "id": "42-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "f21ed5d35782a2166018d8c2310a7908"
+          "fingerprint": "4eb682da4d2b5edc924964f8ead3d177"
         },
         {
           "id": "42-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "1dad9ebcc891b0522b6752adbbc73e47"
+          "fingerprint": "225267c0e01ed20ef0a18e179ee74299"
         },
         {
           "id": "42-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "e974c18b2c79d3499d86f1b4efcd2c2d"
+          "fingerprint": "b2afbe764223eb14984e8e963f489dd8"
         },
         {
           "id": "42-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "fd5bdfecbbd482ccc208b4515f59e616"
+          "fingerprint": "9e1be907c0e4fbec737c5dfcc6f98c92"
         },
         {
           "id": "42-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "40b9931c612617061be7196ddf39917e"
+          "fingerprint": "bc5559d50284aea94f5629251e849bcd"
         },
         {
           "id": "42-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "bdaa3b2738817a29e19a12c5f4f22cfb"
+          "fingerprint": "fc492ccce453b276eda25f0d8973e7ee"
         },
         {
           "id": "42-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "f7c9c90aed42671afd02b97dcf809305"
+          "fingerprint": "ad37c1fdd0a3b42d324544c8ded922ea"
         }
       ]
     },
@@ -2825,61 +2825,61 @@
           "id": "43-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "0c04585cad87b24632b5a50127ba97ee"
+          "fingerprint": "c1babda48ba9d65f89bd282a5bfbe37e"
         },
         {
           "id": "43-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "93b5407346766be7a079056a9a34788e"
+          "fingerprint": "4fadf838f4fe25a73bde11a4d8db66b2"
         },
         {
           "id": "43-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "388b7a5c6b4deca6b19c7de5227e891b"
+          "fingerprint": "224d7380c48ccbf5c6b0059d3abe820b"
         },
         {
           "id": "43-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "f50512d80c2118a61f5cc71e6b4578bb"
+          "fingerprint": "3661516e6cc3479a064b682de9e481ec"
         },
         {
           "id": "43-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "87fca85a19832f984c2b13c79ba27da0"
+          "fingerprint": "5ef94b59e5ec6dc7c95e11d5778b6d73"
         },
         {
           "id": "43-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "8abcd1f27b9e51c641b631174e990d30"
+          "fingerprint": "febe36c97387a15e80e9e97d4a589999"
         },
         {
           "id": "43-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "ddb6e1d33b5f5fb39ac0a542044868d2"
+          "fingerprint": "fe425d503e74ddb6d831913cf90e004e"
         },
         {
           "id": "43-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "0b5a68caa64176d60b24172b258273dc"
+          "fingerprint": "ef62c57c9f3eb503fd8c6270b695423a"
         },
         {
           "id": "43-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "99cdac99ca7d00feb71c9d83b427987d"
+          "fingerprint": "fd0fb89c8ac91eec056a9e012c48ddde"
         },
         {
           "id": "43-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "bbc54a23df75eddb32812059817e803d"
+          "fingerprint": "d5b54fd5a0ba158297f8c7645154509f"
         }
       ]
     },
@@ -2892,61 +2892,61 @@
           "id": "44-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "cfca21f7aefb9ef197c7a2fd20e58dbb"
+          "fingerprint": "838e5b376f31dfd0284aadfb59ef86c3"
         },
         {
           "id": "44-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "2b8fb702bff41d094cb04e747c2312ff"
+          "fingerprint": "a74fcd69ee9574f725f660f5f5823149"
         },
         {
           "id": "44-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "175ecb60a0b10fc2c6603ceba9a983db"
+          "fingerprint": "0ef5c5862b97b993c5785fd70fd9ad09"
         },
         {
           "id": "44-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "012ff59460e22309bdb63e4472122162"
+          "fingerprint": "8681bccfd64bde677f8f9c68ea479056"
         },
         {
           "id": "44-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "73042c8f763c079192f47e7aff4ce128"
+          "fingerprint": "4ed106d00289f3ab9981d7046797ca23"
         },
         {
           "id": "44-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "8d3d13ff72becf63d01b46c6b482c673"
+          "fingerprint": "a81b8900a1c36c6ecaae25f07a82f852"
         },
         {
           "id": "44-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "1146aca6fc525ac96f89d11fcad69158"
+          "fingerprint": "7e4f3588f570349c42cadd12a4f87ade"
         },
         {
           "id": "44-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "131bc953dc5c7dcfceaae40003a1b4b1"
+          "fingerprint": "2fcd49dc3e24719add1f14059ed5315e"
         },
         {
           "id": "44-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "f499b255ef300e68724752274e362f51"
+          "fingerprint": "6e9bcfcec017c8175157b743dd292c41"
         },
         {
           "id": "44-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "423783eead5646af069a5dce680d7f98"
+          "fingerprint": "c99527d7ce8f1d645f28ee747bcde4d8"
         }
       ]
     },
@@ -2959,61 +2959,61 @@
           "id": "45-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "e83a4730361479d6397e7bdd7ab533d4"
+          "fingerprint": "6b10ec55244688d60b097d5d3e6d497b"
         },
         {
           "id": "45-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "c9d343247ae1592967f6088ed8520922"
+          "fingerprint": "265016494216d824f4336cb99712bcb8"
         },
         {
           "id": "45-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "efaa3dbcef3546e0db67571f5510c625"
+          "fingerprint": "da08b45ab7f9add6640198056ca3abb7"
         },
         {
           "id": "45-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "8935fb0fa58bbf5b72c890e8fbca79f2"
+          "fingerprint": "e3f7591c8a2fd2924a54904f5e81e064"
         },
         {
           "id": "45-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "02f290edcfab467ea9f476c0466861dc"
+          "fingerprint": "269dbfa3092b41d826c9be0e9d1b7db3"
         },
         {
           "id": "45-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "be4fc5e3f7cf9d4f13186a8a5747620d"
+          "fingerprint": "d5dc6ac05efa5e81586443dc347e3884"
         },
         {
           "id": "45-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "a093ba3a161cf3b5013bec7bc36ac439"
+          "fingerprint": "bd1aeee31278e1bb0a0c317ece2fd84a"
         },
         {
           "id": "45-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "a57749d4cd8295d9700ea7ba4f6fd37d"
+          "fingerprint": "06561bd66beb00813ee66b7aeaac3c7c"
         },
         {
           "id": "45-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "2ee752c7580e8ae5554801dc7b3e9c4a"
+          "fingerprint": "76cab5ca2f6f93dcb0b16d6a5d4de927"
         },
         {
           "id": "45-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "74bd66b7d9279fac68453c2e1626cd0a"
+          "fingerprint": "1d99cf7852ee106d127de6d83bb4dfaa"
         }
       ]
     },
@@ -3026,61 +3026,61 @@
           "id": "46-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "af276c461e4a2c56d5d5dbc0de2f82a5"
+          "fingerprint": "4e884389c4e751fe647f179b2430825b"
         },
         {
           "id": "46-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "9ab5a633fa4eaea2b575e51956693e28"
+          "fingerprint": "9ede5cc82bbd0e7bee58d347c78c3c4a"
         },
         {
           "id": "46-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "6fe727595d44742026d99b5850a23faf"
+          "fingerprint": "034949af949e272b0452c7e1c4ba6784"
         },
         {
           "id": "46-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "db0bb9a2b05700c2a7988f103269ce4e"
+          "fingerprint": "2f8fee169754fd757afcfd7dccdd7519"
         },
         {
           "id": "46-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "b2aa9609711c65d8505e083409b93a3b"
+          "fingerprint": "60c1973420d804195f06c534a7df07e4"
         },
         {
           "id": "46-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "9a807c08e108d06e26d9bde36ee76ce4"
+          "fingerprint": "282681f76c0783722a5d541b23cea13c"
         },
         {
           "id": "46-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "596d6f652eb8531b1778628c4656c3c1"
+          "fingerprint": "00c266a084b5acc1922aa24f4b57b8ee"
         },
         {
           "id": "46-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "637e39044b5ef9a39b161d0a2b88a755"
+          "fingerprint": "2527640ff87f988410b6bd4b047c35b0"
         },
         {
           "id": "46-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "2afffb663a91e41063c5f2cc1ce560a7"
+          "fingerprint": "420db926bc731db3f54caf6c84a85227"
         },
         {
           "id": "46-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "d766109e457bb9fe33dda1aaf8535113"
+          "fingerprint": "6c975505e4d25de603741bc935753345"
         }
       ]
     },
@@ -3093,61 +3093,61 @@
           "id": "47-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "d09170877979bf9bcf59a9331522681f"
+          "fingerprint": "675fb11c586d207908eb08c9d1b38caa"
         },
         {
           "id": "47-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "098e83cc41e5c3075e8aea8498f35656"
+          "fingerprint": "8d836e5ab66f6e7545a2297e3f7ba53b"
         },
         {
           "id": "47-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "26d48229f92c14266afcd834460e7287"
+          "fingerprint": "f0720727d518a01618ea4727586b06a9"
         },
         {
           "id": "47-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "55876cfcf0974f870ac92395ced1a4db"
+          "fingerprint": "80a647e018e0325758ed6d3a4d19f319"
         },
         {
           "id": "47-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "fdbfc8505560070c1ae6bbf7baccbd46"
+          "fingerprint": "0065b970774a584ae4b007087776252c"
         },
         {
           "id": "47-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "884f1adebad0ebbe62769ca79bbcc827"
+          "fingerprint": "0c9cdbc6ab7d8a4e0d531ddbf7c687f0"
         },
         {
           "id": "47-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "81d56f88352fc0b48aa90c50022c969a"
+          "fingerprint": "0cec3eee884cfec37fb1a10ff25ff591"
         },
         {
           "id": "47-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "fa2754e9d609387a857814be9556c240"
+          "fingerprint": "57e36b09111605f8f527e63d4b0033e2"
         },
         {
           "id": "47-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "7393ac6e3b57800f658778b5a86b83af"
+          "fingerprint": "cbbe61fcfa4cc4b54efa8b3f9501860f"
         },
         {
           "id": "47-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "ee68bf075e61151524346ff449ac3af2"
+          "fingerprint": "bee2710fc7bcfcb14b111d241a5ec41a"
         }
       ]
     },
@@ -3160,61 +3160,61 @@
           "id": "48-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "efe8b2115912ec726c45a1f4c835f0e2"
+          "fingerprint": "63ef2a43ce2664cb8f61b33fbf0bdb87"
         },
         {
           "id": "48-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "6b2603f177b7534bc19fd0e0d6ae19a6"
+          "fingerprint": "7f3e9c3011bcdb81d28e99f361ec7636"
         },
         {
           "id": "48-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "1f236058a3fa20482cb16c711e83a71f"
+          "fingerprint": "a0ee2315ff667f040fbf087554a0f9e5"
         },
         {
           "id": "48-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "71ef8c86b248624aeec4a2869ba353d6"
+          "fingerprint": "d8b27fd76fd83dec2f9c1b2b3ad45cbb"
         },
         {
           "id": "48-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "cafa35fd802af561d65b336a94495792"
+          "fingerprint": "c866d0eaceb15a4e056d29ef2393f3c4"
         },
         {
           "id": "48-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "f23596dc7062755dc70bbb1ee811c132"
+          "fingerprint": "e5a3f1374f3565fee2d85b489251a6e0"
         },
         {
           "id": "48-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "5371b40eaf356086152b5b2c2d703d68"
+          "fingerprint": "a23fd70453563208ca2cb128e02f6aa5"
         },
         {
           "id": "48-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "078881aa47f1c6c390987e65db138686"
+          "fingerprint": "37ffd1bbb9a66c0e141397df4e4d851c"
         },
         {
           "id": "48-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "f7265e6cf7d1c3dec16173ec37b3a8ab"
+          "fingerprint": "02088280c70dc2a0b0cf3a925d8e5be1"
         },
         {
           "id": "48-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "1599af14710edef69c1add435eef4450"
+          "fingerprint": "4dfd83b7e5511934a60eff5a6e625f6e"
         }
       ]
     },
@@ -3227,61 +3227,61 @@
           "id": "49-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "fefec7934c4185c9e9a3bc63f913a77e"
+          "fingerprint": "ea4c3a74aa30a0918b6e12a436c84458"
         },
         {
           "id": "49-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "d63524bb021f4f4442ab94bfb4c35528"
+          "fingerprint": "291eac482dee6c11f2478ac57d7a038b"
         },
         {
           "id": "49-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "ef08f3399150f16362f6be3ee6979ead"
+          "fingerprint": "0882a1d7649fb7a4766bcdfcc674c506"
         },
         {
           "id": "49-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "4c5086efde091969478e898eeb961514"
+          "fingerprint": "bed3ac0245efdfb20b785bdd851c5460"
         },
         {
           "id": "49-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "054b9ec821bec3d8b105495a354b4421"
+          "fingerprint": "298a38c0b659907f21ab76c9e2172500"
         },
         {
           "id": "49-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "470e9906fcc791f39702bbb8ff34457f"
+          "fingerprint": "af0bc2002352d4194c550e887624c8c3"
         },
         {
           "id": "49-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "bd1a3bf851f7d6ed5beaba958792ff01"
+          "fingerprint": "d880c07060ac6408c0f7a8ff4c3e7ce4"
         },
         {
           "id": "49-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "b22e625ed3be3328c043b0f242435178"
+          "fingerprint": "471d65b436885a9c5d523d3785d9f780"
         },
         {
           "id": "49-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "b6e447d8d5f9a9d01f89f53c5e2ba167"
+          "fingerprint": "1294c9f636918fd4f08f56ada893fe9b"
         },
         {
           "id": "49-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "3507601b12a6bb53ec529528ec5af823"
+          "fingerprint": "a9d9e67045134df7b4d4f9209e9eb3ee"
         }
       ]
     },
@@ -3294,61 +3294,61 @@
           "id": "50-1",
           "name": "First Steps",
           "difficulty": "easy",
-          "fingerprint": "b8ce81187951c8db258882647177cb8c"
+          "fingerprint": "cd9365de398791066dd021afd262ff7f"
         },
         {
           "id": "50-2",
           "name": "Warm Up",
           "difficulty": "easy",
-          "fingerprint": "90f241830b7006d0b3a05064827782a2"
+          "fingerprint": "aae8ba343778d02ab30224d2506d225f"
         },
         {
           "id": "50-3",
           "name": "Getting There",
           "difficulty": "medium",
-          "fingerprint": "754a6c52b3b963e7987b7ee1a2a0563c"
+          "fingerprint": "a73df4d84d9e2a1bb68e6d5ead7ab477"
         },
         {
           "id": "50-4",
           "name": "Finding Flow",
           "difficulty": "medium",
-          "fingerprint": "b4006d3e3f871cfe2ae605e8bafc8537"
+          "fingerprint": "b56237d8644afe4d3232f27d6a831007"
         },
         {
           "id": "50-5",
           "name": "Double Down",
           "difficulty": "medium",
-          "fingerprint": "5a11987f9aa6663a1de811c31426aad1"
+          "fingerprint": "89ea6e770caf3174605a2d492078efbc"
         },
         {
           "id": "50-6",
           "name": "Halfway",
           "difficulty": "hard",
-          "fingerprint": "c376986d44229740bdb34a283cab44bb"
+          "fingerprint": "f4833eeba978533ba5710bf2de7dbf5f"
         },
         {
           "id": "50-7",
           "name": "Picking Up",
           "difficulty": "hard",
-          "fingerprint": "3d8a153c1b0886257f223e2248cac02d"
+          "fingerprint": "adb272b2f976f3d7f3ec244a1b9c35ed"
         },
         {
           "id": "50-8",
           "name": "The Pressure",
           "difficulty": "hard",
-          "fingerprint": "2c0f127217bd2c353dd60fa2f0daaff3"
+          "fingerprint": "a51c442cb7bd70e2d2b789055c2e8325"
         },
         {
           "id": "50-9",
           "name": "Almost There",
           "difficulty": "expert",
-          "fingerprint": "f7012ef21606187c3663d2e2b056ce67"
+          "fingerprint": "0360d04450b9273cd98cac280fcb0a69"
         },
         {
           "id": "50-10",
           "name": "The Final Push",
           "difficulty": "expert",
-          "fingerprint": "2925da93f45401d4366b06c6373c3eae"
+          "fingerprint": "c0a69ab667e4a5d867106464fc77bc6c"
         }
       ]
     }
